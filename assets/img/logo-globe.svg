@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#28282E" stroke-width="1.5" role="img" aria-label="Глобус">
+  <circle cx="14" cy="14" r="11.25"/>
+  <ellipse cx="14" cy="14" rx="4.6" ry="11.25"/>
+  <line x1="2.9" y1="14" x2="25.1" y2="14"/>
+  <line x1="4.6" y1="8.4" x2="23.4" y2="8.4"/>
+  <line x1="4.6" y1="19.6" x2="23.4" y2="19.6"/>
+</svg>
