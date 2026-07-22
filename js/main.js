@@ -22,6 +22,20 @@ if (scrollTopBtn) {
   });
 }
 
+// Плавный переход по внутренним якорям (напр. «Контакты» → футер).
+// Через JS — чтобы работало и внутри iframe артефакта, где есть <base href>.
+document.querySelectorAll('a[href^="#"]').forEach((a) => {
+  a.addEventListener('click', (e) => {
+    const id = a.getAttribute('href').slice(1);
+    if (!id) return;
+    const target = document.getElementById(id);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
 // Бейдж «Смотреть кейс/UI», следующий за курсором при наведении на карточку
 const cursorCta = document.querySelector('.cursor-cta');
 if (cursorCta) {
