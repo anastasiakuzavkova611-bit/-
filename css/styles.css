@@ -410,13 +410,12 @@ a {
   text-align: center;
 }
 
-/* Декоративный марк после «скиллы» в заголовке */
+/* Декоративный марк после «скиллы» — стоит как запятая: нижним краём по базовой линии текста */
 .title-mark {
-  height: 0.85em;
+  height: 0.8em;
   width: auto;
   display: inline-block;
   vertical-align: baseline;
-  transform: translateY(0.12em);
   margin: 0 -2px;
 }
 
