@@ -61,6 +61,7 @@ body {
   font-family: var(--font-main);
   color: var(--c-primary);
   background: #ffffff;
+  letter-spacing: 0; /* 0% трекинг по всему проекту */
   -webkit-font-smoothing: antialiased;
 }
 
@@ -179,13 +180,17 @@ a {
   color: currentColor;
 }
 
+/* Бейдж: SF Pro Regular 20 / 24, spacing 0 */
 .tag {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 4px 12px;
   border-radius: 16px;
-  font-size: clamp(13px, 1.4vw, 20px);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
   color: var(--c-tertiary);
   white-space: nowrap;
 }
@@ -302,7 +307,39 @@ a {
 
 .case-card__link:hover .case-card__media {
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(40, 40, 46, 0.12);
+  box-shadow: 0 10px 28px rgba(40, 40, 46, 0.07);
+}
+
+/* Бейдж «Смотреть кейс/UI», следующий за курсором на карточке */
+.cursor-cta {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  padding: 6px 16px;
+  border-radius: 100px;
+  background: var(--c-accent);
+  color: var(--c-tertiary);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, 18px);
+  transition: opacity 0.15s ease;
+}
+
+.cursor-cta.is-visible {
+  opacity: 1;
+}
+
+/* На тач-устройствах бейдж под курсор не нужен */
+@media (hover: none) {
+  .cursor-cta {
+    display: none;
+  }
 }
 
 .case-card__img {
@@ -559,6 +596,12 @@ a {
   opacity: 0.85;
 }
 
+.scroll-top .icon-arrow-up {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
 /* Когда контентная область упирается в края экрана — прижимаем кнопку к правому краю */
 @media (max-width: 1560px) {
   .scroll-top {
@@ -576,6 +619,11 @@ a {
   padding-bottom: clamp(48px, 8vw, 96px);
 }
 
+/* CV в футере — по нижней границе текста контактов */
+.footer-row > .btn {
+  align-self: flex-end;
+}
+
 .footer-contacts {
   display: flex;
   flex-wrap: wrap;
@@ -588,17 +636,22 @@ a {
   gap: 4px;
 }
 
+/* Заголовки в футере: SF Pro 40 / 44 */
 .footer-contact__value {
-  font-size: clamp(22px, 3.4vw, 40px);
-  line-height: 1.1;
+  font-size: clamp(28px, 3.4vw, 40px);
+  line-height: 1.1; /* 44/40 */
+  letter-spacing: 0;
 }
 
 .footer-contact__value--link:hover {
   color: var(--c-accent);
 }
 
+/* Подзаголовки в футере: SF Pro 24 / 28 */
 .footer-contact__label {
-  font-size: clamp(15px, 1.8vw, 24px);
+  font-size: clamp(18px, 1.8vw, 24px);
+  line-height: 1.1667; /* 28/24 */
+  letter-spacing: 0;
   color: var(--c-secondary);
 }
 
