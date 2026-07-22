@@ -180,9 +180,10 @@ a {
   color: currentColor;
 }
 
-/* Бейдж: SF Pro Regular 20 / 24, spacing 0 */
+/* Бейдж: SF Pro Regular 20 / 24, spacing 0, отступы 12×4, не тянется на всю ширину */
 .tag {
   display: inline-flex;
+  align-self: flex-start;
   align-items: center;
   justify-content: center;
   padding: 4px 12px;
@@ -409,15 +410,21 @@ a {
   text-align: center;
 }
 
-.section-title .dash {
-  font-family: var(--font-decorative);
-  font-weight: 400;
+/* Декоративный марк после «скиллы» в заголовке */
+.title-mark {
+  height: 0.85em;
+  width: auto;
+  display: inline-block;
+  vertical-align: baseline;
+  transform: translateY(0.12em);
+  margin: 0 -2px;
 }
 
+/* Две колонки: левая (Hard+Soft, Опыт) ~839, правая (Образование+Курсы) ~537 */
 .skills-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: minmax(0, 839fr) minmax(0, 537fr);
   gap: 24px;
   align-items: stretch;
 }
@@ -431,14 +438,30 @@ a {
 .skills-card {
   background: var(--c-card-bg);
   border-radius: 32px;
-  padding: clamp(20px, 3vw, 32px);
+  padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.skills-card--tall {
+/* Плашка с двумя колонками Hard | Soft внутри */
+.skills-card--duo {
+  flex-direction: row;
+  gap: 40px;
+}
+
+.skills-group {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Высокая плашка Образование + Курсы (тянется на всю высоту левой колонки) */
+.skills-card--edu {
   height: 100%;
+  gap: 40px;
 }
 
 .skills-list {
@@ -447,50 +470,33 @@ a {
   gap: 12px;
 }
 
+/* Пункт списка: SF Pro Regular 24 / 28 */
 .skills-list li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
-  font-size: clamp(16px, 1.8vw, 24px);
-  line-height: 1.15;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0;
   color: var(--c-secondary);
 }
 
+/* Буллет-иконка 28×28 */
 .bullet {
   flex-shrink: 0;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
   width: 28px;
-  height: 22px;
-  justify-content: center;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-.bullet::before,
-.bullet::after {
-  content: "";
-  display: block;
-  width: 15px;
-  border-radius: 1000px;
+.bullet-accent {
+  background-image: url("../assets/img/bullet-hard.png");
 }
 
-.bullet::before {
-  height: 11px;
-  margin-bottom: -3px;
-}
-
-.bullet::after {
-  height: 10px;
-}
-
-.bullet-accent::before,
-.bullet-accent::after {
-  background: var(--c-accent);
-}
-
-.bullet-gray::before,
-.bullet-gray::after {
-  background: var(--c-bullet-soft);
+.bullet-gray {
+  background-image: url("../assets/img/bullet-soft.png");
 }
 
 .skills-card__tags-row {
@@ -504,25 +510,32 @@ a {
   gap: 4px;
 }
 
+/* Заголовок опыта: Semibold 24/28; должность: Regular 24/28 */
 .experience-item__title {
-  font-size: clamp(16px, 1.8vw, 24px);
+  font-size: 24px;
+  line-height: 28px;
   font-weight: 590;
+  letter-spacing: 0;
 }
 
 .experience-item__role {
-  font-size: clamp(16px, 1.8vw, 24px);
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0;
   color: var(--c-secondary);
 }
 
 .edu-block {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
   width: 100%;
 }
 
-.edu-block + .edu-block {
-  margin-top: 24px;
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .edu-item {
@@ -532,20 +545,26 @@ a {
 }
 
 .edu-item__date {
-  font-size: clamp(14px, 1.4vw, 20px);
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
   color: var(--c-secondary);
 }
 
+/* Заголовок: Semibold 24/28 */
 .edu-item__title {
-  font-size: clamp(16px, 1.8vw, 24px);
+  font-size: 24px;
+  line-height: 28px;
   font-weight: 590;
-  line-height: 1.15;
+  letter-spacing: 0;
 }
 
+/* Подзаголовок: Regular 24/28 */
 .edu-item__place {
-  font-size: clamp(16px, 1.8vw, 24px);
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0;
   color: var(--c-secondary);
-  line-height: 1.15;
 }
 
 /* ===== Footer ===== */
@@ -663,6 +682,14 @@ a {
 
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  /* Hard и Soft в столбик на узких экранах */
+  .skills-card--duo {
+    flex-direction: column;
+    gap: 32px;
   }
 }
 
