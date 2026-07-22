@@ -14,10 +14,10 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#top" aria-label="На главную">
+      <div class="logo">
         <img class="logo-icon" src="assets/img/logo-globe.svg" alt="" width="28" height="28">
         <span class="logo-text">Орёл</span>
-      </a>
+      </div>
 
       <p class="header-name">Анастасия Кузавкова</p>
 
@@ -181,13 +181,6 @@
 
   <footer class="site-footer" id="contacts">
     <div class="container">
-      <a class="btn-up" href="#top">
-        Вверх
-        <svg class="icon-arrow-up" viewBox="0 0 28 28" width="20" height="20" fill="none" aria-hidden="true">
-          <path d="M14 22V6M14 6L6 14M14 6l8 8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-
       <div class="footer-row">
         <div class="footer-contacts">
           <div class="footer-contact">
@@ -211,6 +204,14 @@
       </div>
     </div>
   </footer>
+
+  <!-- Плавающая кнопка «Вверх»: появляется при скролле, лежит за контентной областью -->
+  <button class="scroll-top" type="button" aria-label="Наверх">
+    Вверх
+    <svg class="icon-arrow-up" viewBox="0 0 28 28" width="20" height="20" fill="none" aria-hidden="true">
+      <path d="M14 22V6M14 6L6 14M14 6l8 8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
 
   <script src="js/main.js"></script>
 </body>

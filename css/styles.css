@@ -522,21 +522,49 @@ a {
   gap: 32px;
 }
 
-.btn-up {
+/* Плавающая кнопка «Вверх» — фиксирована, в правом поле за контентной областью (24px),
+   появляется при скролле от начала страницы */
+.scroll-top {
+  position: fixed;
+  bottom: 40px;
+  /* правый край контентной области = 50% + половина 1440; кнопка на 24px правее него */
+  left: calc(50% + var(--container-max) / 2 + 24px);
+  z-index: 90;
+
   display: inline-flex;
   align-items: center;
   gap: 2px;
   padding: 4px 4px 4px 12px;
+  border: none;
   border-radius: 100px;
   background: var(--c-accent-bg);
   color: var(--c-accent);
+  font-family: inherit;
   font-size: clamp(14px, 1.6vw, 24px);
-  align-self: flex-end;
-  transition: opacity 0.15s ease;
+  cursor: pointer;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
 }
 
-.btn-up:hover {
-  opacity: 0.8;
+.scroll-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-top:hover {
+  opacity: 0.85;
+}
+
+/* Когда контентная область упирается в края экрана — прижимаем кнопку к правому краю */
+@media (max-width: 1560px) {
+  .scroll-top {
+    left: auto;
+    right: 24px;
+  }
 }
 
 .footer-row {
