@@ -150,6 +150,50 @@
   align-items: stretch;
 }
 
+/* «Что я сделала» и «Выводы» — две колонки внутри ОДНОЙ карточки */
+.method-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.method-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Мини-карточки цитат пользователей (белые, внутри секции «Поиск») */
+.quotes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.quote {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quote__q {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: var(--c-primary);
+}
+
+.quote__a {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: var(--c-secondary);
+}
+
 .insight-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -520,9 +564,13 @@
   .uxtest-pairs {
     grid-template-columns: 1fr;
   }
-  .reflect-card {
+  .reflect-card,
+  .method-grid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+  .quotes-grid {
+    grid-template-columns: 1fr;
   }
 }
 
