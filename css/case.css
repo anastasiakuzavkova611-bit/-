@@ -338,6 +338,23 @@ main {
   background: linear-gradient(135deg, #d7dbe4, #b9c0cd);
 }
 
+/* Реальные логотипы сервисов — вверху карточки «Бенчмарки» (304×72) */
+.bench-logos {
+  display: block;
+  width: 304px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Записи глубинных интервью — во всю ширину, 24px под плашкой текста */
+.interview-shot {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  margin-top: -8px; /* section gap 32px − 8 = 24px до плашки с текстом */
+}
+
 /* ---- Таблица ICE: шапка #F7F7F8, нечётные строки белые, чётные #F7F7F8 ---- */
 .ice-card {
   border-radius: 32px;
