@@ -386,6 +386,11 @@ main {
   font-weight: 400;
 }
 
+/* Заголовок «Гипотеза» — вторичным цветом (перебивает .ice-table .ice-hyp) */
+.ice-table thead th.ice-hyp {
+  color: var(--c-secondary);
+}
+
 .ice-table tbody tr:nth-child(odd) {
   background: #ffffff;
 }
@@ -450,26 +455,12 @@ main {
 }
 
 .thanks-photo {
+  display: block;
+  width: 264px;
+  max-width: 100%;
+  height: 264px;
   border-radius: 20px;
-  min-height: 200px;
-  background: linear-gradient(135deg, #cdb7a6, #a88f7d);
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 20px;
-}
-
-.thanks-photo span {
-  position: relative;
-  color: #1c1c1e;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 590;
-  letter-spacing: 0;
-  text-align: center;
-  text-shadow: 0 1px 6px rgba(255, 255, 255, 0.5);
+  object-fit: cover;
 }
 
 /* ---- UX-тесты: одна карточка, пары телефон + аннотация ---- */
@@ -522,6 +513,11 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+}
+
+/* Карточки «Другие кейсы» — под формат обложек 688×417 */
+.other-cases .case-card__media {
+  aspect-ratio: 688 / 417;
 }
 
 /* ---- Кнопка «Подробнее» в карточке ---- */
