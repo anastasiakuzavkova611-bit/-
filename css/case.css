@@ -73,7 +73,7 @@ main {
 /* ---- Hero ---- */
 .case-hero {
   padding-top: clamp(32px, 4vw, 56px);
-  padding-bottom: clamp(48px, 6vw, 72px);
+  padding-bottom: 0; /* отступ до след. раздела задаёт .case-section (72px) */
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -160,13 +160,18 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  align-items: start;
+  align-items: stretch; /* колонки одной высоты — кнопка прижимается к низу */
 }
 
 .method-col {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px; /* между текстом и пунктами 12px */
+}
+
+/* между бейджем и следующим за ним текстом/списком — 24px */
+.method-col > .tag {
+  margin-bottom: 12px; /* 12px gap + 12px = 24px */
 }
 
 /* Мини-карточки цитат пользователей (белые, внутри секции «Поиск») */
@@ -503,9 +508,12 @@ main {
 }
 
 /* ---- Кнопка «Подробнее» в карточке ---- */
+/* Лежит в левой колонке и прижата к её низу, чтобы вставать
+   на уровне, где заканчивается текст правой колонки (не удлиняя карточку) */
 .card-btn {
   align-self: flex-start;
-  margin-top: 4px;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
 /* ---- Видео-плашка в hero (заглушка) ---- */
