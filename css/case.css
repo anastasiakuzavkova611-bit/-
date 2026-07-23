@@ -425,7 +425,12 @@ main {
 .reflect-col {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px; /* между абзацами 12px */
+}
+
+/* между бейджем и текстом — 24px (12px gap + 12px) */
+.reflect-col > .tag {
+  margin-bottom: 12px;
 }
 
 .reflect-col p {
@@ -454,14 +459,21 @@ main {
   letter-spacing: 0;
 }
 
-/* Фото заполняет свою колонку по всей высоте карточки (не «висит» сверху) */
+/* Фото заполняет свою колонку по всей высоте карточки (не «висит» и не
+   растягивает карточку своей квадратной формой — высоту задаёт текст) */
 .thanks-photo {
-  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.thanks-photo img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  min-height: 200px;
-  border-radius: 20px;
   object-fit: cover;
+  display: block;
 }
 
 /* ---- UX-тесты: одна карточка, пары телефон + аннотация ---- */
