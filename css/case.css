@@ -381,7 +381,8 @@ main {
   color: var(--c-accent);
 }
 
-.ice-num {
+/* Выше по специфичности, чем «.ice-table td», иначе перебивается на top */
+.ice-table td.ice-num {
   color: var(--c-primary);
   vertical-align: middle; /* цифры по центру по вертикали строки */
 }
@@ -411,6 +412,11 @@ main {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+/* Контакты прижаты к нижнему краю столбца */
+.reflect-contacts {
+  margin-top: auto;
 }
 
 /* Заголовок контакта в кейсе: SF Pro Semibold 24 / 28 */
