@@ -128,11 +128,12 @@
 }
 
 /* ---- Section ---- */
+/* Между разделами 72px, между заголовком и контентом 32px */
 .case-section {
-  padding-top: clamp(40px, 5vw, 72px);
+  padding-top: clamp(48px, 6vw, 72px);
   display: flex;
   flex-direction: column;
-  gap: clamp(24px, 3vw, 40px);
+  gap: 32px;
 }
 
 .case-title {
@@ -282,9 +283,9 @@
   background: linear-gradient(135deg, #d7dbe4, #b9c0cd);
 }
 
-/* ---- Таблица ICE ---- */
+/* ---- Таблица ICE: шапка #F7F7F8, нечётные строки белые, чётные #F7F7F8 ---- */
 .ice-card {
-  padding: 0;
+  border-radius: 32px;
   overflow: hidden;
 }
 
@@ -304,13 +305,21 @@
   font-variant-numeric: tabular-nums;
 }
 
+.ice-table thead tr {
+  background: var(--c-card-bg);
+}
+
 .ice-table thead th {
   color: var(--c-secondary);
   font-weight: 400;
 }
 
+.ice-table tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+
 .ice-table tbody tr:nth-child(even) {
-  background: #efeff1;
+  background: var(--c-card-bg);
 }
 
 .ice-table .ice-hyp {
@@ -326,40 +335,99 @@
   color: var(--c-primary);
 }
 
-/* ---- Два вывода (начальная/уточнённая проблема) ---- */
-.tag-init {
-  background: #ffe4e4;
-  color: #e5484d;
-  align-self: flex-start;
+/* ---- Рефлексия + Контакты: одна карточка в три колонки ---- */
+.reflect-card {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 0.9fr;
+  gap: 40px;
+  align-items: stretch;
 }
 
-.tag-refined {
-  background: #dcf6e3;
-  color: #2a9d54;
-  align-self: flex-start;
-}
-
-/* ---- Контакты ---- */
-.case-contacts {
+.reflect-col {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 32px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.thanks-sticker {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 20px;
-  border-radius: 20px;
-  background: var(--c-accent);
-  color: #fff;
+.reflect-col p {
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0;
-  transform: rotate(4deg);
+  color: var(--c-secondary);
+}
+
+.reflect-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.thanks-photo {
+  border-radius: 20px;
+  min-height: 200px;
+  background: linear-gradient(135deg, #cdb7a6, #a88f7d);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+}
+
+.thanks-photo span {
+  position: relative;
+  color: #1c1c1e;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 590;
+  letter-spacing: 0;
+  text-align: center;
+  text-shadow: 0 1px 6px rgba(255, 255, 255, 0.5);
+}
+
+/* ---- UX-тесты: одна карточка, пары телефон + аннотация ---- */
+.uxtest-pairs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 8px;
+}
+
+.uxtest-pair {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.uxtest-pair .phone-ph {
+  width: 220px;
+}
+
+.uxtest-annot {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ---- Доработки: одна карточка, аннотации + телефоны по горизонтали ---- */
+.refine-row {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.refine-row .phone-ph {
+  width: 230px;
+}
+
+.refine-text {
+  flex: 1 1 220px;
+  min-width: 200px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: var(--c-secondary);
 }
 
 /* ---- Другие кейсы (2 карточки) ---- */
@@ -369,18 +437,39 @@
   gap: 24px;
 }
 
-.reflect {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  max-width: 1100px;
+/* ---- Кнопка «Подробнее» в карточке ---- */
+.card-btn {
+  align-self: flex-start;
+  margin-top: 4px;
 }
 
-.reflect p {
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0;
-  color: var(--c-secondary);
+/* ---- Видео-плашка в hero (заглушка) ---- */
+.hero-video {
+  margin-top: 8px;
+  border-radius: 32px;
+  aspect-ratio: 16 / 9;
+  max-height: 620px;
+  background: linear-gradient(180deg, #23262e 0%, #14161c 100%);
+  position: relative;
+}
+
+.hero-video::after {
+  content: "▶ видео — заглушка";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 20px;
+}
+
+/* Статичный хедер (как на главной, но не липнет — уходит под скролл) */
+.case-header--static {
+  position: static;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background: transparent;
 }
 
 /* ---- Блок гипотезы ---- */
@@ -427,8 +516,13 @@
   .insight-3 {
     grid-template-columns: 1fr;
   }
-  .other-cases {
+  .other-cases,
+  .uxtest-pairs {
     grid-template-columns: 1fr;
+  }
+  .reflect-card {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
 
