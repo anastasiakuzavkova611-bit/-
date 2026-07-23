@@ -1,0 +1,447 @@
+/* ===== Case page ===== */
+
+/* Закреплённая строка кейса вместо хедера: Назад / Revolut / дата — эффект glass */
+.case-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--c-header-bg);
+  backdrop-filter: blur(4px) saturate(1.6);
+  -webkit-backdrop-filter: blur(4px) saturate(1.6);
+}
+
+.case-topbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: var(--header-height);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.case-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px 4px 10px;
+  border-radius: 100px;
+  background: var(--c-card-bg);
+  color: var(--c-primary);
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+  transition: opacity 0.15s ease;
+}
+
+.case-back:hover {
+  opacity: 0.75;
+}
+
+.case-topbar__right {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.case-brand {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--c-primary);
+}
+
+.case-date {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 100px;
+  background: var(--c-card-bg);
+  color: var(--c-primary);
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+/* ---- Hero ---- */
+.case-hero {
+  padding-top: clamp(32px, 4vw, 56px);
+  padding-bottom: clamp(48px, 6vw, 72px);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.case-hero__title {
+  font-size: clamp(36px, 5.5vw, 64px);
+  line-height: 1.0625; /* 68/64 */
+  font-weight: 590; /* Semibold */
+  letter-spacing: 0;
+  max-width: 900px;
+}
+
+.case-hero__subtitle {
+  font-size: clamp(22px, 3vw, 40px);
+  line-height: 1.1; /* 44/40 */
+  letter-spacing: 0;
+  color: var(--c-secondary);
+  max-width: 900px;
+}
+
+.case-hero__cards {
+  margin-top: clamp(16px, 2vw, 32px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.case-hero__cta {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+/* ---- Generic secondary card ---- */
+.c-card {
+  background: var(--c-card-bg);
+  border-radius: 32px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.c-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Текст в карточке: SF Pro Regular 24/28 */
+.c-text {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: var(--c-secondary);
+}
+
+/* ---- Section ---- */
+.case-section {
+  padding-top: clamp(40px, 5vw, 72px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(24px, 3vw, 40px);
+}
+
+.case-title {
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.1; /* 44/40 */
+  font-weight: 590; /* Semibold */
+  letter-spacing: 0;
+}
+
+.insight-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.insight-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* маркированный список внутри карточки (переиспользуем буллеты) */
+.c-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.c-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: var(--c-secondary);
+}
+
+/* ---- Плашки Было / Стало ---- */
+.beforeafter {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ba-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ba-phones {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.tag-was {
+  background: #ffe4e4;
+  color: #e5484d;
+  align-self: flex-start;
+}
+
+.tag-now {
+  background: #dcf6e3;
+  color: #2a9d54;
+  align-self: flex-start;
+}
+
+/* ---- Заглушки телефонов / видео / логотипов ---- */
+.phone-ph {
+  flex: 0 0 auto;
+  width: 274px;
+  max-width: 100%;
+  aspect-ratio: 274 / 596;
+  border-radius: 34px;
+  background:
+    linear-gradient(180deg, #1c1f26 0%, #0f1115 100%);
+  border: 6px solid #0b0d11;
+  position: relative;
+  overflow: hidden;
+}
+
+.phone-ph::before {
+  content: "9:41";
+  position: absolute;
+  top: 14px;
+  left: 22px;
+  color: #8b93a3;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.phone-ph::after {
+  content: attr(data-label);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.video-ph {
+  flex: 1 1 0;
+  min-width: 220px;
+  aspect-ratio: 16 / 10;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #23262e 0%, #14161c 100%);
+  position: relative;
+}
+
+.video-ph::after {
+  content: "▶";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 34px;
+}
+
+.video-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.logos-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logo-ph {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #d7dbe4, #b9c0cd);
+}
+
+/* ---- Таблица ICE ---- */
+.ice-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.ice-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ice-table th,
+.ice-table td {
+  text-align: left;
+  padding: 24px 32px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0;
+  vertical-align: top;
+  font-variant-numeric: tabular-nums;
+}
+
+.ice-table thead th {
+  color: var(--c-secondary);
+  font-weight: 400;
+}
+
+.ice-table tbody tr:nth-child(even) {
+  background: #efeff1;
+}
+
+.ice-table .ice-hyp {
+  color: var(--c-primary);
+  width: 48%;
+}
+
+.ice-table .ice-hyp .accent {
+  color: var(--c-accent);
+}
+
+.ice-num {
+  color: var(--c-primary);
+}
+
+/* ---- Два вывода (начальная/уточнённая проблема) ---- */
+.tag-init {
+  background: #ffe4e4;
+  color: #e5484d;
+  align-self: flex-start;
+}
+
+.tag-refined {
+  background: #dcf6e3;
+  color: #2a9d54;
+  align-self: flex-start;
+}
+
+/* ---- Контакты ---- */
+.case-contacts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.thanks-sticker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 20px;
+  background: var(--c-accent);
+  color: #fff;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0;
+  transform: rotate(4deg);
+}
+
+/* ---- Другие кейсы (2 карточки) ---- */
+.other-cases {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.reflect {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1100px;
+}
+
+.reflect p {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: var(--c-secondary);
+}
+
+/* ---- Блок гипотезы ---- */
+.hyp {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hyp-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.hyp-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tags-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.iteration {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(48px, 6vw, 96px);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .hyp-card {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .case-hero__cards,
+  .insight-3 {
+    grid-template-columns: 1fr;
+  }
+  .other-cases {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .insight-2 {
+    grid-template-columns: 1fr;
+  }
+  .ice-table th,
+  .ice-table td {
+    padding: 16px;
+    font-size: 18px;
+  }
+  .case-brand {
+    display: none;
+  }
+}
