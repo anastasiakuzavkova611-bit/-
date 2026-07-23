@@ -1,5 +1,10 @@
 /* ===== Case page ===== */
 
+/* Пространство внизу страницы (футер убран) */
+main {
+  padding-bottom: clamp(64px, 8vw, 96px);
+}
+
 /* Закреплённая строка кейса вместо хедера: Назад / Revolut / дата — эффект glass */
 .case-topbar {
   position: sticky;
@@ -183,6 +188,7 @@
 .quote__q {
   font-size: 24px;
   line-height: 28px;
+  font-weight: 590; /* Semibold */
   letter-spacing: 0;
   color: var(--c-primary);
 }
@@ -377,6 +383,7 @@
 
 .ice-num {
   color: var(--c-primary);
+  vertical-align: middle; /* цифры по центру по вертикали строки */
 }
 
 /* ---- Рефлексия + Контакты: одна карточка в три колонки ---- */
@@ -404,6 +411,14 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+/* Заголовок контакта в кейсе: SF Pro Semibold 24 / 28 */
+.reflect-contacts .footer-contact__value {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 590;
+  letter-spacing: 0;
 }
 
 .thanks-photo {
