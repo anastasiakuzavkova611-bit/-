@@ -590,6 +590,13 @@ main {
   gap: 16px;
 }
 
+/* Композитная картинка «Было / Стало» под карточкой гипотезы */
+.ba-shot {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .tags-row {
   display: flex;
   gap: 8px;
