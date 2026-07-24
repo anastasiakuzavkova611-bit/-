@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI-концептики — Анастасия Кузавкова</title>
+  <meta name="description" content="UI-концепты продуктового дизайнера Анастасии Кузавковой: мобильные и десктоп-интерфейсы.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/case.css">
+</head>
+<body id="top">
+
+  <!-- Хедер как на главной: не закреплён, уходит под скролл -->
+  <header class="site-header case-header--static">
+    <div class="container header-inner">
+      <div class="logo">
+        <img class="logo-icon" src="assets/img/logo-globe.png" alt="" width="28" height="28">
+        <span class="logo-text">Орёл</span>
+      </div>
+      <p class="header-name">Анастасия Кузавкова</p>
+      <div class="header-actions">
+        <a class="btn btn-accent" href="https://drive.google.com/file/d/1nBc1Xclnq3h2-PHImH4tnT49kiSbmmyb/view?usp=drive_link" target="_blank" rel="noopener">
+          CV
+          <img class="icon-arrow" src="assets/img/cv-arrow.png" alt="" width="28" height="20">
+        </a>
+        <a class="btn btn-light" href="#contacts">Контакты</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Закреплённая строка кейса: Назад / период -->
+  <div class="case-topbar">
+    <div class="container case-topbar__inner">
+      <a class="case-back" href="index.html">
+        <span aria-hidden="true">←</span> Назад
+      </a>
+      <div class="case-topbar__right">
+        <span class="case-date">2025–2026</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="case-hero container">
+      <h1 class="case-hero__title">UI-концептики</h1>
+      <p class="case-hero__subtitle">В свободное время продолжаю расти как дизайнер: рисую концепты, прокачиваю насмотренность</p>
+    </section>
+
+    <!-- Галерея концептов -->
+    <section class="case-section container">
+      <div class="concept-grid">
+        <div class="concept-card">
+          <div class="phone-ph" data-label="UI-концепт — заглушка"></div>
+        </div>
+        <div class="concept-card">
+          <div class="phone-ph" data-label="UI-концепт — заглушка"></div>
+        </div>
+        <div class="concept-card">
+          <div class="phone-ph" data-label="UI-концепт — заглушка"></div>
+        </div>
+        <div class="concept-card">
+          <div class="phone-ph" data-label="UI-концепт — заглушка"></div>
+        </div>
+        <div class="concept-card concept-card--wide">
+          <div class="desktop-ph">Десктоп-концепт — заглушка</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Другие кейсы -->
+    <section class="case-section container">
+      <h2 class="case-title">Другие кейсы</h2>
+      <div class="other-cases">
+        <article class="case-card">
+          <a class="case-card__link" href="revolut.html" style="width:auto;">
+            <div class="case-card__media" data-cta="Смотреть кейс">
+              <img class="case-card__img" src="assets/img/other-revolut.webp" alt="Кейс Revolut: банковское приложение" loading="lazy" width="688" height="417">
+              <div class="case-card__tags">
+                <span class="tag tag-accent">B2C</span>
+                <span class="tag tag-gray">Fintech</span>
+                <span class="tag tag-gray">UX research</span>
+                <span class="tag tag-gray">Возвращаемость</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-card">
+          <a class="case-card__link" href="nordstar.html" style="width:auto;">
+            <div class="case-card__media" data-cta="Смотреть кейс">
+              <img class="case-card__img" src="assets/img/other-nordstar.png" alt="Кейс NordStar: выбор тарифа авиабилетов" loading="lazy" width="688" height="417">
+              <div class="case-card__tags">
+                <span class="tag tag-accent">B2C</span>
+                <span class="tag tag-gray">Travel</span>
+                <span class="tag tag-gray">Конверсия</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-contacts">
+          <div class="footer-contact">
+            <p class="footer-contact__value">Орёл</p>
+            <p class="footer-contact__label">тут я живу</p>
+          </div>
+          <div class="footer-contact">
+            <a class="footer-contact__value footer-contact__value--link" href="mailto:Akuzavkova03@mail.ru">Akuzavkova03@mail.ru</a>
+            <p class="footer-contact__label">мой e-mail</p>
+          </div>
+          <div class="footer-contact">
+            <a class="footer-contact__value footer-contact__value--link" href="https://t.me/tasimit" target="_blank" rel="noopener">tasimit</a>
+            <p class="footer-contact__label">мой телеграм</p>
+          </div>
+        </div>
+
+        <a class="btn btn-accent" href="https://drive.google.com/file/d/1nBc1Xclnq3h2-PHImH4tnT49kiSbmmyb/view?usp=drive_link" target="_blank" rel="noopener">
+          CV
+          <img class="icon-arrow" src="assets/img/cv-arrow.png" alt="" width="28" height="20">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Плавающая кнопка «Наверх» -->
+  <button class="scroll-top" type="button" aria-label="Наверх">
+    Наверх
+    <img class="icon-arrow-up" src="assets/img/up-arrow.png" alt="" width="24" height="24">
+  </button>
+
+  <div class="cursor-cta" aria-hidden="true"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

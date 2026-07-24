@@ -620,6 +620,55 @@ main {
   aspect-ratio: 688 / 417;
 }
 
+/* ---- Галерея UI-концептов (кейс Visual) ---- */
+.concept-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.concept-card {
+  background: var(--c-card-bg);
+  border-radius: 32px;
+  aspect-ratio: 688 / 912;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.concept-card--wide {
+  grid-column: 1 / -1;
+  aspect-ratio: 1400 / 833;
+}
+
+.concept-card > .phone-ph {
+  width: 45%;
+}
+
+.concept-card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Заглушка десктоп-концепта (РЖД) */
+.desktop-ph {
+  width: 90%;
+  aspect-ratio: 1400 / 760;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fdfdfe, #eeeef2);
+  border: 1px solid #e6e6ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9a9aa2;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 24px;
+}
+
 /* ---- Кнопка «Подробнее» в карточке ---- */
 /* Лежит в левой колонке и прижата к её низу, чтобы вставать
    на уровне, где заканчивается текст правой колонки (не удлиняя карточку) */
@@ -710,8 +759,12 @@ main {
     grid-template-columns: 1fr;
   }
   .other-cases,
-  .uxtest-pairs {
+  .uxtest-pairs,
+  .concept-grid {
     grid-template-columns: 1fr;
+  }
+  .concept-card--wide {
+    grid-column: auto;
   }
   .reflect-card,
   .method-grid {
