@@ -486,8 +486,8 @@ main {
 
 .uxtest-pair {
   display: flex;
-  gap: 24px;
-  align-items: center;
+  gap: 12px;
+  align-items: flex-start;
 }
 
 .uxtest-pair .phone-ph {
@@ -500,11 +500,37 @@ main {
   gap: 16px;
 }
 
+/* Вводный текст раздела UX-тестов — не во всю ширину, в три строки */
+.uxtest-lead {
+  max-width: 560px;
+}
+
+/* Пунктирный коннектор «экран → текст» (иконка 8) */
+.link-dots {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  width: 40px;
+  height: 12px;
+}
+
+.link-dots.flip {
+  transform: scaleX(-1);
+}
+
+/* Выравниваем коннектор по первой строке аннотации (под плашками-тегами) */
+.uxtest-pair .link-dots {
+  margin-top: 56px;
+}
+
+.refine-row .link-dots {
+  margin-top: 8px;
+}
+
 /* ---- Доработки: одна карточка, аннотации + телефоны по горизонтали ---- */
 .refine-row {
   display: flex;
-  gap: 24px;
-  align-items: center;
+  gap: 8px;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -575,7 +601,7 @@ main {
 .hyp {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px; /* между карточкой гипотезы и фото Было/Стало — 32px */
 }
 
 .hyp-card {
