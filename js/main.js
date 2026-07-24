@@ -1,11 +1,8 @@
-const header = document.querySelector('.site-header');
 const scrollTopBtn = document.querySelector('.scroll-top');
 
-// Тень хедеру при прокрутке + показ кнопки «Вверх» после старта скролла
+// Показ кнопки «Наверх» после старта скролла (без тени у хедера)
 function onScroll() {
   const y = window.scrollY;
-
-  header.style.boxShadow = y > 4 ? '0 4px 20px rgba(40, 40, 46, 0.08)' : 'none';
 
   if (scrollTopBtn) {
     scrollTopBtn.classList.toggle('is-visible', y > 100);

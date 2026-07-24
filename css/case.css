@@ -677,7 +677,7 @@ main {
 
 .tags-row {
   display: flex;
-  gap: 8px;
+  gap: 0; /* два бейджа «Гипотеза N» + название стоят вплотную, как в макете */
   flex-wrap: wrap;
 }
 
