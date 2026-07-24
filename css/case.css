@@ -163,6 +163,23 @@ main {
   align-items: stretch; /* колонки одной высоты — кнопка прижимается к низу */
 }
 
+/* Вариант в три колонки (метрики / результаты / инсайты) */
+.method-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Строки метрик — как значения, основным цветом */
+.metric-line {
+  color: var(--c-primary);
+}
+
+/* Демо-телефон в hero — по центру */
+.hero-phone {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
 .method-col {
   display: flex;
   flex-direction: column;
