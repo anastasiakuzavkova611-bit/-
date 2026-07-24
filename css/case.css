@@ -509,8 +509,8 @@ main {
 .link-dots {
   flex: 0 0 auto;
   align-self: flex-start;
-  width: 40px;
-  height: 12px;
+  width: 36px;
+  height: 11px;
 }
 
 .link-dots.flip {
@@ -529,18 +529,39 @@ main {
 /* ---- Доработки: одна карточка, аннотации + телефоны по горизонтали ---- */
 .refine-row {
   display: flex;
-  gap: 8px;
-  align-items: flex-start;
+  gap: 6px;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
+/* Текст + коннекторы — единый блок, который прижимается к верху или низу
+   телефона (как в макете: первый текст сверху, второй снизу) */
+.refine-unit {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.refine-unit--top {
+  align-self: flex-start;
+}
+
+.refine-unit--bottom {
+  align-self: flex-end;
+}
+
+.refine-unit .link-dots {
+  margin-top: 8px; /* по первой строке текста */
+}
+
 .refine-row .phone-ph {
-  width: 230px;
+  width: 224px;
 }
 
 .refine-text {
-  flex: 1 1 220px;
-  min-width: 200px;
+  flex: 0 1 360px;
+  width: 360px;
+  max-width: 100%;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0;
