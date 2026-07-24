@@ -417,7 +417,7 @@ main {
 /* ---- Рефлексия + Контакты: одна карточка в три колонки ---- */
 .reflect-card {
   display: grid;
-  grid-template-columns: 1.7fr 1fr 1fr;
+  grid-template-columns: 1.7fr 1.25fr 264px;
   gap: 40px;
   align-items: stretch;
 }
