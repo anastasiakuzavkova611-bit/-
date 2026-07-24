@@ -509,8 +509,16 @@ main {
 .link-dots {
   flex: 0 0 auto;
   align-self: flex-start;
-  width: 36px;
-  height: 11px;
+  width: 22px;
+  height: 7px;
+}
+
+/* Реальные скриншоты экранов вместо заглушек */
+.shot-phone {
+  flex: 0 0 auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link-dots.flip {
@@ -529,7 +537,7 @@ main {
 /* ---- Доработки: одна карточка, аннотации + телефоны по горизонтали ---- */
 .refine-row {
   display: flex;
-  gap: 6px;
+  gap: 4px;
   align-items: stretch;
   flex-wrap: wrap;
 }
@@ -537,8 +545,9 @@ main {
 /* Текст + коннекторы — единый блок, который прижимается к верху или низу
    телефона (как в макете: первый текст сверху, второй снизу) */
 .refine-unit {
+  flex: 0 1 auto;
   display: flex;
-  gap: 8px;
+  gap: 4px;
   align-items: flex-start;
 }
 
@@ -554,13 +563,9 @@ main {
   margin-top: 8px; /* по первой строке текста */
 }
 
-.refine-row .phone-ph {
-  width: 224px;
-}
-
 .refine-text {
-  flex: 0 1 360px;
-  width: 360px;
+  flex: 0 1 384px;
+  width: 384px;
   max-width: 100%;
   font-size: 24px;
   line-height: 28px;
