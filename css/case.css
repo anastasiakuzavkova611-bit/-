@@ -434,8 +434,8 @@ main {
 /* ---- Рефлексия + Контакты: одна карточка в три колонки ---- */
 .reflect-card {
   display: grid;
-  grid-template-columns: 1.7fr 1.25fr 264px;
-  gap: 40px;
+  grid-template-columns: 1.9fr 1fr 264px;
+  gap: 101px;
   align-items: stretch;
 }
 
@@ -479,6 +479,9 @@ main {
 /* Фото заполняет свою колонку по всей высоте карточки (не «висит» и не
    растягивает карточку своей квадратной формой — высоту задаёт текст) */
 .thanks-photo {
+  align-self: stretch;
+  justify-self: end;
+  aspect-ratio: 1 / 1; /* квадрат со стороной = высоте текста (264 / 252 и т.д.) */
   position: relative;
   overflow: hidden;
   border-radius: 20px;
