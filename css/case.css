@@ -72,7 +72,7 @@ main {
 
 /* ---- Hero ---- */
 .case-hero {
-  padding-top: clamp(32px, 4vw, 56px);
+  padding-top: clamp(20px, 3vw, 30px); /* +24px паддинга топбара = 56px от «Назад» до заголовка */
   padding-bottom: 0; /* отступ до след. раздела задаёт .case-section (72px) */
   display: flex;
   flex-direction: column;
@@ -163,14 +163,15 @@ main {
   align-items: stretch; /* колонки одной высоты — кнопка прижимается к низу */
 }
 
-/* Вариант в три колонки (метрики / результаты / инсайты) */
+/* Вариант в три колонки: метрики по контенту, результаты (центр) заметно шире */
 .method-grid--3 {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto 2.7fr 1fr;
 }
 
-/* Строки метрик — как значения, основным цветом */
+/* Строки метрик — как значения, основным цветом, в одну строку */
 .metric-line {
   color: var(--c-primary);
+  white-space: nowrap;
 }
 
 /* Демо-телефон в hero — по центру */
@@ -355,12 +356,17 @@ main {
   background: linear-gradient(135deg, #d7dbe4, #b9c0cd);
 }
 
-/* Реальные логотипы сервисов — вверху карточки «Бенчмарки» (304×72) */
+/* Реальные логотипы сервисов — вверху левой колонки карточки «Бенчмарки» */
 .bench-logos {
   display: block;
   width: 304px;
   max-width: 100%;
   height: auto;
+}
+
+/* 24px между логотипами и текстом (12px gap колонки + 12px) */
+.method-col > .bench-logos {
+  margin-bottom: 12px;
 }
 
 /* Записи глубинных интервью — во всю ширину, 24px под плашкой текста */
