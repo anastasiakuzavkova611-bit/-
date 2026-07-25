@@ -505,6 +505,18 @@ a {
   gap: 0;
 }
 
+/* «Опыт» и «2 года» стоят вплотную: срезаем скругление на стыке,
+   чтобы между ними не просвечивал фон */
+.skills-card__tags-row .tag:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.skills-card__tags-row .tag:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .experience-item {
   display: flex;
   flex-direction: column;
