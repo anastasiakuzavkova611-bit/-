@@ -410,14 +410,15 @@ a {
   text-align: center;
 }
 
-/* Декоративный марк после «скиллы» — стоит как запятая: низко, хвостиком ниже базовой линии */
+/* Декоративный марк после «скиллы» — стоит как запятая: низко, хвостиком ниже базовой линии.
+   Сам знак 31×34; в PNG сверху прозрачный фон, из-за чего читается как запятая. */
 .title-mark {
-  height: 0.66em;
-  width: auto;
+  width: 0.484em;  /* 31px при заголовке 64px */
+  height: 0.531em; /* 34px при заголовке 64px */
   display: inline-block;
   vertical-align: baseline;
-  transform: translateY(0.12em);
-  margin: 0 -1px;
+  transform: translateY(0.22em);
+  margin: 0 0.14em 0 0.02em;
 }
 
 /* Две колонки: левая (Hard+Soft, Опыт) ~839, правая (Образование+Курсы) ~537 */
@@ -541,7 +542,7 @@ a {
 .edu-item {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0;
 }
 
 .edu-item__date {
@@ -551,20 +552,22 @@ a {
   color: var(--c-secondary);
 }
 
-/* Заголовок: Semibold 24/28 */
+/* Заголовок: Semibold 24/28; отступ от года — 12 */
 .edu-item__title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 590;
   letter-spacing: 0;
+  margin-top: 12px;
 }
 
-/* Подзаголовок: Regular 24/28 */
+/* Подзаголовок: Regular 24/28; отступ от заголовка — 8 */
 .edu-item__place {
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0;
   color: var(--c-secondary);
+  margin-top: 8px;
 }
 
 /* ===== Footer ===== */
