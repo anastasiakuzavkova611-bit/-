@@ -639,7 +639,7 @@ main {
 
 .concept-card--wide {
   grid-column: 1 / -1;
-  aspect-ratio: 1400 / 833;
+  aspect-ratio: 1400 / 1007;
 }
 
 .concept-card > .phone-ph {
