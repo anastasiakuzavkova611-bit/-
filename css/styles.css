@@ -502,7 +502,7 @@ a {
 
 .skills-card__tags-row {
   display: flex;
-  gap: 8px;
+  gap: 0;
 }
 
 .experience-item {
