@@ -33,6 +33,38 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
   });
 });
 
+// Слайдшоу десктоп-концепта: плавная смена кадров
+document.querySelectorAll('.concept-slideshow').forEach((box) => {
+  const slides = box.querySelectorAll('.concept-slide');
+  if (slides.length < 2) return;
+  const interval = Number(box.dataset.interval) || 3500;
+  let i = 0;
+  let timer = null;
+
+  function next() {
+    slides[i].classList.remove('is-active');
+    i = (i + 1) % slides.length;
+    slides[i].classList.add('is-active');
+  }
+  function start() {
+    if (!timer) timer = setInterval(next, interval);
+  }
+  function stop() {
+    clearInterval(timer);
+    timer = null;
+  }
+
+  // Крутим только когда карточка на экране и вкладка активна
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => (e.isIntersecting ? start() : stop()));
+  }, { threshold: 0.25 });
+  io.observe(box);
+
+  document.addEventListener('visibilitychange', () => {
+    document.hidden ? stop() : start();
+  });
+});
+
 // Бейдж «Смотреть кейс/UI», следующий за курсором при наведении на карточку
 const cursorCta = document.querySelector('.cursor-cta');
 if (cursorCta) {
