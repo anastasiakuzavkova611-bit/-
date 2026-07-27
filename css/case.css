@@ -170,9 +170,9 @@ main {
   gap: 32px;
 }
 
-/* Строки метрик — как значения, основным цветом, в одну строку */
+/* Строки метрик — значения вторичным цветом, в одну строку */
 .metric-line {
-  color: var(--c-primary);
+  color: var(--c-secondary);
   white-space: nowrap;
 }
 
