@@ -791,7 +791,8 @@ main {
     grid-column: auto;
   }
   .reflect-card,
-  .method-grid {
+  .method-grid,
+  .method-grid--3 {
     grid-template-columns: 1fr;
     gap: 24px;
   }
@@ -811,5 +812,105 @@ main {
   }
   .case-brand {
     display: none;
+  }
+}
+
+/* ===== Мобильная версия (кейсы) ===== */
+@media (max-width: 640px) {
+  /* Основной текст кейса: 20/24 */
+  .c-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* Заголовок кейса: 32/36 semibold */
+  .case-hero__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .case-hero__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* Заголовки разделов кейса: 24/28 semibold */
+  .case-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  /* Кнопка «Назад» и дата: 20/24 */
+  .case-back,
+  .case-date {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* Карточки: скругление 24, отступы 24 */
+  .c-card {
+    border-radius: 24px;
+    padding: 24px;
+  }
+  .concept-card {
+    border-radius: 24px;
+  }
+  .hero-video {
+    border-radius: 24px;
+  }
+
+  /* Уменьшенные отступы между разделами */
+  .case-section {
+    padding-top: 40px;
+    gap: 24px;
+  }
+  .case-hero {
+    gap: 16px;
+  }
+  .case-hero__cards {
+    margin-top: 16px;
+    gap: 16px;
+  }
+  .iteration {
+    gap: 40px;
+  }
+  .hyp {
+    gap: 24px;
+  }
+
+  /* Пары «экран + текст» (UX-тесты, доработки) — вертикально */
+  .refine-row {
+    flex-direction: column;
+  }
+  .uxtest-pair,
+  .refine-pair,
+  .refine-unit {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .refine-text {
+    width: 100%;
+    flex-basis: auto;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .shot-phone {
+    width: 100%;
+    max-width: 267px;
+    align-self: flex-start;
+  }
+  /* Горизонтальные коннекторы при вертикальной раскладке не нужны */
+  .uxtest-pair .link-dots,
+  .refine-row .link-dots,
+  .refine-unit .link-dots {
+    display: none;
+  }
+
+  /* ICE-таблица — горизонтальная прокрутка вместо обрезки */
+  .ice-card {
+    overflow-x: auto;
+  }
+  .ice-table {
+    min-width: 520px;
   }
 }

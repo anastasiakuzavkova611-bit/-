@@ -690,23 +690,96 @@ a {
   }
 }
 
-@media (max-width: 620px) {
-  /* Hard и Soft в столбик на узких экранах */
-  .skills-card--duo {
-    flex-direction: column;
-    gap: 32px;
-  }
-}
-
+/* ===== Мобильная версия ===== */
 @media (max-width: 640px) {
+  /* ---- Типографика ---- */
+  /* Крупные заголовки страницы: 32/36 semibold */
   .hero-title {
     gap: 8px 12px;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 590;
+  }
+  .section-title {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 590;
+  }
+
+  /* Подзаголовки и основной текст: 20/24 */
+  .hero-subtitle,
+  .case-card__desc,
+  .skills-list li,
+  .experience-item__title,
+  .experience-item__role,
+  .edu-item__title,
+  .edu-item__place,
+  .edu-item__date,
+  .footer-contact__value,
+  .footer-contact__label {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* Подписи кейсов: 24/28 semibold */
+  .case-card__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  /* Кнопки и мелкий UI: 20/24 regular */
+  .btn,
+  .logo-text,
+  .scroll-top {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* Бейджи: 16/20 regular */
+  .tag {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  /* ---- Карточки: скругление 24, отступы 24 ---- */
+  .skills-card {
+    border-radius: 24px;
+    padding: 24px;
+    gap: 16px;
+  }
+  .skills-card--duo {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .skills-card--edu {
+    gap: 32px;
+  }
+  .skills-col {
+    gap: 16px;
+  }
+  .case-card__media {
+    border-radius: 24px;
+  }
+
+  /* ---- Уменьшенные отступы между разделами ---- */
+  .hero {
+    padding-top: 24px;
+    padding-bottom: 40px;
+    gap: 16px;
+  }
+  .cases {
+    gap: 40px;
+    padding-bottom: 40px;
+  }
+  .skills {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 24px;
   }
 
   .footer-row {
     flex-direction: column;
   }
-
   .btn-up {
     align-self: center;
     margin-right: 0;
