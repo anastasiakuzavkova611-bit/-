@@ -128,12 +128,12 @@ a {
 }
 
 .logo-text {
-  font-size: clamp(16px, 2vw, 24px);
+  font-size: 24px;
   line-height: 1;
 }
 
 .header-name {
-  font-size: clamp(14px, 1.8vw, 24px);
+  font-size: 24px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -387,7 +387,7 @@ a {
 
 /* SF Pro Regular 24/28 */
 .case-card__desc {
-  font-size: clamp(16px, 2.2vw, 24px);
+  font-size: 24px;
   font-weight: 400;
   line-height: 1.1667; /* 28/24 */
   color: var(--c-secondary);
@@ -600,7 +600,7 @@ a {
   background: var(--c-accent-bg);
   color: var(--c-accent);
   font-family: inherit;
-  font-size: clamp(14px, 1.6vw, 24px);
+  font-size: 24px;
   cursor: pointer;
 
   opacity: 0;
@@ -673,7 +673,7 @@ a {
 
 /* Подзаголовки в футере: SF Pro 24 / 28 */
 .footer-contact__label {
-  font-size: clamp(18px, 1.8vw, 24px);
+  font-size: 24px;
   line-height: 1.1667; /* 28/24 */
   letter-spacing: 0;
   color: var(--c-secondary);
