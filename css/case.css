@@ -818,7 +818,13 @@ main {
 /* ===== Мобильная версия (кейсы) ===== */
 @media (max-width: 640px) {
   /* Основной текст кейса: 20/24 */
-  .c-text {
+  .c-text,
+  .c-list li,
+  .quote__q,
+  .quote__a,
+  .reflect-col p,
+  .reflect-contacts .footer-contact__value,
+  .reflect-contacts .footer-contact__label {
     font-size: 20px;
     line-height: 24px;
   }

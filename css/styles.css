@@ -692,10 +692,15 @@ a {
 
 /* ===== Мобильная версия ===== */
 @media (max-width: 640px) {
+  /* Боковые поля сетки — 16px */
+  :root {
+    --container-gutter: 16px;
+  }
+
   /* ---- Типографика ---- */
   /* Крупные заголовки страницы: 32/36 semibold */
   .hero-title {
-    gap: 8px 12px;
+    gap: 2px 12px;
     font-size: 32px;
     line-height: 36px;
     font-weight: 590;
