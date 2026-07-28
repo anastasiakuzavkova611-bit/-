@@ -716,21 +716,11 @@ main {
 .hero-video {
   margin-top: 8px;
   border-radius: 32px;
-  aspect-ratio: 16 / 9;
-  max-height: 620px;
-  background: linear-gradient(180deg, #23262e 0%, #14161c 100%);
-  position: relative;
-}
-
-.hero-video::after {
-  content: "▶ видео — заглушка";
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 20px;
+  aspect-ratio: 1280 / 680;
+  width: 100%;
+  object-fit: cover;
+  background: #14161c;
+  display: block;
 }
 
 /* Статичный хедер (как на главной, но не липнет — уходит под скролл) */
