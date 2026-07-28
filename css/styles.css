@@ -741,6 +741,12 @@ a {
     line-height: 20px;
   }
 
+  /* Иконки-буллеты в списках: 24×24 */
+  .bullet {
+    width: 24px;
+    height: 24px;
+  }
+
   /* ---- Карточки: скругление 24, отступы 24 ---- */
   .skills-card {
     border-radius: 24px;
