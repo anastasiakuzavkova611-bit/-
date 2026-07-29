@@ -716,6 +716,17 @@ a {
   .hero-line {
     white-space: normal;
   }
+  /* Картинки в заголовке — компактнее под 32px текст */
+  .avatar {
+    width: 44px;
+    height: 32px;
+  }
+  .hero-dash {
+    width: 40px;
+  }
+  .hero-rings {
+    width: 24px;
+  }
 
   /* Меньше расстояние между бейджем и текстом в плашках */
   .skills-group {

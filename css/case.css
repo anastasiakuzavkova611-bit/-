@@ -919,11 +919,19 @@ main {
     display: none;
   }
 
-  /* ICE-таблица — горизонтальная прокрутка вместо обрезки */
+  /* ICE-таблица — скругление 24, горизонтальная прокрутка вместо обрезки */
   .ice-card {
+    border-radius: 24px;
     overflow-x: auto;
   }
   .ice-table {
     min-width: 520px;
+  }
+
+  /* Кнопка «Подробнее» — внизу карточки, на всю ширину */
+  .card-btn {
+    margin-top: 0;
+    align-self: stretch;
+    justify-content: center;
   }
 }
