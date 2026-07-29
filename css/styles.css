@@ -701,9 +701,16 @@ a {
   /* Крупные заголовки страницы: 32/36 semibold */
   .hero-title {
     gap: 2px 12px;
+    justify-content: flex-start;
     font-size: 32px;
     line-height: 36px;
     font-weight: 590;
+  }
+
+  /* Герой — по левому краю модульной сетки (маржины 16px) */
+  .hero {
+    align-items: flex-start;
+    text-align: left;
   }
   .section-title {
     font-size: 32px;
@@ -791,8 +798,17 @@ a {
   .footer-row {
     flex-direction: column;
   }
+  /* Контакты в футере — одним столбцом */
+  .footer-contacts {
+    flex-direction: column;
+  }
   .btn-up {
     align-self: center;
     margin-right: 0;
+  }
+
+  /* Меньше расстояние между пунктами Hard/Soft */
+  .skills-list {
+    gap: 8px;
   }
 }
