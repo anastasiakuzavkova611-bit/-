@@ -712,6 +712,18 @@ a {
     align-items: flex-start;
     text-align: left;
   }
+  /* Длинные фразы заголовка переносятся, а не вылезают за экран */
+  .hero-line {
+    white-space: normal;
+  }
+
+  /* Меньше расстояние между бейджем и текстом в плашках */
+  .skills-group {
+    gap: 16px;
+  }
+  .edu-block {
+    gap: 16px;
+  }
   .section-title {
     font-size: 32px;
     line-height: 36px;

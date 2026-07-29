@@ -856,12 +856,19 @@ main {
   .c-card {
     border-radius: 24px;
     padding: 24px;
+    gap: 16px;
   }
   .concept-card {
     border-radius: 24px;
   }
   .hero-video {
     border-radius: 24px;
+  }
+
+  /* Меньше расстояние между бейджем и текстом (16px вместо 24) */
+  .method-col > .tag,
+  .reflect-col > .tag {
+    margin-bottom: 4px;
   }
 
   /* Уменьшенные отступы между разделами */
