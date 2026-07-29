@@ -925,13 +925,16 @@ main {
     overflow-x: auto;
   }
   .ice-table {
-    min-width: 520px;
+    min-width: 560px;
+  }
+  /* Столбец с гипотезами чуть шире */
+  .ice-table .ice-hyp {
+    width: 60%;
   }
 
-  /* Кнопка «Подробнее» — внизу карточки, на всю ширину */
+  /* Кнопка «Подробнее» — внизу карточки, по своему размеру */
   .card-btn {
     margin-top: 0;
-    align-self: stretch;
-    justify-content: center;
+    align-self: flex-start;
   }
 }
