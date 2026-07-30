@@ -834,4 +834,9 @@ a {
   .skills-list {
     gap: 8px;
   }
+
+  /* Описание под «Привет…» — по центру */
+  .hero-subtitle {
+    text-align: center;
+  }
 }

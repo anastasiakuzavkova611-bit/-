@@ -919,17 +919,27 @@ main {
     display: none;
   }
 
+  /* Списки с иконками — плотнее (принцип близости) */
+  .c-list {
+    gap: 8px;
+  }
+
   /* ICE-таблица — скругление 24, горизонтальная прокрутка вместо обрезки */
   .ice-card {
     border-radius: 24px;
     overflow-x: auto;
   }
   .ice-table {
-    min-width: 560px;
+    min-width: 600px;
   }
-  /* Столбец с гипотезами чуть шире */
+  /* Столбец с гипотезами шире */
   .ice-table .ice-hyp {
-    width: 60%;
+    width: 66%;
+  }
+  /* Последний столбец «ICE Score» — в одну строку */
+  .ice-table th:last-child,
+  .ice-table td:last-child {
+    white-space: nowrap;
   }
 
   /* Кнопка «Подробнее» — внизу карточки, по своему размеру */
