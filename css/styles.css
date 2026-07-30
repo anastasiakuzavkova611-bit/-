@@ -701,17 +701,11 @@ a {
   /* Крупные заголовки страницы: 32/36 semibold */
   .hero-title {
     gap: 2px 12px;
-    justify-content: flex-start;
     font-size: 32px;
     line-height: 36px;
     font-weight: 590;
   }
 
-  /* Герой — по левому краю модульной сетки (маржины 16px) */
-  .hero {
-    align-items: flex-start;
-    text-align: left;
-  }
   /* Длинные фразы заголовка переносятся, а не вылезают за экран */
   .hero-line {
     white-space: normal;

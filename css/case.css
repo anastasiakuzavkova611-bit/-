@@ -934,7 +934,7 @@ main {
   }
   /* Столбец с гипотезами шире */
   .ice-table .ice-hyp {
-    width: 66%;
+    width: 72%;
   }
   /* Последний столбец «ICE Score» — в одну строку */
   .ice-table th:last-child,
