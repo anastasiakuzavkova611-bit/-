@@ -698,9 +698,15 @@ a {
   }
 
   /* ---- Типографика ---- */
-  /* Крупные заголовки страницы: 32/36 semibold */
+  /* Герой — по центру */
+  .hero {
+    align-items: center;
+    text-align: center;
+  }
+  /* Крупные заголовки страницы: 32/36 semibold, по центру */
   .hero-title {
     gap: 2px 12px;
+    justify-content: center;
     font-size: 32px;
     line-height: 36px;
     font-weight: 590;
