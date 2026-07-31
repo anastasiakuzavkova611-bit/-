@@ -805,6 +805,10 @@ a {
   .skills-card--edu {
     gap: 32px;
   }
+  /* Единый отступ 16px между всеми плашками (Hard/Soft, Опыт, Образование) */
+  .skills-grid {
+    gap: 16px;
+  }
   .skills-col {
     gap: 16px;
   }
