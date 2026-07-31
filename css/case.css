@@ -856,7 +856,7 @@ main {
   .c-card {
     border-radius: 24px;
     padding: 24px;
-    gap: 16px;
+    gap: 8px; /* бейдж → текст (простые плашки) */
   }
   .concept-card {
     border-radius: 24px;
@@ -865,10 +865,22 @@ main {
     border-radius: 24px;
   }
 
-  /* Меньше расстояние между бейджем и текстом (16px вместо 24) */
+  /* Единая система: бейдж → текст 8px, между смысловыми группами 24px */
+  .hyp-col,
+  .method-col,
+  .reflect-col {
+    gap: 8px;
+  }
   .method-col > .tag,
   .reflect-col > .tag {
-    margin-bottom: 4px;
+    margin-bottom: 0;
+  }
+  /* Разделители между секциями внутри карточки — 24px */
+  .card-btn {
+    margin-top: 16px; /* + gap 8 = 24 от контента */
+  }
+  .quotes-grid {
+    margin-top: 16px;
   }
 
   /* Уменьшенные отступы между разделами */
@@ -934,7 +946,7 @@ main {
   }
   /* Столбец с гипотезами шире */
   .ice-table .ice-hyp {
-    width: 78%;
+    width: 82%;
   }
 
   /* Контакты в блоке рефлексии — плотнее */
@@ -949,7 +961,6 @@ main {
 
   /* Кнопка «Подробнее» — внизу карточки, по своему размеру */
   .card-btn {
-    margin-top: 0;
     align-self: flex-start;
   }
 }
