@@ -864,6 +864,11 @@ a {
     gap: 8px;
   }
 
+  /* Курсы/Образование: название → место чуть ближе */
+  .edu-item__place {
+    margin-top: 4px;
+  }
+
   /* Описание под «Привет…» — по центру */
   .hero-subtitle {
     text-align: center;
