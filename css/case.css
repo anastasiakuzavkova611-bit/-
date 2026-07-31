@@ -934,7 +934,12 @@ main {
   }
   /* Столбец с гипотезами шире */
   .ice-table .ice-hyp {
-    width: 72%;
+    width: 78%;
+  }
+
+  /* Контакты в блоке рефлексии — плотнее */
+  .reflect-contacts {
+    gap: 16px;
   }
   /* Последний столбец «ICE Score» — в одну строку */
   .ice-table th:last-child,

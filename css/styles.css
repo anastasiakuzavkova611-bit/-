@@ -837,9 +837,16 @@ a {
   .footer-row {
     flex-direction: column;
   }
-  /* Контакты в футере — одним столбцом */
+  /* Контакты в футере — одним столбцом, плотнее */
   .footer-contacts {
     flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Подписи кейсов ближе к обложке и плотнее между собой */
+  .case-card__text {
+    margin-top: 16px;
+    gap: 4px;
   }
   .btn-up {
     align-self: center;
