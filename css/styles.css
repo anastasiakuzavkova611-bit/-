@@ -413,6 +413,18 @@ a {
   gap: clamp(32px, 5vw, 52px);
 }
 
+/* Десктоп: суммарный отступ между кейсами и скиллами — ровно 96px
+   (padding-bottom кейсов + padding-top скиллов давали ~192px).
+   На мобилке остаётся базовые clamp(48)+clamp(48) ≈ 96px. */
+@media (min-width: 641px) {
+  .cases {
+    padding-bottom: 0;
+  }
+  .skills {
+    padding-top: 96px;
+  }
+}
+
 .section-title {
   font-size: clamp(32px, 5.5vw, 64px);
   font-weight: 510; /* SF Pro Medium */

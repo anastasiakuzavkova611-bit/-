@@ -768,7 +768,13 @@ main {
   display: block;
   max-width: 100%;
   height: auto;
-  margin-inline: auto; /* узкие вертикальные композиты — по центру карточки */
+}
+
+/* Обёртка picture для адаптивных изображений (desktop/mobile варианты) —
+   блочная и на всю ширину, чтобы вложенный img занимал контейнер */
+.resp-shot {
+  display: block;
+  width: 100%;
 }
 
 .tags-row {
