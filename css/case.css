@@ -549,6 +549,12 @@ main {
   height: auto;
 }
 
+/* Отдельный кадр телефона для мобильной раскладки раздела UX-тестов
+   (текст сверху, фото снизу на всю ширину). На десктопе скрыт. */
+.shot-phone-mobile {
+  display: none;
+}
+
 .link-dots.flip {
   transform: scaleX(-1);
 }
@@ -1009,6 +1015,20 @@ main {
     width: 100%;
     max-width: 267px;
     align-self: flex-start;
+  }
+  /* UX-тесты: скрываем десктопный кадр, показываем мобильный на всю ширину.
+     Порядок «текст → фото» задаётся положением фото в разметке (после текста). */
+  .uxtest-pair .shot-phone {
+    display: none;
+  }
+  .uxtest-pair {
+    gap: 16px;
+  }
+  .shot-phone-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    align-self: stretch;
   }
   /* Горизонтальные коннекторы при вертикальной раскладке не нужны */
   .uxtest-pair .link-dots,
