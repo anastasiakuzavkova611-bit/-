@@ -426,7 +426,7 @@ main {
 
 .ice-table .ice-hyp {
   color: var(--c-primary);
-  width: 62%;
+  width: 624px;
 }
 
 .ice-table .ice-hyp .accent {
