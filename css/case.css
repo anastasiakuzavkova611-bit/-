@@ -755,6 +755,7 @@ main {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-inline: auto; /* узкие вертикальные композиты — по центру карточки */
 }
 
 .tags-row {
