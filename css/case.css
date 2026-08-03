@@ -176,6 +176,11 @@ main {
   white-space: nowrap;
 }
 
+/* Между самими строками метрик — чуть плотнее, чем общий gap колонки */
+.metric-line + .metric-line {
+  margin-top: -4px;
+}
+
 /* Демо-телефон в hero — по центру */
 .hero-phone {
   display: flex;
@@ -571,7 +576,7 @@ main {
 /* ---- Доработки: одна карточка, аннотации + телефоны по горизонтали ---- */
 .refine-row {
   display: flex;
-  gap: 24px;
+  gap: 40px; /* больше пространства между двумя доработками */
   align-items: flex-start;
   flex-wrap: wrap;
 }

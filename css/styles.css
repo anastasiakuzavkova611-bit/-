@@ -277,6 +277,11 @@ a {
   align-self: center;
 }
 
+/* На десктопе — тонкая иконка, жирная скрыта (на мобилке наоборот) */
+.hero-rings--bold {
+  display: none;
+}
+
 /* SF Pro 40 / line-height 44 (≈1.1). На широком экране — в одну строку */
 .hero-subtitle {
   font-size: clamp(18px, 3vw, 40px);
@@ -748,6 +753,13 @@ a {
   }
   .hero-rings {
     width: 24px;
+  }
+  /* На мобилке — жирная иконка, тонкая скрыта */
+  .hero-rings--thin {
+    display: none;
+  }
+  .hero-rings--bold {
+    display: inline-block;
   }
 
   /* Меньше расстояние между бейджем и текстом в плашках */
