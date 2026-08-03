@@ -493,7 +493,7 @@ main {
   aspect-ratio: 1 / 1; /* квадрат со стороной = высоте текста (264 / 252 и т.д.) */
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 6px;
 }
 
 .thanks-photo img {
@@ -574,13 +574,14 @@ main {
   display: flex;
   gap: 40px; /* больше пространства между двумя доработками */
   align-items: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* обе доработки в один горизонтальный ряд (текст ужимается) */
 }
 
 /* Пара «текст + свой экран» — не разрывается: на узком экране переносится
    целиком (телефон вместе с подписью) */
 .refine-pair {
-  flex: 0 1 auto;
+  flex: 1 1 auto; /* ужимается, чтобы обе пары помещались в один ряд */
+  min-width: 0;
   display: flex;
   gap: 4px;
   align-items: stretch;
@@ -589,7 +590,8 @@ main {
 /* Текст + коннекторы — единый блок, который прижимается к верху или низу
    телефона (как в макете: первый текст сверху, второй снизу) */
 .refine-unit {
-  flex: 0 1 auto;
+  flex: 1 1 auto;
+  min-width: 0;
   display: flex;
   gap: 4px;
   align-items: flex-start;
@@ -608,9 +610,9 @@ main {
 }
 
 .refine-text {
-  flex: 0 1 384px;
-  width: 384px;
-  max-width: 100%;
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 384px;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0;
@@ -977,7 +979,7 @@ main {
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
-    border-radius: 8px;
+    border-radius: 6px;
   }
 
   /* Уменьшенные отступы между разделами */
@@ -1017,6 +1019,7 @@ main {
   }
   .refine-text {
     width: 100%;
+    max-width: none;
     flex-basis: auto;
     font-size: 20px;
     line-height: 24px;
