@@ -977,7 +977,7 @@ main {
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
-    border-radius: 24px;
+    border-radius: 16px;
   }
 
   /* Уменьшенные отступы между разделами */
@@ -1002,6 +1002,7 @@ main {
   /* Пары «экран + текст» (UX-тесты, доработки) — вертикально */
   .refine-row {
     flex-direction: column;
+    gap: 32px; /* между двумя доработками — чуть меньше (было 40) */
   }
   .uxtest-pair,
   .refine-pair,
@@ -1009,6 +1010,10 @@ main {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
+  }
+  /* Внутри доработки — больше расстояния между текстом и фото */
+  .refine-pair {
+    gap: 16px;
   }
   .refine-text {
     width: 100%;
