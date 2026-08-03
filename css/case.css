@@ -176,10 +176,6 @@ main {
   white-space: nowrap;
 }
 
-/* Между самими строками метрик — чуть плотнее, чем общий gap колонки */
-.metric-line + .metric-line {
-  margin-top: -4px;
-}
 
 /* Демо-телефон в hero — по центру */
 .hero-phone {
@@ -952,6 +948,10 @@ main {
   .method-col,
   .reflect-col {
     gap: 16px;
+  }
+  /* Строки метрик на мобилке — чуть плотнее (16 → 12) */
+  .metric-line + .metric-line {
+    margin-top: -4px;
   }
   /* hyp-card также имеет класс c-card — возвращаем групповой отступ 24 */
   .hyp-card {
