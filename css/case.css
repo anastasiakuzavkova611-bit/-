@@ -493,7 +493,7 @@ main {
   aspect-ratio: 1 / 1; /* квадрат со стороной = высоте текста (264 / 252 и т.д.) */
   position: relative;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .thanks-photo img {
@@ -979,7 +979,7 @@ main {
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
-    border-radius: 6px;
+    border-radius: 4px;
   }
 
   /* Уменьшенные отступы между разделами */
