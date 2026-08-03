@@ -977,7 +977,7 @@ main {
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
-    border-radius: 16px;
+    border-radius: 12px;
   }
 
   /* Уменьшенные отступы между разделами */
