@@ -979,7 +979,7 @@ main {
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
-    border-radius: 4px;
+    border-radius: 2px;
   }
 
   /* Уменьшенные отступы между разделами */
