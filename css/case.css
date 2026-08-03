@@ -949,9 +949,9 @@ main {
   .reflect-col {
     gap: 16px;
   }
-  /* Строки метрик на мобилке — чуть плотнее (16 → 12) */
+  /* Строки метрик на мобилке — ещё плотнее (16 → 8) */
   .metric-line + .metric-line {
-    margin-top: -4px;
+    margin-top: -8px;
   }
   /* hyp-card также имеет класс c-card — возвращаем групповой отступ 24 */
   .hyp-card {
