@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кейс Revolut — Анастасия Кузавкова</title>
+  <meta name="description" content="Кейс Revolut: из пугающего опыта в понятный интерфейс. Как я снизила непонимание причин просадки у пользователей.">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="../css/styles.css?v=37">
+  <link rel="stylesheet" href="../css/case.css?v=37">
+</head>
+<body id="top">
+
+  <!-- Хедер как на главной: не закреплён, уходит под скролл -->
+  <header class="site-header case-header--static">
+    <div class="container header-inner">
+      <div class="logo">
+        <img class="logo-icon" src="../assets/img/logo-globe.png" alt="" width="28" height="28">
+        <span class="logo-text">Орёл</span>
+      </div>
+      <p class="header-name">Анастасия Кузавкова</p>
+      <div class="header-actions">
+        <a class="btn btn-accent" href="https://drive.google.com/file/d/1d4iUnynvvHpOcHqhduWdREkBx-DLOaL3/view?usp=drive_link" target="_blank" rel="noopener">
+          CV
+          <img class="icon-arrow" src="../assets/img/cv-arrow.png" alt="" width="28" height="20">
+        </a>
+        <a class="btn btn-light" href="#contacts">Контакты</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Закреплённая строка кейса: Назад / Revolut / дата -->
+  <div class="case-topbar">
+    <div class="container case-topbar__inner">
+      <a class="case-back" href="index.html">
+        <span aria-hidden="true">←</span> Назад
+      </a>
+      <div class="case-topbar__right">
+        <span class="case-brand">Revolut</span>
+        <span class="case-date">Май, 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="case-hero container">
+      <h1 class="case-hero__title">Из пугающего опыта в понятный интерфейс</h1>
+      <p class="case-hero__subtitle">Как я снизила непонимание причин просадки у пользователей</p>
+
+      <div class="case-hero__cards">
+        <div class="c-card">
+          <span class="tag tag-gray">Проблема</span>
+          <p class="c-text">Пользователи Revolut перестают возвращаться в инвест-раздел после первой просадки портфеля, негативного опыта, часть пользователей выпадают из инвестиционного сценария</p>
+        </div>
+        <div class="c-card">
+          <span class="tag tag-gray">Бизнес цель</span>
+          <p class="c-text">Удержать активных инвесторов в приложении, увеличив частоту возврата в инвест-раздел и снизив отток среди инвесторов</p>
+        </div>
+        <div class="c-card">
+          <span class="tag tag-gray">Ограничения</span>
+          <ul class="c-list">
+            <li><span class="bullet bullet-accent" aria-hidden="true"></span>UX-задача без доступа к внутренней аналитике</li>
+            <li><span class="bullet bullet-accent" aria-hidden="true"></span>Отсутствие реальной разработки</li>
+            <li><span class="bullet bullet-accent" aria-hidden="true"></span>Решения реализуемы без изменения архитектуры</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="btn btn-light case-hero__cta" href="#solution">К решению <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <!-- Поиск проблемных зон -->
+    <section class="case-section container">
+      <h2 class="case-title">Поиск проблемных зон</h2>
+      <div class="c-card">
+        <div class="method-grid">
+          <div class="method-col">
+            <span class="tag tag-gray">Открытые источники</span>
+            <p class="c-text">Я проанализировала зарубежные форумы, статьи, посвящённые проблемам, с которыми сталкиваются пользователи Revolut в момент просадки портфеля. Я искала формулировки, описывающие опыт пользования приложением</p>
+          </div>
+          <div class="method-col">
+            <span class="tag tag-gray">Выводы</span>
+            <ul class="c-list">
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Пользователи не понимают почему портфель просел, что происходит на рынке</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Пользователи не понимают сколько составляют комиссии и иные сборы, что также влияет на доходность портфеля</li>
+            </ul>
+          </div>
+        </div>
+        <div class="quotes-grid">
+          <div class="quote"><p class="quote__q">Пугающий опыт работы</p><p class="quote__a">Я потерял 25% своего капитала</p></div>
+          <div class="quote"><p class="quote__q">Почему я теряю деньги?</p><p class="quote__a">Это из-за комиссий?</p></div>
+          <div class="quote"><p class="quote__q">Что сегодня произошло?</p><p class="quote__a">Стоимость моего портфеля упала</p></div>
+          <div class="quote"><p class="quote__q">Внезапно 3 000 $ испарилось</p><p class="quote__a">Мне нужна поддержка</p></div>
+          <div class="quote"><p class="quote__q">Почему написано — 1 771 €?</p><p class="quote__a">Хотя я получил прибыль</p></div>
+          <div class="quote"><p class="quote__q">Сколько комиссия?</p><p class="quote__a">Где найти эту информацию?</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Глубинные интервью -->
+    <section class="case-section container">
+      <h2 class="case-title">Глубинные интервью</h2>
+      <div class="c-card">
+        <div class="method-grid">
+          <div class="method-col">
+            <span class="tag tag-gray">Что я сделала</span>
+            <p class="c-text">Провела 5 интервью с пользователями, которые активно инвестируют в мобильных приложениях. Я хотела проверить, действительно ли отток пользователей происходит из-за непонимания причин просадки и непрозрачной системы списания комиссии. А также выявить иные неочевидные причины выхода из сценария инвестиций</p>
+          </div>
+          <div class="method-col">
+            <span class="tag tag-gray">Выводы</span>
+            <ul class="c-list">
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Триггер оттока пользователей — тревога от непонимания причин падения активов / портфеля</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Пользователи воспринимают просадку как личную ошибку</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Пользователи хотели бы видеть сколько средств уходит на комиссию и иные издержки</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Пользователи не следуют рекомендациям после неудачного опыта</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Обычно во время просадки пользователи выжидают время, когда портфель восстановится, покупают новые акции, либо не заходят в приложение вовсе, чтобы не стрессовать</li>
+            </ul>
+          </div>
+        <a class="btn btn-accent card-btn" href="https://www.figma.com/design/eyXj5tS4hKBhmHQ7HxgoXp/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE?node-id=1-2&amp;t=lpxoAoRuNkvTND68-1" target="_blank" rel="noopener">Подробнее<img class="icon-arrow" src="../assets/img/cv-arrow.png" alt="" width="28" height="20"></a>
+        </div>
+      </div>
+      <picture class="resp-shot">
+        <source media="(max-width: 640px)" srcset="../assets/img/interviews-mobile.webp">
+        <img class="interview-shot" src="../assets/img/interviews-desktop.webp" alt="Записи глубинных интервью с пользователями" width="1400" height="202" loading="lazy">
+      </picture>
+    </section>
+
+    <!-- UX-аудит -->
+    <section class="case-section container">
+      <h2 class="case-title">UX-аудит</h2>
+      <div class="c-card">
+        <div class="method-grid">
+          <div class="method-col">
+            <span class="tag tag-gray">Что я сделала</span>
+            <p class="c-text">Изучила инвест-раздел Revolut, чтобы понять системные проблемы приложения. Во время UX-аудита я обращала внимание на те проблемные участки, о которых говорили пользователи в интервью, а именно, как отображается просадка портфеля, как интерфейс объясняет происходящее, как показаны списания комиссий и иных издержек, какой копирайтинг используется</p>
+          </div>
+          <div class="method-col">
+            <span class="tag tag-gray">Выводы</span>
+            <ul class="c-list">
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Интерфейс не объясняет причины просадки</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Мало обучающего контента по инвестициям</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>В интерфейсе нет понимания, сколько составляет чистый доход, комиссии и иные издержки</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>В приложении слабая аналитика портфеля</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Использует непонятный, местами даже агрессивный копирайтинг, например, «капитал под риском»</li>
+            </ul>
+          </div>
+        <a class="btn btn-accent card-btn" href="https://www.figma.com/design/eyXj5tS4hKBhmHQ7HxgoXp/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE?node-id=1-253&amp;t=lpxoAoRuNkvTND68-1" target="_blank" rel="noopener">Подробнее<img class="icon-arrow" src="../assets/img/cv-arrow.png" alt="" width="28" height="20"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Бенчмарки -->
+    <section class="case-section container">
+      <h2 class="case-title">Бенчмарки</h2>
+      <div class="c-card">
+        <div class="method-grid">
+          <div class="method-col">
+            <img class="bench-logos" src="../assets/img/benchmark-logos.png" alt="Логотипы проанализированных сервисов" width="304" height="72">
+            <p class="c-text">На основе интервью я выбрала сервисы, которые пользователи чаще всего называли удобными, а также крупные зарубежные приложения для инвестиций. Во время анализа я обращала внимание на то, как конкуренты объясняют просадку активов / портфеля, как показывают доход, комиссии, какой копирайтинг используют, что ещё используют для решения данной проблемы</p>
+          </div>
+          <div class="method-col">
+            <span class="tag tag-gray">Выводы</span>
+            <ul class="c-list">
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>2 из 5 конкурентов перед первой инвестицией предлагают пройти тест по профилированию рисков, и дальнейшие рекомендации для пользователей строятся именно по его результатам</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>4 из 5 конкурентов показывают расширенную аналитику, которая содержит размер вложенных средств, сколько заработано или потеряно, сколько ушло на комиссии</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>4 из 5 конкурентов используют более человечный копирайтинг</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Конкуренты не решают главной проблемы — объяснения причин просадки</li>
+            </ul>
+          </div>
+        <a class="btn btn-accent card-btn" href="https://www.figma.com/design/eyXj5tS4hKBhmHQ7HxgoXp/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE?node-id=1-467&amp;t=lpxoAoRuNkvTND68-1" target="_blank" rel="noopener">Подробнее<img class="icon-arrow" src="../assets/img/cv-arrow.png" alt="" width="28" height="20"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Общий вывод после дискавери -->
+    <section class="case-section container">
+      <h2 class="case-title">Общий вывод после дискавери</h2>
+      <div class="c-card">
+        <div class="method-grid">
+          <div class="method-col">
+            <span class="tag tag-gray">Начальная проблема</span>
+            <ul class="c-list">
+              <li><span class="bullet bullet-gray" aria-hidden="true"></span>Пользователи Revolut перестают возвращаться в инвест-раздел после первой просадки портфеля, негативного опыта, часть пользователей выпадают из сценария</li>
+            </ul>
+          </div>
+          <div class="method-col">
+            <span class="tag tag-gray">Уточнённая проблема</span>
+            <ul class="c-list">
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Пользователи перестают заходить в инвестиционный раздел из-за непонимания причин падения портфеля и непрозрачной доходности</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Гипотезы и их приоритизация -->
+    <section class="case-section container">
+      <h2 class="case-title">Гипотезы и их приоритизация</h2>
+      <div class="ice-card">
+        <table class="ice-table">
+          <thead>
+            <tr>
+              <th class="ice-hyp">Гипотеза</th>
+              <th>Impact</th>
+              <th>Confidence</th>
+              <th>Ease</th>
+              <th>ICE Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="ice-hyp">Если показать <span class="accent">итоговую доходность с учётом комиссий и налогов,</span> то снизится тревога «размытой прибыли»</td>
+              <td class="ice-num">8</td>
+              <td class="ice-num">7</td>
+              <td class="ice-num">8</td>
+              <td class="ice-num">448</td>
+            </tr>
+            <tr>
+              <td class="ice-hyp">Если в момент падения <span class="accent">показывать контекст просадки в сравнении с рынком/ сектором,</span> то повысится понимание рыночных изменений</td>
+              <td class="ice-num">10</td>
+              <td class="ice-num">8</td>
+              <td class="ice-num">6</td>
+              <td class="ice-num">480</td>
+            </tr>
+            <tr>
+              <td class="ice-hyp">Если во время просадки актива <span class="accent">показывать движение акции на фоне её обычных колебаний,</span> то пользователь перестанет воспринимать просадку как личную ошибку</td>
+              <td class="ice-num">9</td>
+              <td class="ice-num">8</td>
+              <td class="ice-num">6</td>
+              <td class="ice-num">432</td>
+            </tr>
+            <tr>
+              <td class="ice-hyp">Если изменить <span class="accent">UX-копирайтинг на более понятный и человечный,</span> то снизится тревога</td>
+              <td class="ice-num">5</td>
+              <td class="ice-num">6</td>
+              <td class="ice-num">10</td>
+              <td class="ice-num">300</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Первая итерация -->
+    <section class="case-section container" id="solution">
+      <h2 class="case-title">Первая итерация</h2>
+      <div class="iteration">
+
+        <!-- Гипотеза 1 -->
+        <article class="hyp">
+          <div class="c-card hyp-card">
+            <div class="hyp-col">
+              <div class="tags-row">
+                <span class="tag tag-gray">Гипотеза 1</span>
+                <span class="tag tag-gray">Итоговая доходность</span>
+              </div>
+              <p class="c-text">Если показать итоговую доходность с учётом комиссий и налогов, то снизится тревога «размытой прибыли»</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Боль</span>
+              <p class="c-text">Пользователь видит одно итоговое число и не может понять, что в него входит: реальный убыток, комиссии, налоги</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Решение</span>
+              <p class="c-text">Раздел со статистикой общей рыночной стоимости портфеля, где отдельно отражаются вложенные средства, рыночная доходность, комиссии и налоги</p>
+            </div>
+          </div>
+          <picture class="resp-shot">
+            <img class="ba-shot" src="../assets/img/iter-1-desktop.webp" alt="Было / Стало — гипотеза 1" width="1344" height="711" loading="lazy">
+          </picture>
+        </article>
+
+        <!-- Гипотеза 2 -->
+        <article class="hyp">
+          <div class="c-card hyp-card">
+            <div class="hyp-col">
+              <div class="tags-row">
+                <span class="tag tag-gray">Гипотеза 2</span>
+                <span class="tag tag-gray">Сравнение с рынком</span>
+              </div>
+              <p class="c-text">Если в момент падения показывать контекст просадки в сравнении с рынком / сектором, то повысится понимание рыночных изменений</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Боль</span>
+              <p class="c-text">Пользователь не понимает, что происходит на рынке</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Решение</span>
+              <p class="c-text">Раздел с прямым сравнением динамики портфеля с рынком или сектором в момент просадки</p>
+            </div>
+          </div>
+          <picture class="resp-shot">
+            <img class="ba-shot" src="../assets/img/iter-2.webp" alt="Было / Стало — гипотеза 2" width="1010" height="711" loading="lazy">
+          </picture>
+        </article>
+
+        <!-- Гипотеза 3 -->
+        <article class="hyp">
+          <div class="c-card hyp-card">
+            <div class="hyp-col">
+              <div class="tags-row">
+                <span class="tag tag-gray">Гипотеза 3</span>
+                <span class="tag tag-gray">Движение акции</span>
+              </div>
+              <p class="c-text">Если во время просадки актива показывать движение акции на фоне её обычных колебаний, то пользователь перестанет воспринимать просадку как личную ошибку</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Боль</span>
+              <p class="c-text">Пользователь воспринимает просадку как личную ошибку</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Решение</span>
+              <p class="c-text">Визуализация текущего падения на фоне исторического диапазона колебаний актива</p>
+            </div>
+          </div>
+          <picture class="resp-shot">
+            <img class="ba-shot" src="../assets/img/iter-3.webp" alt="Было / Стало — гипотеза 3" width="1010" height="711" loading="lazy">
+          </picture>
+        </article>
+
+        <!-- Гипотеза 4 -->
+        <article class="hyp">
+          <div class="c-card hyp-card">
+            <div class="hyp-col">
+              <div class="tags-row">
+                <span class="tag tag-gray">Гипотеза 4</span>
+                <span class="tag tag-gray">Копирайтинг</span>
+              </div>
+              <p class="c-text">Если изменить UX-копирайтинг на более понятный и человечный, то снизится тревога</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Боль</span>
+              <p class="c-text">Некоторые формулировки не понятны для пользователей или вовсе агрессивные</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Решение</span>
+              <p class="c-text">Замена сложных формулировок на разговорные, понятные формулировки</p>
+            </div>
+          </div>
+          <picture class="resp-shot">
+            <img class="ba-shot" src="../assets/img/iter-4.webp" alt="Было / Стало — гипотеза 4" width="970" height="655" loading="lazy">
+          </picture>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- UX-тесты нового решения -->
+    <section class="case-section container">
+      <h2 class="case-title">UX-тесты нового решения</h2>
+      <div class="c-card">
+        <span class="tag tag-gray">Результаты тестов</span>
+        <p class="c-text uxtest-lead">Тесты проводила на тех же пользователях из интервью. Две гипотезы подтвердились без правок, две потребовали доработки</p>
+        <div class="uxtest-pairs">
+          <div class="uxtest-pair">
+            <img class="shot-phone" src="../assets/img/uxtest-1.png" alt="Экран: сравнение с рынком" width="267" height="548" loading="lazy">
+            <img class="link-dots" src="../assets/img/link-dots.png" alt="" width="52" height="16" aria-hidden="true">
+            <div class="uxtest-annot">
+              <div class="tags-row">
+                <span class="tag tag-gray">Гипотеза 2</span>
+                <span class="tag tag-gray">Сравнение с рынком</span>
+              </div>
+              <p class="c-text">4 из 5 пользователей отметили, что точные цифры колебаний рынка/сектора не важны. Гораздо важнее понятный комментарий, объясняющий ситуацию словами</p>
+            </div>
+            <img class="shot-phone-mobile" src="../assets/img/uxtest-1-mobile.png" alt="Экран: сравнение с рынком" width="930" height="1909" loading="lazy">
+          </div>
+          <div class="uxtest-pair">
+            <img class="shot-phone" src="../assets/img/uxtest-2.png" alt="Экран: движение акции" width="267" height="548" loading="lazy">
+            <img class="link-dots" src="../assets/img/link-dots.png" alt="" width="52" height="16" aria-hidden="true">
+            <div class="uxtest-annot">
+              <div class="tags-row">
+                <span class="tag tag-gray">Гипотеза 3</span>
+                <span class="tag tag-gray">Движение акции</span>
+              </div>
+              <p class="c-text">3 из 5 пользователей сочли отображение суточных и годовых изменений избыточным для быстрого сканирования причин</p>
+            </div>
+            <img class="shot-phone-mobile" src="../assets/img/uxtest-2-mobile.png" alt="Экран: движение акции" width="934" height="1917" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Доработки после UX-тестов -->
+    <section class="case-section container">
+      <h2 class="case-title">Доработки после UX-тестов</h2>
+      <div class="c-card">
+        <div class="refine-row">
+          <div class="refine-pair">
+            <div class="refine-unit refine-unit--top">
+              <p class="refine-text">Оставила комментарий причин просадки. Переименовала раздел «Происходит сейчас». Точные цифры колебаний рынка и сектора убраны, они не несут ценности для быстрого понимания ситуации</p>
+              <img class="link-dots flip" src="../assets/img/link-dots.png" alt="" width="52" height="16" aria-hidden="true">
+            </div>
+            <img class="shot-phone" src="../assets/img/refine-1.png" alt="Экран: происходит сейчас" width="256" height="524" loading="lazy">
+          </div>
+          <div class="refine-pair">
+            <div class="refine-unit refine-unit--bottom">
+              <p class="refine-text">Изменения вынесены в отдельный раздел «Посмотреть всё». Это снижает визуальный шум при сканировании и оставляет возможность углубиться в детали тем пользователям, которым нужно</p>
+              <img class="link-dots flip" src="../assets/img/link-dots.png" alt="" width="52" height="16" aria-hidden="true">
+            </div>
+            <img class="shot-phone" src="../assets/img/refine-2.png" alt="Экран: движение акции — подробно" width="256" height="524" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Рефлексия после задачи + контакты -->
+    <section class="case-section container" id="contacts">
+      <div class="c-card reflect-card">
+        <div class="reflect-col">
+          <span class="tag tag-gray">Рефлексия после задачи</span>
+          <p>В процессе работы над кейсом я пришла к решению эмоциональной задачи. Важно было не просто объяснить пользователю причины, а сделать так, чтобы просадка не воспринималась как личная неудача.</p>
+          <p>Если бы у меня была возможность продолжить работу, я бы исследовала, как меняется восприятие портфеля у пользователей в долгосрочной перспективе</p>
+        </div>
+        <div class="reflect-col">
+          <span class="tag tag-gray">Мои контакты</span>
+          <div class="reflect-contacts">
+            <div class="footer-contact">
+              <a class="footer-contact__value footer-contact__value--link" href="https://t.me/tasimit" target="_blank" rel="noopener">tasimit</a>
+              <p class="footer-contact__label">мой телеграм</p>
+            </div>
+            <div class="footer-contact">
+              <a class="footer-contact__value footer-contact__value--link" href="mailto:Akuzavkova03@mail.ru">Akuzavkova03@mail.ru</a>
+              <p class="footer-contact__label">мой email</p>
+            </div>
+          </div>
+        </div>
+        <div class="thanks-photo">
+          <img src="../assets/img/thanks-cat.png" alt="Спасибо за внимание!" width="264" height="264">
+        </div>
+      </div>
+    </section>
+
+    <!-- Другие кейсы -->
+    <section class="case-section container">
+      <h2 class="case-title">Другие кейсы</h2>
+      <div class="other-cases">
+        <article class="case-card">
+          <a class="case-card__link" href="nordstar.html" style="width:auto;">
+            <div class="case-card__media" data-cta="Смотреть кейс">
+              <img class="case-card__img" src="../assets/img/other-nordstar.webp" alt="Кейс: выбор тарифа авиабилетов" loading="lazy" width="351" height="252">
+              <div class="case-card__tags">
+                <span class="tag tag-accent">B2C</span>
+                <span class="tag tag-gray">Travel</span>
+                <span class="tag tag-gray">Конверсия</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-card">
+          <a class="case-card__link" href="visual.html" style="width:auto;">
+            <div class="case-card__media" data-cta="Смотреть UI">
+              <img class="case-card__img" src="../assets/img/other-visual.webp" alt="UI-концепты" loading="lazy" width="351" height="252">
+              <div class="case-card__tags">
+                <span class="tag tag-accent">UI-концептики</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Плавающая кнопка «Наверх» -->
+  <button class="scroll-top" type="button" aria-label="Наверх">
+    Наверх
+    <img class="icon-arrow-up" src="../assets/img/up-arrow.png" alt="" width="24" height="24">
+  </button>
+
+  <div class="cursor-cta" aria-hidden="true"></div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

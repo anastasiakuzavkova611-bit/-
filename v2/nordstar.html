@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кейс NordStar — Анастасия Кузавкова</title>
+  <meta name="description" content="Кейс: как я улучшила сценарий выбора тарифа авиабилетов — упростила карточки, сравнение и фильтры.">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="../css/styles.css?v=37">
+  <link rel="stylesheet" href="../css/case.css?v=37">
+</head>
+<body id="top">
+
+  <!-- Хедер как на главной: не закреплён, уходит под скролл -->
+  <header class="site-header case-header--static">
+    <div class="container header-inner">
+      <div class="logo">
+        <img class="logo-icon" src="../assets/img/logo-globe.png" alt="" width="28" height="28">
+        <span class="logo-text">Орёл</span>
+      </div>
+      <p class="header-name">Анастасия Кузавкова</p>
+      <div class="header-actions">
+        <a class="btn btn-accent" href="https://drive.google.com/file/d/1d4iUnynvvHpOcHqhduWdREkBx-DLOaL3/view?usp=drive_link" target="_blank" rel="noopener">
+          CV
+          <img class="icon-arrow" src="../assets/img/cv-arrow.png" alt="" width="28" height="20">
+        </a>
+        <a class="btn btn-light" href="#contacts">Контакты</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Закреплённая строка кейса: Назад / NordStar / дата -->
+  <div class="case-topbar">
+    <div class="container case-topbar__inner">
+      <a class="case-back" href="index.html">
+        <span aria-hidden="true">←</span> Назад
+      </a>
+      <div class="case-topbar__right">
+        <span class="case-brand">NordStar</span>
+        <span class="case-date">Май, 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="case-hero container">
+      <h1 class="case-hero__title">Как я улучшила сценарий выбора тарифа авиабилетов</h1>
+
+      <div class="case-hero__cards">
+        <div class="c-card">
+          <span class="tag tag-gray">Проблема</span>
+          <p class="c-text">Пользователям сложно понять, что входит в тариф, и выбрать подходящий. Состав тарифа непрозрачен, карточки рейсов перегружены</p>
+        </div>
+        <div class="c-card">
+          <span class="tag tag-gray">Метрики успеха</span>
+          <ul class="c-list">
+            <li><span class="bullet bullet-accent" aria-hidden="true"></span>Увеличить конверсию в покупку</li>
+            <li><span class="bullet bullet-accent" aria-hidden="true"></span>Снизить число ошибок</li>
+            <li><span class="bullet bullet-accent" aria-hidden="true"></span>Сократить Time On Task</li>
+            <li><span class="bullet bullet-accent" aria-hidden="true"></span>Увеличить CEF, CSAT</li>
+          </ul>
+        </div>
+        <div class="c-card">
+          <span class="tag tag-gray">Ограничения</span>
+          <ul class="c-list">
+            <li><span class="bullet bullet-accent" aria-hidden="true"></span>UX-задача без доступа к внутренней аналитике</li>
+            <li><span class="bullet bullet-accent" aria-hidden="true"></span>Отсутствие реальной разработки</li>
+            <li><span class="bullet bullet-accent" aria-hidden="true"></span>Решения реализуемы без изменения архитектуры</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="btn btn-light case-hero__cta" href="#solution">К решению <span aria-hidden="true">↓</span></a>
+
+    </section>
+
+    <!-- UX-аудит -->
+    <section class="case-section container">
+      <h2 class="case-title">UX-аудит</h2>
+      <div class="c-card">
+        <div class="method-grid">
+          <div class="method-col">
+            <span class="tag tag-gray">Что я сделала</span>
+            <p class="c-text">Изучила сценарий выбора тарифа в приложении, чтобы понять системные проблемы</p>
+          </div>
+          <div class="method-col">
+            <span class="tag tag-gray">Выводы</span>
+            <ul class="c-list">
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Сложно понять, что именно входит в тариф</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Перегруженные карточки рейсов</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Большой список категорий пассажиров</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Кнопку «Подробнее» используют как инструмент сравнения тарифов</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Неочевидная кликабельность доп. информации о тарифе</li>
+            </ul>
+          </div>
+        <a class="btn btn-accent card-btn" href="https://www.figma.com/design/eyXj5tS4hKBhmHQ7HxgoXp/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE?node-id=2-879&amp;t=mGbC0YpsVLOhNRy4-1" target="_blank" rel="noopener">Подробнее<img class="icon-arrow" src="../assets/img/cv-arrow.png" alt="" width="28" height="20"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- UX-тесты текущего решения -->
+    <section class="case-section container">
+      <h2 class="case-title">UX-тесты текущего решения</h2>
+      <div class="c-card">
+        <div class="method-grid method-grid--3">
+          <div class="method-col">
+            <span class="tag tag-gray">Метрики</span>
+            <p class="c-text metric-line">Time on Task = 146 c</p>
+            <p class="c-text metric-line">CSAT = 57%</p>
+            <p class="c-text metric-line">CEF = 3.7 / 5</p>
+          </div>
+          <div class="method-col">
+            <span class="tag tag-gray">Результаты</span>
+            <ul class="c-list">
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>5 из 7 пользователей не поняли иконки на карточках и долго понимали описание тарифов со знаками &lt;&gt;</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>4 из 7 пользователей использовали «Подробнее» как сравнение</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>4 из 7 пользователей отметили большое количество категорий пассажиров</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>3 из 7 пользователей хотели выбрать класс обслуживания до выбора тарифа билета</li>
+            </ul>
+          </div>
+          <div class="method-col">
+            <span class="tag tag-gray">Иные инсайты</span>
+            <ul class="c-list">
+              <li><span class="bullet bullet-gray" aria-hidden="true"></span>Пользователи хотят иметь возможность выбрать быстро рейс без пересадок и выбрать багаж</li>
+              <li><span class="bullet bullet-gray" aria-hidden="true"></span>Пользователи отметили необходимость подтверждения количества пассажиров</li>
+            </ul>
+          </div>
+        <a class="btn btn-accent card-btn" href="https://www.figma.com/design/eyXj5tS4hKBhmHQ7HxgoXp/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE?node-id=2-880&amp;t=mGbC0YpsVLOhNRy4-1" target="_blank" rel="noopener">Подробнее<img class="icon-arrow" src="../assets/img/cv-arrow.png" alt="" width="28" height="20"></a>
+        </div>
+      </div>
+      <picture class="resp-shot">
+        <source media="(max-width: 640px)" srcset="../assets/img/nordstar-test-current-mobile.webp">
+        <img class="interview-shot" src="../assets/img/nordstar-test-current-desktop.webp" alt="Записи UX-тестов текущего решения" width="1400" height="240" loading="lazy">
+      </picture>
+    </section>
+
+    <!-- Бенчмарки -->
+    <section class="case-section container">
+      <h2 class="case-title">Бенчмарки</h2>
+      <div class="c-card">
+        <div class="method-grid">
+          <div class="method-col">
+            <img class="bench-logos" src="../assets/img/nordstar-logos.png" alt="Логотипы проанализированных сервисов" width="304" height="72">
+            <p class="c-text">Во время тестирования текущего решения узнала, какими приложениями для покупки авиабилетов пользуются пользователи. Эти приложения легли в основу бенчмаркинга</p>
+            <p class="c-text">Во время анализа я обращала внимание на то, как конкуренты осуществляют выбор тарифа авиабилетов: от ввода города до выбора тарифа</p>
+          </div>
+          <div class="method-col">
+            <span class="tag tag-gray">Выводы</span>
+            <ul class="c-list">
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Количество пассажиров и выбор класса на одном экране с явным подтверждением</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>На странице с рейсами фильтрация (по багажу, пересадкам и т.д.)</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Карточки с понятными иконками и короткими подписями преимуществ</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Доп. информация раскрывается по клику на иконку «i» либо показывается в виде таблицы сравнения</li>
+            </ul>
+          </div>
+        <a class="btn btn-accent card-btn" href="https://www.figma.com/design/eyXj5tS4hKBhmHQ7HxgoXp/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE?node-id=2-881&amp;t=mGbC0YpsVLOhNRy4-1" target="_blank" rel="noopener">Подробнее<img class="icon-arrow" src="../assets/img/cv-arrow.png" alt="" width="28" height="20"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Гипотезы и их приоритизация -->
+    <section class="case-section container">
+      <h2 class="case-title">Гипотезы и их приоритизация</h2>
+      <div class="ice-card">
+        <table class="ice-table">
+          <thead>
+            <tr>
+              <th class="ice-hyp">Гипотеза</th>
+              <th>Impact</th>
+              <th>Confidence</th>
+              <th>Ease</th>
+              <th>ICE Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="ice-hyp">Если <span class="accent">упростить структуру карточек и выделить ключевые условия тарифа,</span> то повысится понятность предложения и сократится время на выбор</td>
+              <td class="ice-num">9</td>
+              <td class="ice-num">8</td>
+              <td class="ice-num">7</td>
+              <td class="ice-num">504</td>
+            </tr>
+            <tr>
+              <td class="ice-hyp">Если <span class="accent">улучшить экран сравнения тарифов и сделать различия между вариантами заметнее,</span> то пользователи смогут быстрее и увереннее выбирать тариф</td>
+              <td class="ice-num">9</td>
+              <td class="ice-num">8</td>
+              <td class="ice-num">6</td>
+              <td class="ice-num">432</td>
+            </tr>
+            <tr>
+              <td class="ice-hyp">Если <span class="accent">добавить выбор класса, наличие багажа и пересадок,</span> то пользователю будет проще выбрать тариф</td>
+              <td class="ice-num">5</td>
+              <td class="ice-num">6</td>
+              <td class="ice-num">9</td>
+              <td class="ice-num">270</td>
+            </tr>
+            <tr>
+              <td class="ice-hyp">Если <span class="accent">упростить карточку рейса,</span> то пользователь будет быстрее ориентироваться в списке рейсов и переходить к выбору тарифа</td>
+              <td class="ice-num">7</td>
+              <td class="ice-num">7</td>
+              <td class="ice-num">7</td>
+              <td class="ice-num">343</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Первая итерация -->
+    <section class="case-section container" id="solution">
+      <h2 class="case-title">Первая итерация</h2>
+      <div class="iteration">
+
+        <!-- Гипотеза 1 -->
+        <article class="hyp">
+          <div class="c-card hyp-card">
+            <div class="hyp-col">
+              <div class="tags-row">
+                <span class="tag tag-gray">Гипотеза 1</span>
+                <span class="tag tag-gray">Карточка тарифа</span>
+              </div>
+              <p class="c-text">Если упростить структуру карточек и выделить ключевые условия тарифа, то повысится понятность предложения и сократится время на выбор</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Боль</span>
+              <p class="c-text">Пользователи не понимают, что входит в тариф</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Решение</span>
+              <p class="c-text">Упростить структуру карточки тарифа — убрать лишнее, оставить ключевые условия и показать их понятными иконками с короткими подписями преимуществ</p>
+            </div>
+          </div>
+          <img class="ba-shot" src="../assets/img/nordstar-iter-1.webp" alt="Было / Стало — гипотеза 1" width="1018" height="719" loading="lazy">
+        </article>
+
+        <!-- Гипотеза 2 -->
+        <article class="hyp">
+          <div class="c-card hyp-card">
+            <div class="hyp-col">
+              <div class="tags-row">
+                <span class="tag tag-gray">Гипотеза 2</span>
+                <span class="tag tag-gray">Сравнение тарифов</span>
+              </div>
+              <p class="c-text">Если улучшить экран сравнения тарифов и сделать различия между вариантами заметнее, то пользователи смогут быстрее и увереннее выбирать тариф</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Боль</span>
+              <p class="c-text">Пользователю неудобно сравнивать тарифы, различия между вариантами неочевидны</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Решение</span>
+              <p class="c-text">Понятный экран сравнения, где различия между тарифами приведены в таблице</p>
+            </div>
+          </div>
+          <img class="ba-shot" src="../assets/img/nordstar-iter-2.webp" alt="Было / Стало — гипотеза 2" width="676" height="719" loading="lazy">
+        </article>
+
+        <!-- Гипотеза 3 -->
+        <article class="hyp">
+          <div class="c-card hyp-card">
+            <div class="hyp-col">
+              <div class="tags-row">
+                <span class="tag tag-gray">Гипотеза 3</span>
+                <span class="tag tag-gray">Фильтры</span>
+              </div>
+              <p class="c-text">Если добавить выбор класса, наличия багажа и пересадок, то пользователю будет проще выбрать тариф</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Боль</span>
+              <p class="c-text">Пользователю приходится выбирать тариф, не видя важных условий — класса, багажа, наличие пересадок</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Решение</span>
+              <p class="c-text">Сделать фильтрацию с багажом и прямым рейсом. Выбор класса обслуживания вынести на экран выбора количества пассажиров</p>
+            </div>
+          </div>
+          <img class="ba-shot" src="../assets/img/nordstar-iter-3.webp" alt="Было / Стало — гипотеза 3" width="1344" height="709" loading="lazy">
+        </article>
+
+        <!-- Гипотеза 4 -->
+        <article class="hyp">
+          <div class="c-card hyp-card">
+            <div class="hyp-col">
+              <div class="tags-row">
+                <span class="tag tag-gray">Гипотеза 4</span>
+                <span class="tag tag-gray">Карточка рейса</span>
+              </div>
+              <p class="c-text">Если упростить карточку рейса, то пользователь будет быстрее ориентироваться в списке рейсов и переходить к выбору тарифа</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Боль</span>
+              <p class="c-text">Пользователи испытывают когнитивную нагрузку при просмотре карточек рейсов</p>
+            </div>
+            <div class="hyp-col">
+              <span class="tag tag-gray">Решение</span>
+              <p class="c-text">Упростить карточку рейса: убрать визуальный шум, сделать читаемой главную информацию о рейсе и заменить непонятные иконки и стрелки на понятные элементы с подписями</p>
+            </div>
+          </div>
+          <img class="ba-shot" src="../assets/img/nordstar-iter-4.webp" alt="Было / Стало — гипотеза 4" width="668" height="727" loading="lazy">
+        </article>
+
+      </div>
+    </section>
+
+    <!-- UX-тесты нового решения -->
+    <section class="case-section container">
+      <h2 class="case-title">UX-тесты нового решения</h2>
+      <div class="c-card">
+        <div class="method-grid method-grid--3">
+          <div class="method-col">
+            <span class="tag tag-gray">Метрики</span>
+            <p class="c-text metric-line">Time on Task = 146 c → 90 с</p>
+            <p class="c-text metric-line">CSAT = 57% → 85%</p>
+            <p class="c-text metric-line">CEF = 3.8 / 5 → 4.5 / 5</p>
+          </div>
+          <div class="method-col">
+            <span class="tag tag-gray">Результаты</span>
+            <ul class="c-list">
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>7 из 7 пользователей верно поняли отличия тарифов прямо из карточки, без необходимости искать детали в «подробнее»</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>Пользователи отметили удобство фильтров «прямой», «с багажом», подтверждение количества пассажиров, а также карточки рейсов</li>
+              <li><span class="bullet bullet-accent" aria-hidden="true"></span>7 из 7 пользователей легко и быстро нашли дополнительную информацию</li>
+            </ul>
+          </div>
+          <div class="method-col">
+            <span class="tag tag-gray">Вывод</span>
+            <p class="c-text">После переработки карточек тарифов тестирование показало, что разделом «Подробнее» пользователи перестали пользоваться вообще. Было принято решение убрать раздел</p>
+          </div>
+        </div>
+      </div>
+      <picture class="resp-shot">
+        <source media="(max-width: 640px)" srcset="../assets/img/nordstar-test-new-mobile.webp">
+        <img class="interview-shot" src="../assets/img/nordstar-test-new-desktop.webp" alt="Записи UX-тестов нового решения" width="1400" height="236" loading="lazy">
+      </picture>
+    </section>
+
+    <!-- Рефлексия после задачи + контакты -->
+    <section class="case-section container" id="contacts">
+      <div class="c-card reflect-card">
+        <div class="reflect-col">
+          <span class="tag tag-gray">Рефлексия после задачи</span>
+          <p>В рамках этого кейса я научилась выстраивать исследование как целостную логику, а не набор отдельных шагов. Я поняла, как важно опираться на данные и наблюдать за реальным поведением пользователей.</p>
+          <p>Если бы я продолжила работу, следующим шагом я бы протестировала доработанное решение</p>
+        </div>
+        <div class="reflect-col">
+          <span class="tag tag-gray">Мои контакты</span>
+          <div class="reflect-contacts">
+            <div class="footer-contact">
+              <a class="footer-contact__value footer-contact__value--link" href="https://t.me/tasimit" target="_blank" rel="noopener">tasimit</a>
+              <p class="footer-contact__label">мой телеграм</p>
+            </div>
+            <div class="footer-contact">
+              <a class="footer-contact__value footer-contact__value--link" href="mailto:Akuzavkova03@mail.ru">Akuzavkova03@mail.ru</a>
+              <p class="footer-contact__label">мой email</p>
+            </div>
+          </div>
+        </div>
+        <div class="thanks-photo">
+          <img src="../assets/img/nordstar-thanks.webp" alt="Спасибо за внимание!" width="252" height="252">
+        </div>
+      </div>
+    </section>
+
+    <!-- Другие кейсы -->
+    <section class="case-section container">
+      <h2 class="case-title">Другие кейсы</h2>
+      <div class="other-cases">
+        <article class="case-card">
+          <a class="case-card__link" href="revolut.html" style="width:auto;">
+            <div class="case-card__media" data-cta="Смотреть кейс">
+              <img class="case-card__img" src="../assets/img/other-revolut.webp" alt="Кейс Revolut: банковское приложение" loading="lazy" width="351" height="252">
+              <div class="case-card__tags">
+                <span class="tag tag-accent">B2C</span>
+                <span class="tag tag-gray">Fintech</span>
+                <span class="tag tag-gray">UX research</span>
+                <span class="tag tag-gray">Возвращаемость</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-card">
+          <a class="case-card__link" href="visual.html" style="width:auto;">
+            <div class="case-card__media" data-cta="Смотреть UI">
+              <img class="case-card__img" src="../assets/img/other-visual.webp" alt="UI-концепты" loading="lazy" width="351" height="252">
+              <div class="case-card__tags">
+                <span class="tag tag-accent">UI-концептики</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Плавающая кнопка «Наверх» -->
+  <button class="scroll-top" type="button" aria-label="Наверх">
+    Наверх
+    <img class="icon-arrow-up" src="../assets/img/up-arrow.png" alt="" width="24" height="24">
+  </button>
+
+  <div class="cursor-cta" aria-hidden="true"></div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
