@@ -1,0 +1,16 @@
+/* Shared prose and table conventions across all case studies. */
+body main.install-case :is(.story-copy,.reason-block,.impact-list) :is(strong,b){font-weight:400}
+body main.install-case .story-section:has(table){display:grid;grid-template-columns:minmax(0,244px) minmax(0,660px);column-gap:96px;row-gap:16px;max-width:1000px}
+body main.install-case .story-section:has(table)>.story-copy{display:contents}
+body main.install-case .story-section:has(table)>.story-copy>:is(p,ul,ol){grid-column:2;max-width:660px}
+body main.install-case .story-section :is(.priority-scroll,.ab-research-scroll,.ab-feature-panel){grid-column:1 / -1;width:100%;max-width:1000px;margin-inline:auto;min-width:0}
+body main.install-case table{margin-inline:auto;font-size:17px;line-height:1.45}
+body main.install-case table :is(th,td){vertical-align:middle;padding:20px 12px;font-weight:400}
+body main.install-case table thead th{font-weight:500;padding-top:8px;padding-bottom:16px}
+body main.install-case table :is(th,td):first-child{padding-left:0}
+body main.install-case table :is(th,td):last-child{padding-right:0}
+body main.install-case .priority-table td,body main.install-case .ab-feature-table td,body main.install-case .ab-priorities tbody th:first-child{text-align:center}
+body main.install-case .ab-priorities thead th:first-child{text-align:center}
+body main.install-case .story-section.case-priority{grid-template-columns:minmax(0,1fr);row-gap:24px}
+@media(max-width:1100px){body main.install-case .story-section:has(table){grid-template-columns:minmax(0,1fr) minmax(0,2.5fr);column-gap:40px}}
+@media(max-width:900px){body main.install-case .story-section:has(table){grid-template-columns:minmax(0,1fr)}body main.install-case .story-section:has(table)>.story-copy>:is(p,ul,ol){grid-column:1}}
