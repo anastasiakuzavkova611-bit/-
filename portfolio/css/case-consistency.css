@@ -22,3 +22,7 @@ body main.install-case .story-section+:is(.audit-board,.audit-gallery){margin-to
 /* Intro media separates the opening from the case narrative. */
 body main.install-case>:is(.install-video-comparison,.ab-intro-gallery){margin-bottom:128px}
 body main.install-case>:is(.install-video-comparison,.ab-intro-gallery)+.story-section{margin-top:128px}
+
+/* Case navigation stays with the case; authorship is a separate footer. */
+body main.install-case+.case-next{margin-top:80px}
+body main.install-case+.case-next+.case-signature{margin-top:144px}
