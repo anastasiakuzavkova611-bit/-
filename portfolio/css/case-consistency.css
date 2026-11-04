@@ -14,3 +14,11 @@ body main.install-case .ab-priorities thead th:first-child{text-align:center}
 body main.install-case .story-section.case-priority{grid-template-columns:minmax(0,1fr);row-gap:24px}
 @media(max-width:1100px){body main.install-case .story-section:has(table){grid-template-columns:minmax(0,1fr) minmax(0,2.5fr);column-gap:40px}}
 @media(max-width:900px){body main.install-case .story-section:has(table){grid-template-columns:minmax(0,1fr)}body main.install-case .story-section:has(table)>.story-copy>:is(p,ul,ol){grid-column:1}}
+
+/* Evidence belongs to the preceding audit, closer than separate sections. */
+body main.install-case .story-section:has(+:is(.audit-board,.audit-gallery)){margin-bottom:32px}
+body main.install-case .story-section+:is(.audit-board,.audit-gallery){margin-top:0}
+
+/* Intro media separates the opening from the case narrative. */
+body main.install-case>:is(.install-video-comparison,.ab-intro-gallery){margin-bottom:80px}
+body main.install-case>:is(.install-video-comparison,.ab-intro-gallery)+.story-section{margin-top:80px}
