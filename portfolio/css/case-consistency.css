@@ -37,7 +37,16 @@ body main.install-case+.case-next+.case-signature{margin-top:144px}
 body main.install-case .interview-more:disabled{color:#252525;opacity:1;-webkit-text-fill-color:#252525}
 
 /* Mobile source screens keep their original proportions in shared case cards. */
-body main.abordio-case .ab-solution-board{display:flex;justify-content:center;align-items:flex-end;gap:48px;margin:0;padding:48px 48px 0;background:#f4f4f4;border-radius:32px;overflow:hidden;width:100%;box-sizing:border-box}
-body main.abordio-case .ab-solution-board .screen-original{position:relative;display:block;flex:0 1 308px;width:308px;max-width:308px;margin:0;padding:0;overflow:hidden;border-radius:24px 24px 0 0;line-height:0;transform:none}
-body main.abordio-case .ab-solution-board img{display:block;width:100%;height:auto;max-height:none;aspect-ratio:375 / 812;object-fit:contain;border-radius:24px 24px 0 0;transform:none}
-@media(max-width:900px){body main.abordio-case .ab-solution-board{gap:32px;padding:40px 32px 0}}
+body main.abordio-case .ab-solution-board{display:flex;justify-content:center;align-items:flex-end;gap:48px;margin:0;padding:48px;background:#f4f4f4;border-radius:32px;overflow:hidden;width:100%;box-sizing:border-box}
+body main.abordio-case .ab-solution-board .screen-original{position:relative;display:block;flex:0 1 308px;width:308px;max-width:308px;margin:0;padding:0;overflow:hidden;border-radius:24px;line-height:0;transform:none}
+body main.abordio-case .ab-solution-board img{display:block;width:100%;height:auto;max-height:none;aspect-ratio:375 / 812;object-fit:contain;border-radius:24px;transform:none}
+@media(max-width:900px){body main.abordio-case .ab-solution-board{gap:32px;padding:40px 32px}}
+
+/* Keep complete phone screens inset on all sides, with paired slides. */
+body main.abordio-case .ab-solution-gallery{position:relative;width:100%;min-width:0}
+body main.abordio-case .ab-solution-board[hidden]{display:none}
+body main.abordio-case .ab-gallery-next{position:absolute;top:50%;right:0;width:var(--ab-arrow-rail,15%);height:48px;display:grid;place-items:center;transform:translateY(-50%);border:0;padding:0;background:none;color:#666;cursor:pointer}
+body main.abordio-case .ab-gallery-next[data-last="true"]{left:0;right:auto}
+body main.abordio-case .ab-gallery-next[data-last="true"] svg{transform:rotate(180deg)}
+body main.abordio-case .ab-gallery-next:focus-visible{outline:2px solid #252525;outline-offset:-8px;border-radius:16px}
+body main.abordio-case .ab-gallery-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
