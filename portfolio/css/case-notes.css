@@ -216,7 +216,7 @@ body .install-case .complete-screen-board .screen-original>img{
 }
 body .install-case .install-video-panel,
 body .install-case .install-video-panel video{border-radius:16px 16px 0 0}
-body .case-media-viewer .media-stage>video{border-radius:16px 16px 0 0}
+
 @media(max-width:700px){
  body .install-case .annotated-board.complete-screen-board,
  body .install-case .solution-carousel>figure.complete-screen-board{padding:18px 28px 0;border-radius:24px;gap:8px}

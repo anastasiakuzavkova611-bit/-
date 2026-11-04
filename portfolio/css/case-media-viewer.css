@@ -38,10 +38,14 @@ body .install-case .install-video-comparison .install-video-next,body .install-c
 video.branding-recording-trim{clip-path:inset(0 1% 0 0 round 8px)}
 
 /* Videos keep rounded top corners and meet the bottom edge squarely. */
-body .install-case .install-video-panel,body .install-case .install-video-panel video,.case-media-viewer .media-stage>video{border-radius:8px 8px 0 0}
+body .install-case .install-video-panel,body .install-case .install-video-panel video{border-radius:8px 8px 0 0}
 
 /* The video canvas also has a straight bottom edge: no parent clipping rounds it. */
 body .install-case .install-video-comparison{border-radius:24px 24px 0 0}
 
 /* Expanded screenshots always show the entire source, independent of preview crops. */
-.case-media-viewer:not(.has-video) .media-stage>img{position:static;inset:auto;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;transform:none;clip-path:none}
+.case-media-viewer:not(.has-video) .media-stage>img{position:static;inset:auto;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;transform:none;clip-path:none}
+
+/* Expanded media has four rounded corners, including the bottom edge. */
+.case-media-viewer .media-stage>img,.case-media-viewer .media-stage>video{border-radius:16px;overflow:hidden}
+.case-media-viewer .media-stage>video.branding-recording-trim{clip-path:inset(0 1% 0 0 round 16px)}
