@@ -15,9 +15,15 @@ body main.install-case .story-section.case-priority{grid-template-columns:minmax
 @media(max-width:1100px){body main.install-case .story-section:has(table){grid-template-columns:minmax(0,1fr) minmax(0,2.5fr);column-gap:40px}}
 @media(max-width:900px){body main.install-case .story-section:has(table){grid-template-columns:minmax(0,1fr)}body main.install-case .story-section:has(table)>.story-copy>:is(p,ul,ol){grid-column:1}}
 
-/* Evidence belongs to the preceding audit, closer than separate sections. */
-body main.install-case .story-section:has(+:is(.audit-board,.audit-gallery)){margin-bottom:32px}
-body main.install-case .story-section+:is(.audit-board,.audit-gallery){margin-top:0}
+/* One external spacing rhythm for case content and evidence. */
+body main.install-case{--space-section:80px}
+body main.install-case>.story-section{margin-block:80px}
+body main.install-case>:is(.audit-board,.audit-gallery){margin-block:80px}
+body main.install-case .hypotheses{margin-top:80px}
+body main.install-case .hypothesis-row{row-gap:80px;padding-bottom:80px}
+body main.install-case .hypothesis-row:last-child{padding-bottom:0}
+body main.install-case .hypothesis-detail{gap:80px}
+body main.install-case:has(+.case-next)>:last-child{margin-bottom:0}
 
 /* Intro media separates the opening from the case narrative. */
 body main.install-case>:is(.install-video-comparison,.ab-intro-gallery){margin-bottom:128px}
@@ -26,3 +32,12 @@ body main.install-case>:is(.install-video-comparison,.ab-intro-gallery)+.story-s
 /* Case navigation stays with the case; authorship is a separate footer. */
 body main.install-case+.case-next{margin-top:80px}
 body main.install-case+.case-next+.case-signature{margin-top:144px}
+
+/* Pending detail links retain readable button text. */
+body main.install-case .interview-more:disabled{color:#252525;opacity:1;-webkit-text-fill-color:#252525}
+
+/* Mobile source screens keep their original proportions in shared case cards. */
+body main.abordio-case .ab-solution-board{display:flex;justify-content:center;align-items:flex-end;gap:48px;margin:0;padding:48px 48px 0;background:#f4f4f4;border-radius:32px;overflow:hidden;width:100%;box-sizing:border-box}
+body main.abordio-case .ab-solution-board .screen-original{position:relative;display:block;flex:0 1 308px;width:308px;max-width:308px;margin:0;padding:0;overflow:hidden;border-radius:24px 24px 0 0;line-height:0;transform:none}
+body main.abordio-case .ab-solution-board img{display:block;width:100%;height:auto;max-height:none;aspect-ratio:375 / 812;object-fit:contain;border-radius:24px 24px 0 0;transform:none}
+@media(max-width:900px){body main.abordio-case .ab-solution-board{gap:32px;padding:40px 32px 0}}
