@@ -20,7 +20,7 @@ body main.install-case{--space-section:80px}
 body main.install-case>.story-section{margin-block:80px}
 body main.install-case>:is(.audit-board,.audit-gallery){margin-block:80px}
 body main.install-case .hypotheses{margin-top:80px}
-body main.install-case .hypothesis-row{row-gap:80px;padding-bottom:80px}
+body main.install-case .hypothesis-row{row-gap:40px;padding-bottom:80px}
 body main.install-case .hypothesis-row:last-child{padding-bottom:0}
 body main.install-case .hypothesis-detail{gap:80px}
 body main.install-case:has(+.case-next)>:last-child{margin-bottom:0}
@@ -30,17 +30,17 @@ body main.install-case>:is(.install-video-comparison,.ab-intro-gallery){margin-b
 body main.install-case>:is(.install-video-comparison,.ab-intro-gallery)+.story-section{margin-top:128px}
 
 /* Case navigation stays with the case; authorship is a separate footer. */
-body main.install-case+.case-next{margin-top:80px}
+body main.install-case+.case-next{margin-top:120px}
 body main.install-case+.case-next+.case-signature{margin-top:144px}
 
 /* Pending detail links retain readable button text. */
 body main.install-case .interview-more:disabled{color:#252525;opacity:1;-webkit-text-fill-color:#252525}
 
 /* Mobile source screens keep their original proportions in shared case cards. */
-body main.abordio-case .ab-solution-board{display:flex;justify-content:center;align-items:flex-end;gap:48px;margin:0;padding:48px;background:#f4f4f4;border-radius:32px;overflow:hidden;width:100%;box-sizing:border-box}
-body main.abordio-case .ab-solution-board .screen-original{position:relative;display:block;flex:0 1 308px;width:308px;max-width:308px;margin:0;padding:0;overflow:hidden;border-radius:24px;line-height:0;transform:none}
-body main.abordio-case .ab-solution-board img{display:block;width:100%;height:auto;max-height:none;aspect-ratio:375 / 812;object-fit:contain;border-radius:24px;transform:none}
-@media(max-width:900px){body main.abordio-case .ab-solution-board{gap:32px;padding:40px 32px}}
+body main.abordio-case .ab-solution-board{display:flex;justify-content:center;align-items:center;gap:48px;margin:0;padding:40px;background:#f4f4f4;border-radius:32px;overflow:hidden;width:100%;height:min(553px,55.3cqi);box-sizing:border-box}
+body main.abordio-case .ab-solution-board .screen-original{position:relative;display:block;flex:0 0 auto;width:auto;height:100%;max-width:none;aspect-ratio:375 / 812;margin:0;padding:0;overflow:hidden;border-radius:24px;line-height:0;transform:none}
+body main.abordio-case .ab-solution-board img{display:block;width:100%;height:100%;max-height:none;aspect-ratio:375 / 812;object-fit:contain;border-radius:24px;transform:none}
+@media(max-width:900px){body main.abordio-case .ab-solution-board{gap:32px;padding:32px}}
 
 /* Keep complete phone screens inset on all sides, with paired slides. */
 body main.abordio-case .ab-solution-gallery{position:relative;width:100%;min-width:0}
@@ -50,3 +50,19 @@ body main.abordio-case .ab-gallery-next[data-last="true"]{left:0;right:auto}
 body main.abordio-case .ab-gallery-next[data-last="true"] svg{transform:rotate(180deg)}
 body main.abordio-case .ab-gallery-next:focus-visible{outline:2px solid #252525;outline-offset:-8px;border-radius:16px}
 body main.abordio-case .ab-gallery-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+/* Research material follows the same case-card dimensions and gallery controls. */
+body main.install-case a.interview-more{display:inline-block;color:#252525;text-decoration:none;cursor:pointer}
+body main.abordio-case .ab-research-gallery{position:relative;margin:40px 0 80px;width:100%}
+body main.abordio-case .story-section:has(+.ab-research-gallery){margin-bottom:40px}
+body main.abordio-case .ab-research-board{display:flex;flex-direction:column;gap:16px;width:100%;height:min(553px,55.3cqi);padding:32px 76px 32px;box-sizing:border-box;margin:0;background:#f4f4f4;border-radius:32px;overflow:hidden}
+body main.abordio-case .ab-research-board[hidden]{display:none}
+body main.abordio-case .ab-research-board figcaption{margin:0;font-family:inherit;font-weight:400;font-size:17px;line-height:24px;color:#666;text-align:center;flex:0 0 auto}
+body main.abordio-case .ab-research-media{display:flex;align-items:center;justify-content:center;gap:16px;flex:1;min-height:0;width:100%}
+body main.abordio-case .ab-research-media .screen-original{display:flex;align-items:center;justify-content:center;position:relative;width:100%;height:100%;min-width:0;margin:0;padding:0;overflow:hidden;border-radius:16px}
+body main.abordio-case .ab-research-media img{position:static;display:block;width:100%;height:100%;object-fit:contain;object-position:center;border-radius:16px;transform:none}
+body main.abordio-case .ab-research-next{position:absolute;top:50%;right:0;width:76px;height:48px;display:grid;place-items:center;transform:translateY(-50%);padding:0;border:0;background:none;color:#666;cursor:pointer}
+body main.abordio-case .ab-research-next[data-last="true"]{right:auto;left:0}
+body main.abordio-case .ab-research-next[data-last="true"] svg{transform:rotate(180deg)}
+body main.abordio-case .ab-research-next:focus-visible{outline:2px solid #252525;outline-offset:-8px;border-radius:16px}
+body main.abordio-case .ab-research-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
