@@ -105,3 +105,10 @@
 @media(max-width:700px){.flow-cases{row-gap:48px;padding-bottom:112px}}
 
 .stack-greeting .intro-brands .brand-mark img { border-radius: 28%; }
+
+/* Desktop composition keeps its dimensions; only the outer viewport grows. */
+@media(min-width:768px){
+ .concept-sticky{height:100svh;min-height:0}
+ .scroll-card{width:330px;height:390px;margin-left:-165px;margin-top:-195px}
+ .stack-greeting{top:calc(50% - 118px + 62.4px + 28px)}
+}
