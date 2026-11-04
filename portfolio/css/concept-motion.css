@@ -49,26 +49,3 @@
  }
 }
 
-/* Stage light moves across the upper portrait, fading before the lettering. */
-@media (prefers-reduced-motion: no-preference) {
- .card-back[data-motion="artist"]::after {
-  content: "";
-  position: absolute;
-  inset: 37.55% 0 auto;
-  height: 42.1%;
-  pointer-events: none;
-  background-image: radial-gradient(ellipse at center, rgb(255 245 239 / 60%) 0%, rgb(255 245 239 / 30%) 30%, transparent 66%);
-  background-size: 180% 115%;
-  background-repeat: no-repeat;
-  mix-blend-mode: screen;
-  mask-image: linear-gradient(black 0% 42%, transparent 70%);
-  animation: artist-stage-light 3.8s ease-in-out infinite alternate paused;
- }
- .card-back[data-motion="artist"].motion-visible:not(.motion-paused)::after {
-  animation-play-state: running;
- }
-}
-@keyframes artist-stage-light {
- from { background-position: 100% 30%; opacity: .65; }
- to { background-position: 0% 55%; opacity: .9; }
-}

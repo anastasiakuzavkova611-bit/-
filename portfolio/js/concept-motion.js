@@ -1,5 +1,5 @@
 (()=>{
- const type=src=>src?.includes('2722-797')?'music':src?.includes('2722-551')?'charge':src?.includes('2722-354')?'fitness':src?.includes('2722-445')?'prices':src?.includes('2744-877')?'artist':null;
+ const type=src=>src?.includes('2722-797')?'music':src?.includes('2722-551')?'charge':src?.includes('2722-354')?'fitness':src?.includes('2722-445')?'prices':null;
  const targets=[...document.querySelectorAll('.card-back[data-image]')].filter(el=>{const motion=type(el.dataset.image);if(motion)el.dataset.motion=motion;return motion});
  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>entry.target.classList.toggle('motion-visible',entry.isIntersecting)),{threshold:.15});targets.forEach(el=>observer.observe(el));
  let serial=0;
