@@ -8,3 +8,23 @@ body main.install-case .install-hero h1{margin:0 0 24px}
 body main.install-case .install-hero .install-lead{margin:0 auto}
 body main.install-case .install-hero+section{margin-top:0}
 body main.install-case .install-hero:has(+.install-video-comparison){margin-bottom:64px}
+
+/* Fixed editorial grid: additional viewport width becomes outer whitespace. */
+body main.install-case{box-sizing:border-box;width:calc(100% - 64px);max-width:1080px;margin-inline:auto;padding-inline:0;--reading-width:1000px}
+body main.install-case .story-section{width:100%;max-width:1080px;grid-template-columns:minmax(0,284px) minmax(0,700px);column-gap:96px;align-items:start}
+body main.install-case .story-section>.story-copy{min-width:0;max-width:700px}
+body main.install-case .story-section>h2{margin:0}
+body main.install-case .story-section:not(:has(>h2)){display:block}
+body main.install-case .story-section:not(:has(>h2))>.story-copy{margin-left:auto}
+body main.install-case .install-hero{max-width:1000px}
+body main.install-case .install-hero .install-lead{max-width:700px}
+body main.install-case .hypothesis-aside{max-width:1000px}
+body main.install-case .story-section :is(.case-priority-scroll,.ab-table-wrap,.feature-matrix-wrap){min-width:0;max-width:100%;overflow-x:auto}
+@media(max-width:1100px){
+ body main.install-case .story-section{grid-template-columns:minmax(0,1fr) minmax(0,2.5fr);column-gap:40px}
+}
+@media(max-width:900px){
+ body main.install-case{width:calc(100% - 48px)}
+ body main.install-case .story-section{grid-template-columns:minmax(0,1fr);row-gap:16px;max-width:700px}
+ body main.install-case .story-section:not(:has(>h2))>.story-copy{margin-inline:auto}
+}

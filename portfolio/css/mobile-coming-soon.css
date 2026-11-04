@@ -16,7 +16,7 @@
     font-family: 'SF Pro Display', Arial, sans-serif; text-align: center;
   }
   .mobile-typing-cat {
-    width: min(110px, 31vw, 20svh); aspect-ratio: 1;
+    width: min(130px, 37vw, 24svh); aspect-ratio: 1;
     background: url('../assets/img/mobile-typing-cat.png') 0 0 / 200% 200% no-repeat;
     animation: mobile-cat-type 640ms steps(1, end) infinite;
   }
