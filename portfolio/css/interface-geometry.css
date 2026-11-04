@@ -1,0 +1,36 @@
+/* Shared geometry. Navigation and circular brand marks are deliberate exceptions. */
+:root{--radius-surface:24px;--radius-control:16px;--radius-inset:8px}
+.case-art,.concept-preview,.install-video-comparison,.story-task,.story-insight,.scenario-map,.command-layout,.case-media-slot,.dl-dialog,.content-dialog{border-radius:var(--radius-surface)}
+.case-browser,.desktop-window,.case-link,.preview-close,.panel-close,.dl-close,.scenario-root,.scenario-branches>div,.command-layout-grid>div,.outcome-grid>div,.story-discovery .story-copy>p:last-child,.story-changes .story-copy li,.story-results .story-copy li,.dl-window,.dl-command,.dl-input,.dl-bubble{border-radius:var(--radius-control)}
+.case-browser-bar span:last-child,.window-address,.dl-fields b{border-radius:var(--radius-inset)}
+.install-video-panel{border-radius:var(--radius-control) var(--radius-control) 0 0}
+.install-video-next{border-radius:var(--radius-control)}
+.case-art.mobile img{border-radius:var(--radius-control)}
+.scroll-card:first-child .card-front{border-radius:calc(var(--radius-control) / .32)}
+.case-logo,.case-logo img{border-radius:50%}
+
+/* Phone shells for the mobile case previews, preserving the full screen. */
+.case-art.mobile{align-items:center;gap:28px}
+.case-art.mobile .phone-mockup{display:block;flex:0 1 27%;min-width:0;max-width:240px;padding:5px;border-radius:28px;background:#202020;box-shadow:inset 0 0 0 1px #555}
+.case-art.mobile .phone-mockup img{display:block;width:100%;height:auto;max-width:100%;max-height:520px;object-fit:contain;border-radius:23px}
+@media(max-width:700px){.case-art.mobile{gap:14px}.case-art.mobile .phone-mockup{padding:3px;border-radius:16px;flex-basis:29%}.case-art.mobile .phone-mockup img{border-radius:13px;max-height:360px}}
+
+.case-browser-bar{height:44px;display:grid;grid-template-columns:56px minmax(0,1fr) 56px;align-items:center;gap:12px;padding:0 16px;background:#fafafa}
+.case-browser-bar .browser-window-dots{display:flex;gap:6px;align-items:center}
+.browser-window-dots i{width:7px;height:7px;border-radius:50%;background:#b5b5b8}
+.case-browser-bar .browser-address{display:block;justify-self:center;width:min(100%,480px);padding:6px 16px;font-family:'SF Pro Display',Arial,sans-serif;font-size:13px;font-weight:400;line-height:18px;color:#68686d;text-align:center;background:#efeff0;border-radius:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.case-browser-bar .browser-toolbar-spacer:last-child{width:56px;padding:0;background:none}
+@media(max-width:700px){.case-browser-bar{height:32px;grid-template-columns:32px minmax(0,1fr) 32px;gap:8px;padding:0 10px}.case-browser-bar .browser-window-dots{gap:4px}.browser-window-dots i{width:5px;height:5px}.case-browser-bar .browser-address{font-size:10px;line-height:14px;padding:4px 8px}.case-browser-bar .browser-toolbar-spacer:last-child{width:32px}}
+
+/* Case typography: keep title and summary together, separate the brand mark. */
+.case-caption>div{column-gap:24px;row-gap:0}
+.case-caption h2{font-weight:600;margin-bottom:6px;color:#252525}
+.case-caption p:not(.case-company){color:#252525}
+.dl-page{--c-secondary:#252525;--c-tertiary:#252525}
+.dl-page .install-case,.case-note{color:#252525}
+.dl-page :is(.install-back,.install-meta,.story-insight>span,.scenario-map figcaption,.command-layout figcaption,.scenario-branches p,.command-layout p,.outcome-grid p,.scenario-support,.scheme-label,.case-media-slot span,.case-media-slot p,.story-task h2,.ab-screen-gallery figcaption,.ab-table-note,.dl-description,.dl-eyebrow,.dl-muted),.case-note :is(.dl-eyebrow,.dl-muted){color:#252525}
+.dl-page .story-results .story-copy li:before{color:#252525}
+.dl-page .command-result p{color:#fff}
+@media(max-width:700px){.case-caption>div{column-gap:20px}}
+
+.case-caption{align-items:flex-start}

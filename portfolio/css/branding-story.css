@@ -1,0 +1,10 @@
+.branding-story .solution-copy{display:grid;gap:20px}
+.branding-story .hypothesis-detail{gap:28px;position:sticky;top:112px}
+.branding-story .branding-crop{display:block;position:relative;aspect-ratio:var(--crop-w)/var(--crop-h);overflow:hidden;border-radius:8px;background:#fff}
+.branding-story .branding-crop img{position:absolute;max-width:none;width:calc(1728 / var(--crop-w) * 100%);height:auto;left:calc(var(--crop-x) / var(--crop-w) * -100%);top:calc(var(--crop-y) / var(--crop-h) * -100%);border-radius:0}
+@media(max-width:900px){.branding-story .hypothesis-detail{position:static}}
+
+/* Equal-size solution previews; fit each selected fragment without stretching. */
+.branding-story .hypothesis-detail .annotated-board{container-type:inline-size}
+.branding-story .hypothesis-detail .screen-original{position:relative;aspect-ratio:4/3}
+.branding-story .hypothesis-detail .branding-crop{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(100%,calc(75cqw * var(--crop-w) / var(--crop-h)))}

@@ -1,0 +1,496 @@
+/* Homepage proportions taken from Figma node 2538:159. */
+:root{--container-max:1200px}
+.intro-experiment{position:relative;height:calc(100svh + 490px);--intro-fade:1;--folder-opacity:1;--unit:1px}
+.intro-experiment .hero{position:absolute;top:var(--hero-top,calc(271 * var(--unit)));left:0;right:0;min-height:0;padding:0;margin:auto;z-index:0;opacity:var(--intro-fade,1);pointer-events:none}
+.intro-experiment .hero-title{display:flex;flex-direction:column;align-items:stretch;gap:0;max-width:none;width:100%;font-size:117px;line-height:1.196581;font-weight:590;letter-spacing:0;color:var(--c-primary)}
+.bold-line{display:flex;align-items:center;white-space:nowrap;font:inherit;letter-spacing:inherit;margin-bottom:calc(6 * var(--unit))}
+.bold-line--hello{justify-content:flex-start;color:var(--c-accent)}
+.bold-line--name{justify-content:flex-end;padding-left:0;width:var(--name-width,calc(100% - 1.017094em));gap:calc(32 * var(--unit))}
+.bold-line--role{justify-content:flex-start;gap:.162393em;width:max-content;margin-bottom:0}
+.bold-avatar{width:160px;height:98px;object-fit:cover;object-position:50% 25%;border-radius:1000px;flex:none}
+.bold-symbol{width:.854701em;height:1.02564em;display:flex;flex-direction:column;flex:none}
+.bold-symbol i{width:100%;height:.615385em;border:.08547em solid var(--c-accent);border-radius:1000px;flex:none}
+.bold-symbol i+i{margin-top:-.205128em}
+.intro-experiment .ui-gallery{height:100%;margin:0;padding:0;position:relative;z-index:1;pointer-events:none}
+.intro-experiment .ui-gallery__sticky{position:sticky;top:var(--header-height);padding:0;background:transparent;overflow:hidden}
+.intro-experiment .ui-stage{height:650px;margin:0;pointer-events:none}
+.intro-experiment .ui-track{pointer-events:none}
+.intro-experiment .ui-card{pointer-events:auto;border-radius:calc(16 * var(--unit));overflow:hidden;transform-origin:center;will-change:transform;width:var(--card-width);height:var(--card-height)}
+.intro-experiment .ui-card::before{display:block;background:var(--c-card-bg);opacity:var(--paper-opacity,1);border:1px solid #ededf0}
+.intro-experiment .ui-card__image{opacity:1;inset:0;height:100%;border-radius:inherit;background:var(--c-card-bg);border:calc(var(--paper-edge,0) * 1px) solid #fff;box-sizing:border-box;transform:none!important}
+.folder-face{position:absolute;left:var(--folder-x);top:var(--folder-y);width:var(--folder-width);height:var(--folder-height);max-width:none;pointer-events:none;opacity:var(--folder-opacity);will-change:transform,opacity;filter:drop-shadow(0 5px 7px #28282e0a)}
+.folder-back{z-index:0}.folder-front{z-index:31}
+.folder-glass{z-index:30;left:calc(var(--folder-x) + var(--folder-width) * .1167);top:calc(var(--folder-y) + var(--folder-height) * .47586);width:calc(var(--folder-width) * .7556);height:calc(var(--folder-height) * .49655);border-radius:14px;clip-path:polygon(0 0,100% 0,96% 100%,4% 100%);background:rgba(247,247,248,.16);backdrop-filter:blur(7px) saturate(.85);-webkit-backdrop-filter:blur(7px) saturate(.85);filter:none;will-change:transform}
+.folder-trigger{position:absolute;left:calc(var(--folder-x) + var(--folder-width) * .666667);top:calc(var(--folder-y) + var(--folder-height) * .786207);width:calc(var(--folder-width) * .155556);height:calc(var(--folder-height) * .137931);z-index:40;border:0;background:transparent;cursor:pointer;pointer-events:auto;border-radius:20px}
+.folder-trigger:focus-visible{outline:3px solid var(--c-accent);outline-offset:8px}
+.is-unfolding .folder-trigger{pointer-events:none;visibility:hidden}
+@media(max-width:640px){
+ .intro-experiment{height:calc(100svh + 430px)}
+ .intro-experiment .hero{top:var(--hero-top,calc(190px + 160 * var(--unit)));width:calc(100% - 32px)}
+ .bold-line--name{gap:calc(24 * var(--unit))}
+ .bold-avatar{width:calc(160 * var(--unit));height:calc(98 * var(--unit))}
+}
+@media(prefers-reduced-motion:reduce){
+ .intro-experiment{height:auto}.intro-experiment .hero{position:relative;top:auto;padding:72px 0 32px;opacity:1!important}
+ .intro-experiment .ui-gallery{height:auto}.intro-experiment .ui-gallery__sticky{position:relative;top:0}
+ .intro-experiment .ui-stage{height:auto!important;overflow-x:auto}.intro-experiment .ui-track{pointer-events:auto}
+ .folder-face,.folder-trigger{display:none}.intro-experiment .ui-card{position:relative;transform:none!important;overflow:hidden;flex:none}
+}
+
+.cases-title{font-size:clamp(36px,4.5vw,64px);font-weight:590;line-height:1.1;letter-spacing:-.025em;margin-top:64px;margin-bottom:-8px}
+@media(max-width:640px){.cases-title{margin-top:40px;margin-bottom:0}}
+
+/* Comfortable outer gutters; the hero position is measured from the viewport bottom. */
+:root{--container-gutter:clamp(32px,10.5vw,220px)}
+.container,.site-header .container,.intro-experiment .hero,.case-card__link{width:min(var(--container-max),calc(100% - 2 * var(--container-gutter)));margin-inline:auto}
+
+/* Keep the contacts pill clean after mouse activation. */
+.site-header .btn-light{border:0;box-shadow:none}
+.site-header .btn-light:focus:not(:focus-visible){outline:none}
+
+.site-header .header-name{display:block;margin-right:auto;text-align:left}
+.intro-experiment .ui-card{top:0}
+@media(max-width:640px){.site-header .header-name{font-size:16px;line-height:1.15;white-space:normal;max-width:130px;flex-shrink:0}.site-header .header-inner{gap:8px}.site-header .btn{font-size:16px;padding:6px 10px}.site-header .icon-arrow{width:22px}}
+
+/* Header from Figma 2539:1319, aligned to the shared page grid. */
+:root{--header-height:124px}
+.site-header .header-inner{padding-top:32px;padding-bottom:32px;gap:24px}
+.header-nav{display:flex;align-items:center;gap:48px;font-size:24px;line-height:28px;color:var(--c-secondary)}
+.header-nav a:hover{color:var(--c-primary)}
+.site-header .header-cv{background:var(--c-primary);color:#fff;padding:16px;gap:4px;font-size:24px;line-height:28px;flex-shrink:0}
+.header-cv img{width:28px;height:20px;flex:none}
+#cases-title,#skills,#contacts{scroll-margin-top:calc(var(--header-height) + 24px)}
+@media(max-width:640px){
+ :root{--header-height:108px}
+ .site-header .header-inner{padding-top:32px;padding-bottom:32px;gap:12px}
+ .header-nav{gap:12px;font-size:14px;line-height:20px}
+ .site-header .header-cv{font-size:14px;line-height:20px;padding:12px 10px;gap:4px}
+}
+@media(max-width:360px){.site-header .header-inner{flex-wrap:wrap;justify-content:space-between;gap:12px}:root{--header-height:140px}.header-nav{gap:16px}.site-header .header-cv{margin-left:auto}}
+
+@media(min-width:361px) and (max-width:400px){.site-header .header-inner{gap:8px}.header-nav{gap:10px;font-size:13px}.site-header .header-cv{font-size:13px}}
+
+/* Contact composition with the same pill silhouette and arrow as the header. */
+.contact-footer{background:var(--c-primary);color:var(--c-tertiary);padding:80px 0 32px;margin-top:64px}
+.contact-footer .container{gap:64px}
+.contact-footer__main{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:64px}
+.contact-footer__heading{font-size:clamp(44px,4.5vw,64px);font-weight:590;line-height:1.08;letter-spacing:-.025em}
+.contact-footer__heading span{color:var(--c-accent)}
+.contact-footer__links{display:flex;flex-direction:column;gap:16px;min-width:0}
+.contact-pill{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 32px;border-radius:1000px;background:color-mix(in srgb,var(--c-primary) 80%,var(--c-secondary));transition:background .2s ease,transform .2s ease}
+.contact-pill:hover{background:color-mix(in srgb,var(--c-primary) 55%,var(--c-secondary));transform:translateY(-2px)}
+.contact-pill:focus-visible{outline:2px solid var(--c-accent);outline-offset:5px}
+.contact-pill__text{display:flex;flex-direction:column;gap:8px;min-width:0}
+.contact-pill__label{font-size:16px;line-height:20px;color:var(--c-tag-gray)}
+.contact-pill__value{font-size:clamp(18px,1.8vw,24px);line-height:1.2;overflow-wrap:anywhere}
+.contact-pill__arrow{width:28px;height:20px;flex:none;transition:transform .2s ease}
+.contact-pill:hover .contact-pill__arrow{transform:translate(2px,-2px)}
+.contact-footer__bottom{display:flex;justify-content:space-between;gap:24px;font-size:16px;line-height:24px;color:var(--c-tag-gray);border-top:1px solid var(--c-secondary);padding-top:24px}
+@media(max-width:900px){.contact-footer__main{gap:32px}.contact-pill{padding:24px;gap:16px}}
+@media(max-width:640px){.contact-footer{padding:56px 0 24px;margin-top:40px}.contact-footer .container{gap:40px}.contact-footer__main{grid-template-columns:1fr;gap:32px}.contact-pill{padding:20px 24px;gap:12px}.contact-pill__value{font-size:17px}.contact-footer__bottom{flex-direction:column;gap:8px;font-size:14px;line-height:20px}}
+@media(prefers-reduced-motion:reduce){.contact-pill,.contact-pill__arrow{transition:none}.contact-pill:hover,.contact-pill:hover .contact-pill__arrow{transform:none}}
+
+/* Footer refinements use the existing 20/24px text scale. */
+:root{--contact-dark:var(--c-primary)}
+.site-header .header-cv,.site-header .header-cv:hover,.contact-footer{background-color:var(--contact-dark);opacity:1}
+.contact-footer{border-radius:48px 48px 0 0}
+@media(max-width:640px){.contact-footer{border-radius:32px 32px 0 0}}
+.contact-footer__main{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px}
+.contact-footer__bottom{border:0;padding-top:0;font-size:20px;line-height:24px}
+.contact-pill__label{font-size:24px;line-height:28px;color:var(--c-card-bg)}
+.contact-pill__value{font-size:24px;line-height:28px;min-width:0}
+.contact-pill__value:hover{color:var(--c-accent)}
+.contact-pill__value-row{display:flex;align-items:center;gap:8px;min-width:0}
+.contact-pill__arrow{width:42px;height:30px}
+.contact-pill__open{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;flex:none}
+.contact-copy{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;padding:6px;border:0;border-radius:50%;background:transparent;color:var(--c-card-bg);cursor:pointer;flex:none}
+.contact-copy:hover,.contact-copy[data-copied]{color:var(--c-accent)}
+.contact-copy:focus-visible,.contact-pill__open:focus-visible,.contact-pill__value:focus-visible{outline:2px solid var(--c-accent);outline-offset:4px}
+.contact-copy-status{min-height:24px;font-size:20px;line-height:24px;color:var(--c-card-bg)}
+@media(max-width:1000px){.contact-footer__main{grid-template-columns:1fr;gap:32px}.contact-footer__heading{font-size:clamp(44px,6vw,64px)}}
+@media(max-width:640px){.contact-footer__bottom{font-size:20px;line-height:24px}.contact-pill{padding:24px;gap:8px}.contact-pill__label,.contact-pill__value{font-size:20px;line-height:24px}.contact-pill__value-row{gap:4px}.contact-copy{width:32px;height:32px;padding:4px}.contact-pill__open{min-width:42px}}
+
+/* More breathing room around the footer content and larger contact actions. */
+.contact-footer{padding-bottom:64px}
+.contact-pill{padding:32px 48px}
+.contact-pill__open{min-width:64px;min-height:56px}
+.contact-pill__arrow{width:56px;height:40px}
+@media(max-width:640px){.contact-footer{padding-bottom:48px}.contact-pill{padding:28px 32px}.contact-pill__open{min-width:56px;min-height:56px}}
+
+/* Header pill dimensions supplied by the portfolio owner. */
+:root{--header-height:116px}
+.site-header .header-cv{width:215px;height:52px;padding:12px 16px;gap:12px;border-radius:100px;justify-content:center;font-size:24px;line-height:28px;letter-spacing:-.02em}
+.skills{align-items:stretch;gap:64px}
+.experience-title{font-size:clamp(36px,4.5vw,64px);font-weight:590;line-height:1.1;letter-spacing:-.025em;text-align:left}
+.contact-footer__main{align-items:start}
+.contact-pill{padding:24px 32px;gap:12px;border-radius:100px}
+@media(max-width:640px){
+ :root{--header-height:148px}
+ .site-header .header-inner{flex-wrap:wrap;gap:12px;height:auto;min-height:var(--header-height)}
+ .site-header .header-cv{margin-left:auto}
+ .header-nav{flex:1 0 100%;gap:24px}
+ .skills{gap:40px}
+ .contact-pill{padding:24px;gap:12px}
+}
+
+/* Slightly wider contact pills, with matching horizontal breathing room. */
+@media(min-width:1001px){.contact-footer__main{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}}
+@media(min-width:641px){.contact-pill{padding-inline:36px}}
+
+/* Contact pills match the supplied 489 × 102 Figma frame. */
+.contact-pill{position:relative;width:489px;max-width:100%;height:102px;padding:20px 42px;gap:12px;background:#34343C;border-radius:100px;align-self:flex-end}
+.contact-pill__text{gap:6px}
+.contact-copy{width:28px;height:28px;padding:2px}
+@media(max-width:1000px){.contact-pill{align-self:flex-start}}
+@media(max-width:640px){.contact-pill{height:auto;min-height:102px;padding:20px 24px}.contact-pill__open{min-width:44px}.contact-pill__arrow{width:42px;height:30px}}
+
+/* Two header actions share the supplied 362 × 60 frame. */
+:root{--header-height:124px}
+.header-contact-actions{display:flex;align-items:center;gap:8px;padding:0;width:362px;max-width:100%;height:60px;flex:none}
+.site-header .header-contact-actions .btn{display:flex;justify-content:center;align-items:center;height:60px;padding:12px;gap:8px;border-radius:100px;font-size:20px;line-height:24px;white-space:nowrap;margin:0;min-width:0}
+.site-header .header-contact-actions .header-cv{width:215px;flex:215 1 0}
+.site-header .header-resume{background:var(--c-primary);color:var(--c-tertiary);width:139px;flex:139 1 0}
+.header-contact-actions img{width:28px;height:20px;flex:none}
+@media(max-width:640px){:root{--header-height:156px}.header-contact-actions{margin-left:auto}.site-header .header-contact-actions .btn{font-size:18px;padding-inline:8px;gap:6px}}
+
+/* Updated header and contact typography. */
+.site-header .header-nav{font-size:20px;line-height:24px}
+.site-header .header-contact-actions .header-resume{background:#F1F1F3;color:#28282E}
+.contact-footer__heading{font-size:56px}
+.contact-pill{width:520px}
+.contact-pill__label,.contact-pill__value{font-size:20px;line-height:24px;color:#868689}
+.contact-copy{width:28px;height:28px;padding:4px;color:#868689}
+.contact-copy svg{width:20px;height:20px}
+@media(max-width:640px){:root{--header-height:160px}.site-header .header-nav{gap:24px}}
+
+/* Exact header action widths and 28px vertical spacing. */
+:root{--header-height:116px}
+.site-header .header-inner{padding-top:28px;padding-bottom:28px}
+.site-header .header-contact-actions .header-cv{width:228px;flex:0 0 228px}
+.site-header .header-contact-actions .header-resume{width:126px;flex:0 0 126px}
+.contact-pill__value{color:var(--c-tertiary)}
+@media(max-width:640px){
+ :root{--header-height:152px}
+ .site-header .header-contact-actions .header-cv{flex:228 1 0}
+ .site-header .header-contact-actions .header-resume{flex:126 1 0}
+}
+.contact-footer{--footer-secondary:#868689}
+.contact-pill__label,.contact-copy,.contact-footer__bottom,.contact-copy-status{color:var(--footer-secondary)}
+
+/* Header actions mirror the footer contact-card feedback. */
+.site-header .header-contact-actions .btn{transition:background-color .2s ease,transform .2s ease;opacity:1}
+@media(hover:hover){
+ .site-header .header-contact-actions .header-cv:hover{background:color-mix(in srgb,var(--c-primary) 55%,var(--c-secondary));transform:translateY(-2px)}
+ .site-header .header-contact-actions .header-resume:hover{background:color-mix(in srgb,#F1F1F3 85%,#868689);transform:translateY(-2px)}
+}
+.site-header .header-contact-actions .btn:active{transform:translateY(0) scale(.98)}
+.site-header .header-contact-actions .btn:focus-visible{outline:2px solid var(--c-accent);outline-offset:4px}
+.site-header .header-cv img{transition:transform .2s ease}
+@media(hover:hover){.site-header .header-cv:hover img{transform:translate(2px,-2px)}}
+@media(prefers-reduced-motion:reduce){
+ .site-header .header-contact-actions .btn,.site-header .header-cv img{transition:none}
+ .site-header .header-contact-actions .btn:hover,.site-header .header-contact-actions .btn:active,.site-header .header-cv:hover img{transform:none}
+}
+
+/* Light palette trial: gray canvas with white surfaces. */
+:root{--c-card-bg:#ffffff;--c-header-bg:rgba(241,241,243,.8)}
+body{background:#F1F1F3}
+.contact-footer{background:#F1F1F3;color:var(--c-primary)}
+.contact-pill{background:#FFFFFF}
+.contact-pill__value{color:var(--c-primary)}
+.site-header .header-contact-actions .header-cv,.site-header .header-contact-actions .header-resume{background:#FFFFFF;color:var(--c-primary)}
+.site-header .header-cv img{filter:brightness(0);opacity:.84}
+@media(hover:hover){
+ .site-header .header-contact-actions .header-cv:hover,.site-header .header-contact-actions .header-resume:hover,.contact-pill:hover{background:#e8e8ec}
+}
+
+/* Restore dark contact surfaces and give the header CTA content-led spacing. */
+.site-header .header-contact-actions .header-cv{background:#28282E;color:#fff;width:auto;flex:0 0 auto;padding-inline:16px;gap:12px}
+.header-contact-actions{width:auto}
+.site-header .header-cv img{filter:none;opacity:1}
+.contact-footer{background:#28282E;color:#fff}
+.contact-pill{background:#34343C}
+.contact-pill__value{color:#fff}
+@media(hover:hover){.site-header .header-contact-actions .header-cv:hover,.contact-pill:hover{background:color-mix(in srgb,#28282E 55%,#65626c)}}
+.project-card{width:min(var(--container-max),calc(100% - 2 * var(--container-gutter)));margin-inline:auto;display:grid;grid-template-columns:30.4% 69.6%;min-height:560px;border-radius:44px;background:#fff;overflow:hidden}
+.project-card__info{display:flex;flex-direction:column;justify-content:space-between;padding:40px 28px 40px 40px;gap:64px}
+.project-card__brand{font-size:24px;line-height:1.2;font-weight:650;margin:0}
+.project-card__summary{font-size:24px;line-height:1.35;font-weight:590;margin:0 0 24px}
+.project-card__soon{display:inline-flex;padding:16px 20px;border-radius:100px;background:#28282E;color:#fff;font-size:20px;line-height:24px}
+.project-card__cover{border-radius:44px;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:40px}
+.project-card__cover--data{background:radial-gradient(ellipse at 100% 0,#d9e9ff,transparent 70%),radial-gradient(ellipse at 0 100%,#ffe8de,transparent 65%),#f7f7fa}
+.analytics-preview{background:white;border-radius:28px;padding:24px;width:360px;max-width:100%;height:472px;display:flex;flex-direction:column;gap:20px;box-shadow:0 8px 40px #28282e05;font-size:16px}
+.analytics-preview__top{display:flex;justify-content:space-between;font-weight:590;gap:16px}
+.analytics-preview__top span{color:#868689}
+.analytics-preview__question{align-self:flex-end;border-radius:12px;background:#f1f1f3;padding:12px;font-size:14px}
+.analytics-preview p{margin:0}
+.analytics-preview__chart{display:flex;align-items:end;gap:12px;height:140px;padding:16px 8px;border-bottom:1px solid #f1f1f3}
+.analytics-preview__chart i{flex:1;background:#009dff;border-radius:5px 5px 0 0;height:40%}
+.analytics-preview__chart i:nth-child(2n){height:65%;background:#a0d9ff}.analytics-preview__chart i:nth-child(3n){height:80%}.analytics-preview__chart i:last-child{height:100%}
+.analytics-preview__input{margin-top:auto;border:1px solid #eee;border-radius:18px;padding:14px;display:flex;justify-content:space-between;align-items:center;color:#868689;font-size:14px}
+.analytics-preview__input b{background:#009dff;color:white;border-radius:8px;padding:5px 9px}
+.project-card__cover--abordio{background:#e6f6ff}
+.abordio-preview{width:100%;padding:16px;color:#28282E;display:flex;flex-direction:column;gap:48px}
+.abordio-preview>span{font-size:28px;font-weight:590}.abordio-preview strong{font-size:clamp(36px,4vw,56px);line-height:1.05;font-weight:590}
+.abordio-preview__booking{display:flex;justify-content:space-between;gap:16px;background:#fff;padding:24px;border-radius:24px;font-size:20px}.abordio-preview__booking b{color:#009dff}
+@media(max-width:900px){.project-card{grid-template-columns:1fr;min-height:0}.project-card__info{padding:28px;gap:32px}.project-card__summary{font-size:24px}.project-card__cover{min-height:400px;padding:28px}.project-card__brand{font-size:24px}}
+@media(max-width:640px){.header-contact-actions{width:100%}.site-header .header-contact-actions .header-cv{flex:228 1 0;padding-inline:12px}.project-card{border-radius:28px}.project-card__cover{border-radius:28px;padding:20px}.analytics-preview{padding:18px;font-size:14px;height:420px}.analytics-preview__top{gap:8px}.abordio-preview{padding:0}.abordio-preview__booking{font-size:16px;padding:18px}}
+
+/* Case layout inspired by the new reference: gray stage and white content panel. */
+:root{--c-card-bg:#F7F7F8;--c-header-bg:rgba(255,255,255,.8)}
+body{background:#FFFFFF}
+.project-card{display:flex;flex-direction:column;padding:8px;border-radius:48px;min-height:0;background:#F7F7F8;gap:0}
+.project-card__cover{border-radius:40px;background:#F7F7F8;height:auto;min-height:0;aspect-ratio:12/7;padding:48px 40px 0;align-items:flex-start}
+.project-card__cover--data{overflow:hidden}
+.analytics-preview{width:440px;height:510px;flex:none;box-shadow:0 8px 40px #28282e0a}
+.project-card__cover--abordio{align-items:center;padding:48px;}
+.abordio-preview{max-width:580px;padding:32px;background:#fff;border-radius:32px;gap:40px;box-shadow:0 8px 40px #28282e0a}
+.abordio-preview__booking{background:#F7F7F8}
+.project-card__content{background:#fff;border-radius:40px;padding:32px;display:flex;flex-direction:column;gap:24px;position:relative}
+.project-card__tags{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0}
+.project-card__tags li{display:flex;align-items:center;height:32px;padding:0 12px;background:#F7F7F8;border-radius:100px;font-size:16px;line-height:24px}
+.project-card__bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:16px}
+.project-card__copy{min-width:0;display:flex;flex-direction:column;gap:8px}
+.project-card__copy h3{margin:0;font-size:28px;font-weight:590;line-height:1.1;letter-spacing:-.02em}
+.project-card__copy p{margin:0;font-size:20px;line-height:1.4;color:var(--c-secondary)}
+.project-card__open{display:flex;align-items:center;justify-content:center;flex:0 0 72px;width:72px;height:48px;background:#28282E;color:#fff;border:0;border-radius:100px;padding:0;opacity:1;cursor:default}
+@media(max-width:640px){.project-card{padding:8px;border-radius:32px}.project-card__cover{border-radius:24px;aspect-ratio:1/1;min-height:300px;padding:24px 20px 0}.analytics-preview{width:100%;height:370px;padding:16px;gap:14px}.analytics-preview__chart{height:90px}.project-card__cover--abordio{padding:20px}.abordio-preview{padding:20px;gap:24px;border-radius:24px}.abordio-preview strong{font-size:30px}.abordio-preview__booking{padding:12px;font-size:14px}.project-card__content{border-radius:24px;padding:20px;gap:20px}.project-card__copy h3{font-size:24px}.project-card__copy p{font-size:18px}.project-card__bottom{align-items:flex-start}.project-card__open{flex-basis:52px;width:52px}}
+.site-header .header-contact-actions .header-resume{background:#F1F1F3}
+
+/* Compact case covers without changing the content panel. */
+.project-card__cover{aspect-ratio:auto;height:400px;padding:28px 32px 0}
+.analytics-preview{height:390px;width:360px;padding:20px;gap:14px}
+.analytics-preview__chart{height:100px}
+.project-card__cover--abordio{padding:28px 32px}
+.abordio-preview{gap:24px;padding:24px;max-width:520px}
+.abordio-preview strong{font-size:44px}
+@media(max-width:640px){.project-card__cover{height:280px;min-height:0;padding:20px 16px 0}.analytics-preview{height:320px;width:100%;padding:16px;gap:12px}.analytics-preview__chart{height:70px}.project-card__cover--abordio{padding:20px 16px}.abordio-preview{padding:20px;gap:20px}.abordio-preview strong{font-size:30px}}
+
+/* Horizontal case composition: caption left, preview right. */
+@media(min-width:901px){
+ .project-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);height:440px;gap:8px}
+ .project-card__content{grid-column:1;grid-row:1;padding:32px;justify-content:space-between;min-width:0}
+ .project-card__cover{grid-column:2;grid-row:1;width:100%;height:424px;padding:28px 24px 0}
+ .project-card__bottom{flex-direction:column;align-items:flex-start;gap:24px}
+ .project-card__open{flex:0 0 48px}
+ .project-card__cover--abordio{padding:28px 24px}
+ .abordio-preview strong{font-size:40px}
+}
+
+/* Taller horizontal cards and the existing oval arrow icon. */
+.project-card__open img{display:block;width:42px;height:30px}
+@media(min-width:901px){.project-card{height:520px}.project-card__cover{height:504px;align-items:center;padding:32px}.analytics-preview{height:430px}.project-card__cover--abordio{padding:32px}}
+/* The folder remains clickable across its front, without a visible action icon. */
+.folder-trigger{left:calc(var(--folder-x) + var(--folder-width) * .1167);top:calc(var(--folder-y) + var(--folder-height) * .47586);width:calc(var(--folder-width) * .7556);height:calc(var(--folder-height) * .49655)}
+
+/* Taller case composition and unframed arrow glyphs. */
+@media(min-width:901px){.project-card{height:600px}.project-card__cover{height:584px}.analytics-preview{height:470px}}
+@media(max-width:900px){.project-card__cover{height:440px}}
+@media(max-width:640px){.project-card__cover{height:320px}}
+.project-card__open img{width:28px;height:28px}
+.contact-pill__arrow{width:32px;height:32px}
+
+/* Equal text insets in the header, optically balanced footer arrows. */
+.site-header .header-contact-actions .header-cv,.site-header .header-contact-actions .header-resume{width:auto;flex:0 0 auto;padding-inline:20px;letter-spacing:0}
+.header-contact-actions{width:auto}
+.contact-pill{width:560px;padding-left:42px;padding-right:28px}
+.contact-pill__open{width:44px;min-width:44px}
+.project-card__open{width:96px;height:56px;flex:0 0 96px}
+.project-card__open img{width:36px;height:36px}
+@media(min-width:901px){.project-card__open{flex-basis:56px}}
+@media(max-width:640px){.contact-pill{padding-left:30px;padding-right:16px}.header-contact-actions{max-width:100%}.site-header .header-contact-actions .header-cv,.site-header .header-contact-actions .header-resume{padding-inline:18px}.project-card__open{width:80px;height:48px;flex-basis:80px}}
+
+/* Figma logo assets retain natural proportions and share a 28px visible height. */
+.project-logo{height:28px;flex:none;position:relative}
+.project-logo__original{display:flex;align-items:center;transform-origin:top left;width:max-content}
+.project-logo__original img{display:block;max-width:none;flex:none}
+.project-logo--datalens{width:237.76px;max-width:100%}
+.project-logo--datalens .project-logo__original{gap:3.722px;transform:scale(1.253777)}
+.project-logo--abordio{width:122.87px}
+.project-logo--abordio .project-logo__original{transform:scale(.867797)}
+@media(max-width:640px){.project-logo{height:24px}.project-logo--datalens{width:203.8px}.project-logo--datalens .project-logo__original{transform:scale(1.074666)}.project-logo--abordio{width:105.32px}.project-logo--abordio .project-logo__original{transform:scale(.743827)}}
+
+/* Case actions use the same hover language as the header and contact cards. */
+.site-header{margin-inline:0;border-radius:0}
+.site-header .container{width:min(var(--container-max),calc(100% - 2 * var(--container-gutter)))}
+.project-card__open{transition:background-color .2s ease,transform .2s ease}
+.project-card__open img{transition:transform .2s ease}
+@media(hover:hover){
+ .project-card__open:hover{background:color-mix(in srgb,#28282E 55%,#65626c);transform:translateY(-2px)}
+ .project-card__open:hover img{transform:translate(2px,-2px)}
+}
+.project-card__open:not(:disabled):active{transform:translateY(0) scale(.98)}
+.project-card__open:focus-visible{outline:2px solid var(--c-accent);outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.project-card__open,.project-card__open img{transition:none}.project-card__open:hover,.project-card__open:hover img,.project-card__open:not(:disabled):active{transform:none}}
+
+/* Shared spacing scale: 4px base, with 8/16/24/32/48/64px steps. */
+:root{--space-unit:4px;--space-tight:calc(2 * var(--space-unit));--space-item:calc(4 * var(--space-unit));--space-group:calc(6 * var(--space-unit));--panel-padding:calc(8 * var(--space-unit));--panel-radius:calc(12 * var(--space-unit));--section-content-gap:calc(16 * var(--space-unit))}
+.project-card{border-radius:var(--panel-radius)}
+.project-card__content{padding:var(--panel-padding);border-radius:calc(var(--panel-radius) - var(--space-tight));gap:var(--space-group)}
+.contact-footer{border-radius:var(--panel-radius) var(--panel-radius) 0 0}
+.header-contact-actions,.project-card__copy,.contact-pill__text,.contact-pill__value-row{gap:var(--space-tight)}
+.contact-footer__links{gap:var(--space-item)}
+.cases,.skills{gap:var(--section-content-gap)}
+.cases-title{margin-bottom:0}
+@media(max-width:640px){:root{--panel-padding:calc(5 * var(--space-unit));--panel-radius:calc(8 * var(--space-unit));--section-content-gap:calc(10 * var(--space-unit))}}
+
+/* The reveal has a fixed scroll footprint; cards may rise above the short ribbon stage. */
+.intro-experiment{overflow:clip}
+.intro-experiment .ui-gallery__sticky{overflow:visible}
+
+/* Shared typography for section headings. */
+.cases-title,.experience-title,.contact-footer__heading{font-size:clamp(36px,4.5vw,64px);font-weight:590;line-height:1.1;letter-spacing:-.025em}
+
+/* Slimmer header actions; keep the established horizontal insets. */
+.header-contact-actions,.site-header .header-contact-actions .btn{height:56px}
+
+/* Text labels size case actions by their content. */
+.project-card__open{width:max-content;max-width:100%;padding-inline:20px;white-space:nowrap;font-family:inherit;font-size:20px;line-height:24px;flex:0 0 auto}
+
+/* Edge-to-edge experience rail, with its first card on the page grid. */
+.experience{width:100%;max-width:none}
+.experience__heading{display:flex;align-items:center}
+.experience__track{--rail-inset:max(var(--container-gutter),calc((100% - var(--container-max))/2));display:flex;gap:48px;width:100%;padding-inline:var(--rail-inset);overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scroll-padding-inline:var(--rail-inset);scrollbar-width:none;cursor:grab;touch-action:pan-x pan-y}
+.experience__track::-webkit-scrollbar{display:none}
+.experience__track.is-dragging{cursor:grabbing;scroll-snap-type:none;user-select:none}
+.experience-card{flex:0 0 600px;padding:32px;border-radius:40px;background:#F7F7F8;scroll-snap-align:start;display:flex;flex-direction:column;gap:32px;min-width:0;text-align:left}
+.experience-card__header{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.experience-card h3{font-size:24px;line-height:1.4;font-weight:590;margin:0;letter-spacing:0}
+.experience-card__role{font-weight:400}
+.experience-card__period{display:block;font-size:20px;line-height:1.4;margin:0;color:#868689}
+.experience-card__body{display:flex;flex-direction:column;gap:32px;font-size:20px;line-height:1.4}
+.experience-card h4{font:inherit;font-weight:590;margin:0 0 12px}
+.experience-card__body p{margin:0}
+.experience-card ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px}
+.experience__track:focus-visible{outline:2px solid #009DFF;outline-offset:-2px}
+@media(max-width:640px){.experience-card{flex-basis:calc(100vw - 2 * var(--container-gutter));padding:24px;border-radius:32px;gap:24px}.experience__track{gap:32px}.experience-card h3{font-size:20px}.experience-card__body,.experience-card__period{font-size:18px}}
+
+@media(max-width:640px){.experience-card__body{gap:24px}.experience-card h4{margin-bottom:8px}.experience-card ul{gap:12px}}
+
+/* A page-scroll driven rail: the section releases naturally at either end. */
+.experience{display:block}
+.experience__sticky{display:flex;flex-direction:column;gap:var(--section-content-gap)}
+.experience.is-pinned .experience__sticky{position:sticky;top:var(--experience-top)}
+.experience.is-pinned .experience__track{scroll-snap-type:none;scroll-behavior:auto}
+.experience-card h4{margin-bottom:8px}
+.experience-card ul{gap:8px}
+@media(max-width:640px){.experience-card h4{margin-bottom:4px}.experience-card ul{gap:8px}}
+
+/* Avoid browser snap animations competing with wheel damping. */
+.experience__track{scroll-snap-type:none;scroll-behavior:auto;overflow-anchor:none}
+.experience{overflow-anchor:none}
+
+/* Semantic spacing: one value per relationship across the portfolio. */
+:root{
+ --space-related:8px;
+ --space-content-group:24px;
+ --space-card-gap:32px;
+ --section-content-gap:48px;
+ --space-section:96px;
+ --panel-padding:32px;
+ --space-button-inline:20px;
+ --space-footer-inset:64px;
+}
+/* Equal gaps within text groups and between independent content groups. */
+.project-card__copy,.experience-card__header,.experience-card ul,
+.contact-pill__text,.contact-pill__value-row,.header-contact-actions{gap:var(--space-related)}
+.experience-card h4{margin-bottom:var(--space-related)}
+.project-card__content,.project-card__bottom,.experience-card,.experience-card__body{gap:var(--space-content-group)}
+.project-card__content,.experience-card{padding:var(--panel-padding)}
+/* Separate the heading-to-content gap from the gap between sibling cards. */
+.cases,.experience__track,.contact-footer__links{gap:var(--space-card-gap)}
+.cases-title{margin-bottom:calc(var(--section-content-gap) - var(--space-card-gap))}
+.experience__sticky,.contact-footer__main,.contact-footer .container{gap:var(--section-content-gap)}
+.cases{padding-bottom:0}
+.experience{padding-top:var(--space-section);padding-bottom:0}
+.contact-footer{margin-top:var(--space-section);padding-block:var(--space-footer-inset)}
+.contact-copy-status:empty{display:none}
+.site-header .header-contact-actions .header-cv,
+.site-header .header-contact-actions .header-resume,
+.project-card__open{padding-inline:var(--space-button-inline)}
+@media(min-width:901px){.experience-card{flex-basis:calc((100% - var(--space-card-gap)) / 2)}}
+@media(max-width:900px){:root{--space-card-gap:24px}}
+@media(max-width:640px){
+ :root{--section-content-gap:32px;--space-section:64px;--panel-padding:24px;--space-button-inline:16px;--space-footer-inset:48px}
+}
+
+/* Restore the original panels; compact action corners match their inset. */
+:root{--panel-radius:48px;--panel-inner-radius:40px;--experience-radius:40px;--action-radius:24px}
+.project-card{border-radius:var(--panel-radius)}
+.project-card__content,.project-card__cover{border-radius:var(--panel-inner-radius)}
+.experience-card{border-radius:var(--experience-radius)}
+.contact-footer{border-radius:var(--panel-radius) var(--panel-radius) 0 0}
+.site-header .header-contact-actions .btn,.project-card__open{border-radius:var(--action-radius)}
+@media(max-width:640px){:root{--panel-radius:32px;--panel-inner-radius:24px;--experience-radius:32px}}
+
+/* Compact actions and a clear separation between contacts and footer metadata. */
+:root{--action-height:48px;--contact-card-gap:16px;--footer-meta-gap:96px}
+.header-contact-actions,.site-header .header-contact-actions .btn,.project-card__open{height:var(--action-height)}
+.site-header .header-contact-actions .btn{padding-block:0}
+.contact-footer__links{gap:var(--contact-card-gap)}
+.contact-footer .container{gap:var(--footer-meta-gap)}
+@media(max-width:640px){:root{--action-height:44px;--footer-meta-gap:64px}}
+
+/* Experience text shares one edge, with a separate 44px logo column. */
+.experience-card{--experience-icon-gap:24px;--experience-text-inset:calc(44px + var(--experience-icon-gap))}
+.experience-card__header{display:block;position:relative;padding-left:0}
+.experience-card__header--with-icon{padding-left:var(--experience-text-inset)}
+.experience-card__icon{position:absolute;top:0;left:0;display:block;width:44px;height:44px;object-fit:contain}
+.experience-card__heading-copy{display:flex;flex-direction:column;gap:var(--space-related);min-width:0}
+.experience-card h3{min-height:0}
+.experience-card__role{display:inline}
+.experience-card__period{min-height:28px}
+.experience-card__body{padding-left:0}
+.contact-footer{margin-top:calc(var(--space-section) + var(--space-content-group))}
+:root{--footer-meta-gap:128px}
+.site-header .header-contact-actions .header-resume{background:#28282E;color:#FFFFFF}
+@media(hover:hover){.site-header .header-contact-actions .header-resume:hover{background:color-mix(in srgb,#28282E 55%,#65626c)}}
+@media(max-width:640px){
+ :root{--footer-meta-gap:96px}
+ .experience-card{--experience-icon-gap:16px}
+ .experience-card h3{min-height:0}
+}
+
+/* Restore full-width experience copy; company and role share the heading line. */
+.project-card__copy h3,.experience-card h3{font-size:24px}
+@media(min-width:901px){.experience-card{flex-basis:max(560px,calc((100% - var(--space-card-gap)) / 2))}}
+.contact-footer{padding-top:calc(var(--space-footer-inset) + 16px)}
+
+/* Header insets are exactly 20px above and below its content. */
+:root{--header-height:88px}
+.site-header .header-inner{height:auto;min-height:0;padding-block:20px}
+@media(max-width:640px){:root{--header-height:120px}}
+
+/* Align each body with its own heading; reserve the logo column only where present. */
+.experience-card__header--with-icon + .experience-card__body{padding-left:var(--experience-text-inset)}
+.experience-card__heading-copy{gap:4px}
+
+/* Three real app screens in slim phone frames, matching the reference's gentle zoom. */
+.project-card__cover--abordio{display:flex;align-items:center;justify-content:center;padding:24px;overflow:hidden;background:#F7F7F8}
+.abordio-phones{position:relative;width:min(78%,541px);aspect-ratio:541/480;flex:none;transform:scale(1);transition:transform 450ms cubic-bezier(.2,.7,.2,1)}
+.abordio-phone{position:absolute;width:36.5%;padding:5px;border:1px solid #77777c;border-radius:32px;background:#171719;box-shadow:inset 0 0 0 1px #b7b7ba,0 10px 22px #28282e20;overflow:hidden}
+.abordio-phone img{display:block;width:100%;height:auto;aspect-ratio:375/812;object-fit:contain;border-radius:26px;user-select:none}
+.abordio-phone--left{left:0;top:10%;z-index:1}
+.abordio-phone--right{right:0;top:10%;z-index:1}
+.abordio-phone--front{left:28.75%;top:0;width:42.5%;z-index:2}
+@media(hover:hover) and (pointer:fine){.project-card:has(.abordio-phones):hover .abordio-phones{transform:scale(1.04)}}
+@media(max-width:900px){.project-card__cover--abordio{height:auto;min-height:0;padding:32px 24px}}
+@media(max-width:640px){.project-card__cover--abordio{padding:24px 16px}.abordio-phone{padding:3px;border-radius:19px}.abordio-phone img{border-radius:15px}}
+@media(prefers-reduced-motion:reduce){.abordio-phones{transition:none}.project-card:has(.abordio-phones):hover .abordio-phones{transform:none}}
+
+.project-card__cover--abordio{padding:0}
+@media(max-width:900px){.project-card__cover--abordio{padding-block:40px}}
+
+/* More breathing room between case cards. */
+.cases > .project-card + .project-card{margin-top:16px}
+@media(max-width:900px){.cases > .project-card + .project-card{margin-top:8px}}
+
+/* Light contact footer, shared across portfolio and case pages. */
+.site-footer.contact-footer{background:#fff;color:#28282E}
+.contact-footer .contact-footer__heading{color:#28282E}
+.contact-footer .contact-footer__heading span{color:var(--c-accent)}
+.contact-footer .contact-pill{background:#F7F7F8}
+.contact-footer .contact-pill__value{color:#28282E}
+.contact-footer .contact-pill__label,.contact-footer .contact-copy,.contact-footer .contact-footer__bottom,.contact-footer .contact-copy-status{color:#868689}
+@media(hover:hover){.contact-footer .contact-pill:hover{background:#F1F1F3}.contact-footer .contact-pill__value:hover,.contact-footer .contact-copy:hover{color:var(--c-accent)}}
+.contact-footer .contact-copy[data-copied]{color:var(--c-accent)}

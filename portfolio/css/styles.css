@@ -1,0 +1,910 @@
+/* ===== Fonts ===== */
+/* SF Pro Display — self-hosted, чтобы шрифт был одинаковым на всех устройствах.
+   Начертания заявлены ровно под используемые веса (400 / 510 / 590). */
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/SF-Pro-Display-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 510;
+  font-display: swap;
+  src: url("../assets/fonts/SF-Pro-Display-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 590;
+  font-display: swap;
+  src: url("../assets/fonts/SF-Pro-Display-Semibold.woff") format("woff");
+}
+
+/* ===== Variables ===== */
+:root {
+  --c-primary: #28282e;
+  --c-secondary: #65626c;
+  --c-tertiary: #ffffff;
+  --c-accent: #009dff;
+  --c-accent-bg: #e6f6ff;
+  --c-tag-gray: #878796;
+  --c-card-bg: #f7f7f8;
+  --c-bullet-soft: #757585;
+  --c-header-bg: rgba(255, 255, 255, 0.8);
+
+  --font-main: "SF Pro Display", -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-decorative: "Bungee Shade", var(--font-main);
+
+  --container-max: 1440px;
+  --container-gutter: 20px;
+
+  --header-height: clamp(64px, 8vw, 84px);
+}
+
+/* ===== Reset ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--c-primary);
+  background: #ffffff;
+  letter-spacing: 0; /* 0% трекинг по всему проекту */
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Контентная область 1440px по центру; на 1920px по краям остаётся ~240px.
+   На узких экранах — минимальный отступ container-gutter по бокам. */
+.container {
+  width: min(var(--container-max), calc(100% - 2 * var(--container-gutter)));
+  margin-inline: auto;
+}
+
+/* ===== Header ===== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* Glass: фон #FFFFFF 80% + лёгкий frost (≈4), без линии снизу */
+  background: var(--c-header-bg);
+  backdrop-filter: blur(4px) saturate(1.6);
+  -webkit-backdrop-filter: blur(4px) saturate(1.6);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: var(--header-height);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.header-name {
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+}
+
+/* ===== Buttons & tags ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 24px;
+  line-height: 28px;
+  white-space: nowrap;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-accent {
+  background: var(--c-accent);
+  color: var(--c-tertiary);
+}
+
+.btn-light {
+  background: var(--c-accent-bg);
+  color: var(--c-accent);
+}
+
+.icon-arrow {
+  color: currentColor;
+}
+
+/* Бейдж: SF Pro Regular 20 / 24, spacing 0, отступы 12×4, не тянется на всю ширину */
+.tag {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--c-tertiary);
+  white-space: nowrap;
+}
+
+.tag-accent {
+  background: var(--c-accent);
+  border-radius: 100px;
+  padding: 4px 8px;
+}
+
+.tag-gray {
+  background: #E4E4E7;
+  color: #28282E;
+}
+
+/* ===== Hero ===== */
+/* Figma "Headline": высота 385px, pt 72 / pb 96, gap 24 */
+.hero {
+  padding-top: clamp(40px, 5vw, 72px);
+  padding-bottom: clamp(48px, 6vw, 96px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.hero-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+  font-weight: 510; /* SF Pro Medium */
+  font-size: clamp(32px, 5.5vw, 64px);
+  line-height: 1.0625; /* 68/64 */
+  letter-spacing: 0;
+  max-width: 950px;
+}
+
+.hero-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px 12px;
+  flex-wrap: wrap;
+  white-space: nowrap;
+}
+
+/* «дизайнер» + кольца-иконка — единый блок, который переносится целиком */
+.hero-rings-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.accent {
+  color: var(--c-accent);
+}
+
+/* Тире-картинка вместо текстового «—» (w93 h68 по макету) */
+.hero-dash {
+  width: clamp(52px, 4.8vw, 93px);
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.avatar {
+  width: clamp(56px, 6vw, 100px);
+  height: clamp(40px, 4.3vw, 72px);
+  border-radius: 1000px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* Кольца после «дизайнер» (w50 h60 по макету) */
+.hero-rings {
+  width: clamp(28px, 3vw, 50px);
+  height: auto;
+  display: inline-block;
+  align-self: center;
+}
+
+/* На десктопе — тонкая иконка, жирная скрыта (на мобилке наоборот) */
+.hero-rings--bold {
+  display: none;
+}
+
+/* SF Pro 40 / line-height 44 (≈1.1). На широком экране — в одну строку */
+.hero-subtitle {
+  font-size: clamp(18px, 3vw, 40px);
+  line-height: 1.1;
+  color: var(--c-secondary);
+}
+
+@media (min-width: 1240px) {
+  .hero-subtitle {
+    white-space: nowrap;
+  }
+}
+
+/* ===== Cases ===== */
+/* Расстояние между карточками 72px; до первой карточки — 96px (padding-bottom hero) */
+.cases {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding-bottom: clamp(48px, 6vw, 96px);
+}
+
+.case-card__link {
+  display: block;
+  /* Карточка ровно 1400px по макету */
+  width: min(1400px, calc(100% - 2 * var(--container-gutter)));
+  margin-inline: auto;
+}
+
+/* Медиа-контейнер карточки: 1400×728, фон secondary, скругление 32 */
+.case-card__media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1400 / 728;
+  background: var(--c-card-bg);
+  border-radius: 32px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.case-card__link:hover .case-card__media {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(40, 40, 46, 0.07);
+}
+
+/* Бейдж «Смотреть кейс/UI», следующий за курсором на карточке */
+.cursor-cta {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  padding: 6px 16px;
+  border-radius: 100px;
+  background: var(--c-accent);
+  color: var(--c-tertiary);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, 18px);
+  transition: opacity 0.15s ease;
+}
+
+.cursor-cta.is-visible {
+  opacity: 1;
+}
+
+/* На тач-устройствах бейдж под курсор не нужен */
+@media (hover: none) {
+  .cursor-cta {
+    display: none;
+  }
+}
+
+.case-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Бейджи внутри карточки, сверху слева на 32px, между бейджами 0 */
+.case-card__tags {
+  position: absolute;
+  top: clamp(16px, 2.2vw, 32px);
+  left: clamp(16px, 2.2vw, 32px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  max-width: calc(100% - 64px);
+}
+
+/* Принудительный перенос «Возвращаемость» на вторую строку (gap 0) */
+.tags-break {
+  flex-basis: 100%;
+  width: 100%;
+  height: 0;
+}
+
+/* Подпись под карточкой: отступ 24px, заголовок↔подзаголовок 8px */
+.case-card__text {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* SF Pro Semibold 40/44 */
+.case-card__title {
+  font-size: clamp(24px, 4vw, 40px);
+  font-weight: 590;
+  line-height: 1.1; /* 44/40 */
+  letter-spacing: 0;
+}
+
+/* SF Pro Regular 24/28 */
+.case-card__desc {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.1667; /* 28/24 */
+  color: var(--c-secondary);
+}
+
+/* ===== Skills ===== */
+.skills {
+  padding-top: clamp(48px, 8vw, 96px);
+  padding-bottom: clamp(48px, 8vw, 96px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(32px, 5vw, 52px);
+}
+
+/* Десктоп: суммарный отступ между кейсами и скиллами — ровно 96px
+   (padding-bottom кейсов + padding-top скиллов давали ~192px).
+   На мобилке остаётся базовые clamp(48)+clamp(48) ≈ 96px. */
+@media (min-width: 641px) {
+  .cases {
+    padding-bottom: 0;
+  }
+  .skills {
+    padding-top: 96px;
+  }
+}
+
+.section-title {
+  font-size: clamp(32px, 5.5vw, 64px);
+  font-weight: 510; /* SF Pro Medium */
+  line-height: 1.0625; /* 68/64 */
+  letter-spacing: 0;
+  text-align: center;
+}
+
+/* Декоративный марк после «скиллы» — стоит как запятая: низко, хвостиком ниже базовой линии.
+   Сам знак 31×34; в PNG сверху прозрачный фон, из-за чего читается как запятая. */
+.title-mark {
+  width: 0.484em;  /* 31px при заголовке 64px */
+  height: 0.531em; /* 34px при заголовке 64px */
+  display: inline-block;
+  vertical-align: baseline;
+  transform: translateY(0.22em);
+  margin: 0 0.14em 0 0.02em;
+}
+
+/* Две колонки: левая (Hard+Soft, Опыт) ~839, правая (Образование+Курсы) ~537 */
+.skills-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 839fr) minmax(0, 537fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.skills-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.skills-card {
+  background: var(--c-card-bg);
+  border-radius: 32px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Плашка с двумя колонками Hard | Soft внутри */
+.skills-card--duo {
+  flex-direction: row;
+  gap: 40px;
+}
+
+.skills-group {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Высокая плашка Образование + Курсы (тянется на всю высоту левой колонки) */
+.skills-card--edu {
+  height: 100%;
+  gap: 40px;
+}
+
+/* Копия v2: карточка «Опыт» растягивается по высоте, чтобы низ левой колонки
+   совпал с блоком образования; свободное место уходит вниз карточки.
+   Только десктоп (на мобилке сетка в одну колонку — выравнивание не нужно). */
+@media (min-width: 641px) {
+  .skills-card--exp {
+    flex: 1;
+  }
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Пункт списка: SF Pro Regular 24 / 28 */
+.skills-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: var(--c-secondary);
+}
+
+/* Буллет-иконка 28×28 */
+.bullet {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.bullet-accent {
+  background-image: url("../assets/img/bullet-hard.png");
+}
+
+.bullet-gray {
+  background-image: url("../assets/img/bullet-soft.png");
+}
+
+.skills-card__tags-row {
+  display: flex;
+  gap: 0;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Заголовок опыта: Semibold 24/28; должность: Regular 24/28 */
+.experience-item__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 590;
+  letter-spacing: 0;
+}
+
+.experience-item__role {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: var(--c-secondary);
+}
+
+.edu-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.edu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.edu-item__date {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: var(--c-secondary);
+}
+
+/* Заголовок: Semibold 24/28; отступ от года — 12 */
+.edu-item__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 590;
+  letter-spacing: 0;
+  margin-top: 12px;
+}
+
+/* Подзаголовок: Regular 24/28; отступ от заголовка — 8 */
+.edu-item__place {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: var(--c-secondary);
+  margin-top: 8px;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  padding-top: 32px;
+}
+
+.site-footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Плавающая кнопка «Вверх» — фиксирована, в правом поле за контентной областью (24px),
+   появляется при скролле от начала страницы */
+.scroll-top {
+  position: fixed;
+  bottom: 40px;
+  /* правый край контентной области = 50% + половина 1440; кнопка на 24px правее него */
+  left: calc(50% + var(--container-max) / 2 + 24px);
+  z-index: 90;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 4px 4px 12px;
+  border: none;
+  border-radius: 100px;
+  background: var(--c-accent-bg);
+  color: var(--c-accent);
+  font-family: inherit;
+  font-size: 24px;
+  cursor: pointer;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+.scroll-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-top:hover {
+  opacity: 0.85;
+}
+
+.scroll-top .icon-arrow-up {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Когда контентная область упирается в края экрана — прижимаем кнопку к правому краю */
+@media (max-width: 1560px) {
+  .scroll-top {
+    left: auto;
+    right: 24px;
+  }
+}
+
+.footer-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding-bottom: clamp(48px, 8vw, 96px);
+}
+
+/* CV в футере — по нижней границе текста контактов */
+.footer-row > .btn {
+  align-self: flex-end;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(24px, 4vw, 64px);
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Заголовки в футере: SF Pro 40 / 44 */
+.footer-contact__value {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 590; /* semibold */
+  letter-spacing: 0;
+}
+
+.footer-contact__value--link:hover {
+  color: var(--c-accent);
+}
+
+/* Подзаголовки в футере: SF Pro 24 / 28 */
+.footer-contact__label {
+  font-size: 24px;
+  line-height: 1.1667; /* 28/24 */
+  letter-spacing: 0;
+  color: var(--c-secondary);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .header-name {
+    display: none;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Мобильная версия ===== */
+@media (max-width: 640px) {
+  /* Боковые поля сетки — 16px */
+  :root {
+    --container-gutter: 16px;
+  }
+
+  /* ---- Типографика ---- */
+  /* Герой — по центру */
+  .hero {
+    align-items: center;
+    text-align: center;
+  }
+  /* Крупные заголовки страницы: 32/36 semibold, по центру */
+  .hero-title {
+    gap: 2px 12px;
+    justify-content: center;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 590;
+  }
+
+  /* Длинные фразы заголовка переносятся, а не вылезают за экран */
+  .hero-line {
+    white-space: normal;
+  }
+  /* Картинки в заголовке — компактнее под 32px текст */
+  .avatar {
+    width: 44px;
+    height: 32px;
+  }
+  .hero-dash {
+    width: 40px;
+  }
+  .hero-rings {
+    width: 24px;
+  }
+  /* На мобилке — жирная иконка, тонкая скрыта */
+  .hero-rings--thin {
+    display: none;
+  }
+  .hero-rings--bold {
+    display: inline-block;
+  }
+
+  /* Меньше расстояние между бейджем и текстом в плашках */
+  .skills-group {
+    gap: 16px;
+  }
+  .edu-block {
+    gap: 16px;
+  }
+  .section-title {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 590;
+  }
+
+  /* Подзаголовки и основной текст: 20/24 */
+  .hero-subtitle,
+  .case-card__desc,
+  .skills-list li,
+  .experience-item__title,
+  .experience-item__role,
+  .edu-item__title,
+  .edu-item__place,
+  .edu-item__date,
+  .footer-contact__value,
+  .footer-contact__label {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* Подписи кейсов: 24/28 semibold */
+  .case-card__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  /* Кнопки и мелкий UI: 20/24 regular */
+  .btn,
+  .logo-text,
+  .scroll-top {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* Бейджи: 16/20 regular */
+  .tag {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  /* Иконки-буллеты в списках: 24×24 */
+  .bullet {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* ---- Карточки: скругление 24, отступы 24 ---- */
+  .skills-card {
+    border-radius: 24px;
+    padding: 24px;
+    gap: 16px;
+  }
+  .skills-card--duo {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .skills-card--edu {
+    gap: 32px;
+  }
+  /* Единый отступ 16px между всеми плашками (Hard/Soft, Опыт, Образование) */
+  .skills-grid {
+    gap: 16px;
+  }
+  .skills-col {
+    gap: 16px;
+  }
+  /* Вертикальные обложки-мокапы на мобиле (342×417) */
+  .case-card__media {
+    border-radius: 24px;
+    aspect-ratio: 342 / 417;
+  }
+  /* Бейджи с отступом 24px от краёв обложки */
+  .case-card__tags {
+    top: 24px;
+    left: 24px;
+    max-width: calc(100% - 48px);
+  }
+
+  /* ---- Уменьшенные отступы между разделами ---- */
+  .hero {
+    padding-top: 24px;
+    padding-bottom: 40px;
+    gap: 16px;
+  }
+  .cases {
+    gap: 40px;
+    padding-bottom: 40px;
+  }
+  .skills {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 24px;
+  }
+
+  .footer-row {
+    flex-direction: column;
+  }
+  /* Контакты в футере — одним столбцом, плотнее */
+  .footer-contacts {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Подписи кейсов ближе к обложке и плотнее между собой */
+  .case-card__text {
+    margin-top: 16px;
+    gap: 4px;
+  }
+  .btn-up {
+    align-self: center;
+    margin-right: 0;
+  }
+
+  /* Меньше расстояние между пунктами Hard/Soft */
+  .skills-list {
+    gap: 8px;
+  }
+
+  /* Курсы/Образование: название → место чуть ближе */
+  .edu-item__place {
+    margin-top: 4px;
+  }
+
+  /* Описание под «Привет…» — по центру */
+  .hero-subtitle {
+    text-align: center;
+  }
+}

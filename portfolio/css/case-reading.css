@@ -1,0 +1,99 @@
+/* Centered reading column, inspired by the supplied Pakus case reference. */
+.install-case{--reading-width:920px}
+body .install-case .install-hero{width:100%;max-width:var(--reading-width);margin:0 auto 72px;text-align:left}
+body .install-case .story-section{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;width:100%;max-width:var(--reading-width);margin:72px auto;text-align:left}
+body .install-case .story-copy{width:100%;max-width:none}
+body .install-case .hypotheses-heading{max-width:var(--reading-width);margin:0 auto 40px}
+body .install-case .hypothesis-row{display:grid;grid-template-columns:minmax(0,1fr);gap:40px;margin:0;padding:0 0 72px}
+body .install-case .hypothesis-row+.hypothesis-row{padding-top:0;border:0}
+body .install-case .hypothesis-aside{width:100%;max-width:var(--reading-width);margin-inline:auto;text-align:left}
+body .install-case .hypothesis-detail{position:static;width:100%}
+body .install-case .story-insight,body .install-case .story-outcome{max-width:var(--reading-width);margin:72px auto}
+body .install-case .story-insight{padding:0;background:transparent;border-radius:0}
+body .install-case .story-outcome h2{margin-bottom:24px}
+body .install-case .story-outcome>p{max-width:none}
+body .install-case .hypotheses{margin-top:88px}
+body .install-case .hypothesis-detail .annotated-board{width:min(100%,800px);margin-inline:auto}
+@media(max-width:700px){
+ body .install-case .install-hero{margin-bottom:48px}
+ body .install-case .story-section,body .install-case .story-insight,body .install-case .story-outcome{margin-block:48px;gap:20px}
+ body .install-case .hypothesis-row{gap:28px;padding-bottom:48px}
+ body .install-case .hypotheses{margin-top:56px}
+}
+/* Keep the next-case gap independent of the final section margins. */
+body .install-case:has(+.case-next)>:last-child{margin-bottom:0}
+
+/* A shared reading/media measure and a compact inner / generous outer rhythm. */
+body .install-case .install-hero{margin-bottom:56px}
+body .install-case .install-hero:has(+.install-video-comparison){margin-bottom:28px}
+body .install-case .story-section{gap:16px;margin-block:56px}
+body .install-case .story-copy,body .install-case .solution-copy{gap:12px}
+body .install-case .reason-block+.reason-block{margin-top:24px}
+body .install-case .reason-label{margin-bottom:8px}
+body .install-case .story-copy li+li{margin-top:6px}
+body .install-case .impact-list li+li{margin-top:12px}
+body .install-case .story-copy p:has(+ul),body .install-case .story-copy p:has(+ol){margin-bottom:0}
+body .install-case .hypotheses{margin-top:56px}
+body .install-case .hypotheses-heading{margin-bottom:28px}
+body .install-case .hypothesis-row{gap:24px;padding-bottom:56px}
+body .install-case .hypothesis-detail{gap:24px}
+body .install-case :is(.annotated-board,.hypothesis-detail,.audit-board,.install-video-comparison,.ab-screen-gallery,.case-comparison){box-sizing:border-box;width:100%;max-width:var(--reading-width);margin-inline:auto}
+body .install-case .hypothesis-detail .annotated-board{width:100%;max-width:var(--reading-width)}
+body .install-case .audit-board{margin-bottom:56px}
+body .install-case .install-video-comparison{--video-rail:52px;margin-block:0 56px}
+body .install-case .install-video-next{right:calc((var(--video-rail) - 44px)/2)}
+body .install-case .story-insight,body .install-case .story-outcome{margin-block:56px}
+body .install-case .story-outcome h2{margin-bottom:16px}
+body .install-case .audit-finding{gap:12px}
+body .install-case .audit-finding+.audit-finding{margin-top:24px}
+@media(max-width:700px){
+ body .install-case .story-section,body .install-case .story-insight,body .install-case .story-outcome{margin-block:40px}
+ body .install-case .hypothesis-row{padding-bottom:40px}
+ body .install-case .install-video-next{right:calc((var(--video-rail) - 36px)/2)}
+}
+body .install-case:has(+.case-next)>:last-child{margin-bottom:0}
+
+/* Keep the introduction and list together; separate the following thought. */
+body .install-case .story-copy p:has(+ul),body .install-case .story-copy p:has(+ol){margin-bottom:-6px}
+body .install-case .story-copy li+li{margin-top:2px}
+body .install-case .story-copy :is(ul,ol)+p{margin-top:12px}
+body .install-case .impact-list li+li{margin-top:12px}
+
+/* The last illustration belongs to the case; next-case links form a new section. */
+body .install-case .hypotheses .hypothesis-row:last-child{padding-bottom:0}
+body .install-case+.case-next{margin-top:112px}
+@media(max-width:700px){body .install-case+.case-next{margin-top:80px}}
+
+/* Keep each badge attached to its own paragraph. */
+body .install-case .reason-block{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+body .install-case .reason-block .reason-label,body .install-case .reason-block p{margin:0}
+body .install-case .reason-block+.reason-block{margin-top:28px}
+body .install-case .solution-copy:has(>.reason-block){gap:0}
+
+/* One title-to-description rhythm across all cases. */
+body .install-case .install-hero h1{margin-bottom:12px}
+body .install-case .install-hero .install-lead{margin-top:0}
+
+body .case-page-header~main.install-case{margin-top:160px;padding-top:0}
+@media(max-width:850px){body .case-page-header~main.install-case{margin-top:128px;padding-top:0}}
+
+/* A single responsive canvas for every case screenshot and video. */
+body .install-case :is(.annotated-board,.install-video-comparison){aspect-ratio:1.95;height:auto;min-height:0;max-width:var(--reading-width);border-radius:24px;background:#f4f4f4;overflow:hidden}
+body .install-case .annotated-board{display:block;padding:28px}
+body .install-case .annotated-board .screen-original{display:flex;align-items:center;justify-content:center;position:relative;width:100%;height:100%;max-width:none;aspect-ratio:auto;margin:0;container-type:size}
+body .install-case .annotated-board .screen-original>img{width:100%;height:100%;object-fit:contain}
+body .install-case .annotated-board .whole-dialog{width:min(100cqw,calc(100cqh * var(--w) / var(--h)));flex:none}
+body .install-case .annotated-board .branding-crop{position:relative;left:auto;top:auto;transform:none;width:min(100cqw,calc(100cqh * var(--crop-w) / var(--crop-h)));flex:none}
+body .install-case .install-video-comparison{display:grid;grid-template-rows:24px minmax(0,1fr);gap:12px;padding:28px var(--video-rail) 0}
+body .install-case .install-video-comparison .install-video-label{margin:0;line-height:24px}
+body .install-case .install-video-panel{height:100%;min-height:0;aspect-ratio:auto;border-radius:8px 8px 0 0;background:transparent}
+body .install-case .install-video-panel video{height:auto;width:100%;object-fit:contain;object-position:center top;background:transparent}
+body .install-case .install-video-comparison .install-video-next,body .install-case .install-video-comparison .install-video-next:hover{top:calc(50% + 18px)}
+@media(max-width:700px){
+ body .install-case .annotated-board{padding:16px}
+ body .install-case .install-video-comparison{padding-top:24px;padding-bottom:0;gap:8px}
+ body .install-case .install-video-comparison .install-video-next,body .install-case .install-video-comparison .install-video-next:hover{top:calc(50% + 16px)}
+}
+
+body .install-case .install-hero .install-lead{max-width:none}
+body .install-case .case-pending{max-width:var(--reading-width)}

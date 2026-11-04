@@ -1,0 +1,49 @@
+/* An editing sequence: select type → apply colour → drag layout → zoom out. */
+.design-stage *,#canvas-title>span{animation:none}
+.design-object{transform:none;animation:none}
+.design-stage{animation:none;transform:none}
+.canvas-center{animation:none;transform:translate(-50%,-50%)}
+.editor-guides{position:absolute;inset:8% 6%;opacity:0;background-image:linear-gradient(#b7b4c325 1px,transparent 1px),linear-gradient(90deg,#b7b4c325 1px,transparent 1px);background-size:25% 25%;animation:guides-in 12s linear infinite}
+#canvas-title>.greeting-line{color:#171719;font-weight:600;background:none;animation:none}
+#canvas-title>.editor-selection{position:relative;display:inline-block;color:#96969c;background:none;animation:selection-colour 12s linear infinite}
+.editor-text{position:relative;z-index:1;font:inherit!important;color:inherit!important;display:block;animation:type-edit 12s linear infinite}
+.editor-selection::before{content:"";position:absolute;inset:0 -5px;background:#e9f5a6;transform-origin:left;scale:0 1;animation:selection-wipe 12s cubic-bezier(.8,0,.2,1) infinite}
+.editor-selection::after{content:"";position:absolute;inset:-3px -6px;border:1px solid #b4a1d0;opacity:0;animation:selection-outline 12s linear infinite}
+.selection-handle{width:5px;height:5px;position:absolute;top:-5px;background:white;border:1px solid #8d77ac;opacity:0;animation:selection-outline 12s linear infinite}.handle-left{left:-8px}.handle-right{right:-8px}
+.type-sample{height:98px;position:relative;overflow:hidden;line-height:98px;letter-spacing:-6px}
+.type-glyph{position:absolute;inset:0;display:block}.glyph-sans{animation:glyph-one 12s cubic-bezier(.8,0,.2,1) infinite}.glyph-serif{font-family:Georgia,serif;transform:translateY(105%);animation:glyph-two 12s cubic-bezier(.8,0,.2,1) infinite}.glyph-italic{font-family:Georgia,serif;font-style:italic;transform:translateY(105%);animation:glyph-three 12s cubic-bezier(.8,0,.2,1) infinite}
+.type-board{overflow:visible}.font-menu{position:absolute;top:18px;left:calc(100% + 14px);width:83px;padding:8px;background:#f2f2f2;border-radius:5px;display:flex;flex-direction:column;font-size:10px;line-height:21px;opacity:0;transform:translateY(-8px);animation:font-menu-in 12s cubic-bezier(.8,0,.2,1) infinite}.font-menu span{z-index:1;position:relative;padding-left:5px}.font-menu i{position:absolute;left:8px;right:8px;top:8px;height:21px;background:white;border-radius:2px;animation:font-menu-select 12s steps(1) infinite}
+.palette-dots i{animation:none;transition:none}.palette-dots{animation:palette-spread 12s cubic-bezier(.8,0,.2,1) infinite;transform-origin:left}.palette-dots i:nth-child(4){outline:0px solid #aaa;outline-offset:3px;animation:swatch-select 12s linear infinite}
+.layout-grid{position:relative}.layout-drag-block{position:absolute;z-index:2;width:60px;height:45px;left:16px;top:12px;background:#e9f5a6;border:1px solid #ad9ac8;opacity:0;animation:drag-layout 12s cubic-bezier(.75,0,.25,1) infinite}.layout-drag-block i{position:absolute;width:5px;height:5px;border:1px solid #8d77ac;background:white}.layout-drag-block i:nth-child(1){left:-3px;top:-3px}.layout-drag-block i:nth-child(2){right:-3px;top:-3px}.layout-drag-block i:nth-child(3){left:-3px;bottom:-3px}.layout-drag-block i:nth-child(4){right:-3px;bottom:-3px}
+.gradient-orb{animation:fill-change 12s cubic-bezier(.76,0,.24,1) infinite}.gradient-slider i{animation:edit-slider 12s cubic-bezier(.76,0,.24,1) infinite}
+.bezier{stroke-dasharray:none;stroke-dashoffset:0;animation:curve-edit 12s cubic-bezier(.76,0,.24,1) infinite}
+.object-type{animation:panel-type 12s cubic-bezier(.76,0,.24,1) infinite}.object-palette{animation:panel-palette 12s cubic-bezier(.76,0,.24,1) infinite}.object-curve{animation:panel-curve 12s cubic-bezier(.76,0,.24,1) infinite}.object-tool{animation:panel-tool 12s cubic-bezier(.76,0,.24,1) infinite}.object-grid{animation:panel-grid 12s cubic-bezier(.76,0,.24,1) infinite}.object-gradient{animation:panel-fill 12s cubic-bezier(.76,0,.24,1) infinite}
+.object-cursor{z-index:5;animation:none}.object-cursor svg{width:38px}.object-cursor>span{font-size:9px;left:27px;top:35px}
+@keyframes guides-in{0%,8%,89%,100%{opacity:0}15%,83%{opacity:1}}
+@keyframes selection-wipe{0%,13%,72%,100%{scale:0 1}18%,64%{scale:1 1}}
+@keyframes selection-outline{0%,13%,30%,100%{opacity:0}14%,29%{opacity:1}}
+@keyframes selection-colour{0%,13%,72%,100%{color:#96969c}18%,64%{color:#27242d}}
+@keyframes type-edit{0%,19%,70%,100%{transform:skewX(0)}21%,32%{transform:skewX(-8deg)}34%,64%{transform:skewX(0)}}
+@keyframes glyph-one{0%,15%,86%,100%{transform:translateY(0)}20%,79%{transform:translateY(-110%)}}
+@keyframes glyph-two{0%,15%{transform:translateY(110%)}20%,25%{transform:translateY(0)}30%,100%{transform:translateY(-110%)}}
+@keyframes glyph-three{0%,25%,86%,100%{transform:translateY(110%)}30%,79%{transform:translateY(0)}}
+@keyframes font-menu-in{0%,11%,37%,100%{opacity:0;transform:translateY(-8px)}15%,32%{opacity:1;transform:translateY(0)}}
+@keyframes font-menu-select{0%,16%,100%{transform:translateY(0)}17%,26%{transform:translateY(21px)}27%,90%{transform:translateY(42px)}}
+@keyframes palette-spread{0%,34%,53%,100%{gap:0;transform:translateX(0)}39%,48%{gap:4px;transform:translateX(-8px)}}
+@keyframes swatch-select{0%,39%,51%,100%{outline-width:0}40%,50%{outline-width:1px}}
+@keyframes drag-layout{0%,50%,75%,100%{opacity:0;transform:translate(0,0)}51%,55%{opacity:1;transform:translate(0,0)}63%,70%{opacity:1;transform:translate(67px,34px)}}
+@keyframes fill-change{0%,39%,85%,100%{filter:hue-rotate(0deg)}45%,78%{filter:hue-rotate(32deg)}}
+@keyframes edit-slider{0%,39%,85%,100%{left:30%}45%,78%{left:78%}}
+@keyframes curve-edit{0%,34%,85%,100%{d:path('M30 117C75 30 166 130 209 41')}42%,77%{d:path('M30 117C50 150 170 0 209 41')}}
+@keyframes panel-type{0%,8%,90%,100%{transform:translate(0,0)}14%,71%{transform:translate(12px,-10px)}79%,84%{transform:translate(-20px,5px)}}
+@keyframes panel-palette{0%,8%,90%,100%{transform:translate(0,0)}14%,34%{transform:translate(-8px,18px)}40%,71%{transform:translate(12px,0)}79%,84%{transform:translate(-30px,0)}}
+@keyframes panel-curve{0%,8%,90%,100%{transform:translate(0,0)}14%,71%{transform:translate(-12px,-12px)}79%,84%{transform:translate(24px,0)}}
+@keyframes panel-tool{0%,8%,90%,100%{transform:translate(0,0)}14%,71%{transform:translate(14px,-16px)}79%,84%{transform:translate(28px,5px)}}
+@keyframes panel-grid{0%,8%,90%,100%{transform:translate(0,0)}14%,71%{transform:translate(-8px,8px)}79%,84%{transform:translate(-25px,25px)}}
+@keyframes panel-fill{0%,8%,90%,100%{transform:translate(0,0)}14%,71%{transform:translate(10px,-8px)}79%,84%{transform:translate(20px,20px)}}
+.motion-paused .canvas-center,.motion-paused #canvas-title *,.motion-paused .design-stage,.motion-paused .design-stage *{animation-play-state:paused!important}
+@media(max-width:600px){.font-menu{left:calc(100% + 9px);width:72px}.design-stage{transform-origin:50% 43%}}
+@media(prefers-reduced-motion:reduce){.design-stage,.design-stage *,.canvas-center,#canvas-title *{animation:none!important}.glyph-serif,.glyph-italic{display:none}.editor-selection::before,.editor-selection::after,.selection-handle,.font-menu,.layout-drag-block,.editor-guides{display:none}.editor-text{transform:none}.design-stage{transform:none}.object-cursor{transform:none!important}}
+
+/* Crop the initial gradient strokes; retain only interior grid lines. */
+.editor-guides{clip-path:inset(2px)}

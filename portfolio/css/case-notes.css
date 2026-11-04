@@ -1,0 +1,250 @@
+/* Centered introduction; annotations have their own space beside the UI. */
+body .case-page-header~main.install-case{margin-top:184px}
+body .install-case .install-hero{text-align:center}
+body .install-case .install-hero .install-lead{margin-inline:auto;max-width:840px}
+.case-brand{display:flex;align-items:center;justify-content:center;gap:5px;margin:0 auto 28px;height:28px}
+.case-brand img{display:block;object-fit:contain;flex:none;border-radius:0}
+.case-brand .abordio-wordmark{width:120px;height:auto}
+body .install-case .annotated-board.solution-board{display:grid;grid-template-columns:minmax(0,1fr) 156px;gap:64px;padding:36px;align-items:center}
+body .install-case .solution-board.notes-left{grid-template-columns:156px minmax(0,1fr)}
+body .install-case .solution-board.notes-left .screen-original{grid-column:2;grid-row:1}
+body .install-case .solution-board .screen-original{min-width:0;min-height:0}
+.solution-notes{display:flex;flex-direction:column;justify-content:space-evenly;height:100%;gap:28px;margin:0;padding:0}
+body .install-case .solution-board.notes-left .solution-notes{grid-column:1;grid-row:1}
+.solution-note{position:relative;font-size:14px;line-height:1.45;font-weight:400;color:#686868;text-align:left}
+.note-arrow{position:absolute;width:52px;height:12px;left:-60px;top:50%;margin-top:-6px;color:#858585}
+.notes-left .note-arrow{left:auto;right:-60px;transform:scaleX(-1)}
+@media(max-width:700px){
+ body .case-page-header~main.install-case{margin-top:148px}
+ .case-brand{margin-bottom:24px;transform:scale(.9)}
+ body .install-case .annotated-board.solution-board,body .install-case .annotated-board.solution-board.notes-left{grid-template-columns:minmax(0,1fr) 100px;gap:24px;padding:16px}
+ body .install-case .solution-board.notes-left .screen-original{grid-column:1}
+ body .install-case .solution-board.notes-left .solution-notes{grid-column:2}
+ .solution-note{font-size:11px;line-height:1.35}
+ .note-arrow,.notes-left .note-arrow{width:20px;left:-23px;right:auto;transform:none}
+ .solution-notes{gap:12px}
+}
+body .install-case .solution-board .screen-original{justify-content:flex-end}
+body .install-case .solution-board.notes-left .screen-original{justify-content:flex-start}
+@media(max-width:700px){body .install-case .solution-board.notes-left .screen-original{justify-content:flex-end}}
+
+body .case-page-header~main.install-case{margin-top:216px}
+body .install-case .install-hero:has(+.install-video-comparison){margin-bottom:88px}
+@media(max-width:700px){body .case-page-header~main.install-case{margin-top:172px}body .install-case .install-hero:has(+.install-video-comparison){margin-bottom:64px}}
+/* Taller solution canvases leave room around focused screenshots and annotations. */
+body .install-case :is(.annotated-board,.install-video-comparison){aspect-ratio:5/3}
+@media(max-width:700px){body .install-case :is(.annotated-board,.install-video-comparison){aspect-ratio:5/3}}
+
+/* Three parallel stages above each solution preview. */
+body .install-case .hypothesis-row .hypothesis-aside{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;align-items:start}
+body .install-case .hypothesis-row .reason-block{min-width:0;gap:12px}
+body .install-case .hypothesis-row .reason-block+.reason-block{margin-top:0}
+body .install-case .hypothesis-row{row-gap:32px}
+@media(max-width:850px){
+ body .install-case .hypothesis-row .hypothesis-aside{grid-template-columns:minmax(0,1fr);gap:24px}
+ body .install-case .hypothesis-row .reason-block{gap:8px}
+ body .install-case .hypothesis-row{row-gap:24px}
+}
+
+/* Match media canvases to the video; screenshot flows out through the bottom edge. */
+body .install-case .home-screen-board{display:grid;grid-template-rows:24px minmax(0,1fr);gap:12px;padding:28px 52px 0}
+.home-screen-board>figcaption{text-align:center;font-size:17px;line-height:24px;color:#252525}
+body .install-case .home-screen-board .screen-original{display:block;overflow:hidden;border-radius:8px 8px 0 0}
+body .install-case .home-screen-board .screen-original>img{display:block;width:100%;height:auto;max-width:none;object-fit:initial;border-radius:0}
+body .install-case .audit-explained .solution-notes{justify-content:center;gap:44px}
+@media(max-width:700px){body .install-case .home-screen-board{padding:24px 20px 0;gap:8px}body .install-case .install-video-comparison{--video-rail:20px}body .install-case .audit-explained .solution-notes{gap:20px}.home-screen-board>figcaption{font-size:14px}}
+
+/* Fill the taller canvas with the preview, rather than empty space above it. */
+body .install-case :is(.install-video-comparison,.home-screen-board){grid-template-rows:24px minmax(0,1fr);align-content:stretch;gap:12px;padding-top:28px}
+body .install-case .install-video-panel,
+body .install-case .home-screen-board .screen-original{height:100%;aspect-ratio:auto;min-height:0}
+body .install-case .install-video-panel video{display:block;width:100%;height:100%;object-fit:cover;object-position:left top}
+body .install-case .install-video-comparison .install-video-next,
+body .install-case .install-video-comparison .install-video-next:hover{top:calc(50% + 32px);bottom:auto;transform:translateY(-50%)}
+@media(max-width:700px){
+ body .install-case :is(.install-video-comparison,.home-screen-board){padding-top:20px;gap:8px}
+ body .install-case .install-video-comparison .install-video-next,
+ body .install-case .install-video-comparison .install-video-next:hover{top:calc(50% + 26px)}
+}
+
+/* Figma reference: a focused interface fragment on the right, notes on the left. */
+body .install-case .annotated-board.focus-composition{display:block;position:relative;padding:0;isolation:isolate}
+body .install-case .focus-composition .screen-original{position:absolute;left:35%;right:0;top:10%;bottom:0;width:auto;height:auto;display:block;container-type:normal;background:transparent;padding:0;border-radius:12px 0 0 0;overflow:hidden}
+body .install-case .focus-composition :is(.whole-dialog,.branding-crop){display:block;position:relative;left:auto;top:auto;transform:none;width:100%;max-width:none;border-radius:0;flex:none}
+body .install-case .focus-composition .solution-notes{position:absolute;left:6%;top:18%;width:22%;height:66%;gap:24px;justify-content:space-around}
+body .install-case .focus-composition .solution-note{font-size:14px;line-height:1.4;color:#626262}
+body .install-case .focus-composition .note-arrow{left:calc(100% + 8px);right:auto;transform:scaleX(-1);width:32px}
+@media(max-width:700px){
+ body .install-case .annotated-board.focus-composition{aspect-ratio:5/3}
+ body .install-case .focus-composition .screen-original{left:35%;padding:0;border-radius:8px 0 0 0}
+ body .install-case .focus-composition .solution-notes{left:5%;width:23%;top:12%;height:78%;gap:12px}
+ body .install-case .focus-composition .solution-note{font-size:10px;line-height:1.3}
+ body .install-case .focus-composition .note-arrow{left:calc(100% + 3px);width:16px}
+}
+
+/* Fill the complete right-hand viewport; crop only outside its edges. */
+body .install-case .focus-composition .screen-original{container-type:inline-size}
+body .install-case .focus-composition :is(.whole-dialog,.branding-crop){height:100%;aspect-ratio:auto}
+body .install-case .focus-composition .whole-dialog img{top:calc(-100cqw * var(--y) / var(--w))}
+body .install-case .focus-composition .branding-crop img{top:calc(-100cqw * var(--crop-y) / var(--crop-w))}
+body .install-case .focus-composition .note-arrow{color:#626262;width:40px}
+body .install-case .focus-composition .note-arrow path{stroke-width:1.6}
+@media(max-width:700px){body .install-case .focus-composition .note-arrow{width:18px}}
+
+body .install-case .audit-explained .solution-notes{inset:0;width:100%;height:100%;display:block}
+body .install-case .audit-explained .solution-note{position:absolute;left:6%;width:22%;top:var(--note-y);transform:translateY(-50%);font-size:13px;line-height:1.35}
+body .install-case .audit-explained .note-arrow{width:calc(58.4% - 8px)}
+@media(max-width:700px){body .install-case .audit-explained .solution-note{font-size:9px;line-height:1.25}}
+
+/* Respect each selected source fragment: never reveal neighbouring dark previews. */
+body .install-case .focus-composition .whole-dialog{position:absolute;bottom:0;max-height:calc(100cqw * var(--h) / var(--w))}
+body .install-case .focus-composition .branding-crop{position:absolute;bottom:0;max-height:calc(100cqw * var(--crop-h) / var(--crop-w))}
+body .install-case .home-screen-board{grid-template-rows:minmax(0,1fr);gap:0}
+
+/* Shared inset-media radius; only exposed corners are rounded. */
+body .install-case{--case-media-radius:8px}
+body .install-case .focus-composition .screen-original{border-radius:0}
+body .install-case .focus-composition :is(.whole-dialog,.branding-crop){border-radius:var(--case-media-radius) 0 0 0;overflow:hidden}
+body .install-case .home-screen-board .screen-original{border-radius:var(--case-media-radius) var(--case-media-radius) 0 0;overflow:hidden}
+
+/* End annotation leaders in the gutter, 8px before the screenshot. */
+body .install-case .focus-composition .note-arrow{left:calc(100% + 8px);width:max(0px,calc(31.8% - 16px))}
+
+/* Two evidence screens share one stable canvas. */
+.solution-carousel{position:relative;min-width:0;padding-bottom:32px}
+body .install-case .solution-carousel>figure{margin:0}
+body .install-case .solution-carousel>figure[hidden]{display:none!important}
+.solution-carousel-next{position:absolute;right:-44px;top:calc(50% - 16px);transform:translateY(-50%);display:grid;place-items:center;width:40px;height:40px;border:0;background:transparent;color:#686868;padding:8px;cursor:pointer;border-radius:8px}
+.solution-carousel-next:hover{color:#252525}
+.solution-carousel-next[data-last="true"] svg{transform:rotate(180deg)}
+.solution-carousel-dots{position:absolute;bottom:0;left:50%;transform:translateX(-50%);display:flex;gap:0}
+.solution-carousel-dots button{border:0;background:transparent;padding:10px 5px;cursor:pointer}
+.solution-carousel-dots button:before{content:"";display:block;width:6px;height:6px;background:#d0d0d0;border-radius:50%}
+.solution-carousel-dots button[aria-current="true"]:before{background:#686868}
+.solution-carousel-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:700px){.solution-carousel{padding-bottom:44px}.solution-carousel-next{right:0;top:auto;bottom:0;transform:none}}
+
+body .install-case .focus-composition .note-arrow{color:inherit}
+body .install-case .focus-composition .note-arrow path{stroke-width:2;stroke-dasharray:4 4;vector-effect:non-scaling-stroke}
+body .install-case .focus-composition .note-arrow circle{r:3}
+
+/* Match the video: arrow centered in an internal side gutter, no pagination dots. */
+body .install-case .solution-carousel{box-sizing:border-box;aspect-ratio:5/3;padding:0 52px 0 0;background:#f4f4f4;border-radius:24px;overflow:hidden}
+body .install-case .solution-carousel>figure{height:100%;width:100%;aspect-ratio:auto;border-radius:24px 0 0 24px}
+body .install-case .solution-carousel-next{right:6px;top:50%;bottom:auto;transform:translateY(-50%)}
+body .install-case .carousel-home-board .solution-notes{top:36%;height:60%}
+@media(max-width:700px){body .install-case .solution-carousel{padding-right:40px}body .install-case .solution-carousel-next{right:0}}
+
+/* Problem and hypothesis; implementation is explained on the screenshots. */
+body .install-case .hypothesis-row .hypothesis-aside {grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+body .install-case .solution-carousel .carousel-board-title {position:absolute;left:5%;right:5%;top:6%;text-align:center;font-size:17px;line-height:1.4;color:#262626;z-index:2}
+body .install-case .solution-carousel .focus-composition .screen-original {top:22%}
+body .install-case .solution-carousel .focus-composition .solution-notes {top:28%;height:58%}
+@media(max-width:850px){body .install-case .hypothesis-row .hypothesis-aside{grid-template-columns:1fr;gap:24px}}
+
+/* Center both carousel screenshots; reserve equal rails on either side. */
+body .install-case .solution-carousel{padding:0}
+body .install-case .solution-carousel>figure{border-radius:24px}
+body .install-case .solution-carousel .carousel-board-title{left:8%;right:8%;top:5%}
+body .install-case .solution-carousel .focus-composition .solution-notes{left:10%;top:12%;width:80%;height:auto;display:flex;flex-direction:column;gap:6px;justify-content:flex-start}
+body .install-case .solution-carousel .solution-note{text-align:center;font-size:14px;line-height:1.4}
+body .install-case .solution-carousel .note-arrow{display:none}
+body .install-case .solution-carousel .focus-composition .screen-original{left:8%;right:8%;top:28%;bottom:0;width:auto;border-radius:0}
+body .install-case .solution-carousel .new-modal-board .screen-original{left:24%;right:24%}
+body .install-case .solution-carousel .whole-dialog{border-radius:var(--case-media-radius) var(--case-media-radius) 0 0}
+@media(max-width:700px){
+ body .install-case .solution-carousel .carousel-board-title{font-size:13px;top:5%;line-height:1.25}
+ body .install-case .solution-carousel .solution-note{font-size:10px;line-height:1.25}
+ body .install-case .solution-carousel .focus-composition .solution-notes{top:16%;gap:3px}
+ body .install-case .solution-carousel .focus-composition .screen-original{top:36%}
+}
+
+/* Complete source screens, centered with no cropping. Videos retain their own layout. */
+body .install-case .annotated-board.complete-screen-board,
+body .install-case .solution-carousel>figure.complete-screen-board {
+ display:flex;flex-direction:column;align-items:stretch;gap:12px;padding:28px 52px;
+ box-sizing:border-box;overflow:hidden;border-radius:24px;
+}
+body .install-case .complete-screen-board .carousel-board-title,
+body .install-case .solution-carousel .complete-screen-board .carousel-board-title {
+ position:static;order:0;flex:none;text-align:center;font-size:17px;line-height:1.4;
+}
+body .install-case .complete-screen-board .solution-notes,
+body .install-case .solution-carousel .complete-screen-board .solution-notes {
+ position:static;inset:auto;order:1;width:auto;height:auto;display:flex;
+ flex-direction:row;flex-wrap:wrap;justify-content:center;gap:6px 24px;flex:none;
+}
+body .install-case .complete-screen-board .solution-note {
+ position:static;inset:auto;width:auto;transform:none;text-align:center;
+ font-size:14px;line-height:1.4;max-width:100%;
+}
+body .install-case .complete-screen-board .note-arrow {display:none}
+body .install-case .complete-screen-board .screen-original,
+body .install-case .solution-carousel .complete-screen-board .screen-original {
+ position:relative;inset:auto;order:2;flex:1;display:flex;align-items:center;
+ justify-content:center;min-height:0;min-width:0;width:100%;height:auto;
+ padding:0;margin:0;overflow:visible;container-type:normal;border-radius:0;background:transparent;
+}
+body .install-case .complete-screen-board .screen-original>img {
+ position:static;inset:auto;transform:none;display:block;width:100%;height:100%;
+ max-width:100%;max-height:100%;object-fit:contain;object-position:center;
+ clip-path:none;border-radius:8px;box-shadow:none;
+}
+@media(max-width:700px){
+ body .install-case .annotated-board.complete-screen-board,
+ body .install-case .solution-carousel>figure.complete-screen-board{padding:16px 24px;gap:8px}
+ body .install-case .complete-screen-board .solution-note{font-size:10px;line-height:1.3}
+ body .install-case .solution-carousel .complete-screen-board .carousel-board-title{font-size:13px}
+}
+
+/* Screens meet the bottom edge; rounded top corners echo the video frame. */
+body .install-case{--case-media-radius:16px}
+body .install-case .annotated-board.complete-screen-board,
+body .install-case .solution-carousel>figure.complete-screen-board{
+ padding:24px 44px 0;border-radius:32px;gap:10px;
+}
+body .install-case .solution-carousel,
+body .install-case .install-video-comparison{border-radius:32px}
+body .install-case .solution-carousel{aspect-ratio:1.55}
+body .install-case .complete-screen-board .screen-original,
+body .install-case .solution-carousel .complete-screen-board .screen-original{
+ align-items:flex-end;justify-content:center;overflow:hidden;
+}
+body .install-case .complete-screen-board .screen-original>img{
+ width:auto;height:auto;max-width:100%;max-height:100%;flex:none;
+ object-fit:contain;object-position:center bottom;border-radius:16px 16px 0 0;
+}
+body .install-case .install-video-panel,
+body .install-case .install-video-panel video{border-radius:16px 16px 0 0}
+body .case-media-viewer .media-stage>video{border-radius:16px 16px 0 0}
+@media(max-width:700px){
+ body .install-case .annotated-board.complete-screen-board,
+ body .install-case .solution-carousel>figure.complete-screen-board{padding:18px 28px 0;border-radius:24px;gap:8px}
+ body .install-case .solution-carousel,
+ body .install-case .install-video-comparison{border-radius:24px}
+ body .install-case .complete-screen-board .screen-original>img,
+ body .install-case .install-video-panel,
+ body .install-case .install-video-panel video{border-radius:12px 12px 0 0}
+}
+
+body .install-case .solution-carousel-next[data-last="true"]{left:2px;right:auto}
+body .install-case .install-video-next[data-last="true"]{left:calc((var(--video-rail,80px) - 44px)/2);right:auto}
+body .install-case .install-video-next[data-last="true"] svg,
+.case-media-viewer .media-next[data-last="true"] svg{transform:rotate(180deg)}
+
+body .install-case .solution-carousel-next{right:2px}
+
+/* Shared caption rhythm: spacing is measured from the visible screen. */
+body .install-case{--media-caption-size:17px;--media-caption-color:#666666;--media-caption-gap:12px}
+body .install-case .complete-screen-board :is(.carousel-board-title,.solution-note),
+body .install-case .solution-carousel .complete-screen-board .carousel-board-title,
+body .install-case .install-video-comparison .install-video-label{
+ font-size:var(--media-caption-size);line-height:24px;font-weight:400;color:var(--media-caption-color);
+}
+body .install-case .annotated-board.complete-screen-board,
+body .install-case .solution-carousel>figure.complete-screen-board{justify-content:flex-end;gap:var(--media-caption-gap)}
+body .install-case .complete-screen-board .screen-original,
+body .install-case .solution-carousel .complete-screen-board .screen-original{flex:none;height:var(--fitted-screen-height,auto)}
+body .install-case .complete-screen-board .screen-original>img{height:100%;width:auto;object-fit:contain}
+
+body .case-media-viewer .media-title{font-size:17px;line-height:24px;font-weight:400;color:#666666}

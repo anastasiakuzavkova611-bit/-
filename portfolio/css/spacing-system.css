@@ -1,0 +1,34 @@
+/* Shared rhythm: 8/12/16 within groups, 32 between media, 64/80/128 outside. */
+:root{--space-label:8px;--space-copy:12px;--space-heading:16px;--space-media:32px;--space-section:64px;--space-project:80px;--space-footer:128px}
+body .install-case .story-section{gap:var(--space-heading);margin-block:var(--space-section)}
+body .install-case .story-copy,body .install-case .solution-copy{gap:var(--space-copy)}
+body .install-case .story-copy p,body .install-case .solution-copy p{margin:0}
+body .install-case .story-copy p:has(+ul),body .install-case .story-copy p:has(+ol){margin-bottom:0}
+body .install-case .story-copy ul,body .install-case .story-copy ol{margin-block:0}
+body .install-case .story-copy :is(ul,ol)+p{margin-top:var(--space-copy)}
+body .install-case .story-copy li+li{margin-top:4px}
+body .install-case .impact-list li+li{margin-top:var(--space-copy)}
+body .install-case .hypothesis-row .reason-block{gap:var(--space-label)}
+body .install-case .hypothesis-row .reason-label{margin:0}
+body .install-case .hypothesis-row{row-gap:var(--space-media);padding-bottom:var(--space-section)}
+body .install-case .hypothesis-row:last-child{padding-bottom:0}
+body .install-case .hypothesis-detail{gap:var(--space-media)}
+body .install-case .hypotheses{margin-top:var(--space-section)}
+body .install-case .hypotheses-heading{margin-bottom:var(--space-media)}
+body .install-case .audit-board,body .install-case .install-video-comparison{margin-bottom:var(--space-section)}
+body .install-case .install-hero h1{margin-bottom:var(--space-copy)}
+body .install-case .install-hero:has(+:is(.install-video-comparison,.case-pending)){margin-bottom:80px}
+body .case-page-header~main.install-case{margin-top:192px}
+.case-brand{margin-bottom:var(--space-media)}
+body .install-case+.case-next{margin-top:var(--space-footer)}
+body .case-signature{margin-top:var(--space-section);padding-bottom:32px}
+.flow-cases{row-gap:var(--space-project);padding-bottom:var(--space-footer)}
+.case-caption{gap:12px}
+.case-caption h2{margin-bottom:var(--space-label)}
+body .install-case .branding-audit-board .solution-notes{justify-content:center;gap:32px}
+@media(max-width:700px){
+ body .case-page-header~main.install-case{margin-top:156px}
+ :root{--space-media:24px;--space-section:48px;--space-project:56px;--space-footer:96px}
+ body .install-case .install-hero:has(+:is(.install-video-comparison,.case-pending)){margin-bottom:48px}
+ body .install-case .branding-audit-board .solution-notes{gap:12px}
+}

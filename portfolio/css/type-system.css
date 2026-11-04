@@ -1,0 +1,24 @@
+/* Shared typography roles. Loaded after page-specific layouts. */
+:root{--type-hero:58px;--type-section:40px;--type-card-title:32px;--type-lead:24px;--type-body:17px;--type-control:17px}
+.stack-greeting h1{font-size:var(--type-hero);line-height:1.08;font-weight:500}
+.stack-greeting .hero-experience{font-size:var(--type-lead);line-height:1.4}
+.cases-heading{font-size:var(--type-section);line-height:1.15}
+.case-caption h2{font-size:var(--type-card-title);line-height:1.15;font-weight:600}
+body .case-caption p:not(.case-company){font-size:20px;line-height:1.4}
+.case-tags span,.reason-label{font-size:var(--type-control);line-height:24px}
+body .install-case .install-hero h1{font-size:var(--type-section);line-height:1.15;font-weight:600}
+body .install-case .install-lead{font-size:24px;line-height:1.4}
+.floating-nav a,.case-next a,.case-link,.project-card__open,.site-footer a{font-size:var(--type-control);line-height:24px}
+@media(max-width:700px){
+ .stack-greeting h1{font-size:clamp(32px,7.2vw,58px)}
+ .floating-nav{gap:4px}
+ .floating-nav .nav-home{flex-basis:26px;width:26px;margin-right:2px}
+ .nav-home img{width:26px;height:26px}
+ .nav-sections{gap:8px;padding:14px 8px}
+ .floating-nav .nav-telegram{padding:14px 8px}
+ .case-next a{white-space:normal}
+}
+@media(max-width:360px){.nav-sections{gap:5px;padding-inline:6px}.floating-nav .nav-telegram{padding-inline:6px}.floating-nav .nav-home{flex-basis:22px;width:22px}.nav-home img{width:22px;height:22px}}
+
+body main.install-case :is(h2,h3),
+body main.install-case :is(.story-section,.story-outcome,.hypotheses,.hypothesis-aside) :is(h2,h3){font-size:24px;line-height:1.25}

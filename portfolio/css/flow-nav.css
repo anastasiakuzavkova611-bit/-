@@ -1,0 +1,33 @@
+/* Shared floating navigation: grouped sections and separate contact pill. */
+.floating-nav{position:fixed;z-index:1000;top:24px;left:50%;transform:translateX(-50%);display:flex;align-items:stretch;gap:6px;white-space:nowrap;font-family:'SF Pro Display',Arial,sans-serif;background:none;padding:0;border:0;box-shadow:none}
+.nav-sections{display:flex;align-items:center;gap:20px;padding:17px 20px;background:#ebebeb;border-radius:16px}
+.floating-nav a{display:block;color:#202020;text-decoration:none;font-size:20px;font-weight:400;line-height:26px;padding:0;background:none;border:0;transition:color .18s,background .18s}
+.floating-nav .nav-telegram{display:flex;align-items:center;padding:17px 22px;background:#ebebeb;border-radius:999px}
+.floating-nav a:hover,.floating-nav a[aria-current=true]{color:#151515}
+.floating-nav .nav-telegram:hover{background:#dedede}
+.floating-nav a[aria-disabled=true]{opacity:1;cursor:default}
+.floating-nav a:focus-visible{outline:2px solid #777;outline-offset:5px}
+.flow-detail-back{max-width:1120px;width:calc(100% - 96px);margin:136px auto 40px}.flow-detail-back a{font-size:18px;color:#777;text-decoration:none}
+@media(max-width:600px){.floating-nav{top:16px;gap:5px;max-width:calc(100% - 24px)}.nav-sections{gap:12px;padding:14px 14px;border-radius:14px}.floating-nav a{font-size:16px;line-height:22px}.floating-nav .nav-telegram{padding:14px 14px}.flow-detail-back{width:calc(100% - 40px);margin-top:112px}}
+@media(max-width:370px){.nav-sections{gap:11px;padding:14px 12px}.floating-nav .nav-telegram{padding:14px 12px}.floating-nav a{font-size:15px}}
+
+.case-page-header{position:fixed;top:0;left:0;right:0;height:108px;background:#fff;z-index:1001;display:flex;align-items:center}
+.header-back{margin-left:max(48px,calc((100vw - 1240px)/2));font-family:'SF Pro Display',Arial,sans-serif;font-size:20px;color:#202020;text-decoration:none}
+.header-back:hover{opacity:.65}
+.case-page-header~main{margin-top:136px}
+@media(max-width:850px){.case-page-header{height:150px;align-items:flex-end;padding-bottom:18px}.header-back{margin-left:24px;font-size:18px}.case-page-header~main{margin-top:164px}}
+
+/* Personal mark returns to the start of the homepage. */
+.floating-nav .nav-home{position:absolute;right:calc(100% + 20px);top:0;display:flex;align-items:center;justify-content:center;width:44px;height:60px;transition:opacity .18s}
+.nav-home img{display:block;width:36px;height:36px}
+.floating-nav .nav-home:hover{opacity:.65}
+@media(max-width:700px){.floating-nav .nav-home{position:static;width:30px;height:auto;flex:0 0 30px;margin-right:5px}.nav-home img{width:30px;height:30px}.floating-nav{gap:5px}.nav-sections{gap:10px;padding:14px 10px}.floating-nav .nav-telegram{padding:14px 10px}}
+@media(max-width:380px){.floating-nav{max-width:calc(100% - 16px);gap:4px}.floating-nav a{font-size:14px}.floating-nav .nav-home{width:26px;flex-basis:26px;margin-right:2px}.nav-home img{width:26px;height:26px}.nav-sections{gap:8px;padding:14px 8px}.floating-nav .nav-telegram{padding:14px 8px}}
+
+.case-page-header{background:transparent;pointer-events:none}
+.case-page-header .floating-nav{pointer-events:auto}
+
+/* Keep the mark and navigation in one centered row. */
+.floating-nav .nav-home{position:static;right:auto;top:auto;align-self:stretch;height:auto;flex:0 0 44px;margin-right:14px}
+@media(max-width:700px){.floating-nav .nav-home{flex-basis:30px;margin-right:5px}}
+@media(max-width:380px){.floating-nav .nav-home{flex-basis:26px;margin-right:2px}}

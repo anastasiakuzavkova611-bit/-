@@ -1,0 +1,9 @@
+/* Shared feedback for navigation and contact buttons. */
+.navigation-card,.canvas-contact a,.cases-footer a,.resume-footer a{transition:background-color .2s ease,transform .2s ease,opacity .2s ease}
+@media(hover:hover){
+ .navigation-card:hover,.canvas-contact a:hover,.cases-footer a:hover,.resume-footer a:hover{transform:translateY(-3px);opacity:1;background:#e7e7e7}
+ .canvas-contact a:first-child:hover,.cases-footer .contact-primary:hover,.resume-footer a:first-child:hover{background:#333}
+}
+.navigation-card:active,.canvas-contact a:active,.cases-footer a:active,.resume-footer a:active{transform:translateY(0) scale(.97)}
+.canvas-contact a:focus-visible,.cases-footer a:focus-visible,.resume-footer a:focus-visible{outline:2px solid #9988b8;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.navigation-card,.canvas-contact a,.cases-footer a,.resume-footer a{transition:none;transform:none!important}}

@@ -1,0 +1,107 @@
+/* Reference: Tarek Zaruk — compact centered introduction, brands, copy inside previews. */
+.intro-hero{max-width:1040px;margin:auto;padding:154px 24px 76px;text-align:center}
+.intro-photo{display:block;width:96px;height:104px;object-fit:cover;object-position:center 35%;border-radius:24px;filter:grayscale(1);margin:0 auto 28px}
+.intro-hero h1{font-size:clamp(42px,4.5vw,64px);line-height:1.08;font-weight:500;letter-spacing:-.035em;margin:0;text-wrap:balance}
+.intro-hero>p{font-size:24px;line-height:1.4;color:#777;margin:20px auto 24px;max-width:680px;text-wrap:balance}
+.intro-brands{display:flex;justify-content:center;align-items:center;padding:4px 0}
+.intro-brands img{width:44px;height:44px;object-fit:contain;border-radius:12px;background:#fff;outline:3px solid #fff}
+.intro-brands img:first-child{transform:rotate(-9deg)}
+.intro-brands img:last-child{transform:rotate(9deg);margin-left:-3px}
+.flow-cases{width:calc(100% - 96px);max-width:1120px;padding:0 0 96px;gap:32px;scroll-margin-top:120px}
+.cases-heading{font-size:28px;line-height:1.2;font-weight:500;text-align:left;margin:0 0 -8px;letter-spacing:-.02em}
+.flow-case{background:#f1f1f1;border-radius:32px;overflow:hidden}
+.case-caption{padding:40px 32px 0;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
+.case-caption>div{display:block}
+.case-caption .case-tags{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+.case-tags span{font-size:13px;line-height:20px;padding:4px 9px;background:#fff9;border-radius:8px;color:#252525}
+.case-caption h2{font-size:32px;font-weight:600;line-height:1.15;margin:0 0 10px;letter-spacing:-.025em}
+.case-caption p:not(.case-company){font-size:20px;line-height:1.4;max-width:590px;margin:auto;text-wrap:balance}
+.case-link{font-size:16px;padding:10px 18px;line-height:22px}
+.case-art{height:520px;padding:32px 56px 0;border-radius:0;background:transparent}
+.case-art.desktop .case-browser{width:100%;margin:0;align-self:flex-start;max-width:100%;border-radius:16px 16px 0 0}
+.case-art.desktop .case-browser img{width:100%;max-height:none;object-fit:contain}
+.case-art.chart{padding:36px 56px;height:480px}
+.case-art.chart>img{max-width:90%;max-height:100%}
+.case-art.mobile{height:560px;align-items:flex-start;padding-top:32px;gap:32px}
+.case-art.mobile .phone-mockup{max-width:224px}
+.concept-ribbon-section{padding:0 0 96px;scroll-margin-top:120px;overflow:hidden}
+.concept-ribbon-section>h2{max-width:1120px;width:calc(100% - 96px);margin:0 auto 40px;font-size:28px;font-weight:500}
+.concept-ribbon{overflow:hidden;padding:12px 0}
+.concept-track{display:flex;align-items:flex-end;gap:48px;width:max-content;animation:ribbon-drift 40s linear infinite}
+.concept-track .card-back{position:relative;inset:auto;transform:none;display:block;flex:none;width:auto;height:340px;padding:0;background:none;border:0;border-radius:0;overflow:visible}
+.concept-track .card-back img{width:auto;height:100%;max-width:520px;object-fit:contain;border-radius:16px}
+@keyframes ribbon-drift{to{transform:translateX(-50%)}}
+.concept-track:hover,.concept-track:focus-within{animation-play-state:paused}
+@media(max-width:700px){.intro-hero{padding:130px 20px 56px}.intro-photo{width:80px;height:88px;border-radius:20px;margin-bottom:24px}.intro-hero h1{font-size:clamp(32px,6.5vw,44px)}.intro-hero>p{font-size:19px;max-width:350px;margin-top:18px}.intro-brands img{width:38px;height:38px}.flow-cases{width:calc(100% - 32px);gap:24px;padding-bottom:64px}.flow-case{border-radius:24px}.cases-heading{font-size:25px;margin:0 0 0}.case-caption{padding:28px 20px 0;gap:16px}.case-caption h2{font-size:26px}.case-caption p:not(.case-company){font-size:18px}.case-art{aspect-ratio:auto;height:300px;padding:24px 20px 0}.case-art.desktop .case-browser img{max-height:none}.case-art.chart{height:280px;padding:24px 20px}.case-art.mobile{height:320px;padding:24px 20px 0;gap:12px}.case-art.mobile .phone-mockup{flex-basis:29%}.concept-ribbon-section>h2{width:calc(100% - 32px);font-size:25px}.concept-track{gap:24px}.concept-track .card-back{height:260px}.concept-track .card-back img{max-width:380px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.concept-track{animation:none}.concept-ribbon{overflow-x:auto}.concept-track [data-copy]{display:none}}
+
+/* Restore the portrait-to-concepts scroll story with the revised introduction. */
+.card-stage{top:28%}
+.stack-greeting{top:calc(28% + clamp(320px,31vw,390px)*.16 + 28px);left:24px;right:24px}
+.stack-greeting h1{font-size:clamp(38px,4.1vw,58px);line-height:1.08;font-weight:500;letter-spacing:-.035em;text-wrap:balance}
+.stack-greeting .hero-experience{font-size:24px;line-height:1.4;font-weight:400;color:#777;letter-spacing:-.01em;margin:20px auto 24px;max-width:680px;text-wrap:balance}
+.stack-greeting .intro-brands img{border-radius:10px}
+.cases-heading{text-align:center}
+@media(max-width:700px){.card-stage{top:25%}.stack-greeting{top:calc(25% + 55px + 26px);left:16px;right:16px}.stack-greeting h1{font-size:clamp(29px,6vw,40px)}.stack-greeting .hero-experience{font-size:19px;margin:18px auto 22px;max-width:340px}.stack-greeting .intro-brands img{width:38px;height:38px}}
+@media(prefers-reduced-motion:reduce){.stack-greeting{position:static;margin:32px 0}.card-stage{position:static}}
+
+/* Center the complete intro in the space below the fixed navigation. */
+.card-stage{top:calc(50% - 118px)}
+.stack-greeting{top:calc(50% - 118px + clamp(320px,31vw,390px)*.16 + 28px)}
+.intro-brands img{position:relative}
+.intro-brands img:first-child{z-index:2;transform:translateY(-4px) rotate(-9deg)}
+.intro-brands img:last-child{z-index:1;margin-left:-8px}
+.cases-heading{font-size:40px;line-height:1.15;margin-bottom:4px}
+.case-tags span{font-size:16px;line-height:22px;padding:6px 11px}
+@media(max-width:700px){.card-stage{top:calc(50% - 130px)}.stack-greeting{top:calc(50% - 130px + 55px + 26px)}.cases-heading{font-size:32px}.case-tags span{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.card-stage,.stack-greeting{top:auto}}
+
+.flow-cases{row-gap:48px}
+@media(max-width:700px){.flow-cases{row-gap:32px}}
+
+/* Preserve the brand mark without skewing its silhouette. */
+.intro-brands img:first-child{transform:translateY(-4px);z-index:2}
+.intro-brands img:last-child{margin-left:-5px}
+.case-caption>div:not(.case-tags){width:100%}
+.case-caption p:not(.case-company){max-width:none;text-wrap:normal}
+@media(min-width:1200px){.case-caption p:not(.case-company){white-space:nowrap}}
+@media(max-width:700px){.case-caption p:not(.case-company){text-wrap:pretty}}
+
+/* The browser chrome and screen share one width; do not flex-shrink the bitmap. */
+.case-art.desktop .case-browser{display:block;max-height:none;flex:none}
+.case-art.desktop .case-browser img{display:block;width:100%;height:auto;max-height:none;min-height:0;flex:none;object-fit:initial;border-radius:0}
+
+/* Align brand marks on one baseline with a small overlap. */
+.intro-brands img:first-child,.intro-brands img:last-child{transform:none}
+.intro-brands img:last-child{margin-left:-6px}
+
+/* Page signature follows the same content grid as the cases. */
+.home-signature{width:calc(100% - 96px);max-width:1120px;margin:0 auto;display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:0 0 40px;color:#252525;font-size:20px;font-weight:400;line-height:1.4}
+.home-signature span:last-child{white-space:nowrap}
+@media(max-width:700px){.home-signature{width:calc(100% - 32px);font-size:16px;gap:16px;padding-bottom:28px}}
+
+/* Keep the separator clear of the Abordio mark; labels appear on hover/focus. */
+.intro-brands .brand-mark{position:relative;display:block;flex:none;line-height:0;outline:none}
+.intro-brands .brand-mark:first-child{z-index:2}
+.intro-brands .brand-mark+.brand-mark{margin-left:-2px;z-index:1}
+.intro-brands .brand-mark img{display:block;transform:none;margin:0;outline:2px solid #fff}
+.brand-tooltip{position:absolute;top:calc(100% + 12px);left:50%;transform:translate(-50%,-4px);padding:8px 12px;border-radius:10px;background:#252525;color:#fff;font-size:14px;font-weight:400;line-height:20px;white-space:nowrap;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .15s,transform .15s,visibility .15s}
+.intro-brands .brand-mark:hover,.intro-brands .brand-mark:focus-visible{z-index:3}
+.brand-mark:hover .brand-tooltip,.brand-mark:focus-visible .brand-tooltip{opacity:1;visibility:visible;transform:translate(-50%,0)}
+@media(prefers-reduced-motion:reduce){.brand-tooltip{transition:none}}
+
+.home-signature{color:#777}
+
+.home-signature{justify-content:center;text-align:center;font-size:14px;line-height:20px;color:#777}
+
+.case-tags .case-status{display:inline-flex;align-items:center;gap:7px;margin-left:10px;background:#f8e9cb;color:#76501c}.case-tags .case-status svg{flex:none}
+
+.stack-greeting .brand-mark .brand-tooltip{font:400 17px/24px 'SF Pro Display',Arial,sans-serif;letter-spacing:0;color:#fff;background:#252525;margin:0;padding:8px 12px}
+
+.stack-greeting .brand-mark .brand-tooltip{font-size:14px;line-height:20px;padding:6px 10px;border-radius:8px}
+
+/* Separate projects and give the closing signature its own breathing room. */
+.flow-cases{row-gap:72px;padding-bottom:160px}
+@media(max-width:700px){.flow-cases{row-gap:48px;padding-bottom:112px}}
+
+.stack-greeting .intro-brands .brand-mark img { border-radius: 50%; }

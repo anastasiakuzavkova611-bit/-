@@ -1,0 +1,33 @@
+.dl-page{background:#fff;color:var(--c-primary)}
+.dl-main{padding-top:144px;padding-bottom:0}
+.dl-intro{display:flex;flex-direction:column;gap:48px;margin-bottom:96px}
+.dl-back,.dl-eyebrow{font-size:20px;line-height:1.4;color:#868689}.dl-back{align-self:flex-start;text-decoration:none}.dl-back:hover{color:var(--c-primary)}
+.dl-title-row{display:flex;align-items:center;gap:24px}.dl-title-row h1{font-size:clamp(64px,8vw,112px);font-weight:590;line-height:1;letter-spacing:-.045em;margin:0}.dl-title-row img{width:80px;height:80px}
+.dl-intro-bottom{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}.dl-intro-bottom>p{font-size:32px;line-height:1.15;font-weight:510;margin:0}.dl-intro-bottom>div{display:grid;gap:8px}.dl-intro-bottom>div p{font-size:24px;line-height:1.35;margin:0;max-width:480px}
+.dl-section-heading{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:48px}.dl-section-heading h2{font-size:clamp(36px,4.5vw,64px);line-height:1.1;letter-spacing:-.035em;margin:0;font-weight:590}
+.dl-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 32px}.dl-card{background:#F7F7F8;border-radius:48px;padding:8px;display:flex;flex-direction:column;min-width:0}.dl-cover{height:320px;border-radius:40px;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:32px;pointer-events:none}.dl-cover--chart{background:#e6f6ff}.dl-cover--chat{background:#F1F1F3}.dl-card-copy{padding:24px;display:flex;flex-direction:column;align-items:flex-start;gap:16px;flex:1}.dl-card-copy h3{font-size:24px;line-height:1.2;font-weight:590;margin:0}.dl-card-copy p{font-size:20px;line-height:1.4;color:#65626c;margin:0 0 8px}.dl-card-copy .project-card__open{margin-top:auto;cursor:pointer}.dl-window{width:100%;max-width:400px;background:white;border-radius:24px;padding:24px;box-shadow:0 8px 32px #28282e0a;transition:transform .3s}.dl-windowbar{display:flex;justify-content:space-between;font-size:20px;font-weight:510;gap:8px}.dl-windowbar span{color:#868689}.dl-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px;font-size:18px;margin-top:24px;align-items:center}.dl-fields>span{color:#868689}.dl-fields b{font-weight:400;padding:8px;background:#F7F7F8;border-radius:8px;display:flex;justify-content:space-between}.dl-command{font-size:18px;background:#28282E;color:white;border-radius:12px;padding:16px;margin-top:24px;display:flex;justify-content:space-between;gap:8px}.dl-bars{display:flex;align-items:flex-end;justify-content:space-between;height:144px;gap:20px;margin-top:16px}.dl-bars i{display:block;height:var(--bar);width:40px;background:#e6f6ff;position:relative;border-radius:6px 6px 0 0}.dl-bars i:after{content:'';position:absolute;bottom:0;left:25%;width:50%;height:var(--actual);background:#009dff;border-radius:4px 4px 0 0}.dl-legend{display:flex;gap:24px;margin-top:16px;font-size:18px;color:#868689}.dl-legend span:last-child{color:#009dff}.dl-mobile{background:white;border-radius:28px;padding:24px;width:256px;margin-top:64px;box-shadow:0 8px 32px #28282e0a;font-size:18px}.dl-mobile>span{color:#868689}.dl-mobile h4{font-size:24px;margin:16px 0}.dl-bubble{background:#e6f6ff;border-radius:16px;padding:12px}.dl-answer{padding:16px 0}.dl-lines{height:40px;margin-top:12px;background:repeating-linear-gradient(to bottom,#F1F1F3 0 6px,transparent 6px 16px)}.dl-input{background:#F7F7F8;padding:12px;border-radius:20px;display:flex;justify-content:space-between;color:#868689}.dl-type{font-size:64px;display:flex;align-items:center;gap:20px;margin:24px 0;color:#009dff}.dl-type span{font-size:20px;line-height:1.2;color:#28282E}.dl-swatches{display:flex;gap:12px}.dl-swatches i{width:36px;height:36px;background:#009dff;border-radius:50%}.dl-swatches i:nth-child(2){background:#28282E}.dl-swatches i:nth-child(3){background:#868689}.dl-swatches i:nth-child(4){background:#F1F1F3}
+.dl-dialog{max-width:680px;width:calc(100% - 48px);padding:40px;border:0;border-radius:40px;color:#28282E}.dl-dialog::backdrop{background:#28282e66;backdrop-filter:blur(8px)}.dl-dialog form{text-align:right;margin-bottom:24px}.dl-close{font:inherit;font-size:20px;border:0;border-radius:24px;padding:12px 20px;background:#F1F1F3;cursor:pointer}.dl-dialog h2{font-size:32px;margin:16px 0 32px;line-height:1.1}.dl-dialog h3{font-size:24px;margin-bottom:8px}.dl-dialog p{font-size:20px;line-height:1.4}.dl-muted{color:#868689;margin-top:24px}body:has(.dl-dialog[open]){overflow:hidden}
+@media(max-width:900px){.dl-grid{grid-template-columns:1fr;gap:32px}.dl-cover{height:360px}.dl-intro-bottom{grid-template-columns:1fr;gap:24px}.dl-intro{margin-bottom:64px}.dl-main{padding-top:144px}}
+@media(max-width:640px){.dl-main{padding-top:160px}.dl-intro{gap:32px}.dl-title-row img{width:48px;height:48px}.dl-title-row{gap:16px}.dl-title-row h1{font-size:48px}.dl-section-heading{align-items:flex-start;margin-bottom:32px}.dl-section-heading>.dl-eyebrow{display:none}.dl-card{border-radius:32px}.dl-cover{height:280px;padding:16px;border-radius:24px}.dl-card-copy{padding:16px}.dl-window{padding:16px}.dl-fields{font-size:18px;gap:8px}.dl-command{font-size:18px;padding:12px}.dl-dialog{padding:24px;border-radius:32px}}
+
+/* Match the main-page case cards: gray artwork, inset white content. */
+.dl-card{gap:8px}
+.dl-cover,.dl-cover--chart,.dl-cover--chat{background:#F7F7F8}
+.dl-card-copy{background:#fff;border-radius:40px;padding:32px}
+@media(max-width:640px){.dl-card-copy{border-radius:24px;padding:24px}}
+
+/* Compact introduction and consistent card hierarchy. */
+.dl-intro{margin-bottom:48px;gap:0}
+.dl-grid{gap:32px}
+.dl-card-copy{gap:8px}
+.dl-card-copy p{margin:0}
+.dl-card-copy .project-card__open{margin-top:24px}
+@media(max-width:640px){.dl-intro{margin-bottom:32px}.dl-grid{gap:24px}}
+
+/* Short product introduction directly below the header. */
+.dl-main{padding-top:48px}
+.dl-intro{gap:24px}
+.dl-intro .project-logo--datalens{height:36px;width:306px}
+.dl-intro .project-logo--datalens .project-logo__original{transform:scale(1.612)}
+.dl-description{margin:0;max-width:640px;font-size:24px;line-height:1.35;color:#65626c}
+@media(max-width:640px){.dl-main{padding-top:32px}.dl-intro .project-logo--datalens{height:32px;width:272px}.dl-intro .project-logo--datalens .project-logo__original{transform:scale(1.433)}.dl-description{font-size:20px}}

@@ -1,0 +1,21 @@
+name: Import portfolio assets
+on:
+  push:
+    paths:
+      - '.github/portfolio-assets.json'
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Copy and verify public portfolio media
+        run: python3 .github/import-portfolio.py
+      - name: Save portfolio media
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add portfolio
+          git diff --cached --quiet || git commit -m "Add verified portfolio images and videos"
+          git push

@@ -1,0 +1,92 @@
+/* Match the screenshot stage to the before/after video. */
+body .install-case { --screen-rail:52px; --screen-top:28px; --screen-gap:12px }
+body .install-case .solution-carousel { aspect-ratio:5/3 }
+body .install-case .annotated-board.complete-screen-board,
+body .install-case .solution-carousel>figure.complete-screen-board {
+ justify-content:flex-start;
+ padding:var(--screen-top) var(--screen-rail) 0;
+ gap:var(--screen-gap);
+}
+body .install-case .complete-screen-board .screen-original,
+body .install-case .solution-carousel .complete-screen-board .screen-original {
+ flex:1 1 0; height:auto; align-items:flex-start;
+}
+body .install-case .complete-screen-board .screen-original>img {
+ width:100%;height:100%;object-fit:cover;object-position:left top;
+}
+@media(max-width:700px){
+ body .install-case { --screen-rail:20px; --screen-top:20px; --screen-gap:8px }
+}
+body .install-case .solution-carousel .solution-carousel-next {
+ top:var(--screen-middle,50%);right:0;left:auto;width:var(--arrow-rail,var(--screen-rail));
+ padding:0;place-items:center;transform:translateY(-50%);
+}
+body .install-case .solution-carousel .solution-carousel-next[data-last="true"] {left:0;right:auto}
+body .install-case .solution-carousel-next svg{width:min(24px,var(--screen-rail));height:auto}
+/* The caption has a reserved row even on screens without a caption. */
+body .install-case { --caption-row:24px }
+body .install-case .annotated-board.complete-screen-board,
+body .install-case .solution-carousel>figure.complete-screen-board {
+ display:grid;grid-template-columns:minmax(0,1fr);
+ grid-template-rows:var(--caption-row) minmax(0,1fr);align-items:stretch;
+}
+body .install-case .complete-screen-board :is(figcaption,.carousel-board-title){grid-area:1/1;align-self:center}
+body .install-case .complete-screen-board .screen-original{grid-area:2/1}
+body .install-case .install-video-comparison{grid-template-rows:var(--caption-row) minmax(0,1fr)}
+body .install-case .install-video-label{align-self:center}
+body .install-case .audit-gallery{width:100%;max-width:var(--reading-width);margin:0 auto var(--space-section)}
+body .install-case .solution-carousel button[hidden]{display:none}
+@media(max-width:700px){body .install-case{--caption-row:72px}}
+body .install-case .audit-task-list{display:grid;row-gap:4px}
+
+/* A common bottom-aligned viewport for stills and recordings in each case. */
+body .install-case{
+ --reading-width:1000px;
+ --media-ratio:16 / 9;
+ --media-inset:7.6%;
+}
+body .install-case :is(.annotated-board.complete-screen-board,.solution-carousel,.install-video-comparison){
+ aspect-ratio:5/3;height:auto;min-height:0;
+}
+body .install-case .annotated-board.complete-screen-board,
+body .install-case .solution-carousel>figure.complete-screen-board,
+body .install-case .install-video-comparison{
+ display:grid;grid-template-rows:minmax(var(--caption-row),1fr) auto;
+ grid-template-columns:minmax(0,1fr);gap:var(--screen-gap);
+ padding:0 var(--media-inset);align-items:end;align-content:stretch;
+}
+body .install-case .solution-carousel>figure.complete-screen-board{width:100%;height:100%}
+body .install-case .complete-screen-board :is(figcaption,.carousel-board-title),
+body .install-case .install-video-comparison .install-video-label{
+ grid-area:1/1;align-self:end;
+}
+body .install-case .complete-screen-board .screen-original,
+body .install-case .solution-carousel .complete-screen-board .screen-original,
+body .install-case .install-video-comparison .install-video-panel{
+ grid-area:2/1;position:relative;inset:auto;aspect-ratio:var(--media-ratio);
+ width:100%;height:auto;min-height:0;align-self:end;
+}
+body .install-case .complete-screen-board .screen-original>img,
+body .install-case .install-video-panel video{
+ position:absolute;inset:0;display:block;width:100%;height:100%;
+ max-width:100%;max-height:100%;transform:none;object-fit:contain;object-position:center bottom;
+}
+body .install-case .install-video-comparison{--video-rail:var(--media-inset)}
+body .install-case .install-video-comparison .install-video-next{width:var(--media-inset);right:0;left:auto;padding:0}
+body .install-case .install-video-comparison .install-video-next[data-last="true"]{left:0;right:auto}
+@media(max-width:700px){
+ body .install-case :is(.annotated-board.complete-screen-board,.solution-carousel,.install-video-comparison){aspect-ratio:auto}
+ body .install-case .annotated-board.complete-screen-board,
+ body .install-case .solution-carousel>figure.complete-screen-board,
+ body .install-case .install-video-comparison{padding-top:var(--screen-top)}
+}
+body .install-case{container-type:inline-size;--media-inset:min(76px,7.6cqi)}
+
+/* Reserve the caption above the screen instead of stretching its row. */
+@media(min-width:701px){
+ body .install-case :is(.annotated-board.complete-screen-board,.solution-carousel,.install-video-comparison){aspect-ratio:auto}
+ body .install-case .annotated-board.complete-screen-board,
+ body .install-case .solution-carousel>figure.complete-screen-board,
+ body .install-case .install-video-comparison{padding-top:clamp(24px,4cqi,40px);grid-template-rows:minmax(var(--caption-row),auto) auto}
+ body .install-case .solution-carousel>figure.complete-screen-board{height:auto}
+}

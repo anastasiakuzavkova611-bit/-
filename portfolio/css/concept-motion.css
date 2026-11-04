@@ -1,0 +1,74 @@
+/* Motion is confined to two original concepts; exported artwork stays untouched. */
+[data-motion="music"]{isolation:isolate;overflow:hidden!important;border-radius:11.94% / 5.49%!important}
+[data-motion="music"]::after{content:none}
+.card-back[data-motion]:hover img{transform:none}
+.concept-motion-preview{position:relative;display:block;width:max-content;max-width:100%;margin:auto}
+.concept-motion-preview[data-motion="charge"]::after{bottom:9.9%;height:10.3%}
+@media(prefers-reduced-motion:reduce){[data-motion]::after{display:none!important;animation:none!important}}
+
+.charge-live{position:absolute;left:0;bottom:0;width:100%;height:auto;aspect-ratio:539/252;pointer-events:none;overflow:visible}
+.charge-live-small{left:auto;right:0;top:0;bottom:auto;width:46.75%;aspect-ratio:1}
+@media(prefers-reduced-motion:reduce){.charge-live{display:none}}
+[data-motion="charge"]:has(> .charge-ready)>img,.concept-charge-pair:has(> .charge-ready)>img{opacity:0}
+@media(prefers-reduced-motion:reduce){[data-motion="charge"]>img,.concept-charge-pair>img{opacity:1!important}}
+
+
+@font-face{font-family:Anton;src:url('/-/portfolio/assets/fonts/Anton-Regular.ttf') format('truetype');font-display:swap}
+.fitness-live{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.fitness-live text[font-family="SF Pro"]{font-family:"SF Pro Display",Arial,sans-serif}
+@media(prefers-reduced-motion:reduce){.fitness-live{display:none}}
+
+
+/* A tiny contrast adjustment, preserving the original artwork and white text. */
+.card-back > img[src*="2722-797"],.card-back > img[src*="2744-877"],
+.card-back > img[src*="2744-1150"],.card-back > img[src*="2722-602"],
+.concept-motion-preview > img[src*="2722-797"],.concept-motion-preview > img[src*="2744-877"],
+.concept-motion-preview > img[src*="2744-1150"],.concept-motion-preview > img[src*="2722-602"]{
+ filter:brightness(.97) contrast(1.03);
+}
+.flow-case{position:relative;cursor:pointer}
+.flow-case .case-caption h2 a::after{content:"";position:absolute;inset:0;z-index:3;border-radius:inherit}
+.flow-case:has(.case-caption h2 a:focus-visible){outline:2px solid #555;outline-offset:5px}
+.fitness-live{overflow:hidden;border-radius:11.94% / 5.49%}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.flow-case:hover .case-browser,.flow-case:hover .case-art>img{transform:translateY(-5px)}}
+
+@media (prefers-reduced-motion:no-preference){
+ .card-back[data-motion="music"].motion-visible::after{
+  content:"";position:absolute;left:21.89055%;top:23.79863%;width:78.10945%;height:58.12357%;
+  pointer-events:none;background:center/100% 100% no-repeat url('../assets/img/resonance-drift.webp?v=2');
+  mix-blend-mode:screen;
+ }
+}
+.fitness-live .fitness-label{font-family:"SF Pro Display",Arial,sans-serif;fill:#fff}
+.charge-live .charge-car-art{filter:brightness(1.16)}
+
+@media (prefers-reduced-motion:no-preference){
+ .card-back[data-motion="prices"].motion-visible::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:center bottom/contain no-repeat url('../assets/img/price-chart-motion.svg');
+ }
+}
+
+/* Stage light moves across the upper portrait, fading before the lettering. */
+@media (prefers-reduced-motion: no-preference) {
+ .card-back[data-motion="artist"]::after {
+  content: "";
+  position: absolute;
+  inset: 37.55% 0 auto;
+  height: 42.1%;
+  pointer-events: none;
+  background-image: radial-gradient(ellipse at center, rgb(255 245 239 / 60%) 0%, rgb(255 245 239 / 30%) 30%, transparent 66%);
+  background-size: 180% 115%;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  mask-image: linear-gradient(black 0% 42%, transparent 70%);
+  animation: artist-stage-light 3.8s ease-in-out infinite alternate paused;
+ }
+ .card-back[data-motion="artist"].motion-visible:not(.motion-paused)::after {
+  animation-play-state: running;
+ }
+}
+@keyframes artist-stage-light {
+ from { background-position: 100% 30%; opacity: .65; }
+ to { background-position: 0% 55%; opacity: .9; }
+}

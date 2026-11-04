@@ -1,0 +1,27 @@
+/* Reference lock: Semenov's white gallery, Stefan's varied preview proportions. */
+.visuals-dialog{inset:0;width:100%;height:100dvh;max-width:none;max-height:none;margin:0;padding:0 0 48px;border:0;border-radius:0;box-shadow:none;background:#fff;box-sizing:border-box;overflow-y:auto}
+.visuals-dialog::backdrop{background:#fff;backdrop-filter:none}
+.visuals-dialog .site-header--panel{padding:0 max(24px,calc((100% - 1200px)/2));box-sizing:border-box;height:88px}
+.visuals-dialog .concepts-heading{max-width:1200px;margin:24px auto 40px;padding:0 24px;font-size:28px;line-height:1.2;font-weight:500;box-sizing:content-box}
+.visuals-grid{max-width:1200px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:repeat(4,260px);gap:20px;grid-template-areas:'music music charge charge charge charge' 'music music small small prices prices' 'studio studio studio studio fitness fitness' 'recipes recipes recipes recipes fitness fitness'}
+.visual-tile{position:relative;min-width:0;min-height:0;border:0;border-radius:28px;background:#f5f5f5;padding:28px;overflow:hidden;display:flex;align-items:center;justify-content:center;box-shadow:none}
+.visual-tile:nth-child(1){grid-area:music}.visual-tile:nth-child(2){grid-area:recipes}.visual-tile:nth-child(3){grid-area:charge}.visual-tile:nth-child(4){grid-area:small}.visual-tile:nth-child(5){grid-area:studio}.visual-tile:nth-child(6){grid-area:fitness}.visual-tile:nth-child(7){grid-area:prices}
+.visual-tile-image{height:100%;width:100%;display:flex;align-items:center;justify-content:center}
+.visual-tile-image img{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;transition:transform .35s cubic-bezier(.2,.7,.3,1)}
+.visual-tile:nth-child(3) img{max-width:82%}.visual-tile:nth-child(5){padding:24px}.visual-tile:nth-child(2) img{max-height:none;width:210px;align-self:flex-start;transform:translateY(2px)}
+.visual-tile>span{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.visual-tile:focus-visible{outline:2px solid #333;outline-offset:5px}
+.visuals-dialog .site-footer{max-width:1200px;width:calc(100% - 48px);margin:32px auto 0;padding:32px 0 0}
+@media(hover:hover) and (pointer:fine){.visual-tile:hover img{transform:scale(1.025)}.visual-tile:nth-child(2):hover img{transform:translateY(-8px)}}
+@media(max-width:900px){.visuals-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:480px 260px 300px 480px;grid-template-areas:'music fitness' 'charge charge' 'small prices' 'recipes studio';gap:16px}.visual-tile:nth-child(2) img{height:100%;width:auto;max-height:100%;transform:none}.visual-tile:nth-child(3) img{max-width:90%}}
+@media(max-width:600px){.visuals-dialog{padding-bottom:32px}.visuals-dialog .site-header--panel{height:64px;padding:0 16px}.visuals-dialog .concepts-heading{padding:0 16px;margin:16px 0 28px;font-size:28px}.visuals-grid{padding:0 16px;grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:340px;grid-template-areas:'music' 'charge' 'recipes' 'small' 'studio' 'fitness' 'prices';gap:16px}.visual-tile{padding:24px;border-radius:22px}.visual-tile:nth-child(1),.visual-tile:nth-child(2),.visual-tile:nth-child(6){height:440px}.visuals-grid{grid-template-rows:440px 260px 440px 300px 260px 440px 340px}.visuals-dialog .site-footer{width:calc(100% - 32px)}.visual-tile:nth-child(3) img{max-width:100%}}
+@media(prefers-reduced-motion:reduce){.visual-tile-image img{transition:none}.visual-tile:hover img{transform:none}}
+/* Keep gallery, title, back link, and footer on one outer grid. */
+.visuals-grid{width:calc(100% - 48px);padding:0;box-sizing:border-box}
+.visuals-dialog .concepts-heading{width:calc(100% - 48px);padding:0;box-sizing:border-box}
+@media(max-width:600px){.visuals-grid,.visuals-dialog .concepts-heading{width:calc(100% - 32px)}.visuals-dialog .concepts-heading{margin-left:auto;margin-right:auto}}
+
+.visuals-grid{margin-top:24px}.visuals-dialog .site-footer{margin-top:72px}
+@media(max-width:700px){.visuals-grid{margin-top:16px}.visuals-dialog .site-footer{margin-top:48px}}
+
+.visuals-dialog:focus{outline:none}.visuals-dialog .site-back:focus-visible{outline:2px solid #555;outline-offset:5px}

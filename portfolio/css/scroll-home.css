@@ -1,0 +1,97 @@
+@font-face{font-family:'SF Pro Display';src:url('../assets/fonts/SF-Pro-Display-Regular.woff')}@font-face{font-family:'SF Pro Display';src:url('../assets/fonts/SF-Pro-Display-Semibold.woff');font-weight:600}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:110px}body{margin:0;background:#fff;color:#252525;font-family:'SF Pro Display',Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}button{font:inherit}button,a{-webkit-tap-highlight-color:transparent}.concept-story{height:220svh;position:relative}.concept-sticky{position:sticky;top:0;height:100svh;min-height:620px;overflow:hidden;perspective:1400px}.card-stage{position:absolute;top:44%;left:50%;width:0;height:0;perspective:1400px;transform-style:preserve-3d}.scroll-card{position:absolute;width:clamp(250px,25vw,330px);height:clamp(320px,34vw,420px);left:0;top:0;margin-left:calc(clamp(250px,25vw,330px) / -2);margin-top:calc(clamp(320px,34vw,420px) / -2);z-index:var(--layer);transform-style:preserve-3d;will-change:transform}.flip-card{height:100%;width:100%;position:relative;transform-style:preserve-3d;will-change:transform}.card-face{position:absolute;inset:0;border:0;border-radius:22px;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;background:#efefef}.card-front{background:#e7e7e7}.card-front .portrait{height:100%;width:100%;object-fit:cover;object-position:center 35%;filter:grayscale(1)}.card-back{display:grid;place-items:center;transform:rotateY(180deg);padding:24px;cursor:default;width:100%;height:100%}.card-back img{max-width:100%;max-height:100%;object-fit:contain;border-radius:10px;transition:transform .3s}.card-back:hover img{transform:scale(1.025)}.card-back:focus-visible{outline:2px solid #888;outline-offset:-6px}.stack-greeting{position:absolute;top:calc(44% + clamp(320px,34vw,420px)/2 + 34px);left:20px;right:20px;text-align:center;font-size:clamp(24px,2.4vw,32px);line-height:1.2;font-weight:400;letter-spacing:-.025em;margin:0}.stack-greeting span{display:block;color:#929292;margin-top:4px}.flow-cases{max-width:1120px;width:calc(100% - 120px);margin:0 auto;padding:100px 0 140px;display:grid;gap:112px;scroll-margin-top:30px}.case-art{display:flex;align-items:center;justify-content:center;position:relative;height:540px;overflow:hidden;border-radius:28px;background:#f1f1f1;text-decoration:none;padding:56px}.case-art>img{max-width:100%;max-height:100%;object-fit:contain;transition:transform .4s}.case-art:hover>img{transform:translateY(-5px)}.case-browser{width:108%;flex-shrink:0;align-self:flex-start;margin:12px 0 0 15%;border-radius:14px 14px 0 0;overflow:hidden;transition:transform .4s}.case-browser img{display:block;width:100%;height:auto}.case-browser-bar{height:40px;background:#fafafa;display:flex;align-items:center;padding:0 16px;gap:16px;font-size:12px;color:#aaa}.case-browser-bar span:last-child{width:65%;text-align:center;background:#f1f1f1;border-radius:6px;padding:5px}.case-art:hover .case-browser{transform:translateY(-5px)}.case-art.mobile{gap:28px}.case-art.mobile img{height:100%;width:auto;max-width:29%;border-radius:20px}.case-caption{display:flex;align-items:flex-end;justify-content:space-between;gap:36px;padding:28px 4px 0}.case-company{font-size:16px;color:#888;margin:0 0 12px}.case-caption h2{font-size:28px;line-height:1.15;font-weight:400;letter-spacing:-.025em;margin:0 0 10px}.case-caption h2 a{text-decoration:none}.case-caption p:not(.case-company){font-size:20px;line-height:1.4;margin:0;max-width:670px;color:#666}.case-link{flex-shrink:0;background:#262626;color:#fff;padding:13px 22px;border-radius:13px;text-decoration:none;font-size:18px;transition:background .2s}.case-link:hover{background:#444}.concept-preview{border:0;border-radius:24px;padding:60px 28px 28px;max-width:90vw;max-height:90svh;background:#f2f2f2}.concept-preview::backdrop{background:#fff9;backdrop-filter:blur(12px)}.concept-preview img{display:block;max-width:80vw;max-height:74svh;object-fit:contain}.preview-close{position:absolute;right:20px;top:16px;border:0;background:#e5e5e5;border-radius:10px;padding:8px 16px;cursor:pointer}
+@media(max-width:700px){.concept-story{height:225svh}.concept-sticky{min-height:560px}.scroll-card{width:260px;height:340px;margin-left:-130px;margin-top:-170px}.stack-greeting{top:calc(44% + 204px);font-size:24px}.flow-cases{width:calc(100% - 40px);padding:64px 0 80px;gap:64px}.case-art{height:350px;padding:28px;border-radius:22px}.case-art.mobile{gap:12px}.case-art.mobile img{border-radius:10px}.case-caption{align-items:flex-start;flex-direction:column;gap:20px;padding-top:24px}.case-caption h2{font-size:25px}.case-caption p:not(.case-company){font-size:18px}.case-link{font-size:17px}.case-browser-bar{height:28px;font-size:9px;padding:0 8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.case-art img,.case-browser,.card-back img{transition:none}.concept-story{height:auto;padding:160px 20px 40px}.concept-sticky{position:relative;height:auto;min-height:0;overflow:visible}.card-stage{position:static;width:100%;height:auto;display:flex;overflow-x:auto;gap:20px;scroll-snap-type:x mandatory}.scroll-card{position:relative;flex-shrink:0;width:280px;height:360px;margin:0;transform:none!important;scroll-snap-align:center}.flip-card{transform:rotateY(180deg)!important}.stack-greeting{position:static;opacity:1!important;margin:32px 0}.flow-cases{padding-top:60px}}
+.card-stage{top:47%;perspective:2400px}.concept-sticky{perspective:2400px}.scroll-card{height:clamp(320px,31vw,390px);margin-top:calc(clamp(320px,31vw,390px)/-2)}.stack-greeting{top:calc(47% + clamp(320px,31vw,390px)/2 + 34px)}.card-back{grid-template-rows:minmax(0,1fr);grid-template-columns:minmax(0,1fr)}.card-back img{width:100%;height:100%;min-width:0;min-height:0;object-fit:contain}
+@media(max-width:700px){.scroll-card{height:340px;margin-top:-170px}.stack-greeting{top:calc(47% + 204px)}}
+/* Typographic composition: large role, smaller portrait stack, greeting below. */
+.hero-role-title{position:absolute;top:clamp(112px,16vh,170px);left:32px;right:32px;margin:0;font-size:clamp(54px,7.5vw,122px);font-weight:400;line-height:1;letter-spacing:-.045em;text-align:center;color:#c6c6c9;white-space:nowrap;will-change:opacity,transform}.card-stage{top:52%}.stack-greeting{top:calc(52% + clamp(320px,31vw,390px)*.34 + 34px);left:24px;right:24px;letter-spacing:-.025em}.stack-greeting h2{font-size:clamp(28px,3vw,42px);line-height:1.15;font-weight:400;margin:0}.stack-greeting p{font-size:clamp(22px,2.25vw,32px);line-height:1.3;color:#929292;font-weight:400;margin:10px 0 0}.scroll-card{transform:scale(.68)}
+@media(max-height:700px) and (min-width:701px){.concept-sticky{min-height:660px}.hero-role-title{top:108px;font-size:7.1vw}.card-stage{top:51%}.stack-greeting{top:calc(51% + 132px + 24px)}}
+@media(max-width:700px){.concept-sticky{min-height:680px}.hero-role-title{top:110px;left:20px;right:20px;font-size:clamp(42px,10.7vw,70px);line-height:.98;white-space:normal;max-width:600px;margin:auto}.card-stage{top:51%}.stack-greeting{top:calc(51% + 116px + 30px)}.stack-greeting h2{font-size:29px}.stack-greeting p{font-size:23px;max-width:340px;margin:12px auto 0}}
+@media(prefers-reduced-motion:reduce){.hero-role-title{position:static;white-space:normal;opacity:1!important;transform:none!important;font-size:clamp(42px,7.5vw,100px);margin:0 0 64px}.stack-greeting{position:static}.concept-sticky{min-height:0}}
+
+/* Quiet portrait-first introduction. Concepts reveal only on scroll. */
+.card-stage{top:44%}
+.stack-greeting{top:calc(44% + clamp(320px,31vw,390px)*.34 + 34px)}
+.stack-greeting h1{font-size:clamp(28px,3vw,42px);line-height:1.15;font-weight:400;margin:0}
+.scroll-card:not(:first-child){opacity:0}
+@media(max-width:700px){.card-stage{top:43%}.stack-greeting{top:calc(43% + 116px + 30px)}.stack-greeting h1{font-size:29px}}
+@media(prefers-reduced-motion:reduce){.scroll-card:not(:first-child){opacity:1}.stack-greeting{position:static}}
+
+/* Large, equal-size introduction with a smaller portrait. */
+.card-stage{top:38%}
+.scroll-card{transform:scale(.32)}
+.stack-greeting{top:calc(38% + clamp(320px,31vw,390px)*.16 + 36px);letter-spacing:-.028em}
+.stack-greeting h1,.stack-greeting p{font-size:clamp(46px,5.9vw,84px);line-height:1.08;font-weight:400;max-width:none;margin:0}
+.stack-greeting p{margin-top:8px}
+@media(max-width:700px){.card-stage{top:35%}.stack-greeting{top:calc(35% + 55px + 30px);left:16px;right:16px}.stack-greeting h1,.stack-greeting p{font-size:clamp(31px,6vw,44px);line-height:1.12;max-width:none}.stack-greeting p{margin-top:8px}}
+@media(prefers-reduced-motion:reduce){.stack-greeting{position:static;margin-top:40px}}
+
+/* Unframed concepts on a continuous moving ribbon. */
+.card-back{background:transparent;padding:0;border:0;border-radius:0;box-shadow:none;overflow:visible}
+.card-back img{border-radius:0;filter:none}
+.scroll-card:not(:first-child) .card-front{background:transparent}
+@media(prefers-reduced-motion:reduce){.scroll-card[data-copy]{display:none}}
+
+/* Portrait radius is 16px at the initial .32 scale; concepts share a baseline. */
+.scroll-card:first-child .card-front{border-radius:50px}
+.card-back img{object-position:center bottom}
+
+@font-face{font-family:'SF Pro Display';src:url('../assets/fonts/SF-Pro-Display-Medium.woff');font-weight:500}
+.stack-greeting h1,.stack-greeting p{font-size:clamp(48px,6.1vw,88px);font-weight:500;line-height:1.04}
+.stack-greeting p{margin-top:2px}
+.flow-cases{max-width:1240px;width:calc(100% - 96px)}
+.case-art{height:590px;padding:52px;border-radius:28px}
+.case-browser{width:100%;max-width:1060px;margin:0;align-self:center;border-radius:14px;flex-shrink:1}
+.case-browser img{max-height:440px;object-fit:contain;background:#fff}
+.case-logo{display:grid;place-items:center;width:44px;height:44px;border-radius:11px;background:#f1f1f1;overflow:hidden}
+.case-logo img{display:block;width:32px;height:32px;object-fit:contain;border-radius:8px}
+.case-company{margin-bottom:14px}
+@media(max-width:700px){.stack-greeting h1,.stack-greeting p{font-size:clamp(32px,6.2vw,46px)}.flow-cases{width:calc(100% - 32px)}.case-art{height:380px;padding:24px;border-radius:24px}.case-logo{border-radius:10px}.case-browser img{max-height:300px}}
+
+.cases-heading{font-size:clamp(36px,4vw,56px);font-weight:500;line-height:1.08;letter-spacing:-.025em;margin:0 0 -64px}
+@media(max-width:700px){.cases-heading{margin-bottom:-28px}}
+
+/* Wide case previews, compact section transition, side-by-side brand captions. */
+.stack-greeting h1,.stack-greeting p{font-weight:400}
+.concept-story{margin-bottom:-24px}
+.flow-cases{max-width:1400px;width:calc(100% - 64px);padding-top:24px;gap:88px}
+.cases-heading{text-align:center;margin-bottom:-40px}
+.case-art{height:auto;aspect-ratio:1.92;padding:36px;border-radius:24px}
+.case-browser{width:92%;max-width:none;border-radius:12px}
+.case-browser img{max-height:none;height:auto}
+.case-art.mobile img{height:100%;max-height:520px;max-width:29%;object-fit:contain}
+.case-caption{padding-top:20px}
+.case-caption>div{display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:16px;align-items:start}
+.case-caption .case-company{grid-column:1;grid-row:1 / 3;margin:0}
+.case-caption h2,.case-caption p:not(.case-company){grid-column:2}
+.case-logo{width:40px;height:40px;background:none;border-radius:10px}
+.case-logo img{width:40px;height:40px;border-radius:10px}
+@media(max-width:700px){.concept-story{margin-bottom:0}.flow-cases{width:calc(100% - 32px);padding-top:24px;gap:64px}.cases-heading{margin-bottom:-28px}.case-art{height:auto;aspect-ratio:1.55;padding:20px;border-radius:20px}.case-caption>div{grid-template-columns:32px minmax(0,1fr);column-gap:12px}.case-logo,.case-logo img{width:32px;height:32px;border-radius:8px}.case-art.mobile img{max-height:240px}}
+@media(prefers-reduced-motion:reduce){.concept-story{margin-bottom:0}}
+.case-art{height:min(730px,calc((100vw - 64px)/1.92));min-height:0}
+.case-browser{max-height:100%;display:flex;flex-direction:column}
+.case-browser-bar{flex-shrink:0}
+.case-browser img{min-height:0;object-fit:contain}
+@media(max-width:700px){.case-art{height:calc((100vw - 32px)/1.55)}}
+/* Restore restrained width; increase vertical space instead. */
+.flow-cases{max-width:1120px;width:calc(100% - 96px)}
+.case-art{height:660px;aspect-ratio:auto;padding:48px}
+@media(max-width:700px){.flow-cases{width:calc(100% - 32px)}.case-art{height:440px;padding:24px}}
+
+.case-caption>div{grid-template-columns:32px minmax(0,1fr)}
+.case-logo,.case-logo img{width:32px;height:32px;border-radius:50%;background:none}
+@media(max-width:700px){.case-caption>div{grid-template-columns:28px minmax(0,1fr)}.case-logo,.case-logo img{width:28px;height:28px}}
+
+.stack-greeting h1,.stack-greeting p{font-size:clamp(44px,5.6vw,80px)}
+.stack-greeting .hero-experience{font-size:clamp(20px,2vw,26px);line-height:1.35;letter-spacing:-.01em;margin-top:22px;color:#929292}
+@media(max-width:700px){.stack-greeting h1,.stack-greeting p{font-size:clamp(30px,5.8vw,42px)}.stack-greeting .hero-experience{font-size:18px;line-height:1.4;margin-top:18px}}
+
+/* Preserve the paired charging widgets from the concept collection. */
+.card-back .concept-charge-pair{position:absolute;bottom:0;left:0;width:100%;aspect-ratio:539/542;display:block}
+.card-back .concept-charge-pair img{position:absolute;height:auto;object-fit:contain}
+.card-back .concept-charge-pair .charge-small{width:46.75%;right:0;top:0}
+.card-back .concept-charge-pair .charge-wide{width:100%;left:0;bottom:0}
+
+/* Clip only the exported canvas outside the original rounded phone corners. */
+.card-back img[src*="concept-2744-"],.concept-preview img[src*="concept-2744-"]{border-radius:11.94% / 5.49%;overflow:hidden}

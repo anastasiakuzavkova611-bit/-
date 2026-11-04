@@ -1,0 +1,12 @@
+/* Existing case typography and whitespace, with the earlier ICE table structure. */
+.priority-scroll{overflow-x:auto;max-width:100%;outline-offset:4px}
+.priority-table{width:100%;border-collapse:collapse;table-layout:fixed;color:#252525;font-size:17px;line-height:1.45}
+.priority-table th,.priority-table td{padding:20px 12px;border-bottom:1px solid #e7e7e7;vertical-align:top}
+.priority-table thead th{font-weight:500;padding-top:8px;padding-bottom:16px;text-align:center}
+.priority-table th:first-child{width:54%;padding-left:0;text-align:left}
+.priority-table tbody th{font-weight:400}
+.priority-table td{vertical-align:middle;text-align:center;font-variant-numeric:tabular-nums}
+.priority-table th:last-child,.priority-table td:last-child{padding-right:0;font-weight:600}
+.priority-table tbody tr:last-child>*{border-bottom:0}
+.priority-caption{font-size:17px;line-height:1.45;margin:12px 0 0;color:#252525}
+@media(max-width:700px){.priority-table{min-width:680px}.priority-table th:first-child{width:49%}.priority-table th,.priority-table td{padding-block:16px}}

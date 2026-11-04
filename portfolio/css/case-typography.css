@@ -1,0 +1,10 @@
+/* Case body copy shares one reading size on desktop and mobile. */
+body .install-case .story-copy :is(p,li),
+body .install-case .hypothesis-aside p,
+body .install-case .story-outcome>p,
+body .install-case .story-insight p,
+body .install-case .install-lead,
+body .install-case .case-media-slot p,
+body .install-case .ab-table :is(th,td),
+body .install-case .ab-table-note,
+body .case-note p{font-size:17px;line-height:1.5}

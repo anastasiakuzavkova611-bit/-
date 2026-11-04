@@ -1,0 +1,48 @@
+.site-header{position:sticky;top:0;z-index:100;width:100%;background:#fff;transform:translateY(0);transition:transform .22s ease}
+.site-header.is-hidden{transform:translateY(-100%);pointer-events:none}
+.site-header:focus-within{transform:translateY(0);pointer-events:auto}
+.site-header-inner{width:min(1200px,calc(100% - 2 * clamp(32px,10.5vw,220px)));height:88px;margin:auto;display:flex;align-items:center}
+.site-back{display:inline-flex;align-items:center;gap:10px;padding:0;margin:0;border:0;border-radius:0;background:none;color:#868689;text-decoration:none;font-family:inherit;font-size:20px;font-weight:400;line-height:28px}
+.site-back:hover{background:none;color:#28282e}
+body:has(>.site-header) main{padding-top:0}
+.site-footer{box-sizing:border-box;width:min(1200px,calc(100% - 2 * clamp(32px,10.5vw,220px)));margin:16px auto 0;padding:32px 0 48px;display:flex;justify-content:space-between;gap:24px;border:0;font-family:"SF Pro Display",-apple-system,BlinkMacSystemFont,sans-serif}
+.site-footer nav,.site-footer-contacts{display:flex;gap:10px;flex-wrap:wrap}
+.site-footer a{display:inline-flex;align-items:center;justify-content:center;background:#f1f1f1;color:#28282e;text-decoration:none;padding:13px 24px;border-radius:14px;font-size:20px;line-height:24px;font-weight:400;transition:background .18s,transform .18s}
+.site-footer .contact-primary{background:#151515;color:#fff}
+.site-footer a:hover{background:#e7e7e7;transform:translateY(-3px)}.site-footer .contact-primary:hover{background:#333}
+.site-footer a:active{transform:scale(.97)}.site-footer a:focus-visible,.site-back:focus-visible{outline:2px solid #9988b8;outline-offset:4px}
+.visuals-dialog{padding-top:0}.site-header--panel{height:88px;display:flex;align-items:center;margin:0}.concepts-heading{margin:0 0 28px;font-size:28px;font-weight:590}
+.visuals-dialog .site-footer{width:100%;margin-top:32px;padding-bottom:0}
+html{scroll-padding-top:104px}
+@media(max-width:700px){.site-header-inner{width:calc(100% - 32px);height:64px}.site-header--panel{height:64px}.site-footer{width:calc(100% - 32px);display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:24px 0 32px}.site-footer nav,.site-footer-contacts{flex-direction:column}.site-footer a{font-size:17px;padding:10px 12px}.visuals-dialog .site-footer{width:100%}html{scroll-padding-top:80px}}
+@media(prefers-reduced-motion:reduce){.site-header,.site-footer a{transition:none}}
+
+.site-footer{margin-top:56px}.visuals-dialog .site-footer{margin-top:72px}
+@media(max-width:700px){.site-footer{margin-top:40px}.visuals-dialog .site-footer{margin-top:48px}}
+
+/* Shared case signature, separated from the narrative. */
+.case-signature{box-sizing:border-box;display:flex;justify-content:space-between;align-items:baseline;gap:24px;width:calc(100% - 96px);max-width:1120px;margin:144px auto 0;padding:0 0 40px;color:#777;font-size:20px;line-height:1.4;font-weight:400}
+.case-signature span:last-child{white-space:nowrap}
+@media(max-width:700px){.case-signature{width:calc(100% - 32px);margin-top:88px;padding-bottom:28px;font-size:16px;gap:16px}}
+
+.case-next{display:flex;justify-content:center;margin:112px auto 0;padding:0 16px}
+.case-next a{display:inline-flex;align-items:center;justify-content:center;gap:16px;padding:16px 24px;border-radius:14px;background:#f1f1f1;color:#252525;font-size:20px;line-height:28px;font-weight:400;text-decoration:none;transition:background .18s}
+.case-next a:hover{background:#e6e6e6}
+.case-next a:focus-visible{outline:2px solid #252525;outline-offset:4px}
+.case-next svg{flex:none}
+.case-next+.case-signature{margin-top:80px}
+@media(max-width:700px){.case-next{margin-top:72px}.case-next a{font-size:18px;padding:14px 20px}.case-next+.case-signature{margin-top:64px}}
+
+.case-next-pair{gap:16px;flex-wrap:wrap}
+@media(max-width:700px){.case-next-pair{flex-direction:column;align-items:center;gap:12px}.case-next-pair a{max-width:100%;box-sizing:border-box}}
+
+/* One explicit content-to-navigation gap, without stacked section spacing. */
+main:has(+.case-next){padding-bottom:0}
+main:has(+.case-next)>:last-child{margin-bottom:0}
+.case-next{margin-top:64px}
+@media(max-width:700px){.case-next{margin-top:48px}}
+
+.case-signature{justify-content:center;text-align:center;font-size:14px;line-height:20px;color:#777}
+
+.case-signature,.case-next+.case-signature{margin-top:144px}
+@media(max-width:700px){.case-signature,.case-next+.case-signature{margin-top:104px}}

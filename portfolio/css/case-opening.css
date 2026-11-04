@@ -1,0 +1,10 @@
+/* One opening rhythm for both DataLens cases and Abordio. */
+body .case-page-header~main.install-case{margin-top:clamp(160px, 13vw, 176px);padding-top:0}
+body main.install-case .install-hero{display:flex;flex-direction:column;align-items:center;gap:0;padding:0}
+body main.install-case .install-hero,
+body main.install-case .install-hero:has(+section){margin-block:0 64px}
+body main.install-case .install-hero .case-brand{margin:0 auto 16px}
+body main.install-case .install-hero h1{margin:0 0 24px}
+body main.install-case .install-hero .install-lead{margin:0 auto}
+body main.install-case .install-hero+section{margin-top:0}
+body main.install-case .install-hero:has(+.install-video-comparison){margin-bottom:64px}

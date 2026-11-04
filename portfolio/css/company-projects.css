@@ -1,0 +1,32 @@
+.company-projects{width:min(1100px,calc(100% - 96px));margin:24px auto 120px}
+.company-project+.company-project{margin-top:100px}
+.project-intro{margin-bottom:32px;max-width:620px}
+.project-intro h2{display:flex;align-items:center;gap:12px;font-size:28px;line-height:36px;font-weight:590;margin:0 0 14px;letter-spacing:-.4px}
+.project-intro h2 img{width:32px;height:32px;border-radius:10px}
+.project-intro p{font-size:20px;line-height:28px;color:#65626c;margin:0;text-wrap:pretty}
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.project-grid .work-preview,.project-tile{display:block;position:relative;width:100%;height:430px;min-height:0;overflow:hidden;border-radius:24px;background:#f7f7f7;border:0;box-shadow:none;container-type:inline-size}
+.project-grid--datalens>.work-preview:first-child{grid-column:1 / -1;height:490px}
+.project-grid .desktop-scene,.project-grid .chart-duo{width:100%;height:100%;background:none;--preview-inset:40px}
+.project-grid .desktop-window{transition:transform .35s ease}
+.project-grid .desktop-scene--side .desktop-window:not(.desktop-window--branding){width:118%;left:56px;top:48px}
+.project-grid .desktop-scene--side .desktop-window--branding{left:40px;top:40px;width:calc(100% - 28px)}
+.project-grid .desktop-window--branding .desktop-toolbar{width:100%}
+.project-grid .chart-card{width:68%;max-width:none;box-shadow:none;border:0;border-radius:14px}
+.project-grid .chart-card--overlap{left:28px;top:32px;bottom:auto}
+.project-grid .chart-card--spacing{right:28px;bottom:32px;top:auto}
+.phone-tile{display:flex;justify-content:center;align-items:flex-start;padding:40px 24px 0}
+.phone-tile>img{display:block;width:190px;height:auto;max-width:65%;border-radius:24px;transition:transform .35s ease}
+.phone-tile--detail{align-items:flex-start;padding-top:0}
+.phone-tile--detail>img{width:330px;max-width:85%;margin-top:-190px;border-radius:32px}
+.company-projects-layout .site-footer{margin-top:0}
+@media(hover:hover) and (pointer:fine){.project-grid a:hover>img,.project-grid a:hover .desktop-window,.project-grid a:hover .chart-card{transform:translateY(-6px)}}
+.project-grid a:focus-visible{outline:2px solid #28282e;outline-offset:5px}
+@media(max-width:700px){.company-projects{width:calc(100% - 32px);margin:16px auto 72px}.project-intro{margin-bottom:24px}.project-intro h2{font-size:24px;line-height:32px}.project-intro p{font-size:18px;line-height:26px}.project-grid{grid-template-columns:1fr;gap:16px}.project-grid .work-preview,.project-tile,.project-grid--datalens>.work-preview:first-child{height:360px;border-radius:20px}.project-grid .desktop-scene--side .desktop-window:not(.desktop-window--branding){width:190%;left:28px;top:32px}.project-grid .desktop-scene--side .desktop-window--branding{left:28px;top:32px;width:calc(100% - 16px)}.project-grid .chart-card{width:70%}.project-grid .chart-card--overlap{left:20px;top:28px}.project-grid .chart-card--spacing{right:20px;bottom:28px}.company-project+.company-project{margin-top:64px}}
+@media(prefers-reduced-motion:reduce){.project-grid *{transition:none!important}.project-grid a:hover>img,.project-grid a:hover .desktop-window,.project-grid a:hover .chart-card{transform:none}}
+/* Keep whole controls and both chart legends visible in the gallery. */
+@media(min-width:701px){.project-grid--datalens>.work-preview:first-child .desktop-window{width:calc(100% - 112px);height:auto}.project-grid .chart-card{width:56%}.project-grid .chart-card--overlap{top:24px}.project-grid .chart-card--spacing{bottom:24px}}
+.phone-tile:not(.phone-tile--detail)>img{height:350px;width:auto;max-width:none;object-fit:contain}
+@media(max-width:700px){.phone-tile:not(.phone-tile--detail)>img{height:290px}.project-grid .chart-card{width:58%}}
+
+.company-project{position:relative}.project-intro{padding-right:0;max-width:calc(100% - 190px)}.project-intro p{max-width:620px}.company-go{position:absolute;right:0;top:42px;display:inline-flex;align-items:center;justify-content:center;padding:13px 24px;border-radius:14px;background:#151515;color:#fff;font-size:20px;line-height:24px;text-decoration:none;transition:background .18s,transform .18s}.company-go:hover{background:#333;transform:translateY(-3px)}.company-go:focus-visible{outline:2px solid #28282e;outline-offset:4px}@media(max-width:700px){.project-intro{max-width:100%}.company-go{position:static;font-size:17px;line-height:24px;margin:0 0 24px;padding:10px 20px}}

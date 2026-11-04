@@ -1,0 +1,47 @@
+.media-viewer-open{overflow:hidden}
+.case-media-viewer{width:calc(100vw - 48px);height:calc(100dvh - 48px);max-width:1600px;max-height:none;padding:0;border:0;border-radius:20px;background:#f4f4f4;color:#252525;overflow:hidden}
+.case-media-viewer::backdrop{background:#0009}
+.media-toolbar{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 20px;box-sizing:border-box}
+.media-title{font-size:17px;line-height:1.4;min-width:0}
+.media-toolbar>div{display:flex;gap:12px;flex:none}
+.media-toolbar button{font:inherit;font-size:17px;line-height:24px;padding:8px 12px;border:0;border-radius:10px;background:#e7e7e7;color:#252525;cursor:pointer}
+.media-toolbar button:hover{background:#ddd}
+.media-toolbar button:focus-visible,.video-enlarge:focus-visible{outline:2px solid #252525;outline-offset:3px}
+.media-stage{height:calc(100% - 72px);padding:16px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;overflow:auto}
+.media-stage>img,.media-stage>video{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;border-radius:8px}
+.media-stage.is-original{display:block}
+.media-stage.is-original>img{max-width:none;max-height:none;margin:auto}
+.install-video-comparison .video-enlarge{display:block;margin:-12px auto 20px;padding:0;background:none;border:0;font:inherit;font-size:14px;line-height:20px;color:#555;cursor:pointer}
+.install-video-comparison .install-video-next{top:calc(50% + 54px)}
+@media(max-width:700px){.case-media-viewer{width:calc(100vw - 16px);height:calc(100dvh - 16px);border-radius:14px}.media-toolbar{padding:12px;gap:8px;flex-wrap:wrap}.media-title{font-size:14px}.media-toolbar>div{margin-left:auto}.media-toolbar button{font-size:14px;padding:6px 10px}.media-stage{height:calc(100% - 104px);padding:8px}.install-video-comparison .install-video-next{top:calc(50% + 46px)}}
+
+.install-video-comparison .video-enlarge{position:absolute;top:auto;bottom:12px;right:6px;display:grid;place-items:center;width:40px;height:40px;margin:0;padding:0;color:#929292;background:transparent;border:0}
+.install-video-comparison .video-enlarge:hover{opacity:.6}
+body .install-case .install-video-comparison .install-video-next,body .install-case .install-video-comparison .install-video-next:hover{background:transparent;box-shadow:none;top:calc(50% + 38px)}
+.media-toolbar .media-close{display:grid;place-items:center;width:40px;height:40px;padding:0;background:transparent;font-size:30px;line-height:1}
+.media-toolbar .media-close:hover{background:transparent;opacity:.6}
+@media(max-width:700px){.install-video-comparison .video-enlarge{top:auto;bottom:8px;right:6px}body .install-case .install-video-comparison .install-video-next{top:calc(50% + 30px)}}
+
+body .install-case .install-video-label{margin-bottom:12px}
+body .install-case .install-video-comparison .install-video-next,body .install-case .install-video-comparison .install-video-next:hover{top:calc(50% + 32px)}
+@media(max-width:700px){body .install-case .install-video-comparison .install-video-next,body .install-case .install-video-comparison .install-video-next:hover{top:calc(50% + 28px)}}
+
+.case-media-viewer .media-toolbar{height:64px;min-height:64px;display:grid;grid-template-columns:40px minmax(0,1fr) 40px;gap:8px;padding:12px 20px}.media-toolbar:before{content:""}.media-title{text-align:center}.case-media-viewer .media-toolbar>div{margin:0}.case-media-viewer .media-stage{height:calc(100% - 64px)}.case-media-viewer.has-video .media-stage{padding:12px 56px 24px}.media-next{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:40px;height:44px;display:grid;place-items:center;padding:0;background:transparent;border:0;color:#777;cursor:pointer}.media-next[hidden]{display:none}.media-next:hover{color:#252525}.media-next:focus-visible{outline:2px solid #252525;outline-offset:2px}@media(max-width:700px){.case-media-viewer .media-toolbar{padding:12px}.case-media-viewer.has-video .media-stage{padding:8px 44px 16px}.media-next{right:2px}}
+
+.media-zoom-target{position:relative;cursor:zoom-in}.media-zoom-target:after{content:attr(data-zoom-hint);position:absolute;z-index:4;bottom:16px;left:50%;transform:translate(-50%,4px);padding:8px 12px;border-radius:10px;background:#252525;color:#fff;font:400 17px/24px 'SF Pro Display',Arial,sans-serif;letter-spacing:0;white-space:nowrap;pointer-events:none;opacity:0;visibility:hidden;transition:opacity .15s,transform .15s,visibility .15s}.media-zoom-target:hover:after,.media-zoom-target:focus-visible:after{opacity:1;visibility:visible;transform:translate(-50%,0)}.media-zoom-target:focus-visible{outline:2px solid #555;outline-offset:4px}@media(prefers-reduced-motion:reduce){.media-zoom-target:after{transition:none}}@media(max-width:480px){.media-zoom-target:after{font-size:14px;padding:6px 10px}}
+
+.media-zoom-target:after{font-size:14px;line-height:20px;padding:6px 10px;border-radius:8px}
+
+.media-zoom-target:after{display:none}.media-cursor-hint{position:fixed;z-index:10000;max-width:calc(100vw - 24px);box-sizing:border-box;padding:6px 10px;border-radius:8px;background:#252525;color:#fff;font:400 14px/20px 'SF Pro Display',Arial,sans-serif;letter-spacing:0;white-space:nowrap;pointer-events:none}.media-cursor-hint[hidden]{display:none}
+
+/* Hide the recording edge without recompressing or shifting the video. */
+video.branding-recording-trim{clip-path:inset(0 1% 0 0 round 8px)}
+
+/* Videos keep rounded top corners and meet the bottom edge squarely. */
+body .install-case .install-video-panel,body .install-case .install-video-panel video,.case-media-viewer .media-stage>video{border-radius:8px 8px 0 0}
+
+/* The video canvas also has a straight bottom edge: no parent clipping rounds it. */
+body .install-case .install-video-comparison{border-radius:24px 24px 0 0}
+
+/* Expanded screenshots always show the entire source, independent of preview crops. */
+.case-media-viewer:not(.has-video) .media-stage>img{position:static;inset:auto;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;transform:none;clip-path:none}

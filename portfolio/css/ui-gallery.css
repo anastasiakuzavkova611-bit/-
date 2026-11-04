@@ -1,0 +1,79 @@
+/* The archived portfolio is separate. This is the working UI-concept gallery. */
+.hero{padding-bottom:32px}
+.ui-gallery{height:1250px;position:relative;margin-bottom:64px}
+.ui-gallery__sticky{position:sticky;top:84px;overflow:hidden;padding:28px 0 24px;background:#fff}
+.ui-gallery__heading{display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:1400px}
+.ui-gallery h2{font-size:32px;font-weight:510;letter-spacing:-.8px;display:flex;align-items:center;gap:12px}
+.ui-count{font-size:14px;letter-spacing:0;color:var(--c-secondary);align-self:flex-start;padding-top:5px}
+.ui-gallery__controls{display:flex;align-items:center;gap:20px;font-size:14px;color:var(--c-secondary)}
+.ui-pause,.ui-close{font:inherit;color:var(--c-primary);border:1px solid #e5e5e8;border-radius:30px;padding:11px 18px;background:#fff;cursor:pointer}
+.ui-pause:hover,.ui-close:hover{background:var(--c-card-bg)}
+.ui-stage{height:460px;position:relative;margin-top:22px;touch-action:pan-y;cursor:grab;user-select:none}
+.ui-stage.is-dragging{cursor:grabbing}
+.ui-track{height:100%;position:relative;width:100%}
+.ui-card{position:absolute;left:0;top:35px;width:300px;height:365px;border:0;padding:17px 17px 14px;border-radius:26px;background:var(--c-card-bg);color:var(--c-primary);font:inherit;cursor:pointer;text-align:left;box-shadow:0 8px 22px #28282e12;will-change:transform;transform-origin:50% 70%;transition:box-shadow .25s}
+.ui-card--blue{background:var(--c-accent);color:#fff}
+.ui-card--black{background:var(--c-primary);color:#fff}
+.ui-card--orange{background:#ff9900;color:#28282e}
+.ui-card--wide{width:410px;height:310px;top:63px}
+.ui-card__image{display:block;height:calc(100% - 47px);overflow:hidden;border-radius:15px;background:#f7f7f8;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.ui-card__image img{height:100%;width:100%;object-fit:contain;pointer-events:none}
+.ui-card__caption{display:flex;flex-direction:column;gap:3px;padding-top:10px;font-size:16px;line-height:1.1}
+.ui-card__caption span+span{font-size:12px;opacity:.75}
+.ui-card:hover .ui-card__image{transform:translateY(-5px)}
+.ui-card:hover{box-shadow:0 18px 35px #28282e26}
+.ui-card:focus-visible,.ui-pause:focus-visible,.ui-close:focus-visible{outline:3px solid #ff9900;outline-offset:5px}
+.ui-gallery__note{text-align:center;font-size:16px;color:var(--c-secondary);margin:6px 20px 0}
+.ui-dialog{border:0;border-radius:24px;padding:20px;width:min(960px,94vw);max-height:92dvh;color:var(--c-primary);background:#fff;box-shadow:0 24px 100px #0004}
+.ui-dialog::backdrop{background:#15151dbd;backdrop-filter:blur(12px)}
+.ui-dialog__bar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:16px}
+.ui-dialog__bar h2{font-size:24px;font-weight:510}
+.ui-dialog__body{overflow:auto;max-height:calc(92dvh - 110px);background:var(--c-card-bg);border-radius:12px}
+.ui-dialog__body img{width:100%;max-height:75dvh;object-fit:contain}
+body.ui-modal-open{overflow:hidden}
+@media(max-width:640px){
+ .hero{padding-bottom:12px}.ui-gallery{height:970px;margin-bottom:40px}.ui-gallery__sticky{top:64px;padding-top:20px}.ui-gallery h2{font-size:26px}.ui-hint{display:none}.ui-stage{height:380px;margin-top:10px}.ui-card{width:232px;height:300px;top:30px;border-radius:22px;padding:13px}.ui-card--wide{width:310px;height:250px;top:56px}.ui-card__caption{font-size:15px}.ui-gallery__note{font-size:14px}.ui-dialog__bar h2{font-size:20px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ui-gallery{height:auto}.ui-card,.ui-card__image{transition:none}.ui-gallery__sticky{position:relative;top:auto}.ui-stage{overflow-x:auto;scrollbar-width:thin;scroll-snap-type:x proximity}.ui-track{display:flex;align-items:center;gap:20px;width:max-content;padding:10px 20px}.ui-card{position:relative;top:auto;left:auto;flex:none;transform:none!important;scroll-snap-align:center;will-change:auto}.ui-pause{display:none}}
+.ui-card:not(.ui-card--wide) .ui-card__image img{object-fit:cover}
+
+/* Five flat colour cards resolve into cropped, equal-height interfaces. */
+.ui-gallery{height:950px;--reveal:0;--surface:1}
+.ui-stage{height:410px;margin-top:20px}
+.ui-card,.ui-card--wide{top:0;padding:0;background:transparent!important;box-shadow:none!important;border-radius:22px;transform-origin:center;transition:none}
+.ui-card::before{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--tile,#ededf0);opacity:var(--surface);pointer-events:none}
+.ui-card--blue{--tile:var(--c-accent)}.ui-card--black{--tile:var(--c-primary)}.ui-card--orange{--tile:#ff9900}
+.ui-card__image{position:absolute;inset:0;display:block;height:100%;background:transparent;border-radius:14% / 7%;opacity:var(--reveal);transition:none;transform:none!important;overflow:hidden}
+.ui-card--wide .ui-card__image{border-radius:18px}
+.ui-card .ui-card__image img{position:absolute;max-width:none;object-fit:fill!important;width:205.03%;height:131.06%;left:-52.31%;top:-15.34%;pointer-events:none}
+.ui-card[data-image$="concept-2.webp"] .ui-card__image img{width:204.75%;height:131.06%;left:-52.10%;top:-15.47%}
+.ui-card[data-image$="concept-3.png"] .ui-card__image img{width:204.76%;height:131.03%;left:-52.38%;top:-15.52%}
+.ui-card[data-image$="concept-4.webp"] .ui-card__image img{width:205.03%;height:131.15%;left:-52.45%;top:-15.54%}
+.ui-card.ui-card--wide .ui-card__image img{width:116.28%;height:117.65%;left:-8.14%;top:-8.82%}
+.ui-card__caption{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%)}
+.ui-gallery__controls,.ui-gallery__note{opacity:var(--reveal)}
+.ui-gallery__controls{pointer-events:auto}
+.ui-pause{visibility:hidden}.ui-gallery.is-unfolded .ui-pause{visibility:visible}
+@media(max-width:640px){.ui-gallery{height:780px}.ui-stage{height:330px}.ui-card,.ui-card--wide{top:0;padding:0;border-radius:16px}}
+@media(prefers-reduced-motion:reduce){.ui-gallery{height:auto;--reveal:1!important;--surface:0!important}.ui-card,.ui-card--wide{position:relative;top:auto}.ui-card__image{opacity:1}.ui-track{gap:40px}}
+
+.ui-card:nth-child(3){--tile:#ededf0}.ui-card:nth-child(4){--tile:var(--c-primary)}.ui-card:nth-child(5){--tile:#ff9900}
+
+/* The first viewport ends at the upper edge of the colour fan. */
+.hero{min-height:calc(100svh - var(--header-height) - 170px);padding-top:clamp(90px,13svh,140px);padding-bottom:clamp(95px,17svh,180px);justify-content:center}
+.ui-stage{height:440px}
+@media(max-width:640px){.hero{min-height:calc(100svh - var(--header-height) - 150px);padding-top:70px;padding-bottom:90px}.ui-stage{height:350px}}
+@media(prefers-reduced-motion:reduce){.hero{min-height:auto}}
+
+/* Unlabelled gallery, larger cards and a tighter introduction. */
+.hero{min-height:calc(100svh - var(--header-height) - 150px);padding-top:clamp(80px,11svh,118px);padding-bottom:clamp(80px,13svh,140px);justify-content:flex-start}
+.ui-gallery__sticky{padding-top:0}
+.ui-gallery__heading{position:absolute;inset:12px 20px auto auto;width:auto;z-index:20}
+.ui-gallery__controls{gap:0}
+.ui-stage{height:480px;margin-top:0}
+@media(max-width:640px){.hero{min-height:calc(100svh - var(--header-height) - 130px);padding-top:58px;padding-bottom:72px}.ui-stage{height:385px}.ui-gallery__sticky{padding-top:0}}
+@media(prefers-reduced-motion:reduce){.hero{min-height:auto}}
+
+/* Supplied final exports: preserve their native framing and transparency. */
+.ui-card--supplied .ui-card__image{border-radius:0;overflow:visible}
+.ui-card.ui-card--supplied .ui-card__image img{width:100%;height:100%;left:0;top:0;object-fit:contain!important}

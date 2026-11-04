@@ -1,0 +1,55 @@
+/* Abordio follows the existing case rhythm and understated research tables. */
+body .abordio-case .install-hero{margin-bottom:64px}
+/* Full-width ticker, matching the reference's 200px screens and 24px rhythm. */
+.ab-intro-gallery{width:100vw;max-width:none;margin:0 0 64px;position:relative;left:50%;transform:translateX(-50%);padding:0;overflow:hidden;background:transparent}
+.ab-ribbon-track{display:flex;width:max-content;animation:ab-ribbon-drift 84s linear infinite;will-change:transform}
+.ab-ribbon-group{display:flex;align-items:flex-end;gap:24px;padding-right:24px;flex-shrink:0}
+.ab-intro-gallery .screen-original{display:block;flex:0 0 200px;width:200px;min-width:0;max-width:none;border-radius:var(--radius-surface,24px);overflow:hidden}
+.ab-intro-gallery img{display:block;width:100%;height:auto;aspect-ratio:375/812;object-fit:contain;border-radius:inherit}
+
+@keyframes ab-ribbon-drift{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.ab-ribbon-track{animation:none}.ab-intro-gallery{overflow-x:auto;scrollbar-width:none}.ab-intro-gallery::-webkit-scrollbar{display:none}}
+.ab-research-scroll{width:100%;overflow-x:auto;outline-offset:5px}
+.ab-research-table{width:100%;min-width:680px;table-layout:fixed;border-collapse:collapse;font-size:17px;line-height:1.5;color:#252525}
+.ab-research-table th,.ab-research-table td{padding:20px 16px;border-bottom:1px solid #e7e7e7;text-align:left;vertical-align:top;font-weight:400;overflow-wrap:normal;hyphens:none}
+.ab-research-table thead th{font-weight:600;padding-top:4px;padding-bottom:16px}
+.ab-research-table th:first-child{padding-left:0}
+.ab-research-table td:last-child,.ab-research-table th:last-child{padding-right:0}
+.ab-research-table tbody tr:last-child>*{border:0}
+.ab-research-table.ab-priorities{min-width:850px}
+.ab-priorities th:first-child{width:11%;vertical-align:middle}
+.ab-priorities th:nth-child(2){width:35%}
+.ab-priorities th:nth-child(3){width:27%}
+.ab-priorities th:nth-child(4){width:27%}
+.ab-priorities tbody th{font-weight:600}
+.ab-research-link{color:#252525;text-decoration:underline;text-underline-offset:5px;text-decoration-color:#b5b5b5}
+.ab-research-link:hover{text-decoration-color:#252525}
+.ab-findings{display:grid;gap:24px}
+.ab-findings strong{font-weight:600}
+.ab-paths{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin:12px 0}
+.ab-path .reason-label{margin-bottom:12px}
+body .abordio-case :is(p,li,th,td){text-wrap:pretty}
+@media(max-width:700px){
+ .ab-intro-gallery{margin-bottom:48px}
+ 
+ body .abordio-case .install-hero{margin-bottom:48px}
+ .ab-paths{grid-template-columns:1fr;gap:24px}
+ .ab-research-table th,.ab-research-table td{padding-block:16px}
+}
+
+/* Functional comparison: research-backed statuses, matching the supplied reference. */
+.ab-feature-panel{margin-bottom:24px}
+.ab-feature-scroll{overflow-x:auto;outline-offset:6px}
+.ab-feature-table{border-collapse:collapse;width:100%;min-width:700px;table-layout:fixed;font-size:17px;line-height:1.4;color:#252525}
+.ab-feature-table th,.ab-feature-table td{padding:20px 12px;border-bottom:1px solid #dedede;vertical-align:middle;text-align:center;font-weight:400}
+.ab-feature-table thead th{font-weight:600;border-bottom-color:#bcbcbc;padding-top:0;padding-bottom:24px}
+.ab-feature-table th:first-child{width:40%;text-align:left;padding-left:0}
+.ab-feature-table small{display:block;font-size:14px;line-height:20px;font-weight:400;margin-top:4px}
+.ab-feature-dot{display:inline-block;width:16px;height:16px;box-sizing:border-box;border-radius:50%;vertical-align:middle;flex-shrink:0}
+.ab-feature-dot.is-yes{background:#303030}
+.ab-feature-dot.is-conditional{border:1.5px solid #888}
+.ab-feature-dot.is-unknown{background:#e0e0e0}
+
+.ab-feature-legend{display:flex;flex-wrap:wrap;gap:16px 24px;margin-top:24px;font-size:14px;line-height:20px;color:#414141}
+.ab-feature-legend>span{display:inline-flex;align-items:center;gap:8px}
+@media(max-width:700px){.ab-feature-table{font-size:16px}.ab-feature-table th,.ab-feature-table td{padding-block:16px}.ab-feature-legend{gap:12px 20px}}

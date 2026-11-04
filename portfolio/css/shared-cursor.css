@@ -1,0 +1,6 @@
+/* One pointer asset across the portfolio; the homepage intro yields on input. */
+@media(hover:hover) and (pointer:fine){
+ html,body,body *{cursor:url('../assets/img/editor-cursor-soft.svg') 4 2,auto!important}
+ input,textarea,[contenteditable="true"]{cursor:text!important}
+ html.cursor-demo,html.cursor-demo body,html.cursor-demo body *{cursor:none!important}
+}

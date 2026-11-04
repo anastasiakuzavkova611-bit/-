@@ -1,0 +1,73 @@
+/* Main navigation and introduction, including narrow screens. */
+.canvas-center h1{font-size:28px;line-height:1.15}
+.navigation-label{font-size:20px;line-height:24px;font-weight:400}
+.navigation-card{height:154px}
+.canvas-contact a{font-size:20px;line-height:24px;min-height:50px}
+@media(max-width:1050px){.navigation-card{height:148px}}
+@media(max-width:600px){.navigation-card{height:136px;min-width:0;width:103px}.canvas-navigation{gap:6px}.canvas-center{padding-inline:12px}.canvas-contact a{padding-inline:24px}}
+
+/* A personal portrait in the same soft palette as the design tools. */
+.intro-portrait{position:absolute;bottom:calc(100% + 22px);left:50%;transform:translateX(-50%) rotate(-4deg);width:112px;height:84px;padding:5px;border-radius:50%;background:#f2eef7;border:1px solid #d9cfe7;box-shadow:0 4px 12px #35244408}
+.intro-portrait img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
+@media(max-width:600px){.intro-portrait{width:100px;height:76px;bottom:calc(100% + 16px);padding:4px}.object-palette{left:5%;top:22%}.object-tool{left:65%;top:22%}}
+
+.navigation-card{width:144px;height:172px;padding:14px 12px 18px;border-radius:18px;justify-content:space-between}
+.section-illustration{width:120px;height:110px;flex:none}.section-illustration img{width:100%;height:100%;display:block}
+@media(max-width:1050px) and (min-width:601px){.navigation-card{width:136px;height:164px}}
+@media(max-width:600px){.navigation-card{width:calc((100vw - 36px)/3);max-width:116px;height:146px;padding:9px 5px 14px;border-radius:15px}.section-illustration{width:100px;height:101px}}
+
+.intro-portrait{width:128px;height:128px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;transform:translateX(-50%);bottom:calc(100% + 18px)}
+.intro-portrait img{object-fit:contain;border-radius:0}
+@media(max-width:600px){.intro-portrait{width:100px;height:100px;bottom:calc(100% + 16px)}}
+
+/* Quiet decorative studies, with no technical captions. */
+.design-stage .tool-caption,.type-bottom,.grid-foot,.object-cursor>span{display:none}
+.palette-dots{margin-bottom:0}.layout-grid{margin-top:0}.gradient-orb{margin-top:4px}
+.type-sample{font-size:96px;height:120px;line-height:120px}
+.font-menu{font-size:12px;width:94px}
+.navigation-card{width:152px;height:180px}.navigation-label{font-size:20px;line-height:24px;font-weight:400}
+.intro-portrait{width:108px;height:108px;padding:0;overflow:hidden;border-radius:18px;background:#ece8ef;box-shadow:0 3px 10px #3027380a}
+.intro-portrait img{position:absolute;width:140%;height:140%;max-width:none;left:-20%;top:-20%;object-fit:cover;border-radius:0}
+@media(max-width:1050px) and (min-width:601px){.navigation-card{width:140px;height:172px}}
+@media(max-width:600px){.navigation-card{width:calc((100vw - 36px)/3);max-width:116px;height:154px}.intro-portrait{width:92px;height:92px;border-radius:15px}.font-menu{width:84px}}
+
+.intro-portrait{width:80px;height:80px;background:#e8e8e8;border-radius:15px;box-shadow:none}
+.intro-portrait img{position:static;width:100%;height:100%;object-fit:contain;filter:grayscale(1)}
+@media(max-width:600px){.intro-portrait{width:72px;height:72px;border-radius:13px}}
+
+/* Compact text navigation, in reading order: cases, concepts, experience. */
+.canvas-navigation{gap:8px;margin-top:24px}
+.navigation-card{width:auto;max-width:none;min-width:0;height:48px;padding:0 24px;border-radius:14px;justify-content:center;flex-direction:row;background:#f3f3f3}
+.navigation-label{font-size:20px;line-height:24px;font-weight:400}
+@media(max-width:600px){.navigation-card{width:auto;max-width:none;height:46px;padding:0 19px;border-radius:13px}.canvas-navigation{gap:7px}}
+
+/* Shared corner radius for all homepage buttons. */
+.portfolio-canvas{--button-radius:14px}
+.navigation-card,.canvas-contact a{border-radius:var(--button-radius)}
+@media(max-width:600px){.portfolio-canvas{--button-radius:13px}}
+
+
+/* A single compact, quiet pointer for the visitor. */
+@media(hover:hover) and (pointer:fine){
+  body,body *{cursor:url('../assets/img/editor-cursor-soft.svg') 4 2,auto}
+  a,button,[role="button"]{cursor:url('../assets/img/editor-cursor-soft.svg') 4 2,pointer}
+  input,textarea,[contenteditable="true"]{cursor:text}
+}
+/* One shared baseline for the desktop bottom row. */
+@media(min-width:1051px){
+  .canvas-contact,.object-grid,.object-gradient{bottom:15%}
+  @keyframes panel-grid{0%,8%,90%,100%{transform:translateX(0)}14%,71%{transform:translateX(-8px)}79%,84%{transform:translateX(-25px)}}
+  @keyframes panel-fill{0%,8%,90%,100%{transform:translateX(0)}14%,71%{transform:translateX(10px)}79%,84%{transform:translateX(20px)}}
+}
+
+/* Center every type variant while retaining its vertical transition. */
+.type-board{padding:13px 17px}
+.type-glyph{display:flex;align-items:center;justify-content:center;padding-right:6px}
+
+/* Intro cursor yields permanently to the visitor's first input. */
+.object-cursor svg{width:24px}
+.object-cursor[hidden]{display:none}
+@media(hover:hover) and (pointer:fine){
+  html.cursor-demo,html.cursor-demo body,html.cursor-demo body *{cursor:none}
+}
+@media(prefers-reduced-motion:reduce){.object-cursor{display:none}}

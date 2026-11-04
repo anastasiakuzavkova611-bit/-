@@ -1,0 +1,15 @@
+.install-video-comparison{position:relative;width:100%;min-width:0;margin:64px 0 96px;background:#f7f7f7;border-radius:32px;padding:28px 56px 0;box-sizing:border-box;overflow:hidden}
+.install-video-label{text-align:center;font-size:17px;line-height:24px;color:#656565;margin:0 0 24px}
+.install-video-next{position:absolute;right:10px;top:50%;width:44px;height:44px;display:grid;place-items:center;padding:0;border:0;border-radius:50%;background:#e8e8e8;color:#555;cursor:pointer;transition:background .2s,transform .2s;z-index:1}
+.install-video-next:hover{background:#ddd;transform:translateX(2px)}
+.install-video-next:focus-visible{outline:2px solid #222;outline-offset:3px}
+.install-video-panel{width:100%;margin:auto;border-radius:16px 16px 0 0;aspect-ratio:1.88;overflow:hidden;background:#fff}
+.install-video-panel[hidden]{display:none}
+.install-video-panel video{display:block;width:100%;height:auto;object-fit:contain;background:#fff}
+@media(max-width:700px){.install-video-comparison{width:100%;margin:40px 0 64px;padding:20px 12px 0;border-radius:24px}.install-video-label{margin-bottom:16px;font-size:16px}.install-video-panel{border-radius:10px 10px 0 0}.install-video-next{top:12px;right:12px;width:36px;height:36px}.install-video-next svg{width:20px;height:20px}}
+
+/* Center the control within the rail between the video and outer edge. */
+.install-video-comparison{--video-rail:80px;padding-left:var(--video-rail);padding-right:var(--video-rail)}
+.install-video-next{right:calc((var(--video-rail) - 44px)/2);top:calc(50% + 38px);transform:translateY(-50%)}
+.install-video-next:hover{transform:translateY(-50%);background:#ddd}
+@media(max-width:700px){.install-video-comparison{--video-rail:52px}.install-video-next{right:calc((var(--video-rail) - 36px)/2);top:calc(50% + 30px)}}
