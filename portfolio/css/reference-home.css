@@ -83,7 +83,7 @@
 /* Keep the separator clear of the Abordio mark; labels appear on hover/focus. */
 .intro-brands .brand-mark{position:relative;display:block;flex:none;line-height:0;outline:none}
 .intro-brands .brand-mark:first-child{z-index:2}
-.intro-brands .brand-mark+.brand-mark{margin-left:-2px;z-index:1}
+.intro-brands .brand-mark+.brand-mark{margin-left:0;z-index:1}
 .intro-brands .brand-mark img{display:block;transform:none;margin:0;outline:2px solid #fff}
 .brand-tooltip{position:absolute;top:calc(100% + 12px);left:50%;transform:translate(-50%,-4px);padding:8px 12px;border-radius:10px;background:#252525;color:#fff;font-size:14px;font-weight:400;line-height:20px;white-space:nowrap;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .15s,transform .15s,visibility .15s}
 .intro-brands .brand-mark:hover,.intro-brands .brand-mark:focus-visible{z-index:3}
@@ -104,7 +104,8 @@
 .flow-cases{row-gap:72px;padding-bottom:160px}
 @media(max-width:700px){.flow-cases{row-gap:48px;padding-bottom:112px}}
 
-.stack-greeting .intro-brands .brand-mark img { border-radius: 28%; }
+.stack-greeting .intro-brands { gap: 12px; }
+.stack-greeting .intro-brands .brand-mark img { border-radius: 50%; outline: none; }
 
 /* Desktop composition keeps its dimensions; only the outer viewport grows. */
 @media(min-width:768px){
