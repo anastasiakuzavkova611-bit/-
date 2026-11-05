@@ -109,5 +109,5 @@ body main.abordio-case .ab-research-next[hidden]{display:none}
 /* Align the complete section heading and description at their lower edges. */
 @media(min-width:901px){
  body main.install-case .story-section:not(.case-priority){align-items:end}
- body main.install-case #competitor-analysis>.competitor-heading{align-self:end}
+ body main.install-case .story-section#competitor-analysis>.competitor-heading{align-self:end}
 }
