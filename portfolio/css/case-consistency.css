@@ -84,3 +84,9 @@ body main.abordio-case .story-section:has(+.ab-mvp){margin-bottom:40px}
 body main.abordio-case .ab-ds-preview{width:100%;height:553px;margin:40px 0 80px;border-radius:32px;overflow:hidden}
 body main.abordio-case .ab-ds-preview .screen-original,body main.abordio-case .ab-ds-preview img{display:block;width:100%;height:100%;margin:0;padding:0;object-fit:contain;border-radius:32px}
 body main.abordio-case .story-section:has(+.ab-ds-preview){margin-bottom:40px}
+
+/* The JTBD grid has the same frame on all four sides; its caption occupies the top frame. */
+body main.abordio-case .ab-jtbd-board{position:relative;padding:32px 76px}
+body main.abordio-case .ab-jtbd-board .ab-research-media{position:absolute;inset:13.7432188065% 7.6%;width:auto;height:auto;min-height:0}
+body main.abordio-case .ab-jtbd-board .screen-original,body main.abordio-case .ab-jtbd-board img{border-radius:0}
+body main.install-case :is(.ab-research-next,.solution-carousel-next,.install-video-next){transition:color .2s}
