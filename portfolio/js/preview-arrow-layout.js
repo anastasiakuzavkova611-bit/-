@@ -5,6 +5,11 @@
   pending=false;
   roots.forEach(root=>{
    const media=[...root.querySelectorAll('img,video')].find(el=>!el.closest('[hidden]')&&el.getBoundingClientRect().width);
+   const group=[...root.querySelectorAll('.ab-flow-phones,.ab-mvp-grid')].find(el=>!el.closest('[hidden]')&&el.getBoundingClientRect().width);
+   if(group){
+    const card=root.getBoundingClientRect(), box=group.getBoundingClientRect();
+    root.querySelectorAll(':scope > button').forEach(button=>{if(button.hidden)return;const x=button.dataset.last==='true'?(card.left+box.left)/2:(box.right+card.right)/2;button.style.left=(x-card.left-20)+'px';button.style.right='auto';button.style.width='40px';button.style.top=((box.top+box.bottom)/2-card.top)+'px';button.style.transform='translateY(-50%)'});return;
+   }
    if(!media)return;
    const card=root.getBoundingClientRect(), frame=media.closest('.screen-original,.install-video-panel')?.getBoundingClientRect()||card;
    const box=media.getBoundingClientRect(), css=getComputedStyle(media);
@@ -36,7 +41,7 @@
  const resize=new ResizeObserver(schedule),mutation=new MutationObserver(schedule);
  roots.forEach(root=>{
   resize.observe(root);mutation.observe(root,{subtree:true,attributes:true,attributeFilter:['hidden','data-last']});
-  root.querySelectorAll('img,video,.screen-original,.install-video-panel').forEach(el=>{resize.observe(el);el.addEventListener('load',schedule);el.addEventListener('loadedmetadata',schedule)});
+  root.querySelectorAll('img,video,.screen-original,.install-video-panel,.ab-flow-phones,.ab-mvp-grid').forEach(el=>{resize.observe(el);el.addEventListener('load',schedule);el.addEventListener('loadedmetadata',schedule)});
  });
  document.fonts.ready.then(schedule);window.addEventListener('resize',schedule);schedule();
 })();

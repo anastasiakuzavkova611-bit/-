@@ -90,3 +90,18 @@ body main.abordio-case .ab-jtbd-board{position:relative;padding:32px 76px}
 body main.abordio-case .ab-jtbd-board .ab-research-media{position:absolute;inset:13.7432188065% 7.6%;width:auto;height:auto;min-height:0}
 body main.abordio-case .ab-jtbd-board .screen-original,body main.abordio-case .ab-jtbd-board img{border-radius:0}
 body main.install-case :is(.ab-research-next,.solution-carousel-next,.install-video-next){transition:color .2s}
+
+/* Ordered phone flows use complete screens and fixed, equal outer spacing. */
+body main.abordio-case .ab-flow-gallery{margin:0}
+body main.abordio-case .ab-flow-board{padding:32px 76px 40px;gap:24px}
+body main.abordio-case .ab-flow-phones{display:flex;align-items:center;justify-content:center;gap:20px;flex:1;min-height:0;width:100%}
+body main.abordio-case .ab-flow-phones .screen-original{display:block;position:relative;flex:0 1 25%;min-width:0;width:auto;height:auto;max-height:100%;aspect-ratio:375/812;margin:0;padding:0;border-radius:24px;overflow:hidden;line-height:0}
+body main.abordio-case .ab-flow-phones img{display:block;width:100%;height:100%;object-fit:contain;aspect-ratio:375/812;border-radius:24px}
+/* MVP: same six-card grid, frame and dimensions as the JTBD preview. */
+body main.abordio-case .ab-mvp-gallery{margin:0}
+body main.abordio-case .ab-mvp-board{position:relative;padding:32px 76px}
+body main.abordio-case .ab-mvp-board .ab-mvp-grid{position:absolute;inset:13.7432188065% 7.6%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:16px}
+body main.abordio-case .ab-mvp-board .ab-mvp-card{display:flex;flex-direction:column;justify-content:center;background:#fff;border-radius:16px;padding:20px}
+body main.abordio-case .ab-mvp-board .ab-mvp-card h3{font-size:17px;line-height:24px;font-weight:500;margin:0 0 8px}
+body main.abordio-case .ab-mvp-board .ab-mvp-card p{font-size:16px;line-height:23px}
+body main.abordio-case .ab-research-next[hidden]{display:none}
