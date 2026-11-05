@@ -105,3 +105,9 @@ body main.abordio-case .ab-mvp-board .ab-mvp-card{display:flex;flex-direction:co
 body main.abordio-case .ab-mvp-board .ab-mvp-card h3{font-size:17px;line-height:24px;font-weight:500;margin:0 0 8px}
 body main.abordio-case .ab-mvp-board .ab-mvp-card p{font-size:16px;line-height:23px}
 body main.abordio-case .ab-research-next[hidden]{display:none}
+
+/* Align the complete section heading and description at their lower edges. */
+@media(min-width:901px){
+ body main.install-case .story-section:not(.case-priority){align-items:end}
+ body main.install-case #competitor-analysis>.competitor-heading{align-self:end}
+}
