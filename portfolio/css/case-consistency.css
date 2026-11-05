@@ -111,3 +111,10 @@ body main.abordio-case .ab-research-next[hidden]{display:none}
  body main.install-case .story-section:not(.case-priority){align-items:first baseline}
  body main.install-case .story-section#competitor-analysis>.competitor-heading{align-self:first baseline}
 }
+
+/* Name-only MVP inventory shares the architecture gallery. */
+body main.abordio-case .ab-mvp-board .ab-mvp-grid{inset:76px 76px 40px;grid-template-rows:repeat(6,minmax(0,1fr));gap:12px}
+body main.abordio-case .ab-mvp-board .ab-mvp-card{padding:16px 20px;font-size:17px;line-height:22px;border-radius:16px}
+body main.abordio-case .ab-flow-board:not(:has(figcaption)){padding-top:40px;padding-bottom:40px}
+
+body main.abordio-case .ab-ds-pair{display:flex;align-items:center;justify-content:center;gap:48px}body main.abordio-case .ab-ds-pair a{width:40%;height:100%;display:flex;align-items:center;justify-content:center}body main.abordio-case .ab-ds-pair img{width:100%;height:auto;max-height:100%;object-fit:contain}

@@ -8,7 +8,7 @@
     if(direction){button.hidden=direction==='prev'?current===0:current===slides.length-1;button.dataset.last=String(direction==='prev')}
     else{button.dataset.last=String(current===slides.length-1);button.setAttribute('aria-label',current===slides.length-1?'Предыдущий слайд':'Следующий слайд')}
    });
-   status.textContent=`${current+1} из ${slides.length}: ${slides[current].querySelector('figcaption').textContent}`;
+   if(status) status.textContent=`${current+1} из ${slides.length}${slides[current].querySelector('figcaption') ? ': '+slides[current].querySelector('figcaption').textContent : ''}`;
   }
   buttons.forEach(button=>button.addEventListener('click',()=>show(current+(button.dataset.direction==='prev'?-1:1))));
   root.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();show(current+(e.key==='ArrowRight'?1:-1))}});show(0);
