@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="5960" height="3428" viewBox="0 0 5960 3428" fill="none">
+<path d="M40 51.9999C40 45.3725 45.3726 40 52 40H5908C5914.63 40 5920 45.3726 5920 52V3376C5920 3382.63 5914.63 3388 5908 3388H51.9999C45.3725 3388 40 3382.63 40 3376V51.9999Z" fill="#F5F5F5" />
+<rect x="2620" y="270" width="720" height="149" rx="6" fill="#1E1E1E" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" />
+<text fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="32" font-weight="500" letter-spacing="-0.011em"><tspan x="2920.73" y="356.636">Abordio</tspan></text>
+<rect x="108" y="540" width="840" height="139" rx="6" fill="#DCCCFF" stroke="#874FFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="480.44" y="618.727">Главная</tspan></text>
+<path d="M2980 423.5V455.5C2980 468.755 2969.25 479.5 2956 479.5H552C538.745 479.5 528 490.245 528 503.5V535.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="228" y="830" width="740" height="320" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="482.084" y="926.727">Город и геолокация
+</tspan><tspan x="598" y="962.727">
+</tspan><tspan x="454.706" y="998.727">Разрешение геолокации
+</tspan><tspan x="398.238" y="1034.73">Рекомендованные города и поиск
+</tspan><tspan x="462.801" y="1070.73">Смена города вручную</tspan></text>
+<path d="M103.5 609.5H84C70.7452 609.5 60 620.245 60 633.5V966C60 979.255 70.7452 990 84 990H223.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="228" y="1220" width="740" height="286" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="514.752" y="1317.73">Поиск из хиро
+</tspan><tspan x="598" y="1353.73">
+</tspan><tspan x="395.476" y="1389.73">Ресторан → дата → время → гости
+</tspan><tspan x="324.933" y="1425.73">Автоматическое раскрытие следующего шага</tspan></text>
+<path d="M103.5 609.5H84C70.7452 609.5 60 620.245 60 633.5V1339C60 1352.25 70.7452 1363 84 1363H223.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="228" y="1576" width="740" height="320" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="501.762" y="1672.73">Контент главной
+</tspan><tspan x="598" y="1708.73">
+</tspan><tspan x="466.949" y="1744.73">Подборки и категории
+</tspan><tspan x="419.018" y="1780.73">Скидки и ограниченные места
+</tspan><tspan x="471.282" y="1816.73">Карточки ресторанов</tspan></text>
+<path d="M103.5 609.5H84C70.7452 609.5 60 620.245 60 633.5V1712C60 1725.25 70.7452 1736 84 1736H223.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="228" y="1966" width="740" height="320" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="425.434" y="2062.73">Уведомления и продолжение
+</tspan><tspan x="598" y="2098.73">
+</tspan><tspan x="433.719" y="2134.73">Вход в список уведомлений
+</tspan><tspan x="433.036" y="2170.73">Продолжить начатую бронь
+</tspan><tspan x="417.404" y="2206.73">Проверить оплату или возврат</tspan></text>
+<path d="M103.5 609.5H84C70.7452 609.5 60 620.245 60 633.5V2102C60 2115.25 70.7452 2126 84 2126H223.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="1068" y="540" width="840" height="139" rx="6" fill="#DCCCFF" stroke="#874FFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="1451.79" y="618.727">Поиск</tspan></text>
+<path d="M2980 423.5V455.5C2980 468.755 2969.25 479.5 2956 479.5H1512C1498.75 479.5 1488 490.245 1488 503.5V535.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="1188" y="830" width="740" height="320" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="1469.54" y="926.727">Карта и список
+</tspan><tspan x="1558" y="962.727">
+</tspan><tspan x="1423.73" y="998.727">Масштаб и геолокация
+</tspan><tspan x="1339.91" y="1034.73">Пины, группы и выбранный ресторан
+</tspan><tspan x="1356.19" y="1070.73">Свернутая / полная панель списка</tspan></text>
+<path d="M1063.5 609.5H1044C1030.75 609.5 1020 620.245 1020 633.5V966C1020 979.255 1030.75 990 1044 990H1183.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="1188" y="1220" width="740" height="320" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="1451.1" y="1316.73">Запрос и фильтры
+</tspan><tspan x="1558" y="1352.73">
+</tspan><tspan x="1437.69" y="1388.73">Название ресторана
+</tspan><tspan x="1381.34" y="1424.73">Стоимость, дата и параметры
+</tspan><tspan x="1361" y="1460.73">Списки выбора и сброс фильтров</tspan></text>
+<path d="M1063.5 609.5H1044C1030.75 609.5 1020 620.245 1020 633.5V1356C1020 1369.25 1030.75 1380 1044 1380H1183.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="1188" y="1610" width="740" height="320" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="1490.63" y="1706.73">Результаты
+</tspan><tspan x="1558" y="1742.73">
+</tspan><tspan x="1386.69" y="1778.73">Карточки и доступные слоты
+</tspan><tspan x="1439.83" y="1814.73">Переход в ресторан
+</tspan><tspan x="1342.29" y="1850.73">Пустая выдача и изменение условий</tspan></text>
+<path d="M1063.5 609.5H1044C1030.75 609.5 1020 620.245 1020 633.5V1746C1020 1759.25 1030.75 1770 1044 1770H1183.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="1188" y="2000" width="740" height="286" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="1499.9" y="2097.73">Подборка
+</tspan><tspan x="1558" y="2133.73">
+</tspan><tspan x="1366.72" y="2169.73">Заголовок выбранной категории
+</tspan><tspan x="1379.65" y="2205.73">Фильтры и список ресторанов</tspan></text>
+<path d="M1063.5 609.5H1044C1030.75 609.5 1020 620.245 1020 633.5V2119C1020 2132.25 1030.75 2143 1044 2143H1183.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="2028" y="540" width="840" height="139" rx="6" fill="#DCCCFF" stroke="#874FFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="2384.29" y="618.727">Избранное</tspan></text>
+<path d="M2980 423.5V455.5C2980 468.755 2969.25 479.5 2956 479.5H2472C2458.75 479.5 2448 490.245 2448 503.5V535.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="2148" y="830" width="740" height="320" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="2371.27" y="926.727">Сохранённые рестораны
+</tspan><tspan x="2518" y="962.727">
+</tspan><tspan x="2391.28" y="998.727">Карточки ресторанов
+</tspan><tspan x="2353.33" y="1034.73">Открытие полной страницы
+</tspan><tspan x="2347.62" y="1070.73">Удаление и отмена удаления</tspan></text>
+<path d="M2023.5 609.5H2004C1990.75 609.5 1980 620.245 1980 633.5V966C1980 979.255 1990.75 990 2004 990H2143.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="2148" y="1220" width="740" height="286" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="2460.35" y="1317.73">Для гостя
+</tspan><tspan x="2518" y="1353.73">
+</tspan><tspan x="2298.13" y="1389.73">Сохранение без обязательного входа
+</tspan><tspan x="2322.01" y="1425.73">Объединение после авторизации</tspan></text>
+<path d="M2023.5 609.5H2004C1990.75 609.5 1980 620.245 1980 633.5V1339C1980 1352.25 1990.75 1363 2004 1363H2143.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="2148" y="1576" width="740" height="286" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="2411.44" y="1673.73">Состояния списка
+</tspan><tspan x="2518" y="1709.73">
+</tspan><tspan x="2315.71" y="1745.73">Пустой список → поиск ресторана
+</tspan><tspan x="2299.26" y="1781.73">Недоступный сохранённый ресторан</tspan></text>
+<path d="M2023.5 609.5H2004C1990.75 609.5 1980 620.245 1980 633.5V1695C1980 1708.25 1990.75 1719 2004 1719H2143.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="2988" y="540" width="840" height="139" rx="6" fill="#DCCCFF" stroke="#874FFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="3323.38" y="618.727">Бронирования</tspan></text>
+<path d="M2980 423.5V455.5C2980 468.755 2990.75 479.5 3004 479.5H3384C3397.25 479.5 3408 490.245 3408 503.5V535.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="3108" y="830" width="740" height="320" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="3420.01" y="926.727">Активные
+</tspan><tspan x="3478" y="962.727">
+</tspan><tspan x="3323.94" y="998.727">Сегмент активных броней
+</tspan><tspan x="3311.59" y="1034.73">Один фильтр через модалку
+</tspan><tspan x="3294.27" y="1070.73">Карточки и подробности брони</tspan></text>
+<path d="M2983.5 609.5H2964C2950.75 609.5 2940 620.245 2940 633.5V966C2940 979.255 2950.75 990 2964 990H3103.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="3108" y="1220" width="740" height="320" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="3428.3" y="1316.73">История
+</tspan><tspan x="3478" y="1352.73">
+</tspan><tspan x="3273.57" y="1388.73">Посещено / отменено / пропущено
+</tspan><tspan x="3321.75" y="1424.73">Депозит и статус возврата
+</tspan><tspan x="3334.31" y="1460.73">Отзыв после посещения</tspan></text>
+<path d="M2983.5 609.5H2964C2950.75 609.5 2940 620.245 2940 633.5V1356C2940 1369.25 2950.75 1380 2964 1380H3103.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="3108" y="1610" width="740" height="320" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="3396.83" y="1706.73">Детали брони
+</tspan><tspan x="3478" y="1742.73">
+</tspan><tspan x="3276.06" y="1778.73">Ресторан, дата, время, гости, стол
+</tspan><tspan x="3328.57" y="1814.73">Статус и условия отмены
+</tspan><tspan x="3289.45" y="1850.73">Отмена или переход в ресторан</tspan></text>
+<path d="M2983.5 609.5H2964C2950.75 609.5 2940 620.245 2940 633.5V1746C2940 1759.25 2950.75 1770 2964 1770H3103.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="3108" y="2000" width="740" height="320" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="3327" y="2096.73">После изменения статуса
+</tspan><tspan x="3478" y="2132.73">
+</tspan><tspan x="3370.73" y="2168.73">Ожидание оплаты
+</tspan><tspan x="3312.03" y="2204.73">Предложение замены стола
+</tspan><tspan x="3294.93" y="2240.73">Возврат запрошен / возвращён</tspan></text>
+<path d="M2983.5 609.5H2964C2950.75 609.5 2940 620.245 2940 633.5V2136C2940 2149.25 2950.75 2160 2964 2160H3103.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="3948" y="540" width="840" height="139" rx="6" fill="#DCCCFF" stroke="#874FFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="4315.57" y="618.727"><a href="https://www.figma.com/design/uZkkvJEbHmyxD5Iz1T1hmx?node-id=47-1506">Профиль</a></tspan></text>
+<path d="M2980 423.5V455.5C2980 468.755 2990.75 479.5 3004 479.5H4344C4357.25 479.5 4368 490.245 4368 503.5V535.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="4068" y="830" width="740" height="286" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="4303.86" y="927.727">Персональные данные
+</tspan><tspan x="4438" y="963.727">
+</tspan><tspan x="4307.06" y="999.727">Имя • фамилия • email
+</tspan><tspan x="4266.37" y="1035.73">Подтверждение нового email</tspan></text>
+<path d="M3943.5 609.5H3924C3910.75 609.5 3900 620.245 3900 633.5V949C3900 962.255 3910.75 973 3924 973H4063.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="4068" y="1186" width="740" height="286" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="4374.42" y="1283.73">Настройки
+</tspan><tspan x="4438" y="1319.73">
+</tspan><tspan x="4319.31" y="1355.73">Предпочтения в еде
+</tspan><tspan x="4292.56" y="1391.73">Настройки уведомлений</tspan></text>
+<path d="M3943.5 609.5H3924C3910.75 609.5 3900 620.245 3900 633.5V1305C3900 1318.25 3910.75 1329 3924 1329H4063.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="4068" y="1542" width="740" height="286" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="4338.98" y="1639.73">Личные разделы
+</tspan><tspan x="4438" y="1675.73">
+</tspan><tspan x="4366.09" y="1711.73">Мои отзывы
+</tspan><tspan x="4339.39" y="1747.73">Способы оплаты</tspan></text>
+<path d="M3943.5 609.5H3924C3910.75 609.5 3900 620.245 3900 633.5V1661C3900 1674.25 3910.75 1685 3924 1685H4063.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="4068" y="1898" width="740" height="286" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="4329.93" y="1995.73">Помощь и аккаунт
+</tspan><tspan x="4438" y="2031.73">
+</tspan><tspan x="4369.85" y="2067.73">Поддержка
+</tspan><tspan x="4328.97" y="2103.73">Выход из аккаунта</tspan></text>
+<path d="M3943.5 609.5H3924C3910.75 609.5 3900 620.245 3900 633.5V2017C3900 2030.25 3910.75 2041 3924 2041H4063.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="4908" y="540" width="840" height="139" rx="6" fill="#DCCCFF" stroke="#874FFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="5241.17" y="618.727">Общие экраны</tspan></text>
+<path d="M2980 423.5V455.5C2980 468.755 2990.75 479.5 3004 479.5H5304C5317.25 479.5 5328 490.245 5328 503.5V535.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="5028" y="830" width="740" height="388" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="5276.05" y="924.727">Страница ресторана
+</tspan><tspan x="5398" y="960.727">
+</tspan><tspan x="5113.42" y="996.727">Фото • название • рейтинг • кухни • стоимость •
+</tspan><tspan x="5362.76" y="1032.73">адрес
+</tspan><tspan x="5144.88" y="1068.73">Описание и особенности, включая депозит
+</tspan><tspan x="5146.16" y="1104.73">Меню из PDF • отзывы • карта • избранное
+</tspan><tspan x="5135.99" y="1140.73">Забронировать → параметры → план столов</tspan></text>
+<path d="M4903.5 609.5H4884C4870.75 609.5 4860 620.245 4860 633.5V1000C4860 1013.25 4870.75 1024 4884 1024H5023.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="5028" y="1288" width="740" height="388" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="5281.22" y="1382.73">Вход и регистрация
+</tspan><tspan x="5398" y="1418.73">
+</tspan><tspan x="5194.54" y="1454.73">Email или доступный способ входа
+</tspan><tspan x="5134.76" y="1490.73">Код: адрес, смена email, повторная отправка
+</tspan><tspan x="5181.99" y="1526.73">Имя и фамилия нового пользователя
+</tspan><tspan x="5138.4" y="1562.73">Предпочтения можно пропустить; возврат к
+</tspan><tspan x="5272.99" y="1598.73">исходному действию</tspan></text>
+<path d="M4903.5 609.5H4884C4870.75 609.5 4860 620.245 4860 633.5V1458C4860 1471.25 4870.75 1482 4884 1482H5023.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="5028" y="1746" width="740" height="422" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="5268.96" y="1839.73">Оформление и оплата
+</tspan><tspan x="5398" y="1875.73">
+</tspan><tspan x="5117.24" y="1911.73">Дата • время • гости → этаж и конкретный стол
+</tspan><tspan x="5127.73" y="1947.73">Проверка контактов • комментарий • условия
+</tspan><tspan x="5344.07" y="1983.73">депозита
+</tspan><tspan x="5220.27" y="2019.73">Без депозита: подтверждение
+</tspan><tspan x="5139.97" y="2055.73">С депозитом: отдельная оплата → проверка
+</tspan><tspan x="5333.56" y="2091.73">результата</tspan></text>
+<path d="M4903.5 609.5H4884C4870.75 609.5 4860 620.245 4860 633.5V1933C4860 1946.25 4870.75 1957 4884 1957H5023.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="5028" y="2238" width="740" height="456" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="5319.08" y="2330.73">Уведомления
+</tspan><tspan x="5398" y="2366.73">
+</tspan><tspan x="5090.82" y="2402.73">Список, непрочитанные, отметить всё прочитанным
+</tspan><tspan x="5115.91" y="2438.73">Детали: напоминание / скидка / рекомендация /
+</tspan><tspan x="5363.09" y="2474.73">отзыв
+</tspan><tspan x="5135.64" y="2510.73">Отмена брони • возврат запрошен • депозит
+</tspan><tspan x="5333.21" y="2546.73">возвращён
+</tspan><tspan x="5093.42" y="2582.73">Действия ведут к конкретной брони, ресторану или
+</tspan><tspan x="5341.75" y="2618.73">подборке</tspan></text>
+<path d="M4903.5 609.5H4884C4870.75 609.5 4860 620.245 4860 633.5V2442C4860 2455.25 4870.75 2466 4884 2466H5023.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+<rect x="5028" y="2764" width="740" height="388" rx="6" fill="white" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="5265.81" y="2858.73">Просмотр материалов
+</tspan><tspan x="5398" y="2894.73">
+</tspan><tspan x="5194.72" y="2930.73">Фото ресторана и фото из отзывов
+</tspan><tspan x="5160.76" y="2966.73">Меню: вертикальная прокрутка страниц
+</tspan><tspan x="5108.49" y="3002.73">Все отзывы: рейтинг, фильтры, раскрытие текста
+</tspan><tspan x="5125.48" y="3038.73">Создание / редактирование / удаление своего
+</tspan><tspan x="5356.39" y="3074.73">отзыва</tspan></text>
+<path d="M4903.5 609.5H4884C4870.75 609.5 4860 620.245 4860 633.5V2934C4860 2947.25 4870.75 2958 4884 2958H5023.5" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+</svg>

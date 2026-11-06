@@ -1,0 +1,549 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="5976" height="2440" viewBox="0 0 5976 2440"><svg width="1960" height="2100" viewBox="0 0 1960 2100" fill="none" x="0" y="0">
+<path d="M40 52C40 45.3726 45.3726 40 52 40H1908C1914.63 40 1920 45.3726 1920 52V2048C1920 2054.63 1914.63 2060 1908 2060H52C45.3726 2060 40 2054.63 40 2048V52Z" fill="#FAFAFA" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="40" font-weight="bold" letter-spacing="0em"><tspan x="88" y="118.545">Найти ресторан и начать бронирование</tspan></text>
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" letter-spacing="0em"><tspan x="88" y="209.5">Два входа сходятся перед выбором стола</tspan></text>
+<rect x="104" y="270" width="480" height="180" rx="72" fill="#C2E5FF" stroke="#3DADFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="241.164" y="368.727">Открыть главную</tspan></text>
+<rect x="744" y="270" width="480" height="180" rx="72" fill="#C2E5FF" stroke="#3DADFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="816.64" y="350.727">Открыть ресторан из карты,
+</tspan><tspan x="832.92" y="386.727">подборки или избранного</tspan></text>
+<g filter="url(#filter0_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 260)" fill="#A8DAFF" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="302.273">Главная
+</tspan><tspan x="1360" y="332.273">Город • поиск • подборки • карточки
+</tspan><tspan x="1360" y="362.273">Загрузка → скелетоны → контент</tspan></text>
+</g>
+<rect x="104" y="610" width="480" height="180" rx="72" fill="#C2E5FF" stroke="#3DADFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="209.05" y="708.727">Выбрать поиск из хиро</tspan></text>
+<path d="M345 454.5C345 453.948 344.552 453.5 344 453.5C343.448 453.5 343 453.948 343 454.5H344H345ZM343.293 606.207C343.683 606.598 344.317 606.598 344.707 606.207L351.071 599.843C351.462 599.453 351.462 598.819 351.071 598.429C350.681 598.038 350.047 598.038 349.657 598.429L344 604.086L338.343 598.429C337.953 598.038 337.319 598.038 336.929 598.429C336.538 598.819 336.538 599.453 336.929 599.843L343.293 606.207ZM344 454.5H343V605.5H344H345V454.5H344Z" fill="#757575" />
+<rect x="744" y="607" width="480" height="186" rx="74.4" fill="#C2E5FF" stroke="#3DADFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="832.682" y="672.727">Нажать «Забронировать»
+</tspan><tspan x="848.866" y="708.727">и выбрать дату, время,
+</tspan><tspan x="945.062" y="744.727">гостей</tspan></text>
+<path d="M985 454.5C985 453.948 984.552 453.5 984 453.5C983.448 453.5 983 453.948 983 454.5H984H985ZM983.293 603.207C983.683 603.598 984.317 603.598 984.707 603.207L991.071 596.843C991.462 596.453 991.462 595.819 991.071 595.429C990.681 595.038 990.047 595.038 989.657 595.429L984 601.086L978.343 595.429C977.953 595.038 977.319 595.038 976.929 595.429C976.538 595.819 976.538 596.453 976.929 596.843L983.293 603.207ZM984 454.5H983V602.5H984H985V454.5H984Z" fill="#757575" />
+<g filter="url(#filter1_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 600)" fill="#A8DAFF" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="642.273">Поиск
+</tspan><tspan x="1360" y="672.273">Ресторан, дата, время и гости
+</tspan><tspan x="1360" y="702.273">Заполненный пункт сворачивается</tspan></text>
+</g>
+<rect x="104" y="950" width="480" height="180" rx="72" fill="#C2E5FF" stroke="#3DADFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="232.276" y="1030.73">Выбрать ресторан,
+</tspan><tspan x="222.781" y="1066.73">дату, время и гостей</tspan></text>
+<path d="M345 794.5C345 793.948 344.552 793.5 344 793.5C343.448 793.5 343 793.948 343 794.5H344H345ZM343.293 946.207C343.683 946.598 344.317 946.598 344.707 946.207L351.071 939.843C351.462 939.453 351.462 938.819 351.071 938.429C350.681 938.038 350.047 938.038 349.657 938.429L344 944.086L338.343 938.429C337.953 938.038 337.319 938.038 336.929 938.429C336.538 938.819 336.538 939.453 336.929 939.843L343.293 946.207ZM344 794.5H343V945.5H344H345V794.5H344Z" fill="#757575" />
+<path d="M744 956C744 952.686 746.686 950 750 950H769.5H1198.5H1218C1221.31 950 1224 952.686 1224 956V1124C1224 1127.31 1221.31 1130 1218 1130H1198.5H769.5H750C746.686 1130 744 1127.31 744 1124V956Z" fill="#DCCCFF" stroke="#874FFF" stroke-width="2" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="872.285" y="1030.73"><a href="https://www.figma.com/design/uZkkvJEbHmyxD5Iz1T1hmx?node-id=48-1556">Параметры готовы
+</a></tspan><tspan x="881.387" y="1066.73"><a href="https://www.figma.com/design/uZkkvJEbHmyxD5Iz1T1hmx?node-id=48-1556">→ «Выбор стола»</a></tspan></text>
+<path d="M985 797.5C985 796.948 984.552 796.5 984 796.5C983.448 796.5 983 796.948 983 797.5H984H985ZM983.293 946.207C983.683 946.598 984.317 946.598 984.707 946.207L991.071 939.843C991.462 939.453 991.462 938.819 991.071 938.429C990.681 938.038 990.047 938.038 989.657 938.429L984 944.086L978.343 938.429C977.953 938.038 977.319 938.038 976.929 938.429C976.538 938.819 976.538 939.453 976.929 939.843L983.293 946.207ZM984 797.5H983V945.5H984H985V797.5H984Z" fill="#757575" />
+<g filter="url(#filter2_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 940)" fill="#A8DAFF" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="982.273">Параметры
+</tspan><tspan x="1360" y="1012.27">Календарь • барабан времени • </tspan><tspan x="1360" y="1042.27">степпер
+</tspan><tspan x="1360" y="1072.27">Детали можно отредактировать</tspan></text>
+</g>
+<path d="M341.317 1260.63C343.006 1259.79 344.994 1259.79 346.683 1260.63L580.683 1374.63C585.106 1376.84 585.106 1383.16 580.683 1385.37L346.683 1499.37C344.994 1500.21 343.006 1500.21 341.317 1499.37L107.317 1385.37C102.894 1383.16 102.894 1376.84 107.317 1374.63L341.317 1260.63Z" fill="#FFECBD" stroke="#FFC943" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="280.275" y="1370.73">Проверить
+</tspan><tspan x="269.16" y="1406.73">доступность</tspan></text>
+<path d="M345 1134.5C345 1133.95 344.552 1133.5 344 1133.5C343.448 1133.5 343 1133.95 343 1134.5H344H345ZM343.293 1256.21C343.683 1256.6 344.317 1256.6 344.707 1256.21L351.071 1249.84C351.462 1249.45 351.462 1248.82 351.071 1248.43C350.681 1248.04 350.047 1248.04 349.657 1248.43L344 1254.09L338.343 1248.43C337.953 1248.04 337.319 1248.04 336.929 1248.43C336.538 1248.82 336.538 1249.45 336.929 1249.84L343.293 1256.21ZM344 1134.5H343V1255.5H344H345V1134.5H344Z" fill="#757575" />
+<path d="M744 1296C744 1292.69 746.686 1290 750 1290H769.5H1198.5H1218C1221.31 1290 1224 1292.69 1224 1296V1464C1224 1467.31 1221.31 1470 1218 1470H1198.5H769.5H750C746.686 1470 744 1467.31 744 1464V1296Z" fill="#DCCCFF" stroke="#874FFF" stroke-width="2" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="873.049" y="1370.73"><a href="https://www.figma.com/design/uZkkvJEbHmyxD5Iz1T1hmx?node-id=48-1482">Ничего не найдено
+</a></tspan><tspan x="845.028" y="1406.73"><a href="https://www.figma.com/design/uZkkvJEbHmyxD5Iz1T1hmx?node-id=48-1482">→ изменить параметры</a></tspan></text>
+<path d="M588.5 1379C587.948 1379 587.5 1379.45 587.5 1380C587.5 1380.55 587.948 1381 588.5 1381V1380V1379ZM641.5 1381C642.052 1381 642.5 1380.55 642.5 1380C642.5 1379.45 642.052 1379 641.5 1379V1380V1381ZM686.5 1379C685.948 1379 685.5 1379.45 685.5 1380C685.5 1380.55 685.948 1381 686.5 1381V1380V1379ZM740.207 1380.71C740.598 1380.32 740.598 1379.68 740.207 1379.29L733.843 1372.93C733.453 1372.54 732.819 1372.54 732.429 1372.93C732.038 1373.32 732.038 1373.95 732.429 1374.34L738.086 1380L732.429 1385.66C732.038 1386.05 732.038 1386.68 732.429 1387.07C732.819 1387.46 733.453 1387.46 733.843 1387.07L740.207 1380.71ZM588.5 1380V1381H641.5V1380V1379H588.5V1380ZM686.5 1380V1381H739.5V1380V1379H686.5V1380Z" fill="#757575" />
+<text fill="black" fill-opacity="0.8" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" font-weight="500" letter-spacing="-0.011em"><tspan x="649.348" y="1385.82">Нет</tspan></text>
+<g filter="url(#filter3_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 1280)" fill="#FFE299" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="1322.27">Нет результатов
+</tspan><tspan x="1360" y="1352.27">Предложить изменить параметры
+</tspan><tspan x="1360" y="1382.27">Не терять введённые значения</tspan></text>
+</g>
+<path d="M104 1636C104 1632.69 106.686 1630 110 1630H129.5H558.5H578C581.314 1630 584 1632.69 584 1636V1804C584 1807.31 581.314 1810 578 1810H558.5H129.5H110C106.686 1810 104 1807.31 104 1804V1636Z" fill="#DCCCFF" stroke="#874FFF" stroke-width="2" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="203.897" y="1728.73"><a href="https://www.figma.com/design/uZkkvJEbHmyxD5Iz1T1hmx?node-id=48-1556">Перейти к плану столов</a></tspan></text>
+<path d="M345 1504.5C345 1503.95 344.552 1503.5 344 1503.5C343.448 1503.5 343 1503.95 343 1504.5H344H345ZM343 1545.5C343 1546.05 343.448 1546.5 344 1546.5C344.552 1546.5 345 1546.05 345 1545.5H344H343ZM345 1584.5C345 1583.95 344.552 1583.5 344 1583.5C343.448 1583.5 343 1583.95 343 1584.5H344H345ZM343.293 1626.21C343.683 1626.6 344.317 1626.6 344.707 1626.21L351.071 1619.84C351.462 1619.45 351.462 1618.82 351.071 1618.43C350.681 1618.04 350.047 1618.04 349.657 1618.43L344 1624.09L338.343 1618.43C337.953 1618.04 337.319 1618.04 336.929 1618.43C336.538 1618.82 336.538 1619.45 336.929 1619.84L343.293 1626.21ZM344 1504.5H343V1545.5H344H345V1504.5H344ZM344 1584.5H343V1625.5H344H345V1584.5H344Z" fill="#757575" />
+<text fill="black" fill-opacity="0.8" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" font-weight="500" letter-spacing="-0.011em"><tspan x="326.131" y="1570.82">Есть</tspan></text>
+<g filter="url(#filter4_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 1620)" fill="#A8DAFF" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="1662.27">Все точки входа используют один </tspan><tspan x="1360" y="1692.27">сценарий.
+</tspan><tspan x="1360" y="1722.27">Вход в аккаунт пока не обязателен.</tspan></text>
+</g>
+<defs>
+<filter id="filter0_ddd_11_377" x="1330" y="258" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+<filter id="filter1_ddd_11_377" x="1330" y="598" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+<filter id="filter2_ddd_11_377" x="1330" y="938" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+<filter id="filter3_ddd_11_377" x="1330" y="1278" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+<filter id="filter4_ddd_11_377" x="1330" y="1618" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+</defs>
+</svg><svg width="1960" height="2440" viewBox="0 0 1960 2440" fill="none" x="2008" y="0">
+<path d="M40 52C40 45.3726 45.3726 40 52 40H1908C1914.63 40 1920 45.3726 1920 52V2388C1920 2394.63 1914.63 2400 1908 2400H52C45.3726 2400 40 2394.63 40 2388V52Z" fill="#FAFAFA" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="40" font-weight="bold" letter-spacing="0em"><tspan x="88" y="118.545">Выбрать конкретный стол</tspan></text>
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" letter-spacing="0em"><tspan x="88" y="209.5">Дата, время и число гостей уже известны</tspan></text>
+<rect x="104" y="270" width="480" height="180" rx="72" fill="#C2E5FF" stroke="#3DADFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="218.372" y="368.727">Открыть план столов</tspan></text>
+<g filter="url(#filter0_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 260)" fill="#A8DAFF" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="302.273">План
+</tspan><tspan x="1360" y="332.273">Этажи при необходимости
+</tspan><tspan x="1360" y="362.273">Столы по доступности и вместимости
+</tspan><tspan x="1360" y="392.273">Без пользовательской легенды</tspan></text>
+</g>
+<path d="M341.317 580.633C343.006 579.789 344.994 579.789 346.683 580.633L580.683 694.633C585.106 696.845 585.106 703.155 580.683 705.367L346.683 819.367C344.994 820.211 343.006 820.211 341.317 819.367L107.317 705.367C102.894 703.155 102.894 696.845 107.317 694.633L341.317 580.633Z" fill="#FFECBD" stroke="#FFC943" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="240.309" y="690.727">Есть подходящий
+</tspan><tspan x="310.977" y="726.727">стол?</tspan></text>
+<path d="M345 454.5C345 453.948 344.552 453.5 344 453.5C343.448 453.5 343 453.948 343 454.5H344H345ZM343.293 576.207C343.683 576.598 344.317 576.598 344.707 576.207L351.071 569.843C351.462 569.453 351.462 568.819 351.071 568.429C350.681 568.038 350.047 568.038 349.657 568.429L344 574.086L338.343 568.429C337.953 568.038 337.319 568.038 336.929 568.429C336.538 568.819 336.538 569.453 336.929 569.843L343.293 576.207ZM344 454.5H343V575.5H344H345V454.5H344Z" fill="#757575" />
+<path d="M744 613C744 609.686 746.686 607 750 607H769.5H1198.5H1218C1221.31 607 1224 609.686 1224 613V787C1224 790.314 1221.31 793 1218 793H1198.5H769.5H750C746.686 793 744 790.314 744 787V613Z" fill="#DCCCFF" stroke="#874FFF" stroke-width="2" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="842.218" y="672.727"><a href="https://www.figma.com/design/uZkkvJEbHmyxD5Iz1T1hmx?node-id=48-1482">Нет подходящих столов
+</a></tspan><tspan x="817.706" y="708.727"><a href="https://www.figma.com/design/uZkkvJEbHmyxD5Iz1T1hmx?node-id=48-1482">→ изменить дату, время или
+</a></tspan><tspan x="945.062" y="744.727"><a href="https://www.figma.com/design/uZkkvJEbHmyxD5Iz1T1hmx?node-id=48-1482">гостей</a></tspan></text>
+<path d="M588.5 699C587.948 699 587.5 699.448 587.5 700C587.5 700.552 587.948 701 588.5 701V700V699ZM641.5 701C642.052 701 642.5 700.552 642.5 700C642.5 699.448 642.052 699 641.5 699V700V701ZM686.5 699C685.948 699 685.5 699.448 685.5 700C685.5 700.552 685.948 701 686.5 701V700V699ZM740.207 700.707C740.598 700.317 740.598 699.683 740.207 699.293L733.843 692.929C733.453 692.538 732.819 692.538 732.429 692.929C732.038 693.319 732.038 693.953 732.429 694.343L738.086 700L732.429 705.657C732.038 706.047 732.038 706.681 732.429 707.071C732.819 707.462 733.453 707.462 733.843 707.071L740.207 700.707ZM588.5 700V701H641.5V700V699H588.5V700ZM686.5 700V701H739.5V700V699H686.5V700Z" fill="#757575" />
+<text fill="black" fill-opacity="0.8" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" font-weight="500" letter-spacing="-0.011em"><tspan x="649.348" y="705.818">Нет</tspan></text>
+<g filter="url(#filter1_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 600)" fill="#FFE299" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="642.273">Пустое состояние
+</tspan><tspan x="1360" y="672.273">Иллюстрация «Ничего не найдено»
+</tspan><tspan x="1360" y="702.273">Изменить детали бронирования</tspan></text>
+</g>
+<rect x="104" y="950" width="480" height="180" rx="72" fill="#C2E5FF" stroke="#3DADFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="202.066" y="1048.73">Нажать доступный стол</tspan></text>
+<path d="M345 824.5C345 823.948 344.552 823.5 344 823.5C343.448 823.5 343 823.948 343 824.5H344H345ZM343 865.5C343 866.052 343.448 866.5 344 866.5C344.552 866.5 345 866.052 345 865.5H344H343ZM345 904.5C345 903.948 344.552 903.5 344 903.5C343.448 903.5 343 903.948 343 904.5H344H345ZM343.293 946.207C343.683 946.598 344.317 946.598 344.707 946.207L351.071 939.843C351.462 939.453 351.462 938.819 351.071 938.429C350.681 938.038 350.047 938.038 349.657 938.429L344 944.086L338.343 938.429C337.953 938.038 337.319 938.038 336.929 938.429C336.538 938.819 336.538 939.453 336.929 939.843L343.293 946.207ZM344 824.5H343V865.5H344H345V824.5H344ZM344 904.5H343V945.5H344H345V904.5H344Z" fill="#757575" />
+<text fill="black" fill-opacity="0.8" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" font-weight="500" letter-spacing="-0.011em"><tspan x="333.424" y="890.818">Да</tspan></text>
+<g filter="url(#filter2_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 940)" fill="#A8DAFF" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="982.273">План
+</tspan><tspan x="1360" y="1012.27">Занятый и слишком маленький стол
+</tspan><tspan x="1360" y="1042.27">нельзя выбрать</tspan></text>
+</g>
+<path d="M341.317 1260.63C343.006 1259.79 344.994 1259.79 346.683 1260.63L580.683 1374.63C585.106 1376.84 585.106 1383.16 580.683 1385.37L346.683 1499.37C344.994 1500.21 343.006 1500.21 341.317 1499.37L107.317 1385.37C102.894 1383.16 102.894 1376.84 107.317 1374.63L341.317 1260.63Z" fill="#FFECBD" stroke="#FFC943" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="259.15" y="1370.73">На столе есть </tspan><tspan x="299.121" y="1406.73">бейдж?</tspan></text>
+<path d="M345 1134.5C345 1133.95 344.552 1133.5 344 1133.5C343.448 1133.5 343 1133.95 343 1134.5H344H345ZM343.293 1256.21C343.683 1256.6 344.317 1256.6 344.707 1256.21L351.071 1249.84C351.462 1249.45 351.462 1248.82 351.071 1248.43C350.681 1248.04 350.047 1248.04 349.657 1248.43L344 1254.09L338.343 1248.43C337.953 1248.04 337.319 1248.04 336.929 1248.43C336.538 1248.82 336.538 1249.45 336.929 1249.84L343.293 1256.21ZM344 1134.5H343V1255.5H344H345V1134.5H344Z" fill="#757575" />
+<rect x="744" y="1290" width="480" height="180" rx="72" fill="#C2E5FF" stroke="#3DADFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="837.311" y="1370.73">Открыть условия скидки
+</tspan><tspan x="843.686" y="1406.73">и выбрать стол кнопкой</tspan></text>
+<path d="M588.5 1379C587.948 1379 587.5 1379.45 587.5 1380C587.5 1380.55 587.948 1381 588.5 1381V1380V1379ZM645.5 1381C646.052 1381 646.5 1380.55 646.5 1380C646.5 1379.45 646.052 1379 645.5 1379V1380V1381ZM682.5 1379C681.948 1379 681.5 1379.45 681.5 1380C681.5 1380.55 681.948 1381 682.5 1381V1380V1379ZM740.207 1380.71C740.598 1380.32 740.598 1379.68 740.207 1379.29L733.843 1372.93C733.453 1372.54 732.819 1372.54 732.429 1372.93C732.038 1373.32 732.038 1373.95 732.429 1374.34L738.086 1380L732.429 1385.66C732.038 1386.05 732.038 1386.68 732.429 1387.07C732.819 1387.46 733.453 1387.46 733.843 1387.07L740.207 1380.71ZM588.5 1380V1381H645.5V1380V1379H588.5V1380ZM682.5 1380V1381H739.5V1380V1379H682.5V1380Z" fill="#757575" />
+<text fill="black" fill-opacity="0.8" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" font-weight="500" letter-spacing="-0.011em"><tspan x="653.424" y="1385.82">Да</tspan></text>
+<g filter="url(#filter3_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 1280)" fill="#FFE299" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="1322.27">Модалка стола
+</tspan><tspan x="1360" y="1352.27">Скидка в заголовке
+</tspan><tspan x="1360" y="1382.27">Условия обычным текстом
+</tspan><tspan x="1360" y="1412.27">Кнопка «Выбрать стол»</tspan></text>
+</g>
+<rect x="104" y="1630" width="480" height="180" rx="72" fill="#C2E5FF" stroke="#3DADFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="268.246" y="1728.73">Стол выбран</tspan></text>
+<path d="M985 1474.5C985 1473.95 984.552 1473.5 984 1473.5C983.448 1473.5 983 1473.95 983 1474.5H984H985ZM587.793 1719.29C587.402 1719.68 587.402 1720.32 587.793 1720.71L594.157 1727.07C594.547 1727.46 595.181 1727.46 595.571 1727.07C595.962 1726.68 595.962 1726.05 595.571 1725.66L589.914 1720L595.571 1714.34C595.962 1713.95 595.962 1713.32 595.571 1712.93C595.181 1712.54 594.547 1712.54 594.157 1712.93L587.793 1719.29ZM984 1474.5H983V1696H984H985V1474.5H984ZM960 1720V1719H588.5V1720V1721H960V1720ZM984 1696H983C983 1708.7 972.703 1719 960 1719V1720V1721C973.807 1721 985 1709.81 985 1696H984Z" fill="#757575" />
+<path d="M345 1504.5C345 1503.95 344.552 1503.5 344 1503.5C343.448 1503.5 343 1503.95 343 1504.5H344H345ZM343 1545.5C343 1546.05 343.448 1546.5 344 1546.5C344.552 1546.5 345 1546.05 345 1545.5H344H343ZM345 1584.5C345 1583.95 344.552 1583.5 344 1583.5C343.448 1583.5 343 1583.95 343 1584.5H344H345ZM343.293 1626.21C343.683 1626.6 344.317 1626.6 344.707 1626.21L351.071 1619.84C351.462 1619.45 351.462 1618.82 351.071 1618.43C350.681 1618.04 350.047 1618.04 349.657 1618.43L344 1624.09L338.343 1618.43C337.953 1618.04 337.319 1618.04 336.929 1618.43C336.538 1618.82 336.538 1619.45 336.929 1619.84L343.293 1626.21ZM344 1504.5H343V1545.5H344H345V1504.5H344ZM344 1584.5H343V1625.5H344H345V1584.5H344Z" fill="#757575" />
+<text fill="black" fill-opacity="0.8" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" font-weight="500" letter-spacing="-0.011em"><tspan x="329.348" y="1570.82">Нет</tspan></text>
+<g filter="url(#filter4_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 1620)" fill="#A8DAFF" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="1662.27">Параметры изменились?
+</tspan><tspan x="1360" y="1692.27">Если стол не подходит — сбросить
+</tspan><tspan x="1360" y="1722.27">его выбор и связанную скидку</tspan></text>
+</g>
+<path d="M104 1976C104 1972.69 106.686 1970 110 1970H129.5H558.5H578C581.314 1970 584 1972.69 584 1976V2144C584 2147.31 581.314 2150 578 2150H558.5H129.5H110C106.686 2150 104 2147.31 104 2144V1976Z" fill="#DCCCFF" stroke="#874FFF" stroke-width="2" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="192.738" y="2068.73"><a href="https://www.figma.com/design/uZkkvJEbHmyxD5Iz1T1hmx?node-id=48-1659">Продолжить оформление</a></tspan></text>
+<path d="M345 1814.5C345 1813.95 344.552 1813.5 344 1813.5C343.448 1813.5 343 1813.95 343 1814.5H344H345ZM343.293 1966.21C343.683 1966.6 344.317 1966.6 344.707 1966.21L351.071 1959.84C351.462 1959.45 351.462 1958.82 351.071 1958.43C350.681 1958.04 350.047 1958.04 349.657 1958.43L344 1964.09L338.343 1958.43C337.953 1958.04 337.319 1958.04 336.929 1958.43C336.538 1958.82 336.538 1959.45 336.929 1959.84L343.293 1966.21ZM344 1814.5H343V1965.5H344H345V1814.5H344Z" fill="#757575" />
+<g filter="url(#filter5_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 1960)" fill="#A8DAFF" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="2002.27">Повторно проверить доступность.
+</tspan><tspan x="1360" y="2032.27">Если стол заняли — вернуться к </tspan><tspan x="1360" y="2062.27">плану
+</tspan><tspan x="1360" y="2092.27">с сохранёнными параметрами.</tspan></text>
+</g>
+<defs>
+<filter id="filter0_ddd_11_377" x="1330" y="258" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+<filter id="filter1_ddd_11_377" x="1330" y="598" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+<filter id="filter2_ddd_11_377" x="1330" y="938" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+<filter id="filter3_ddd_11_377" x="1330" y="1278" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+<filter id="filter4_ddd_11_377" x="1330" y="1618" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+<filter id="filter5_ddd_11_377" x="1330" y="1958" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+</defs>
+</svg><svg width="1960" height="2440" viewBox="0 0 1960 2440" fill="none" x="4016" y="0">
+<path d="M40 52C40 45.3726 45.3726 40 52 40H1908C1914.63 40 1920 45.3726 1920 52V2388C1920 2394.63 1914.63 2400 1908 2400H52C45.3726 2400 40 2394.63 40 2388V52Z" fill="#FAFAFA" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="40" font-weight="bold" letter-spacing="0em"><tspan x="88" y="118.545">Проверить данные и оформить бронь</tspan></text>
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" letter-spacing="0em"><tspan x="88" y="209.5">Один сценарий после любого входа к плану столов</tspan></text>
+<path d="M341.317 240.633C343.006 239.789 344.994 239.789 346.683 240.633L580.683 354.633C585.106 356.845 585.106 363.155 580.683 365.367L346.683 479.367C344.994 480.211 343.006 480.211 341.317 479.367L107.317 365.367C102.894 363.155 102.894 356.845 107.317 354.633L341.317 240.633Z" fill="#FFECBD" stroke="#FFC943" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="258.783" y="350.727">Пользователь </tspan><tspan x="300.176" y="386.727">вошёл?</tspan></text>
+<path d="M744 276C744 272.686 746.686 270 750 270H769.5H1198.5H1218C1221.31 270 1224 272.686 1224 276V444C1224 447.314 1221.31 450 1218 450H1198.5H769.5H750C746.686 450 744 447.314 744 444V276Z" fill="#DCCCFF" stroke="#874FFF" stroke-width="2" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="870.029" y="350.727"><a href="https://www.figma.com/design/uZkkvJEbHmyxD5Iz1T1hmx?node-id=48-1771">Вход / регистрация
+</a></tspan><tspan x="819.88" y="386.727"><a href="https://www.figma.com/design/uZkkvJEbHmyxD5Iz1T1hmx?node-id=48-1771">→ вернуться к оформлению</a></tspan></text>
+<path d="M588.5 359C587.948 359 587.5 359.448 587.5 360C587.5 360.552 587.948 361 588.5 361V360V359ZM641.5 361C642.052 361 642.5 360.552 642.5 360C642.5 359.448 642.052 359 641.5 359V360V361ZM686.5 359C685.948 359 685.5 359.448 685.5 360C685.5 360.552 685.948 361 686.5 361V360V359ZM740.207 360.707C740.598 360.317 740.598 359.683 740.207 359.293L733.843 352.929C733.453 352.538 732.819 352.538 732.429 352.929C732.038 353.319 732.038 353.953 732.429 354.343L738.086 360L732.429 365.657C732.038 366.047 732.038 366.681 732.429 367.071C732.819 367.462 733.453 367.462 733.843 367.071L740.207 360.707ZM588.5 360V361H641.5V360V359H588.5V360ZM686.5 360V361H739.5V360V359H686.5V360Z" fill="#757575" />
+<text fill="black" fill-opacity="0.8" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" font-weight="500" letter-spacing="-0.011em"><tspan x="649.348" y="365.818">Нет</tspan></text>
+<g filter="url(#filter0_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 260)" fill="#FFE299" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="302.273">Контекст входа
+</tspan><tspan x="1360" y="332.273">Сохранить ресторан, стол и </tspan><tspan x="1360" y="362.273">параметры
+</tspan><tspan x="1360" y="392.273">После входа вернуться сюда</tspan></text>
+</g>
+<rect x="104" y="610" width="480" height="180" rx="72" fill="#C2E5FF" stroke="#3DADFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="194.698" y="708.727">Проверить данные брони</tspan></text>
+<path d="M345 484.5C345 483.948 344.552 483.5 344 483.5C343.448 483.5 343 483.948 343 484.5H344H345ZM343 525.5C343 526.052 343.448 526.5 344 526.5C344.552 526.5 345 526.052 345 525.5H344H343ZM345 564.5C345 563.948 344.552 563.5 344 563.5C343.448 563.5 343 563.948 343 564.5H344H345ZM343.293 606.207C343.683 606.598 344.317 606.598 344.707 606.207L351.071 599.843C351.462 599.453 351.462 598.819 351.071 598.429C350.681 598.038 350.047 598.038 349.657 598.429L344 604.086L338.343 598.429C337.953 598.038 337.319 598.038 336.929 598.429C336.538 598.819 336.538 599.453 336.929 599.843L343.293 606.207ZM344 484.5H343V525.5H344H345V484.5H344ZM344 564.5H343V605.5H344H345V564.5H344Z" fill="#757575" />
+<text fill="black" fill-opacity="0.8" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" font-weight="500" letter-spacing="-0.011em"><tspan x="333.424" y="550.818">Да</tspan></text>
+<g filter="url(#filter1_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 600)" fill="#A8DAFF" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="642.273">Ваша бронь
+</tspan><tspan x="1360" y="672.273">Ресторан • дата • время • гости • </tspan><tspan x="1360" y="702.273">стол
+</tspan><tspan x="1360" y="732.273">Карандаш → назад к параметрам
+</tspan><tspan x="1360" y="762.273">Контакты • необязательный </tspan><tspan x="1360" y="792.273">комментарий</tspan></text>
+</g>
+<path d="M341.317 920.633C343.006 919.789 344.994 919.789 346.683 920.633L580.683 1034.63C585.106 1036.84 585.106 1043.16 580.683 1045.37L346.683 1159.37C344.994 1160.21 343.006 1160.21 341.317 1159.37L107.317 1045.37C102.894 1043.16 102.894 1036.84 107.317 1034.63L341.317 920.633Z" fill="#FFECBD" stroke="#FFC943" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="237.933" y="1030.73">Есть пересечение
+</tspan><tspan x="239.738" y="1066.73">с другой бронью?</tspan></text>
+<path d="M345 794.5C345 793.948 344.552 793.5 344 793.5C343.448 793.5 343 793.948 343 794.5H344H345ZM343.293 916.207C343.683 916.598 344.317 916.598 344.707 916.207L351.071 909.843C351.462 909.453 351.462 908.819 351.071 908.429C350.681 908.038 350.047 908.038 349.657 908.429L344 914.086L338.343 908.429C337.953 908.038 337.319 908.038 336.929 908.429C336.538 908.819 336.538 909.453 336.929 909.843L343.293 916.207ZM344 794.5H343V915.5H344H345V794.5H344Z" fill="#757575" />
+<rect x="744" y="950" width="480" height="180" rx="72" fill="#C2E5FF" stroke="#3DADFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="895.139" y="1030.73">Предупредить;
+</tspan><tspan x="827.892" y="1066.73">пользователь продолжает</tspan></text>
+<path d="M588.5 1039C587.948 1039 587.5 1039.45 587.5 1040C587.5 1040.55 587.948 1041 588.5 1041V1040V1039ZM645.5 1041C646.052 1041 646.5 1040.55 646.5 1040C646.5 1039.45 646.052 1039 645.5 1039V1040V1041ZM682.5 1039C681.948 1039 681.5 1039.45 681.5 1040C681.5 1040.55 681.948 1041 682.5 1041V1040V1039ZM740.207 1040.71C740.598 1040.32 740.598 1039.68 740.207 1039.29L733.843 1032.93C733.453 1032.54 732.819 1032.54 732.429 1032.93C732.038 1033.32 732.038 1033.95 732.429 1034.34L738.086 1040L732.429 1045.66C732.038 1046.05 732.038 1046.68 732.429 1047.07C732.819 1047.46 733.453 1047.46 733.843 1047.07L740.207 1040.71ZM588.5 1040V1041H645.5V1040V1039H588.5V1040ZM682.5 1040V1041H739.5V1040V1039H682.5V1040Z" fill="#757575" />
+<text fill="black" fill-opacity="0.8" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" font-weight="500" letter-spacing="-0.011em"><tspan x="653.424" y="1045.82">Да</tspan></text>
+<g filter="url(#filter2_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 940)" fill="#FFE299" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="982.273">Пересечение не запрещает бронь.
+</tspan><tspan x="1360" y="1012.27">Показать предупреждение
+</tspan><tspan x="1360" y="1042.27">и дать продолжить или вернуться.</tspan></text>
+</g>
+<path d="M341.317 1260.63C343.006 1259.79 344.994 1259.79 346.683 1260.63L580.683 1374.63C585.106 1376.84 585.106 1383.16 580.683 1385.37L346.683 1499.37C344.994 1500.21 343.006 1500.21 341.317 1499.37L107.317 1385.37C102.894 1383.16 102.894 1376.84 107.317 1374.63L341.317 1260.63Z" fill="#FFECBD" stroke="#FFC943" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="248.263" y="1388.73">Нужен депозит?</tspan></text>
+<path d="M985 1134.5C985 1133.95 984.552 1133.5 984 1133.5C983.448 1133.5 983 1133.95 983 1134.5H984H985ZM682.5 1379C681.948 1379 681.5 1379.45 681.5 1380C681.5 1380.55 681.948 1381 682.5 1381V1380V1379ZM645.5 1381C646.052 1381 646.5 1380.55 646.5 1380C646.5 1379.45 646.052 1379 645.5 1379V1380V1381ZM587.793 1379.29C587.402 1379.68 587.402 1380.32 587.793 1380.71L594.157 1387.07C594.547 1387.46 595.181 1387.46 595.571 1387.07C595.962 1386.68 595.962 1386.05 595.571 1385.66L589.914 1380L595.571 1374.34C595.962 1373.95 595.962 1373.32 595.571 1372.93C595.181 1372.54 594.547 1372.54 594.157 1372.93L587.793 1379.29ZM984 1134.5H983V1356H984H985V1134.5H984ZM960 1380V1379H682.5V1380V1381H960V1380ZM645.5 1380V1379H588.5V1380V1381H645.5V1380ZM984 1356H983C983 1368.7 972.703 1379 960 1379V1380V1381C973.807 1381 985 1369.81 985 1356H984Z" fill="#757575" />
+<path d="M345 1164.5C345 1163.95 344.552 1163.5 344 1163.5C343.448 1163.5 343 1163.95 343 1164.5H344H345ZM343 1190.5C343 1191.05 343.448 1191.5 344 1191.5C344.552 1191.5 345 1191.05 345 1190.5H344H343ZM345 1229.5C345 1228.95 344.552 1228.5 344 1228.5C343.448 1228.5 343 1228.95 343 1229.5H344H345ZM343.293 1256.21C343.683 1256.6 344.317 1256.6 344.707 1256.21L351.071 1249.84C351.462 1249.45 351.462 1248.82 351.071 1248.43C350.681 1248.04 350.047 1248.04 349.657 1248.43L344 1254.09L338.343 1248.43C337.953 1248.04 337.319 1248.04 336.929 1248.43C336.538 1248.82 336.538 1249.45 336.929 1249.84L343.293 1256.21ZM344 1164.5H343V1190.5H344H345V1164.5H344ZM344 1229.5H343V1255.5H344H345V1229.5H344Z" fill="#757575" />
+<text fill="black" fill-opacity="0.8" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" font-weight="500" letter-spacing="-0.011em"><tspan x="329.348" y="1215.82">Нет</tspan></text>
+<path d="M744 1296C744 1292.69 746.686 1290 750 1290H769.5H1198.5H1218C1221.31 1290 1224 1292.69 1224 1296V1464C1224 1467.31 1221.31 1470 1218 1470H1198.5H769.5H750C746.686 1470 744 1467.31 744 1464V1296Z" fill="#DCCCFF" stroke="#874FFF" stroke-width="2" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="881.121" y="1388.73"><a href="https://www.figma.com/design/uZkkvJEbHmyxD5Iz1T1hmx?node-id=48-1861">Перейти к оплате</a></tspan></text>
+<path d="M587.793 1379.29C587.402 1379.68 587.402 1380.32 587.793 1380.71L594.157 1387.07C594.547 1387.46 595.181 1387.46 595.571 1387.07C595.962 1386.68 595.962 1386.05 595.571 1385.66L589.914 1380L595.571 1374.34C595.962 1373.95 595.962 1373.32 595.571 1372.93C595.181 1372.54 594.547 1372.54 594.157 1372.93L587.793 1379.29ZM645.5 1381C646.052 1381 646.5 1380.55 646.5 1380C646.5 1379.45 646.052 1379 645.5 1379V1380V1381ZM682.5 1379C681.948 1379 681.5 1379.45 681.5 1380C681.5 1380.55 681.948 1381 682.5 1381V1380V1379ZM740.207 1380.71C740.598 1380.32 740.598 1379.68 740.207 1379.29L733.843 1372.93C733.453 1372.54 732.819 1372.54 732.429 1372.93C732.038 1373.32 732.038 1373.95 732.429 1374.34L738.086 1380L732.429 1385.66C732.038 1386.05 732.038 1386.68 732.429 1387.07C732.819 1387.46 733.453 1387.46 733.843 1387.07L740.207 1380.71ZM588.5 1380V1381H645.5V1380V1379H588.5V1380ZM682.5 1380V1381H739.5V1380V1379H682.5V1380Z" fill="#757575" />
+<text fill="black" fill-opacity="0.8" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" font-weight="500" letter-spacing="-0.011em"><tspan x="653.424" y="1385.82">Да</tspan></text>
+<g filter="url(#filter3_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 1280)" fill="#FFE299" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="1322.27">Депозит
+</tspan><tspan x="1360" y="1352.27">Средний чек × число гостей
+</tspan><tspan x="1360" y="1382.27">Не уменьшается из-за скидки
+</tspan><tspan x="1360" y="1412.27">Подробнее → условия в модалке</tspan></text>
+</g>
+<rect x="104" y="1630" width="480" height="180" rx="72" fill="#C2E5FF" stroke="#3DADFF" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="154.849" y="1728.73">Подтвердить бесплатную бронь</tspan></text>
+<path d="M345 1504.5C345 1503.95 344.552 1503.5 344 1503.5C343.448 1503.5 343 1503.95 343 1504.5H344H345ZM343 1545.5C343 1546.05 343.448 1546.5 344 1546.5C344.552 1546.5 345 1546.05 345 1545.5H344H343ZM345 1584.5C345 1583.95 344.552 1583.5 344 1583.5C343.448 1583.5 343 1583.95 343 1584.5H344H345ZM343.293 1626.21C343.683 1626.6 344.317 1626.6 344.707 1626.21L351.071 1619.84C351.462 1619.45 351.462 1618.82 351.071 1618.43C350.681 1618.04 350.047 1618.04 349.657 1618.43L344 1624.09L338.343 1618.43C337.953 1618.04 337.319 1618.04 336.929 1618.43C336.538 1618.82 336.538 1619.45 336.929 1619.84L343.293 1626.21ZM344 1504.5H343V1545.5H344H345V1504.5H344ZM344 1584.5H343V1625.5H344H345V1584.5H344Z" fill="#757575" />
+<text fill="black" fill-opacity="0.8" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" font-weight="500" letter-spacing="-0.011em"><tspan x="329.348" y="1570.82">Нет</tspan></text>
+<g filter="url(#filter4_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 1620)" fill="#A8DAFF" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="1662.27">Валидация у конкретного поля.
+</tspan><tspan x="1360" y="1692.27">При отправке не создавать </tspan><tspan x="1360" y="1722.27">дубликаты.
+</tspan><tspan x="1360" y="1752.27">При неизвестном ответе проверить </tspan><tspan x="1360" y="1782.27">статус.</tspan></text>
+</g>
+<rect x="104" y="1970" width="480" height="180" rx="72" fill="#CDF4D3" stroke="#66D575" stroke-width="2" stroke-linecap="round" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="500" letter-spacing="-0.011em"><tspan x="218.592" y="2068.73">Бронь подтверждена</tspan></text>
+<path d="M345 1814.5C345 1813.95 344.552 1813.5 344 1813.5C343.448 1813.5 343 1813.95 343 1814.5H344H345ZM343.293 1966.21C343.683 1966.6 344.317 1966.6 344.707 1966.21L351.071 1959.84C351.462 1959.45 351.462 1958.82 351.071 1958.43C350.681 1958.04 350.047 1958.04 349.657 1958.43L344 1964.09L338.343 1958.43C337.953 1958.04 337.319 1958.04 336.929 1958.43C336.538 1958.82 336.538 1959.45 336.929 1959.84L343.293 1966.21ZM344 1814.5H343V1965.5H344H345V1814.5H344Z" fill="#757575" />
+<g filter="url(#filter5_ddd_11_377)">
+<rect width="416" height="240" transform="translate(1340 1960)" fill="#FFE299" />
+<text fill="#1E1E1E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="500" letter-spacing="-0.011em"><tspan x="1360" y="2002.27">Результат
+</tspan><tspan x="1360" y="2032.27">Ресторан, дата, время, гости, стол
+</tspan><tspan x="1360" y="2062.27">Переход к деталям в </tspan><tspan x="1360" y="2092.27">«Бронированиях»</tspan></text>
+</g>
+<defs>
+<filter id="filter0_ddd_11_377" x="1330" y="258" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+<filter id="filter1_ddd_11_377" x="1330" y="598" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+<filter id="filter2_ddd_11_377" x="1330" y="938" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+<filter id="filter3_ddd_11_377" x="1330" y="1278" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+<filter id="filter4_ddd_11_377" x="1330" y="1618" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+<filter id="filter5_ddd_11_377" x="1330" y="1958" width="436" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="2.5" />
+<feGaussianBlur stdDeviation="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="3" />
+<feGaussianBlur stdDeviation="2.5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+<feBlend mode="normal" in2="effect1_dropShadow_11_377" result="effect2_dropShadow_11_377" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="8" />
+<feGaussianBlur stdDeviation="5" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+<feBlend mode="normal" in2="effect2_dropShadow_11_377" result="effect3_dropShadow_11_377" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_11_377" result="shape" />
+</filter>
+</defs>
+</svg></svg>
