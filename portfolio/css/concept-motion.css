@@ -45,7 +45,7 @@
 @media (prefers-reduced-motion:no-preference){
  .card-back[data-motion="prices"].motion-visible::after{
   content:"";position:absolute;inset:0;pointer-events:none;
-  background:center bottom/contain no-repeat url('../assets/img/price-chart-motion.svg');
+  background:center bottom/contain no-repeat url('../assets/img/price-chart-motion.svg?v=11-months');
  }
 }
 
