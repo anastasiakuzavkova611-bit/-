@@ -21,8 +21,6 @@ body main.install-case>.story-section{margin-block:80px}
 body main.install-case>:is(.audit-board,.audit-gallery){margin-block:80px}
 body main.install-case>.story-section:has(+ :is(.audit-board,.audit-gallery)){margin-bottom:32px}
 body main.install-case>.story-section + :is(.audit-board,.audit-gallery){margin-top:32px}
-body main.install-case .hypothesis-row > .solution-summary{margin:0}
-body main.install-case .solution-summary h3{margin:0;font-size:20px;line-height:1.3}
 body main.install-case .hypotheses{margin-top:80px}
 body main.install-case .hypothesis-row{row-gap:40px;padding-bottom:80px}
 body main.install-case .hypothesis-row:last-child{padding-bottom:0}
