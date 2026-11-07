@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 848 338" width="848" height="338" font-family="Arial, sans-serif">
+<rect x="0" width="272" height="338" rx="16" fill="white"/>
+<text x="20" y="39" font-size="18" font-weight="600" fill="#252525">Выбрать конкретный</text>
+<text x="20" y="61" font-size="18" font-weight="600" fill="#252525">стол</text>
+<text x="20" y="93" font-size="16" font-weight="400" fill="#252525">Когда мне важно,</text>
+<text x="20" y="115" font-size="16" font-weight="400" fill="#252525">где мы будем сидеть, я хочу</text>
+<text x="20" y="137" font-size="16" font-weight="400" fill="#252525">заранее выбрать подходящий</text>
+<text x="20" y="159" font-size="16" font-weight="400" fill="#252525">стол, чтобы не зависеть</text>
+<text x="20" y="181" font-size="16" font-weight="400" fill="#252525">от того, куда нас посадят</text>
+<text x="20" y="203" font-size="16" font-weight="400" fill="#252525">по приходу.</text>
+<text x="20" y="262" font-size="14" font-weight="400" fill="#616161">В MVP</text>
+<text x="20" y="292" font-size="16" font-weight="400" fill="#252525">План зала</text>
+<rect x="288" width="272" height="338" rx="16" fill="white"/>
+<text x="308" y="39" font-size="18" font-weight="600" fill="#252525">Понять условия скидки</text>
+<text x="308" y="71" font-size="16" font-weight="400" fill="#252525">Когда на подходящий стол</text>
+<text x="308" y="93" font-size="16" font-weight="400" fill="#252525">действует скидка, я хочу</text>
+<text x="308" y="115" font-size="16" font-weight="400" fill="#252525">понять её условия</text>
+<text x="308" y="137" font-size="16" font-weight="400" fill="#252525">до бронирования, чтобы знать,</text>
+<text x="308" y="159" font-size="16" font-weight="400" fill="#252525">на что рассчитывать</text>
+<text x="308" y="181" font-size="16" font-weight="400" fill="#252525">при оплате счёта.</text>
+<text x="308" y="262" font-size="14" font-weight="400" fill="#616161">В MVP</text>
+<text x="308" y="292" font-size="16" font-weight="400" fill="#252525">Предложение для стола</text>
+<rect x="576" width="272" height="338" rx="16" fill="white"/>
+<text x="596" y="39" font-size="18" font-weight="600" fill="#252525">Передать пожелания</text>
+<text x="596" y="71" font-size="16" font-weight="400" fill="#252525">Когда у нашей компании есть</text>
+<text x="596" y="93" font-size="16" font-weight="400" fill="#252525">пожелания к посещению,</text>
+<text x="596" y="115" font-size="16" font-weight="400" fill="#252525">я хочу передать их ресторану</text>
+<text x="596" y="137" font-size="16" font-weight="400" fill="#252525">при бронировании,</text>
+<text x="596" y="159" font-size="16" font-weight="400" fill="#252525">чтобы сотрудники могли</text>
+<text x="596" y="181" font-size="16" font-weight="400" fill="#252525">учесть их заранее.</text>
+<text x="596" y="262" font-size="14" font-weight="400" fill="#616161">В MVP</text>
+<text x="596" y="292" font-size="16" font-weight="400" fill="#252525">Комментарий к брони</text>
+</svg>

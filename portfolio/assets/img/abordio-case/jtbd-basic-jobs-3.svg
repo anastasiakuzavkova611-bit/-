@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 848 338" width="848" height="338" font-family="Arial, sans-serif">
+<rect x="0" width="416" height="338" rx="16" fill="white"/>
+<text x="20" y="39" font-size="18" font-weight="600" fill="#252525">Узнать условия депозита</text>
+<text x="20" y="71" font-size="16" font-weight="400" fill="#252525">Когда ресторан просит депозит, я хочу до оплаты</text>
+<text x="20" y="93" font-size="16" font-weight="400" fill="#252525">узнать сумму, причину и условия возврата,</text>
+<text x="20" y="115" font-size="16" font-weight="400" fill="#252525">чтобы решить, подходят ли мне эти условия.</text>
+<text x="20" y="262" font-size="14" font-weight="400" fill="#616161">В MVP</text>
+<text x="20" y="292" font-size="16" font-weight="400" fill="#252525">Условия депозита</text>
+<rect x="432" width="416" height="338" rx="16" fill="white"/>
+<text x="452" y="39" font-size="18" font-weight="600" fill="#252525">Успеть оплатить</text>
+<text x="452" y="71" font-size="16" font-weight="400" fill="#252525">Когда я перешёл к оплате выбранного стола,</text>
+<text x="452" y="93" font-size="16" font-weight="400" fill="#252525">я хочу понимать, сколько времени он сохраняется</text>
+<text x="452" y="115" font-size="16" font-weight="400" fill="#252525">за мной, чтобы успеть завершить бронирование.</text>
+<text x="452" y="262" font-size="14" font-weight="400" fill="#616161">В MVP</text>
+<text x="452" y="292" font-size="16" font-weight="400" fill="#252525">Срок оплаты</text>
+</svg>

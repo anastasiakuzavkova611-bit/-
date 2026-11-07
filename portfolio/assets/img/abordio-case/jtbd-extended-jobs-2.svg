@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 848 338" width="848" height="338" font-family="Arial, sans-serif">
+<rect x="0" width="272" height="338" rx="16" fill="white"/>
+<text x="20" y="39" font-size="18" font-weight="600" fill="#252525">Завершить оформление</text>
+<text x="20" y="71" font-size="16" font-weight="400" fill="#252525">Когда я уже выбрал ресторан</text>
+<text x="20" y="93" font-size="16" font-weight="400" fill="#252525">и стол, я хочу быстро</text>
+<text x="20" y="115" font-size="16" font-weight="400" fill="#252525">закончить бронирование,</text>
+<text x="20" y="137" font-size="16" font-weight="400" fill="#252525">чтобы не вводить повторно то,</text>
+<text x="20" y="159" font-size="16" font-weight="400" fill="#252525">что уже указал.</text>
+<text x="20" y="262" font-size="14" font-weight="400" fill="#616161">В MVP</text>
+<text x="20" y="292" font-size="16" font-weight="400" fill="#252525">Данные выбранной брони</text>
+<rect x="288" width="272" height="338" rx="16" fill="white"/>
+<text x="308" y="39" font-size="18" font-weight="600" fill="#252525">Быстрое бронирование</text>
+<text x="308" y="71" font-size="16" font-weight="400" fill="#252525">Когда я уже знаю, в какой</text>
+<text x="308" y="93" font-size="16" font-weight="400" fill="#252525">ресторан хочу пойти, я хочу</text>
+<text x="308" y="115" font-size="16" font-weight="400" fill="#252525">сразу указать дату, время</text>
+<text x="308" y="137" font-size="16" font-weight="400" fill="#252525">и число гостей и увидеть</text>
+<text x="308" y="159" font-size="16" font-weight="400" fill="#252525">свободные столы,</text>
+<text x="308" y="181" font-size="16" font-weight="400" fill="#252525">чтобы не искать ресторан</text>
+<text x="308" y="203" font-size="16" font-weight="400" fill="#252525">заново.</text>
+<text x="308" y="262" font-size="14" font-weight="400" fill="#616161">В MVP</text>
+<text x="308" y="292" font-size="16" font-weight="400" fill="#252525">Быстрое бронирование</text>
+<text x="308" y="314" font-size="16" font-weight="400" fill="#252525">с главной</text>
+<rect x="576" width="272" height="338" rx="16" fill="white"/>
+<text x="596" y="39" font-size="18" font-weight="600" fill="#252525">Решить, подходит</text>
+<text x="596" y="61" font-size="18" font-weight="600" fill="#252525">ли замена</text>
+<text x="596" y="93" font-size="16" font-weight="400" fill="#252525">Когда ресторан не может</text>
+<text x="596" y="115" font-size="16" font-weight="400" fill="#252525">предоставить уже</text>
+<text x="596" y="137" font-size="16" font-weight="400" fill="#252525">подтверждённый стол, я хочу</text>
+<text x="596" y="159" font-size="16" font-weight="400" fill="#252525">сам решить, подходит</text>
+<text x="596" y="181" font-size="16" font-weight="400" fill="#252525">ли замена, чтобы сохранить</text>
+<text x="596" y="203" font-size="16" font-weight="400" fill="#252525">встречу или отменить бронь</text>
+<text x="596" y="225" font-size="16" font-weight="400" fill="#252525">с полным возвратом.</text>
+<text x="596" y="262" font-size="14" font-weight="400" fill="#616161">Для проверки</text>
+<text x="596" y="292" font-size="16" font-weight="400" fill="#252525">Замена стола или отмена</text>
+</svg>

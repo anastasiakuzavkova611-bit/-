@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 848 338" width="848" height="338" font-family="Arial, sans-serif">
+<rect x="0" width="272" height="338" rx="16" fill="white"/>
+<text x="20" y="39" font-size="18" font-weight="600" fill="#252525">Понять, как добраться</text>
+<text x="20" y="71" font-size="16" font-weight="400" fill="#252525">Когда я ищу ресторан</text>
+<text x="20" y="93" font-size="16" font-weight="400" fill="#252525">в незнакомом районе, я хочу</text>
+<text x="20" y="115" font-size="16" font-weight="400" fill="#252525">понять, где он находится</text>
+<text x="20" y="137" font-size="16" font-weight="400" fill="#252525">и удобно ли до него добраться,</text>
+<text x="20" y="159" font-size="16" font-weight="400" fill="#252525">чтобы не выбрать место</text>
+<text x="20" y="181" font-size="16" font-weight="400" fill="#252525">слишком далеко.</text>
+<text x="20" y="262" font-size="14" font-weight="400" fill="#616161">В MVP</text>
+<text x="20" y="292" font-size="16" font-weight="400" fill="#252525">Подборки с картой</text>
+<rect x="288" width="272" height="338" rx="16" fill="white"/>
+<text x="308" y="39" font-size="18" font-weight="600" fill="#252525">Успеть между делами</text>
+<text x="308" y="71" font-size="16" font-weight="400" fill="#252525">Когда у меня мало времени</text>
+<text x="308" y="93" font-size="16" font-weight="400" fill="#252525">между делами, я хочу</text>
+<text x="308" y="115" font-size="16" font-weight="400" fill="#252525">забронировать стол рядом</text>
+<text x="308" y="137" font-size="16" font-weight="400" fill="#252525">на определённое время,</text>
+<text x="308" y="159" font-size="16" font-weight="400" fill="#252525">чтобы не тратить время</text>
+<text x="308" y="181" font-size="16" font-weight="400" fill="#252525">на ожидание посадки.</text>
+<text x="308" y="262" font-size="14" font-weight="400" fill="#616161">В MVP</text>
+<text x="308" y="292" font-size="16" font-weight="400" fill="#252525">Поиск по месту и времени</text>
+<rect x="576" width="272" height="338" rx="16" fill="white"/>
+<text x="596" y="39" font-size="18" font-weight="600" fill="#252525">Сохранить ресторан</text>
+<text x="596" y="71" font-size="16" font-weight="400" fill="#252525">Когда я нахожу интересный</text>
+<text x="596" y="93" font-size="16" font-weight="400" fill="#252525">ресторан, но пока не готов</text>
+<text x="596" y="115" font-size="16" font-weight="400" fill="#252525">бронировать, я хочу сохранить</text>
+<text x="596" y="137" font-size="16" font-weight="400" fill="#252525">его, чтобы вернуться к нему</text>
+<text x="596" y="159" font-size="16" font-weight="400" fill="#252525">позже без повторного поиска.</text>
+<text x="596" y="262" font-size="14" font-weight="400" fill="#616161">В MVP</text>
+<text x="596" y="292" font-size="16" font-weight="400" fill="#252525">Избранное</text>
+</svg>

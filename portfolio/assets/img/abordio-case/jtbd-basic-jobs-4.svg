@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 848 338" width="848" height="338" font-family="Arial, sans-serif">
+<rect x="0" width="272" height="338" rx="16" fill="white"/>
+<text x="20" y="39" font-size="18" font-weight="600" fill="#252525">Вспомнить о встрече</text>
+<text x="20" y="71" font-size="16" font-weight="400" fill="#252525">Когда встреча приближается,</text>
+<text x="20" y="93" font-size="16" font-weight="400" fill="#252525">я хочу вовремя получить</text>
+<text x="20" y="115" font-size="16" font-weight="400" fill="#252525">напоминание и быстро</text>
+<text x="20" y="137" font-size="16" font-weight="400" fill="#252525">открыть детали,</text>
+<text x="20" y="159" font-size="16" font-weight="400" fill="#252525">чтобы не забыть о брони</text>
+<text x="20" y="181" font-size="16" font-weight="400" fill="#252525">и найти адрес.</text>
+<text x="20" y="262" font-size="14" font-weight="400" fill="#616161">В MVP</text>
+<text x="20" y="292" font-size="16" font-weight="400" fill="#252525">Уведомления и детали брони</text>
+<rect x="288" width="272" height="338" rx="16" fill="white"/>
+<text x="308" y="39" font-size="18" font-weight="600" fill="#252525">Поделиться</text>
+<text x="308" y="61" font-size="18" font-weight="600" fill="#252525">впечатлениями</text>
+<text x="308" y="93" font-size="16" font-weight="400" fill="#252525">Когда после посещения</text>
+<text x="308" y="115" font-size="16" font-weight="400" fill="#252525">мне есть чем поделиться,</text>
+<text x="308" y="137" font-size="16" font-weight="400" fill="#252525">я хочу оставить оценку, отзыв</text>
+<text x="308" y="159" font-size="16" font-weight="400" fill="#252525">и фотографии,</text>
+<text x="308" y="181" font-size="16" font-weight="400" fill="#252525">чтобы рассказать другим</text>
+<text x="308" y="203" font-size="16" font-weight="400" fill="#252525">о своём опыте.</text>
+<text x="308" y="262" font-size="14" font-weight="400" fill="#616161">В MVP</text>
+<text x="308" y="292" font-size="16" font-weight="400" fill="#252525">Отзывы</text>
+<rect x="576" width="272" height="338" rx="16" fill="white"/>
+<text x="596" y="39" font-size="18" font-weight="600" fill="#252525">Вернуться в ресторан</text>
+<text x="596" y="71" font-size="16" font-weight="400" fill="#252525">Когда я хочу вернуться</text>
+<text x="596" y="93" font-size="16" font-weight="400" fill="#252525">в ресторан, где уже был,</text>
+<text x="596" y="115" font-size="16" font-weight="400" fill="#252525">я хочу быстро найти его</text>
+<text x="596" y="137" font-size="16" font-weight="400" fill="#252525">в истории, чтобы снова</text>
+<text x="596" y="159" font-size="16" font-weight="400" fill="#252525">забронировать стол.</text>
+<text x="596" y="262" font-size="14" font-weight="400" fill="#616161">В MVP</text>
+<text x="596" y="292" font-size="16" font-weight="400" fill="#252525">История бронирований</text>
+</svg>
