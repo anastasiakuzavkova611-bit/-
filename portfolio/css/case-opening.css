@@ -7,7 +7,7 @@ body main.install-case .install-hero .case-brand{margin:0 auto 32px}
 body main.install-case .install-hero h1{margin:0 0 12px}
 body main.install-case .install-hero .install-lead{margin:0 auto}
 body main.install-case .install-hero+section{margin-top:0}
-body main.install-case .install-hero:has(+.install-video-comparison){margin-bottom:64px}
+body main.install-case .install-hero:has(+.install-video-comparison){margin-bottom:62px}
 
 /* Fixed editorial grid: additional viewport width becomes outer whitespace. */
 body main.install-case{box-sizing:border-box;width:calc(100% - 64px);max-width:1000px;margin-inline:auto;padding-inline:0;--reading-width:1000px}

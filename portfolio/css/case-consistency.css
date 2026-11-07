@@ -26,12 +26,15 @@ body main.install-case .hypothesis-detail{gap:80px}
 body main.install-case:has(+.case-next)>:last-child{margin-bottom:0}
 
 /* Intro media separates the opening from the case narrative. */
-body main.install-case>:is(.install-video-comparison,.ab-intro-gallery){margin-bottom:128px}
-body main.install-case>:is(.install-video-comparison,.ab-intro-gallery)+.story-section{margin-top:128px}
+body main.install-case>.ab-intro-gallery{margin-bottom:128px}
+body main.install-case>.ab-intro-gallery+.story-section{margin-top:128px}
+
+body main.install-case>.install-video-comparison{margin-bottom:96px}
+body main.install-case>.install-video-comparison+.story-section{margin-top:96px}
 
 /* Case navigation stays with the case; authorship is a separate footer. */
 body main.install-case+.case-next{margin-top:120px}
-body main.install-case+.case-next+.case-signature{margin-top:144px}
+body main.install-case+.case-next+.case-signature{margin-top:176px}
 
 /* Pending detail links retain readable button text. */
 body main.install-case .interview-more:disabled{color:#252525;opacity:1;-webkit-text-fill-color:#252525}
