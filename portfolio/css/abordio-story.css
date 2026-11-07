@@ -63,7 +63,12 @@ body .abordio-case :is(p,li,th,td){text-wrap:pretty}
 .table-options input:checked + span {background:#252525; color:white}
 .table-options input:focus-visible + span {outline:2px solid #252525; outline-offset:3px}
 body main.abordio-case .ab-table-switch .story-section {margin:24px auto 0}
+.ab-table-switch:has(#show-basic:checked) .growth-copy,
+.ab-table-switch:has(#show-growth:checked) .basic-copy,
 .ab-table-switch:has(#show-basic:checked) #feature-comparison,
 .ab-table-switch:has(#show-growth:checked) #basic-features {display:none!important}
 .ab-table-switch .ab-feature-panel {margin-bottom:0}
-.ab-table-switch .table-intro {grid-column:1/-1; width:100%; max-width:660px; margin:0 0 8px}
+.ab-table-switch #competitor-analysis .story-copy p {margin:0}
+
+body main.abordio-case .ab-architecture-gallery {container-type:inline-size}
+body main.abordio-case .ab-architecture-gallery > .ab-research-board {height:calc(72px + 51.54cqi);padding-inline:5.2cqi}

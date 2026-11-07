@@ -32,3 +32,5 @@ body main.install-case .story-section :is(.case-priority-scroll,.ab-table-wrap,.
 /* ICE keeps its full-width centered table rather than sharing the prose grid. */
 body main.install-case .story-section.case-priority{grid-template-columns:minmax(0,1fr);max-width:1000px;row-gap:24px;margin-inline:auto}
 body main.install-case .case-priority .priority-scroll{width:100%;min-width:0;max-width:100%}
+
+body main.install-case .install-hero .install-lead.install-summary {max-width:100%}

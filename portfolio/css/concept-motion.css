@@ -49,3 +49,12 @@
  }
 }
 
+
+/* Layers are exported from the 402 × 874 Figma artboard. */
+.art-deck {position:absolute; inset:0; overflow:hidden; background-size:100% 100%; pointer-events:none}
+.art-panel {position:absolute; left:3.9801%; top:55.7208%; width:92.0398%; height:36.3844%; background-size:100% 100%; transform-origin:50% 90%}
+.art-panel[hidden] {display:none}
+.art-controls {position:absolute; z-index:3; left:24.3781%; top:88.9016%; width:51.2438%; height:5.9497%; display:flex; justify-content:space-between; background-size:100% 100%}
+.art-controls button {width:26%; height:100%; border:0; border-radius:50%; background:transparent; padding:0; pointer-events:auto; cursor:pointer}
+.art-controls button:focus-visible {outline:2px solid #252525; outline-offset:-2px}
+@media(prefers-reduced-motion:reduce){.art-deck{display:none}}
