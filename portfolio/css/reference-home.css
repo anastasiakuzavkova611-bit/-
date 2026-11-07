@@ -116,11 +116,3 @@
 }
 
 .concept-story .card-stage { column-gap: 24px; }
-
-.flow-case[data-cover="install"] {background:linear-gradient(35deg,#d9edff,#edf6ff)}
-.flow-case[data-cover="branding"] {
-  background:linear-gradient(35deg,#ffe3d5 0%,#fff 48%,#dceeff 100%);
-}
-.flow-case[data-cover="abordio"] {
-  background:linear-gradient(35deg,#ffd8c3 0%,#fff0e7 100%);
-}

@@ -1,0 +1,15 @@
+[data-cover="install"] {
+  --case-preview-background: linear-gradient(35deg, #dff0ff, #f0f7ff);
+}
+[data-cover="branding"] {
+  --case-preview-background: linear-gradient(35deg, #ffe7db 0%, #fff 48%, #e1f1ff 100%);
+}
+[data-cover="abordio"] {
+  --case-preview-background: linear-gradient(35deg, #ffdecc, #fff2eb);
+}
+
+.flow-case[data-cover],
+main.install-case[data-cover] :is(.install-video-comparison, .complete-screen-board, .solution-carousel),
+main.abordio-case[data-cover] :is(.ab-intro-gallery, .ab-flow-board, .ab-solution-board) {
+  background-image: var(--case-preview-background);
+}
