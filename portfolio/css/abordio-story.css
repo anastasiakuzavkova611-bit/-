@@ -63,7 +63,7 @@ body .abordio-case :is(p,li,th,td){text-wrap:pretty}
 .table-options input:checked + span {background:#252525; color:white}
 .table-options input:focus-visible + span {outline:2px solid #252525; outline-offset:3px}
 body main.abordio-case .ab-table-switch .story-section {margin:24px auto 0}
-body main.abordio-case .ab-table-switch #competitor-analysis {margin-top:32px}
+body main.abordio-case .ab-table-switch #competitor-analysis {margin-top:48px}
 .ab-table-switch:has(#show-basic:checked) .growth-copy,
 .ab-table-switch:has(#show-growth:checked) .basic-copy,
 .ab-table-switch:has(#show-basic:checked) #feature-comparison,
