@@ -104,8 +104,9 @@
 .flow-cases{row-gap:72px;padding-bottom:160px}
 @media(max-width:700px){.flow-cases{row-gap:48px;padding-bottom:112px}}
 
-.stack-greeting .intro-brands { gap: 4px; }
-.stack-greeting .intro-brands .brand-mark img { border-radius: 50%; outline: none; }
+.stack-greeting .intro-brands { gap: 0; }
+.stack-greeting .intro-brands .brand-mark + .brand-mark { margin-left: -2px; }
+.stack-greeting .intro-brands .brand-mark img { border-radius: 50%; outline: 2px solid #fff; }
 
 /* Desktop composition keeps its dimensions; only the outer viewport grows. */
 @media(min-width:768px){
