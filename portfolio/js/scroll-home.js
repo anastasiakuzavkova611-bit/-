@@ -4,7 +4,7 @@ const clamp=x=>Math.max(0,Math.min(1,x)),smooth=x=>{x=clamp(x);return x*x*(3-2*x
 const originalCount=cards.length;
 if(!reduced.matches){for(let copy=1;copy<3;copy++)cards.slice(0,originalCount).forEach(card=>{const clone=card.cloneNode(true);clone.dataset.copy="true";clone.setAttribute("aria-hidden","true");card.parentNode.appendChild(clone);cards.push(clone)})}
 let ribbonOffset=0,lastTime=0,ribbonReady=false,progress=0,targetProgress=0;
-function draw(){frame=0;const rect=story.getBoundingClientRect(),range=Math.max(1,story.offsetHeight-innerHeight),target=(targetProgress=clamp(-rect.top/range)),p=reduced.matches?target:progress,spread=smooth((p-.36)/.42);const width=cards[0].offsetWidth,height=cards[0].offsetHeight,gap=48,margin=innerWidth<700?24:72;
+function draw(){frame=0;const rect=story.getBoundingClientRect(),range=Math.max(1,story.offsetHeight-innerHeight),target=(targetProgress=clamp(-rect.top/range)),p=reduced.matches?target:progress,spread=smooth((p-.36)/.42);const width=cards[0].offsetWidth,height=cards[0].offsetHeight,gap=parseFloat(getComputedStyle(story.querySelector(".card-stage")).columnGap),margin=innerWidth<700?24:72;
 const widths=cards.slice(0,originalCount).map(card=>{const img=card.querySelector('.card-back img');const w=Number(card.dataset.conceptWidth)||img.naturalWidth,h=Number(card.dataset.conceptHeight)||img.naturalHeight;return w?height*w/874:width});
 const offsets=[];let cycleWidth=0;widths.forEach(w=>{offsets.push(cycleWidth+w/2);cycleWidth+=w+gap});
 const first=-innerWidth/2+margin;
