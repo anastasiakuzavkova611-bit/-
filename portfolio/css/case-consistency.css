@@ -124,3 +124,16 @@ body main.abordio-case .ab-ds-pair{display:flex;align-items:center;justify-conte
 
 /* Twelve MVP functions, same card spacing throughout the grid. */
 body main.abordio-case .ab-mvp-board .ab-mvp-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(4,minmax(0,1fr));inset:76px 76px 40px}
+
+/* Place arrows in the frame gutters so changing the image never moves a control. */
+body main.install-case :is(.install-video-comparison,.solution-carousel) {--preview-rail:var(--media-inset,7.6%)}
+body main.abordio-case .ab-research-gallery {--preview-rail:76px}
+body main.abordio-case .ab-architecture-gallery {--preview-rail:5.2%}
+body main.abordio-case .ab-solution-gallery {--preview-rail:40px}
+body main.install-case :is(.solution-carousel,.install-video-comparison,.ab-research-gallery,.ab-solution-gallery)
+  > :is(.solution-carousel-next,.install-video-next,.ab-research-next,.ab-gallery-next):not([hidden]) {
+ position:absolute; inset:50% 0 auto auto; width:var(--preview-rail); height:48px;
+ padding:0; margin:0; display:grid; place-items:center; transform:translateY(-50%);
+}
+body main.install-case :is(.solution-carousel,.install-video-comparison,.ab-research-gallery,.ab-solution-gallery)
+  > :is(.solution-carousel-next,.install-video-next,.ab-research-next,.ab-gallery-next)[data-last="true"]:not([hidden]) {left:0; right:auto}

@@ -11,21 +11,10 @@
    root.append(previous);
   }
   let current=0;
-  function alignArrow(){
-   const screen=slides[current].querySelector('.screen-original img');
-   if(!screen)return;
-   const frame=screen.getBoundingClientRect();
-   const card=root.getBoundingClientRect();
-   root.style.setProperty('--screen-middle',(frame.top-card.top+frame.height/2)+'px');
-   root.style.setProperty('--arrow-rail',(frame.left-card.left)+'px');
-  }
-  const observer=new ResizeObserver(alignArrow);
-  slides.forEach(slide=>{const screen=slide.querySelector('.screen-original');if(screen){observer.observe(screen);observer.observe(screen.querySelector('img'))}});
   function show(index){
    current=(index+slides.length)%slides.length;
    slides.forEach((slide,i)=>{slide.hidden=i!==current});
    dots.forEach((dot,i)=>{if(i===current)dot.setAttribute('aria-current','true');else dot.removeAttribute('aria-current')});
-   alignArrow();
    if(previous){
     previous.hidden=current===0;
     next.hidden=current===slides.length-1;
