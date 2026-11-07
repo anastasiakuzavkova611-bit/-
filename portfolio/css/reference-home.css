@@ -117,10 +117,10 @@
 
 .concept-story .card-stage { column-gap: 24px; }
 
-.flow-case[data-cover="install"] {background:#d5e7fb}
+.flow-case[data-cover="install"] {background:linear-gradient(35deg,#d9edff,#edf6ff)}
 .flow-case[data-cover="branding"] {
-  background:linear-gradient(35deg,#fbe0d7 0%,#f8f4f4 46%,#cee6fc 100%);
+  background:linear-gradient(35deg,#ffe3d5 0%,#fff 48%,#dceeff 100%);
 }
 .flow-case[data-cover="abordio"] {
-  background:linear-gradient(35deg,#f7c7b3 0%,#fae2db 52%,#fcf2ed 100%);
+  background:linear-gradient(35deg,#ffd8c3 0%,#fff0e7 100%);
 }
