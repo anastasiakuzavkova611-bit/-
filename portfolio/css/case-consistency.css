@@ -129,8 +129,7 @@ body main.abordio-case .ab-mvp-board .ab-mvp-grid{grid-template-columns:repeat(3
 
 /* Place arrows in the frame gutters so changing the image never moves a control. */
 body main.install-case :is(.install-video-comparison,.solution-carousel) {--preview-rail:var(--media-inset,7.6%)}
-body main.abordio-case .ab-research-gallery {--preview-rail:76px}
-body main.abordio-case .ab-architecture-gallery {--preview-rail:5.2%}
+body main.abordio-case .ab-research-gallery {--preview-rail:min(7.6%, 76px)}
 body main.abordio-case .ab-solution-gallery {--preview-rail:40px}
 body main.install-case :is(.solution-carousel,.install-video-comparison,.ab-solution-gallery)
   > :is(.solution-carousel-next,.install-video-next,.ab-research-next,.ab-gallery-next):not([hidden]) {

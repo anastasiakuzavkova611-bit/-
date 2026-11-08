@@ -66,3 +66,10 @@
   .art-controls {opacity:0}
   .art-deck:hover .art-controls, .card-back:hover .art-controls, .art-controls:focus-within {opacity:1}
 }
+
+/* Clip the rectangular Figma canvas to the corners of the 1126 × 704 landscape. */
+.card-back > img[src*="concept-3008-7960"] {
+  align-self: end;
+  height: auto;
+  border-radius: 4.45% / 7.12%;
+}
