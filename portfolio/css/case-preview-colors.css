@@ -1,15 +1,25 @@
 [data-cover="install"] {
-  --case-preview-background: linear-gradient(35deg, #d4eaff 0%, #e8f3ff 33%, #f8fcff 48%, #e9f4ff 65%, #deefff 100%);
+  --case-preview-base: #f6fbff;
+  --case-preview-background:
+    radial-gradient(ellipse 86% 113% at 97% 12%, #cee6fc 0%, transparent 88%),
+    radial-gradient(ellipse 68% 84% at 7% 82%, #ddecfc 0%, transparent 94%);
 }
 [data-cover="branding"] {
-  --case-preview-background: linear-gradient(35deg, #ffe0d0 0%, #fff0e9 33%, #fff 48%, #eaf4ff 65%, #d6eaff 100%);
+  --case-preview-base: #fff;
+  --case-preview-background:
+    radial-gradient(ellipse 69% 102% at 13% 79%, #ffddc9 0%, transparent 95%),
+    radial-gradient(ellipse 85% 100% at 90% 20%, #d1e7fc 0%, transparent 93%);
 }
 [data-cover="abordio"] {
-  --case-preview-background: linear-gradient(35deg, #ffd5bf 0%, #ffeadd 33%, #fffaf7 48%, #ffebe0 65%, #ffe4d5 100%);
+  --case-preview-base: #fff9f5;
+  --case-preview-background:
+    radial-gradient(ellipse 82% 96% at 10% 77%, #ffd1b9 0%, transparent 93%),
+    radial-gradient(ellipse 61% 110% at 86% 15%, #ffe3d5 0%, transparent 92%);
 }
 
 .flow-case[data-cover],
 main.install-case[data-cover] :is(.install-video-comparison, .complete-screen-board, .solution-carousel),
 main.abordio-case[data-cover] :is(.ab-flow-board, .ab-solution-board) {
+  background-color: var(--case-preview-base);
   background-image: var(--case-preview-background);
 }

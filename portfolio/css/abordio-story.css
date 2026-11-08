@@ -85,3 +85,14 @@ body main.abordio-case > .story-section:has(+ .ab-ui-overview) {margin-bottom:32
 body main.abordio-case .ab-booking-step > .story-section {margin:0 auto 24px}
 
 body main.abordio-case .ab-research-gallery > .ab-jtbd-board .ab-research-media {inset:72px 7.6% 32px}
+
+/* One frame for every booking flow, including slides in the search carousel. */
+body main.abordio-case .ab-booking-step .ab-flow-board {
+  --phone-gap: min(2cqi, 20px);
+  padding: min(4cqi, 40px) min(7.6cqi, 76px);
+}
+body main.abordio-case .ab-booking-step .ab-flow-phones { gap: var(--phone-gap); }
+body main.abordio-case .ab-booking-step .ab-flow-phones .screen-original {
+  flex: 0 0 auto;
+  width: calc((100% - 3 * var(--phone-gap)) / 4);
+}

@@ -7,7 +7,7 @@
 .intro-brands img{width:44px;height:44px;object-fit:contain;border-radius:12px;background:#fff;outline:3px solid #fff}
 .intro-brands img:first-child{transform:rotate(-9deg)}
 .intro-brands img:last-child{transform:rotate(9deg);margin-left:-3px}
-.flow-cases{width:calc(100% - 96px);max-width:1120px;padding:0 0 96px;gap:32px;scroll-margin-top:120px}
+.flow-cases{width:calc(100% - 64px);max-width:1000px;padding:0 0 96px;gap:32px;scroll-margin-top:120px}
 .cases-heading{font-size:28px;line-height:1.2;font-weight:500;text-align:left;margin:0 0 -8px;letter-spacing:-.02em}
 .flow-case{background:#f1f1f1;border-radius:32px;overflow:hidden}
 .case-caption{padding:40px 32px 0;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
@@ -116,3 +116,5 @@
 }
 
 .concept-story .card-stage { column-gap: 24px; }
+
+@media (max-width:900px) { .flow-cases { width:calc(100% - 48px); } }
