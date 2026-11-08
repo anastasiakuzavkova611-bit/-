@@ -96,3 +96,29 @@ body main.abordio-case .ab-booking-step .ab-flow-phones .screen-original {
   flex: 0 0 auto;
   width: calc((100% - 3 * var(--phone-gap)) / 4);
 }
+
+
+/* Keep the supporting screen next to the benefit it illustrates. */
+body main.abordio-case .ab-value-board {container-type:inline-size}
+.ab-value-pair {
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;
+  flex:1;min-height:0;align-content:center;
+}
+.ab-value-card {
+  display:grid;grid-template-columns:34% minmax(0,1fr);align-items:center;
+  gap:clamp(10px,2cqi,20px);padding:clamp(12px,2cqi,20px);background:white;border-radius:16px;
+}
+body main.abordio-case .ab-value-card a.screen-original {
+  display:block;position:static;width:100%;height:auto;aspect-ratio:375/812;
+  margin:0;padding:0;line-height:0;overflow:hidden;border-radius:12px;
+}
+body main.abordio-case .ab-value-card img {display:block;width:100%;height:auto;object-fit:contain}
+.ab-value-card h3 {margin:0;font-size:18px;line-height:1.2}
+.ab-value-card p {margin:8px 0 14px;font-size:16px;line-height:1.4}
+.ab-value-card a[href^="#solution-"] {color:#252525;text-underline-offset:3px;font-size:15px}
+.ab-booking-step[id],.ab-value-board[id] {scroll-margin-top:100px}
+@media (max-width:900px) {
+  body main.abordio-case .ab-value-board {height:auto;min-height:var(--research-size,420px)}
+  .ab-value-pair {grid-template-columns:1fr}
+  .ab-value-card {grid-template-columns:minmax(62px,16%) 1fr}
+}

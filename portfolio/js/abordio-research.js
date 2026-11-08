@@ -11,6 +11,15 @@
    if(status) status.textContent=`${current+1} из ${slides.length}${slides[current].querySelector('figcaption') ? ': '+slides[current].querySelector('figcaption').textContent : ''}`;
   }
   buttons.forEach(button=>button.addEventListener('click',()=>show(current+(button.dataset.direction==='prev'?-1:1))));
-  root.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();show(current+(e.key==='ArrowRight'?1:-1))}});show(0);
+  root.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();show(current+(e.key==='ArrowRight'?1:-1))}});
+  function openLinkedSlide(){
+   const index=slides.findIndex(slide=>slide.id && '#'+slide.id===location.hash);
+   if(index<0)return false;
+   show(index);
+   slides[index].scrollIntoView({block:'start'});
+   return true;
+  }
+  if(!openLinkedSlide())show(0);
+  window.addEventListener('hashchange',openLinkedSlide);
  });
 })();
