@@ -98,27 +98,21 @@ body main.abordio-case .ab-booking-step .ab-flow-phones .screen-original {
 }
 
 
-/* Keep the supporting screen next to the benefit it illustrates. */
-body main.abordio-case .ab-value-board {container-type:inline-size}
-.ab-value-pair {
-  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;
-  flex:1;min-height:0;align-content:center;
+/* Text-only hypotheses echo the cards on the neighboring JTBD board. */
+.ab-hypothesis-grid {
+  display:grid;grid-template-columns:repeat(6,minmax(0,1fr));
+  grid-auto-rows:1fr;gap:16px;align-content:center;margin:auto 0;
 }
-.ab-value-card {
-  display:grid;grid-template-columns:34% minmax(0,1fr);align-items:center;
-  gap:clamp(10px,2cqi,20px);padding:clamp(12px,2cqi,20px);background:white;border-radius:16px;
+.ab-hypothesis-card {
+  grid-column:span 2;display:block;box-sizing:border-box;padding:20px;
+  background:#fff;color:#252525;border-radius:16px;text-decoration:none;
+  font-size:17px;font-weight:400;line-height:1.4;
 }
-body main.abordio-case .ab-value-card a.screen-original {
-  display:block;position:static;width:100%;height:auto;aspect-ratio:375/812;
-  margin:0;padding:0;line-height:0;overflow:hidden;border-radius:12px;
-}
-body main.abordio-case .ab-value-card img {display:block;width:100%;height:auto;object-fit:contain}
-.ab-value-card h3 {margin:0;font-size:18px;line-height:1.2}
-.ab-value-card p {margin:8px 0 14px;font-size:16px;line-height:1.4}
-.ab-value-card a[href^="#solution-"] {color:#252525;text-underline-offset:3px;font-size:15px}
-.ab-booking-step[id],.ab-value-board[id] {scroll-margin-top:100px}
+.ab-hypothesis-card:nth-child(4) {grid-column:2 / span 2}
+.ab-hypothesis-card:hover,.ab-hypothesis-card:focus-visible {text-decoration:underline;text-underline-offset:3px}
+.ab-booking-step[id],.ab-hypothesis-board[id] {scroll-margin-top:100px}
 @media (max-width:900px) {
-  body main.abordio-case .ab-value-board {height:auto;min-height:var(--research-size,420px)}
-  .ab-value-pair {grid-template-columns:1fr}
-  .ab-value-card {grid-template-columns:minmax(62px,16%) 1fr}
+  body main.abordio-case .ab-hypothesis-board {height:auto;min-height:420px}
+  .ab-hypothesis-grid {gap:12px}
+  .ab-hypothesis-card {padding:16px;font-size:16px}
 }
