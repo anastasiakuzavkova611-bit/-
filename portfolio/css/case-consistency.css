@@ -66,7 +66,7 @@ body main.abordio-case .ab-research-board figcaption{margin:0;font-family:inheri
 body main.abordio-case .ab-research-media{display:flex;align-items:center;justify-content:center;gap:16px;flex:1;min-height:0;width:100%}
 body main.abordio-case .ab-research-media .screen-original{display:flex;align-items:center;justify-content:center;position:relative;width:100%;height:100%;min-width:0;margin:0;padding:0;overflow:hidden;border-radius:16px}
 body main.abordio-case .ab-research-media img{position:static;display:block;width:100%;height:100%;object-fit:contain;object-position:center;border-radius:16px;transform:none}
-body main.abordio-case .ab-research-next{position:absolute;top:50%;right:0;width:76px;height:48px;display:grid;place-items:center;transform:translateY(-50%);padding:0;border:0;background:none;color:#666;cursor:pointer}
+body main.abordio-case .ab-research-next{position:absolute;top:50%;right:0;width:var(--preview-rail,76px);height:48px;display:grid;place-items:center;transform:translateY(-50%);padding:0;border:0;background:none;color:#666;cursor:pointer}
 body main.abordio-case .ab-research-next[data-last="true"]{right:auto;left:0}
 body main.abordio-case .ab-research-next[data-last="true"] svg{transform:rotate(180deg)}
 body main.abordio-case .ab-research-next:focus-visible{outline:2px solid #252525;outline-offset:-8px;border-radius:16px}
@@ -132,12 +132,12 @@ body main.install-case :is(.install-video-comparison,.solution-carousel) {--prev
 body main.abordio-case .ab-research-gallery {--preview-rail:76px}
 body main.abordio-case .ab-architecture-gallery {--preview-rail:5.2%}
 body main.abordio-case .ab-solution-gallery {--preview-rail:40px}
-body main.install-case :is(.solution-carousel,.install-video-comparison,.ab-research-gallery,.ab-solution-gallery)
+body main.install-case :is(.solution-carousel,.install-video-comparison,.ab-solution-gallery)
   > :is(.solution-carousel-next,.install-video-next,.ab-research-next,.ab-gallery-next):not([hidden]) {
  position:absolute; inset:var(--preview-middle,50%) 0 auto auto; width:var(--preview-right,var(--preview-rail)); height:48px;
  padding:0; margin:0; display:grid; place-items:center; transform:translateY(-50%);
 }
-body main.install-case :is(.solution-carousel,.install-video-comparison,.ab-research-gallery,.ab-solution-gallery)
+body main.install-case :is(.solution-carousel,.install-video-comparison,.ab-solution-gallery)
   > :is(.solution-carousel-next,.install-video-next,.ab-research-next,.ab-gallery-next)[data-last="true"]:not([hidden]) {left:0; right:auto; width:var(--preview-left,var(--preview-rail))}
 
 /* Research evidence uses the same white cards on gray across the case studies. */

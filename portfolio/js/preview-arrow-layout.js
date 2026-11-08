@@ -1,6 +1,6 @@
 (() => {
   const galleries = document.querySelectorAll(
-    '.install-video-comparison, .solution-carousel, .ab-research-gallery, .ab-solution-gallery'
+    '.install-video-comparison, .solution-carousel, .ab-solution-gallery'
   );
 
   for (const gallery of galleries) {
