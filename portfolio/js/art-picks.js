@@ -3,7 +3,7 @@
   if (!hosts.length) return;
 
   const root = new URL('assets/img/art-picks/', document.baseURI);
-  const names = ['board', 'collection', 'architecture', 'live-music', 'controls'];
+  const files = ['../concept-2883-6601.webp', 'collection-nov8.webp', 'architecture.png?v=upright', 'live-music.png?v=upright', 'controls.png'];
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const poses = [
     'translate(0, 0) rotate(0deg) scale(1)',
@@ -28,9 +28,9 @@
   const rise = [{transform: poses[2]}, {transform: poses[1]}];
 
   async function prepare() {
-    const images = await Promise.all(names.map(async name => {
+    const images = await Promise.all(files.map(async file => {
       const image = new Image();
-      image.src = new URL(name + '.png' + (['architecture', 'live-music'].includes(name) ? '?v=upright' : ''), root);
+      image.src = new URL(file, root);
       await image.decode();
       return image;
     }));

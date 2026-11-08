@@ -88,7 +88,7 @@
 @media(max-width:700px){.stack-greeting h1,.stack-greeting p{font-size:clamp(30px,5.8vw,42px)}.stack-greeting .hero-experience{font-size:18px;line-height:1.4;margin-top:18px}}
 
 /* Preserve the paired charging widgets from the concept collection. */
-.card-back .concept-charge-pair{position:absolute;bottom:0;left:0;width:100%;aspect-ratio:539/542;display:block}
+.card-back .concept-charge-pair{position:absolute;bottom:0;left:0;width:100%;aspect-ratio:539/537;display:block}
 .card-back .concept-charge-pair img{position:absolute;height:auto;object-fit:contain}
 .card-back .concept-charge-pair .charge-small{width:46.75%;right:0;top:0}
 .card-back .concept-charge-pair .charge-wide{width:100%;left:0;bottom:0}

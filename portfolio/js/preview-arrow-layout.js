@@ -1,47 +1,28 @@
 (() => {
- const roots=[...document.querySelectorAll('.solution-carousel,.install-video-comparison,.ab-research-gallery,.ab-solution-gallery')];
- let pending=false;
- function layout(){
-  pending=false;
-  roots.forEach(root=>{
-   const media=[...root.querySelectorAll('img,video')].find(el=>!el.closest('[hidden]')&&el.getBoundingClientRect().width);
-   const group=[...root.querySelectorAll('.ab-flow-phones,.ab-mvp-grid')].find(el=>!el.closest('[hidden]')&&el.getBoundingClientRect().width);
-   if(group){
-    const card=root.getBoundingClientRect(), box=group.getBoundingClientRect();
-    root.querySelectorAll(':scope > button').forEach(button=>{if(button.hidden)return;const x=button.dataset.last==='true'?(card.left+box.left)/2:(box.right+card.right)/2;button.style.left=(x-card.left-20)+'px';button.style.right='auto';button.style.width='40px';button.style.top=((box.top+box.bottom)/2-card.top)+'px';button.style.transform='translateY(-50%)'});return;
-   }
-   if(!media)return;
-   const card=root.getBoundingClientRect(), frame=media.closest('.screen-original,.install-video-panel')?.getBoundingClientRect()||card;
-   const box=media.getBoundingClientRect(), css=getComputedStyle(media);
-   let left=box.left,right=box.right,top=box.top,bottom=box.bottom;
-   const nw=media.naturalWidth||media.videoWidth,nh=media.naturalHeight||media.videoHeight;
-   if(css.objectFit==='contain'&&nw&&nh){
-    const scale=Math.min(box.width/nw,box.height/nh),w=nw*scale,h=nh*scale;
-    const pos=css.objectPosition.split(' ');
-    const ratio=(v)=>v==='left'||v==='top'?0:v==='right'||v==='bottom'?1:parseFloat(v)/100;
-    left+=(box.width-w)*(Number.isFinite(ratio(pos[0]))?ratio(pos[0]):.5);
-    top+=(box.height-h)*(Number.isFinite(ratio(pos[1]))?ratio(pos[1]):.5);
-    right=left+w;bottom=top+h;
-   }
-   // Use only the visible image: long sources may extend below the card.
-   left=Math.max(left,frame.left,card.left);right=Math.min(right,frame.right,card.right);
-   top=Math.max(top,frame.top,card.top);bottom=Math.min(bottom,frame.bottom,card.bottom);
-   root.querySelectorAll(':scope > button').forEach(button=>{
-    if(button.hidden)return;
-    const previous=button.dataset.last==='true';
-    const centerX=previous?(card.left+left)/2:(right+card.right)/2;
-    button.style.left=(centerX-card.left-20)+'px';
-    button.style.right='auto';button.style.width='40px';
-    button.style.top=((top+bottom)/2-card.top)+'px';
-    button.style.transform='translateY(-50%)';
-   });
-  });
- }
- function schedule(){if(!pending){pending=true;requestAnimationFrame(layout)}}
- const resize=new ResizeObserver(schedule),mutation=new MutationObserver(schedule);
- roots.forEach(root=>{
-  resize.observe(root);mutation.observe(root,{subtree:true,attributes:true,attributeFilter:['hidden','data-last']});
-  root.querySelectorAll('img,video,.screen-original,.install-video-panel,.ab-flow-phones,.ab-mvp-grid').forEach(el=>{resize.observe(el);el.addEventListener('load',schedule);el.addEventListener('loadedmetadata',schedule)});
- });
- document.fonts.ready.then(schedule);window.addEventListener('resize',schedule);schedule();
+  const galleries = document.querySelectorAll(
+    '.install-video-comparison, .solution-carousel, .ab-research-gallery, .ab-solution-gallery'
+  );
+
+  for (const gallery of galleries) {
+    // The frame reserves the same side gutters for every slide. Anchor controls
+    // to that frame, independently of the artwork's intrinsic aspect ratio.
+    let lastWidth = 0, lastHeight = 0;
+    function placeControls() {
+      const card = gallery.getBoundingClientRect();
+      if (!card.width || (card.width === lastWidth && card.height === lastHeight)) return;
+      const slide = gallery.querySelector(':scope > figure:not([hidden]), :scope > .install-video-panel:not([hidden])');
+      if (!slide) return;
+      const frame = slide.querySelector('.ab-flow-phones, .ab-research-media, .screen-original') || slide;
+      const box = frame.getBoundingClientRect();
+      if (!box.width || !box.height) return;
+      gallery.style.setProperty('--preview-middle', (box.top + box.height / 2 - card.top) + 'px');
+      gallery.style.setProperty('--preview-left', (box.left - card.left) + 'px');
+      gallery.style.setProperty('--preview-right', (card.right - box.right) + 'px');
+      lastWidth = card.width;
+      lastHeight = card.height;
+    }
+    new ResizeObserver(placeControls).observe(gallery);
+    document.fonts.ready.then(placeControls);
+    placeControls();
+  }
 })();

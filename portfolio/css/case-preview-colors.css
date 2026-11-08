@@ -1,11 +1,11 @@
 [data-cover="install"] {
-  --case-preview-background: linear-gradient(35deg, #e4f3ff, #f3f8ff);
+  --case-preview-background: linear-gradient(35deg, #e4f3ff 0%, #fff 48%, #f3f8ff 100%);
 }
 [data-cover="branding"] {
   --case-preview-background: linear-gradient(35deg, #ffebe1 0%, #fff 48%, #e6f3ff 100%);
 }
 [data-cover="abordio"] {
-  --case-preview-background: linear-gradient(35deg, #ffe4d5, #fff4ee);
+  --case-preview-background: linear-gradient(35deg, #ffe4d5 0%, #fff 48%, #fff4ee 100%);
 }
 
 .flow-case[data-cover],

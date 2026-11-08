@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 962 384" width="962" height="384" font-family="Arial, sans-serif"><title>Продуктовые гипотезы</title><rect width="100%" height="100%" fill="#f4f4f4"/>
+<rect x="0" y="0" width="310" height="184" rx="16" fill="#fff"/>
+<text x="20" y="38" font-size="18" fill="#252525">Если гость укажет дату, время</text>
+<text x="20" y="62" font-size="18" fill="#252525">и число гостей до выбора</text>
+<text x="20" y="86" font-size="18" fill="#252525">стола, он увидит только</text>
+<text x="20" y="110" font-size="18" fill="#252525">подходящие варианты.</text>
+<rect x="326" y="0" width="310" height="184" rx="16" fill="#fff"/>
+<text x="346" y="38" font-size="18" fill="#252525">Если показать свободные</text>
+<text x="346" y="62" font-size="18" fill="#252525">столы на плане зала, гость</text>
+<text x="346" y="86" font-size="18" fill="#252525">сможет заранее выбрать, где</text>
+<text x="346" y="110" font-size="18" fill="#252525">ему удобно сидеть.</text>
+<rect x="652" y="0" width="310" height="184" rx="16" fill="#fff"/>
+<text x="672" y="38" font-size="18" fill="#252525">Если показать скидку</text>
+<text x="672" y="62" font-size="18" fill="#252525">на конкретный стол</text>
+<text x="672" y="86" font-size="18" fill="#252525">и объяснить её условия</text>
+<text x="672" y="110" font-size="18" fill="#252525">до бронирования, гостю будет</text>
+<text x="672" y="134" font-size="18" fill="#252525">проще решить, подходит</text>
+<text x="672" y="158" font-size="18" fill="#252525">ли ему предложение.</text>
+<rect x="0" y="200" width="310" height="184" rx="16" fill="#fff"/>
+<text x="20" y="238" font-size="18" fill="#252525">Если показать сумму депозита</text>
+<text x="20" y="262" font-size="18" fill="#252525">и условия возврата до оплаты,</text>
+<text x="20" y="286" font-size="18" fill="#252525">гость сможет решить, готов</text>
+<text x="20" y="310" font-size="18" fill="#252525">ли он подтвердить бронь.</text>
+<rect x="326" y="200" width="310" height="184" rx="16" fill="#fff"/>
+<text x="346" y="238" font-size="18" fill="#252525">Если дать гостю быстрый</text>
+<text x="346" y="262" font-size="18" fill="#252525">переход к бронированию</text>
+<text x="346" y="286" font-size="18" fill="#252525">в знакомом ресторане,</text>
+<text x="346" y="310" font-size="18" fill="#252525">он сможет выбрать время</text>
+<text x="346" y="334" font-size="18" fill="#252525">и стол без повторного поиска.</text>
+</svg>

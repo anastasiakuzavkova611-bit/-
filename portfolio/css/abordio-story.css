@@ -62,8 +62,8 @@ body .abordio-case :is(p,li,th,td){text-wrap:pretty}
 .table-options span {display:block; padding:8px 14px; border-radius:12px; font-size:17px; line-height:24px}
 .table-options input:checked + span {background:#252525; color:white}
 .table-options input:focus-visible + span {outline:2px solid #252525; outline-offset:3px}
-body main.abordio-case .ab-table-switch .story-section {margin:18px auto 0}
-body main.abordio-case .ab-table-switch #competitor-analysis {margin-top:46px}
+body main.abordio-case .ab-table-switch .story-section {margin:22px auto 0}
+body main.abordio-case .ab-table-switch #competitor-analysis {margin-top:48px}
 .ab-table-switch #competitor-analysis .story-copy {display:grid;grid-template-columns:minmax(0,1fr)}
 .ab-table-switch #competitor-analysis .story-copy p {grid-area:1/1;align-self:start}
 .ab-comparison-panels {display:grid;grid-template-columns:minmax(0,1fr)}

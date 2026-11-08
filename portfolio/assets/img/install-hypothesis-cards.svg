@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 962 432" width="962" height="432" font-family="Arial, sans-serif"><title>Продуктовые гипотезы</title><rect width="100%" height="100%" fill="#f4f4f4"/>
+<rect x="0" y="0" width="310" height="208" rx="16" fill="#fff"/>
+<text x="20" y="38" font-size="18" fill="#252525">Если вынести основные</text>
+<text x="20" y="62" font-size="18" fill="#252525">сценарии на главную,</text>
+<text x="20" y="86" font-size="18" fill="#252525">а в диалоговом окне оставить</text>
+<text x="20" y="110" font-size="18" fill="#252525">действия с выбранной версией,</text>
+<text x="20" y="134" font-size="18" fill="#252525">пользователю будет проще</text>
+<text x="20" y="158" font-size="18" fill="#252525">выбрать следующий шаг</text>
+<rect x="326" y="0" width="310" height="208" rx="16" fill="#fff"/>
+<text x="346" y="38" font-size="18" fill="#252525">Если показывать требования</text>
+<text x="346" y="62" font-size="18" fill="#252525">к ресурсам рядом</text>
+<text x="346" y="86" font-size="18" fill="#252525">с настройками, пользователь</text>
+<text x="346" y="110" font-size="18" fill="#252525">сможет заранее проверить,</text>
+<text x="346" y="134" font-size="18" fill="#252525">подходит ли виртуальная</text>
+<text x="346" y="158" font-size="18" fill="#252525">машина</text>
+<rect x="652" y="0" width="310" height="208" rx="16" fill="#fff"/>
+<text x="672" y="38" font-size="18" fill="#252525">Если показать название</text>
+<text x="672" y="62" font-size="18" fill="#252525">функции, описание</text>
+<text x="672" y="86" font-size="18" fill="#252525">и обозначение</text>
+<text x="672" y="110" font-size="18" fill="#252525">из документации,</text>
+<text x="672" y="134" font-size="18" fill="#252525">пользователю будет проще</text>
+<text x="672" y="158" font-size="18" fill="#252525">выбрать нужные возможности</text>
+<rect x="0" y="224" width="310" height="208" rx="16" fill="#fff"/>
+<text x="20" y="262" font-size="18" fill="#252525">Если команда формируется</text>
+<text x="20" y="286" font-size="18" fill="#252525">автоматически при изменении</text>
+<text x="20" y="310" font-size="18" fill="#252525">настроек, пользователь сможет</text>
+<text x="20" y="334" font-size="18" fill="#252525">скопировать команду,</text>
+<text x="20" y="358" font-size="18" fill="#252525">не собирая её вручную</text>
+<rect x="326" y="224" width="310" height="208" rx="16" fill="#fff"/>
+<text x="346" y="262" font-size="18" fill="#252525">Если разделить базовые</text>
+<text x="346" y="286" font-size="18" fill="#252525">параметры и функциональные</text>
+<text x="346" y="310" font-size="18" fill="#252525">возможности, пользователю</text>
+<text x="346" y="334" font-size="18" fill="#252525">будет проще понять, что нужно</text>
+<text x="346" y="358" font-size="18" fill="#252525">настроить обязательно,</text>
+<text x="346" y="382" font-size="18" fill="#252525">а что можно подключить</text>
+<text x="346" y="406" font-size="18" fill="#252525">дополнительно</text>
+</svg>
