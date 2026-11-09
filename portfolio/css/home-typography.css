@@ -47,12 +47,6 @@
 @media(max-width:600px){.portfolio-canvas{--button-radius:13px}}
 
 
-/* A single compact, quiet pointer for the visitor. */
-@media(hover:hover) and (pointer:fine){
-  body,body *{cursor:url('../assets/img/editor-cursor-soft.svg') 4 2,auto}
-  a,button,[role="button"]{cursor:url('../assets/img/editor-cursor-soft.svg') 4 2,pointer}
-  input,textarea,[contenteditable="true"]{cursor:text}
-}
 /* One shared baseline for the desktop bottom row. */
 @media(min-width:1051px){
   .canvas-contact,.object-grid,.object-gradient{bottom:15%}
@@ -67,7 +61,4 @@
 /* Intro cursor yields permanently to the visitor's first input. */
 .object-cursor svg{width:24px}
 .object-cursor[hidden]{display:none}
-@media(hover:hover) and (pointer:fine){
-  html.cursor-demo,html.cursor-demo body,html.cursor-demo body *{cursor:none}
-}
 @media(prefers-reduced-motion:reduce){.object-cursor{display:none}}

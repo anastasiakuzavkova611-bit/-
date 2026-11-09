@@ -22,6 +22,18 @@
     }
    });
    root.querySelectorAll('feColorMatrix').forEach(el=>{const v=el.getAttribute('values').split(/\s+/).map(Number);if(v[9]>v[4]&&v[9]>v[14]){el.classList.add('charge-glow-matrix');el.dataset.alpha=v[18]}});
+   // Keep a single soft contact shadow instead of stacked dark shadow passes.
+   root.querySelectorAll('filter').forEach(filter=>{
+    const layers=[...filter.querySelectorAll('feColorMatrix')].filter(el=>{
+     const m=el.getAttribute('values')?.trim().split(/\s+/).map(Number);
+     return m?.length===20 && m[4]===0 && m[9]===0 && m[14]===0 && m[18]>0 && m[18]<=1;
+    });
+    layers.forEach((el,i)=>{
+     const m=el.getAttribute('values').trim().split(/\s+/).map(Number);
+     m[18]=i===0?Math.min(m[18],.12):0;
+     el.setAttribute('values',m.join(' '));
+    });
+   });
    const ids=new Map([...root.querySelectorAll('[id]')].map(el=>[el.id,`${id}-${el.id}`]));
    root.querySelectorAll('*').forEach(el=>{for(const attr of [...el.attributes]){if(attr.name==='id')el.setAttribute('id',ids.get(attr.value));else if(attr.value.startsWith('#')&&ids.has(attr.value.slice(1))){el.setAttribute(attr.name,'#'+ids.get(attr.value.slice(1)))}else if(attr.value.startsWith('url(#')){const key=attr.value.slice(5,-1);if(ids.has(key))el.setAttribute(attr.name,`url(#${ids.get(key)})`)}}});
    svg.innerHTML=root.innerHTML;svg.classList.add("charge-ready");

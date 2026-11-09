@@ -71,42 +71,17 @@
  });
  main.querySelectorAll('a.screen-original').forEach(link=>{
   const img=link.querySelector('img');if(!img)return;
-  link.setAttribute('aria-haspopup','dialog');link.classList.add('media-zoom-target');link.dataset.zoomHint='Нажмите, чтобы увеличить';
+  link.setAttribute('aria-haspopup','dialog');link.classList.add('media-zoom-target');
   link.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();open(link,img,link.closest('figure')?.querySelector('.carousel-board-title')?.textContent || link.closest('figure')?.querySelector('figcaption')?.textContent.trim() || img.alt)});
  });
  main.querySelectorAll('.install-video-comparison').forEach(root=>{
   root.querySelectorAll('.install-video-panel').forEach(panel=>{
    const video=panel.querySelector('video');if(!video)return;
-   panel.classList.add('media-zoom-target');panel.dataset.zoomHint='Нажмите, чтобы увеличить';
+   panel.classList.add('media-zoom-target');
    panel.tabIndex=0;panel.setAttribute('role','button');panel.setAttribute('aria-label','Увеличить видео');panel.setAttribute('aria-haspopup','dialog');
    const show=()=>open(panel,video,root.querySelector('.install-video-label').textContent);
    panel.addEventListener('click',show);
    panel.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();show()}});
   });
  });
- const hint=document.createElement('span');
- hint.className='media-cursor-hint';hint.id='media-cursor-hint';hint.setAttribute('role','tooltip');hint.textContent='Нажмите, чтобы увеличить';hint.hidden=true;document.body.append(hint);
- const hideHint=()=>{hint.hidden=true};
- function positionHint(x,y){
-  if(dialog.open)return hideHint();
-  hint.hidden=false;
-  const w=hint.offsetWidth,h=hint.offsetHeight;
-  let left=x+16,top=y+18;
-  if(left+w>innerWidth-12)left=x-w-16;
-  if(top+h>innerHeight-12)top=y-h-12;
-  hint.style.left=Math.max(12,Math.min(left,innerWidth-w-12))+'px';
-  hint.style.top=Math.max(12,Math.min(top,innerHeight-h-12))+'px';
- }
- main.querySelectorAll('.media-zoom-target').forEach(target=>{
-  target.setAttribute('aria-describedby',hint.id);
-  target.addEventListener('pointermove',e=>{if(e.pointerType==='mouse')positionHint(e.clientX,e.clientY)});
-  target.addEventListener('pointerleave',hideHint);
-  target.addEventListener('pointerdown',hideHint);
-  target.addEventListener('click',hideHint);
-  target.addEventListener('focus',()=>{if(target.matches(':focus-visible')){const r=target.getBoundingClientRect();positionHint(r.left+16,r.top+16)}});
-  target.addEventListener('blur',hideHint);
- });
- document.addEventListener('scroll',hideHint,true);
- window.addEventListener('blur',hideHint);
- window.addEventListener('resize',hideHint);
 })();

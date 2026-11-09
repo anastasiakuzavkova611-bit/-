@@ -21,7 +21,7 @@ body{margin:0;background:#fff;color:#28282e;font-family:"SF Pro Display",-apple-
 .resume-footer{display:flex;gap:10px;border-top:1px solid #eee;padding-top:32px}
 .resume-footer a{background:#f1f1f1;color:#28282e;text-decoration:none;padding:13px 24px;border-radius:14px;font-size:20px;line-height:24px}.resume-footer a:first-child{background:#151515;color:white}.resume-footer a:hover{opacity:.75}
 a:focus-visible{outline:2px solid #9988b8;outline-offset:4px}
-@media(hover:hover) and (pointer:fine){body,body *{cursor:url('../assets/img/editor-cursor.svg') 6 3,auto}a{cursor:url('../assets/img/editor-cursor.svg') 6 3,pointer}}
+@media(hover:hover) and (pointer:fine){}
 @media(max-width:900px){.resume-section{grid-template-columns:1fr;gap:24px}}
 @media(max-width:640px){.resume-page{width:calc(100% - 32px);padding:32px 0 40px}.back-button{margin-bottom:32px}.resume-section{grid-template-columns:1fr;gap:24px;margin-bottom:64px}.company-logo,.resume-footer a{border-radius:13px}.resume-footer{padding-top:24px}}
 

@@ -28,11 +28,10 @@ body .install-case .install-video-comparison .install-video-next,body .install-c
 
 .case-media-viewer .media-toolbar{height:64px;min-height:64px;display:grid;grid-template-columns:40px minmax(0,1fr) 40px;gap:8px;padding:12px 20px}.media-toolbar:before{content:""}.media-title{text-align:center}.case-media-viewer .media-toolbar>div{margin:0}.case-media-viewer .media-stage{height:calc(100% - 64px)}.case-media-viewer.has-video .media-stage{padding:12px 56px 24px}.media-next{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:40px;height:44px;display:grid;place-items:center;padding:0;background:transparent;border:0;color:#777;cursor:pointer}.media-next[hidden]{display:none}.media-next:hover{color:#252525}.media-next:focus-visible{outline:2px solid #252525;outline-offset:2px}@media(max-width:700px){.case-media-viewer .media-toolbar{padding:12px}.case-media-viewer.has-video .media-stage{padding:8px 44px 16px}.media-next{right:2px}}
 
-.media-zoom-target{position:relative;cursor:zoom-in}.media-zoom-target:after{content:attr(data-zoom-hint);position:absolute;z-index:4;bottom:16px;left:50%;transform:translate(-50%,4px);padding:8px 12px;border-radius:10px;background:#252525;color:#fff;font:400 17px/24px 'SF Pro Display',Arial,sans-serif;letter-spacing:0;white-space:nowrap;pointer-events:none;opacity:0;visibility:hidden;transition:opacity .15s,transform .15s,visibility .15s}.media-zoom-target:hover:after,.media-zoom-target:focus-visible:after{opacity:1;visibility:visible;transform:translate(-50%,0)}.media-zoom-target:focus-visible{outline:2px solid #555;outline-offset:4px}@media(prefers-reduced-motion:reduce){.media-zoom-target:after{transition:none}}@media(max-width:480px){.media-zoom-target:after{font-size:14px;padding:6px 10px}}
+.media-zoom-target{position:relative;cursor:zoom-in}.media-zoom-target:focus-visible{outline:2px solid #555;outline-offset:4px}
 
-.media-zoom-target:after{font-size:14px;line-height:20px;padding:6px 10px;border-radius:8px}
 
-.media-zoom-target:after{display:none}.media-cursor-hint{position:fixed;z-index:10000;max-width:calc(100vw - 24px);box-sizing:border-box;padding:6px 10px;border-radius:8px;background:#252525;color:#fff;font:400 14px/20px 'SF Pro Display',Arial,sans-serif;letter-spacing:0;white-space:nowrap;pointer-events:none}.media-cursor-hint[hidden]{display:none}
+
 
 /* Hide the recording edge without recompressing or shifting the video. */
 video.branding-recording-trim{clip-path:inset(0 1% 0 0 round 8px)}
@@ -49,3 +48,10 @@ body .install-case .install-video-comparison{border-radius:24px 24px 0 0}
 /* Expanded media has four rounded corners, including the bottom edge. */
 .case-media-viewer .media-stage>img,.case-media-viewer .media-stage>video{border-radius:16px;overflow:hidden}
 .case-media-viewer .media-stage>video.branding-recording-trim{clip-path:inset(0 1% 0 0 round 16px)}
+
+.media-zoom-target, .media-zoom-target :is(img,video){cursor:zoom-in!important}
+.case-hero-still{margin:0 auto;width:min(100%,1000px);overflow:hidden;border-radius:24px;background-color:var(--case-preview-base,#f5f6f8);background-image:var(--case-preview-background);padding:32px 6% 0}
+.case-hero-still img{width:100%;display:block;border-radius:16px 16px 0 0}
+.case-video-disclosure{width:min(100%,1000px);margin:16px auto 0}
+.case-video-disclosure summary{width:max-content;margin:auto;cursor:pointer}
+.case-video-disclosure[open] summary{margin-bottom:16px}

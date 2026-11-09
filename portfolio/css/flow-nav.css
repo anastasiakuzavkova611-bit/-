@@ -1,10 +1,10 @@
 /* Shared floating navigation: grouped sections and separate contact pill. */
 .floating-nav{position:fixed;z-index:1000;top:24px;left:50%;transform:translateX(-50%);display:flex;align-items:stretch;gap:6px;white-space:nowrap;font-family:'SF Pro Display',Arial,sans-serif;background:none;padding:0;border:0;box-shadow:none}
-.nav-sections{display:flex;align-items:center;gap:20px;padding:17px 20px;background:#ebebeb;border-radius:16px}
+.nav-sections{display:flex;align-items:center;gap:20px;padding:17px 20px;background:transparent;border-radius:16px}
 .floating-nav a{display:block;color:#202020;text-decoration:none;font-size:20px;font-weight:400;line-height:26px;padding:0;background:none;border:0;transition:color .18s,background .18s}
-.floating-nav .nav-telegram{display:flex;align-items:center;padding:17px 22px;background:#ebebeb;border-radius:999px}
+.floating-nav .nav-telegram{display:flex;align-items:center;padding:17px 22px;background:transparent;border-radius:999px}
 .floating-nav a:hover,.floating-nav a[aria-current=true]{color:#151515}
-.floating-nav .nav-telegram:hover{background:#dedede}
+.floating-nav .nav-telegram:hover{background:transparent}
 .floating-nav a[aria-disabled=true]{opacity:1;cursor:default}
 .floating-nav a:focus-visible{outline:2px solid #777;outline-offset:5px}
 .flow-detail-back{max-width:1120px;width:calc(100% - 96px);margin:136px auto 40px}.flow-detail-back a{font-size:18px;color:#777;text-decoration:none}
@@ -31,3 +31,5 @@
 .floating-nav .nav-home{position:static;right:auto;top:auto;align-self:stretch;height:auto;flex:0 0 44px;margin-right:14px}
 @media(max-width:700px){.floating-nav .nav-home{flex-basis:30px;margin-right:5px}}
 @media(max-width:380px){.floating-nav .nav-home{flex-basis:26px;margin-right:2px}}
+
+body .floating-nav .nav-sections,body .floating-nav .nav-telegram{background:transparent;box-shadow:none;backdrop-filter:none}
