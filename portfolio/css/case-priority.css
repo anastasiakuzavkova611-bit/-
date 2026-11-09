@@ -10,3 +10,32 @@
 .priority-table tbody tr:last-child>*{border-bottom:0}
 .priority-caption{font-size:17px;line-height:1.45;margin:12px 0 0;color:#252525}
 @media(max-width:700px){.priority-table{min-width:680px}.priority-table th:first-child{width:49%}.priority-table th,.priority-table td{padding-block:16px}}
+
+.case-priority .priority-cards {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: clamp(16px, 3vw, 32px);
+  list-style: none;
+  border-radius: 24px;
+  background: #f4f4f4;
+}
+.priority-cards li {
+  box-sizing: border-box;
+  min-height: 208px;
+  padding: 20px;
+  border-radius: 16px;
+  background: white;
+  color: #252525;
+  font: 400 18px/24px Arial, sans-serif;
+}
+.case-priority .priority-scroll { grid-column: 1 / -1; }
+@media (max-width: 760px) {
+  .case-priority .priority-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  .case-priority .priority-cards { grid-template-columns: 1fr; }
+  .priority-cards li { min-height: 0; }
+}
