@@ -1,29 +1,18 @@
-/* Existing case typography and whitespace, with the earlier ICE table structure. */
-.priority-scroll{overflow-x:auto;max-width:100%;outline-offset:4px}
-.priority-table{width:100%;border-collapse:collapse;table-layout:fixed;color:#252525;font-size:17px;line-height:1.45}
-.priority-table th,.priority-table td{padding:20px 12px;border-bottom:1px solid #e7e7e7;vertical-align:top}
-.priority-table thead th{font-weight:500;padding-top:8px;padding-bottom:16px;text-align:center}
-.priority-table th:first-child{width:54%;padding-left:0;text-align:left}
-.priority-table tbody th{font-weight:400}
-.priority-table td{vertical-align:middle;text-align:center;font-variant-numeric:tabular-nums}
-.priority-table th:last-child,.priority-table td:last-child{padding-right:0;font-weight:600}
-.priority-table tbody tr:last-child>*{border-bottom:0}
-.priority-caption{font-size:17px;line-height:1.45;margin:12px 0 0;color:#252525}
-@media(max-width:700px){.priority-table{min-width:680px}.priority-table th:first-child{width:49%}.priority-table th,.priority-table td{padding-block:16px}}
-
 .case-priority .priority-cards {
   grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
   margin: 0;
-  padding: clamp(16px, 3vw, 32px);
+  padding: var(--media-inset, 7.6%);
   list-style: none;
   border-radius: 24px;
   background: #f4f4f4;
 }
 .priority-cards li {
   box-sizing: border-box;
+  flex: 0 0 calc((100% - 32px) / 3);
   min-height: 208px;
   padding: 20px;
   border-radius: 16px;
@@ -31,11 +20,9 @@
   color: #252525;
   font: 400 18px/24px Arial, sans-serif;
 }
-.case-priority .priority-scroll { grid-column: 1 / -1; }
 @media (max-width: 760px) {
-  .case-priority .priority-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .priority-cards li { flex-basis: calc((100% - 16px) / 2); }
 }
 @media (max-width: 520px) {
-  .case-priority .priority-cards { grid-template-columns: 1fr; }
-  .priority-cards li { min-height: 0; }
+  .priority-cards li { flex-basis: 100%; min-height: 0; }
 }

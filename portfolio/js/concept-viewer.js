@@ -31,7 +31,8 @@
   }
   function fit() {
     if (!active) return;
-    const height = Math.min(viewport.clientHeight, viewport.clientWidth / ratio);
+    const widget = ['charge', 'prices'].includes(active.dataset.motion);
+    const height = Math.min(viewport.clientHeight, viewport.clientWidth / ratio, widget ? 360 / ratio : Infinity);
     active.style.setProperty('--viewer-width', height * ratio + 'px');
     active.style.setProperty('--viewer-height', height + 'px');
   }

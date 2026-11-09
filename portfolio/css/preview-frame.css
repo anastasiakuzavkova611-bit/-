@@ -1,0 +1,41 @@
+/* Use the same viewing area for case screenshots and ribbon items. */
+dialog:is(.case-media-viewer, .concept-viewer) {
+  box-sizing: border-box;
+  width: min(1240px, 96vw);
+  height: min(900px, 94dvh);
+  max-width: none;
+  max-height: none;
+  margin: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 24px;
+  color: #252525;
+  background: #f4f4f4;
+}
+dialog:is(.case-media-viewer, .concept-viewer)::backdrop {
+  background: rgb(0 0 0 / .72);
+}
+dialog :is(.viewer-stage, .media-stage) {
+  box-sizing: border-box;
+}
+dialog.concept-viewer {padding: 48px clamp(24px, 4vw, 56px)}
+dialog.case-media-viewer .media-stage {
+  position: absolute;
+  inset: 48px clamp(24px, 4vw, 56px);
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+dialog.case-media-viewer .media-toolbar {
+  position: relative;
+  z-index: 1;
+  height: 48px;
+  min-height: 48px;
+}
+.card-back:hover img, .case-art:hover > img, .case-art:hover .case-browser,
+.flow-case:hover .case-browser, .flow-case:hover .case-art > img {
+  transform: none;
+}
+@media (hover: hover) {
+  .card-back .art-controls {opacity: 1}
+}
