@@ -1,7 +1,7 @@
 /* Abordio follows the existing case rhythm and understated research tables. */
 body .abordio-case .install-hero{margin-bottom:64px}
 /* Full-width ticker, matching the reference's 200px screens and 24px rhythm. */
-.ab-intro-gallery{width:100vw;max-width:none;margin:0 0 64px;position:relative;left:50%;transform:translateX(-50%);padding:0;overflow:hidden;background:#f6f6f6}
+.ab-intro-gallery{width:100vw;max-width:none;margin:0 0 64px;position:relative;left:50%;transform:translateX(-50%);padding:0;overflow:hidden;background:transparent}
 .ab-ribbon-track{display:flex;width:max-content;animation:ab-ribbon-drift 84s linear infinite;will-change:transform}
 .ab-ribbon-group{display:flex;align-items:flex-end;gap:24px;padding-right:24px;flex-shrink:0}
 .ab-intro-gallery .screen-original{display:block;flex:0 0 200px;width:200px;min-width:0;max-width:none;border-radius:var(--radius-surface,24px);overflow:hidden}
