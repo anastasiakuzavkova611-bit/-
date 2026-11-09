@@ -2,50 +2,49 @@
 <title>Продуктовые гипотезы</title>
 <rect width="100%" height="100%" fill="#f4f4f4"/>
 <rect x="0" y="0" width="310" height="208" rx="16" fill="#fff"/>
-<text x="20" y="38" font-size="18" fill="#252525">Если на карте видны</text>
-<text x="20" y="62" font-size="18" fill="#252525">рестораны со свободными</text>
-<text x="20" y="86" font-size="18" fill="#252525">столами, гость быстрее найдёт,</text>
-<text x="20" y="110" font-size="18" fill="#252525">где поесть рядом.</text>
+<text x="20" y="38" font-size="18" fill="#252525">Если гость видит на карте,</text>
+<text x="20" y="62" font-size="18" fill="#252525">где поблизости есть свободный</text>
+<text x="20" y="86" font-size="18" fill="#252525">стол, он быстрее выбирает</text>
+<text x="20" y="110" font-size="18" fill="#252525">ресторан.</text>
 <rect x="326" y="0" width="310" height="208" rx="16" fill="#fff"/>
-<text x="346" y="38" font-size="18" fill="#252525">Если ресторан заранее видит,</text>
-<text x="346" y="62" font-size="18" fill="#252525">какой стол и на какое время</text>
-<text x="346" y="86" font-size="18" fill="#252525">забронирован, гость меньше</text>
-<text x="346" y="110" font-size="18" fill="#252525">ждёт посадки.</text>
+<text x="346" y="38" font-size="18" fill="#252525">Если гость бронирует</text>
+<text x="346" y="62" font-size="18" fill="#252525">конкретный стол на удобное</text>
+<text x="346" y="86" font-size="18" fill="#252525">время, он меньше ждёт</text>
+<text x="346" y="110" font-size="18" fill="#252525">посадки, чем при визите</text>
+<text x="346" y="134" font-size="18" fill="#252525">без брони.</text>
 <rect x="652" y="0" width="310" height="208" rx="16" fill="#fff"/>
-<text x="672" y="38" font-size="18" fill="#252525">Если гости сами выбирают стол</text>
-<text x="672" y="62" font-size="18" fill="#252525">на плане зала, они реже просят</text>
-<text x="672" y="86" font-size="18" fill="#252525">пересадить их во время визита.</text>
+<text x="672" y="38" font-size="18" fill="#252525">Если гость выбирает место</text>
+<text x="672" y="62" font-size="18" fill="#252525">на плане зала, он реже просит</text>
+<text x="672" y="86" font-size="18" fill="#252525">другой стол по приходе.</text>
 <rect x="0" y="224" width="310" height="208" rx="16" fill="#fff"/>
-<text x="20" y="262" font-size="18" fill="#252525">Если при выборе стола видны</text>
-<text x="20" y="286" font-size="18" fill="#252525">размер скидки, часы действия</text>
-<text x="20" y="310" font-size="18" fill="#252525">и блюда со скидкой, гость</text>
-<text x="20" y="334" font-size="18" fill="#252525">точнее оценит экономию.</text>
+<text x="20" y="262" font-size="18" fill="#252525">Если гость видит условия</text>
+<text x="20" y="286" font-size="18" fill="#252525">скидки при выборе стола,</text>
+<text x="20" y="310" font-size="18" fill="#252525">он может заранее рассчитать</text>
+<text x="20" y="334" font-size="18" fill="#252525">экономию на своём заказе.</text>
 <rect x="326" y="224" width="310" height="208" rx="16" fill="#fff"/>
-<text x="346" y="262" font-size="18" fill="#252525">Если ресторан получает</text>
-<text x="346" y="286" font-size="18" fill="#252525">пожелания вместе с бронью,</text>
-<text x="346" y="310" font-size="18" fill="#252525">гости реже звонят,</text>
-<text x="346" y="334" font-size="18" fill="#252525">чтобы уточнить детали визита.</text>
+<text x="346" y="262" font-size="18" fill="#252525">Если гость может добавить</text>
+<text x="346" y="286" font-size="18" fill="#252525">пожелание к брони, ему реже</text>
+<text x="346" y="310" font-size="18" fill="#252525">приходится отдельно звонить</text>
+<text x="346" y="334" font-size="18" fill="#252525">в ресторан.</text>
 <rect x="652" y="224" width="310" height="208" rx="16" fill="#fff"/>
-<text x="672" y="262" font-size="18" fill="#252525">Если до оплаты объяснить,</text>
-<text x="672" y="286" font-size="18" fill="#252525">за что берут депозит, и указать</text>
-<text x="672" y="310" font-size="18" fill="#252525">сумму и срок полного возврата,</text>
-<text x="672" y="334" font-size="18" fill="#252525">гости точнее оценят условия</text>
-<text x="672" y="358" font-size="18" fill="#252525">брони.</text>
+<text x="672" y="262" font-size="18" fill="#252525">Если гость до оплаты видит</text>
+<text x="672" y="286" font-size="18" fill="#252525">сумму депозита и срок</text>
+<text x="672" y="310" font-size="18" fill="#252525">возврата, он точнее оценивает,</text>
+<text x="672" y="334" font-size="18" fill="#252525">сколько вернётся при отмене.</text>
 <rect x="0" y="448" width="310" height="208" rx="16" fill="#fff"/>
-<text x="20" y="486" font-size="18" fill="#252525">Если в приложении можно</text>
-<text x="20" y="510" font-size="18" fill="#252525">принять другой стол</text>
-<text x="20" y="534" font-size="18" fill="#252525">или отменить бронь с полным</text>
-<text x="20" y="558" font-size="18" fill="#252525">возвратом, больше гостей</text>
-<text x="20" y="582" font-size="18" fill="#252525">решат вопрос без звонка</text>
-<text x="20" y="606" font-size="18" fill="#252525">в ресторан.</text>
+<text x="20" y="486" font-size="18" fill="#252525">Если гость видит</text>
+<text x="20" y="510" font-size="18" fill="#252525">предложенный стол и условия</text>
+<text x="20" y="534" font-size="18" fill="#252525">возврата, он может принять</text>
+<text x="20" y="558" font-size="18" fill="#252525">замену или отменить бронь</text>
+<text x="20" y="582" font-size="18" fill="#252525">прямо в приложении.</text>
 <rect x="326" y="448" width="310" height="208" rx="16" fill="#fff"/>
-<text x="346" y="486" font-size="18" fill="#252525">Если в напоминании указать</text>
-<text x="346" y="510" font-size="18" fill="#252525">время брони и адрес</text>
-<text x="346" y="534" font-size="18" fill="#252525">ресторана, больше гостей</text>
-<text x="346" y="558" font-size="18" fill="#252525">придут вовремя.</text>
+<text x="346" y="486" font-size="18" fill="#252525">Если гость получает</text>
+<text x="346" y="510" font-size="18" fill="#252525">напоминание со временем</text>
+<text x="346" y="534" font-size="18" fill="#252525">визита и адресом, он реже</text>
+<text x="346" y="558" font-size="18" fill="#252525">опаздывает к своему столу.</text>
 <rect x="652" y="448" width="310" height="208" rx="16" fill="#fff"/>
-<text x="672" y="486" font-size="18" fill="#252525">Если начать новую бронь</text>
-<text x="672" y="510" font-size="18" fill="#252525">из истории посещений, гость</text>
-<text x="672" y="534" font-size="18" fill="#252525">быстрее забронирует стол</text>
-<text x="672" y="558" font-size="18" fill="#252525">в знакомом ресторане.</text>
+<text x="672" y="486" font-size="18" fill="#252525">Если гость может снова</text>
+<text x="672" y="510" font-size="18" fill="#252525">забронировать стол из истории</text>
+<text x="672" y="534" font-size="18" fill="#252525">посещений, повторная бронь</text>
+<text x="672" y="558" font-size="18" fill="#252525">занимает меньше времени.</text>
 </svg>

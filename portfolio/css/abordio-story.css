@@ -106,3 +106,6 @@ body main.abordio-case .ab-metric-sheet img {display:block;position:static;width
 .ab-board-link {position:absolute;font:400 1.42cqi/1.2 Arial,sans-serif;color:#3f3f3f;text-decoration:underline;text-underline-offset:.16em}
 .ab-board-link:hover,.ab-board-link:focus-visible {color:#151515}
 .ab-booking-step[id],.ab-hypothesis-board[id],.ab-jtbd-board[id] {scroll-margin-top:100px}
+
+.ab-intro-gallery .ribbon-surface{background-size:100% 100%;background-repeat:no-repeat}
+.ab-intro-gallery .ribbon-surface img{opacity:.5}
