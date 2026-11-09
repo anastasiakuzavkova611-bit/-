@@ -1,6 +1,13 @@
 (() => {
-  const stage = document.querySelector('.card-stage');
-  const originals = [...stage.querySelectorAll('.scroll-card:not([data-copy]) .card-back')];
+  const stage = document.querySelector('.card-stage, .ab-intro-gallery');
+  if (!stage) return;
+  const ribbon = stage.classList.contains('ab-intro-gallery');
+  const selector = ribbon ? '.screen-original' : '.card-back';
+  const originals = [...stage.querySelectorAll(ribbon
+    ? '.ab-ribbon-group:first-child .screen-original'
+    : '.scroll-card:not([data-copy]) .card-back')];
+  const key = card => ribbon ? card.querySelector('img').src : card.dataset.image;
+  const title = card => ribbon ? card.querySelector('img').alt : card.dataset.title;
   const dialog = document.createElement('dialog');
   dialog.className = 'concept-viewer';
   dialog.setAttribute('aria-label', 'Просмотр концептов');
@@ -15,8 +22,11 @@
   }
   function restore() {
     if (!active) return;
-    transfer(marker.parentNode, active, marker);
-    marker.remove();
+    if (ribbon) active.remove();
+    else {
+      transfer(marker.parentNode, active, marker);
+      marker.remove();
+    }
     active = null;
   }
   function fit() {
@@ -29,13 +39,23 @@
   function show(i, selected) {
     restore();
     index = (i + originals.length) % originals.length;
-    active = selected || originals[index];
-    const frame = active.closest('.scroll-card');
-    ratio = Number(frame.dataset.conceptWidth) / Number(frame.dataset.conceptHeight);
-    marker = document.createComment('concept in viewer');
-    active.before(marker);
-    transfer(viewport, active);
-    dialog.setAttribute('aria-label', active.dataset.title);
+    const card = selected || originals[index];
+    if (ribbon) {
+      // Keep the track width constant while displaying the same layered artwork.
+      active = card.cloneNode(true);
+      active.querySelector('.concept-open')?.remove();
+      const image = active.querySelector('img');
+      ratio = Number(image.getAttribute('width')) / Number(image.getAttribute('height'));
+      viewport.append(active);
+    } else {
+      active = card;
+      const frame = active.closest('.scroll-card');
+      ratio = Number(frame.dataset.conceptWidth) / Number(frame.dataset.conceptHeight);
+      marker = document.createComment('concept in viewer');
+      active.before(marker);
+      transfer(viewport, active);
+    }
+    dialog.setAttribute('aria-label', title(card));
     fit();
   }
   dialog.addEventListener('close', () => {
@@ -43,18 +63,18 @@
     delete dialog.dataset.viewing;
     opener?.focus({preventScroll:true});
   });
-  for (const card of stage.querySelectorAll('.card-back')) {
+  for (const card of stage.querySelectorAll(selector)) {
     const open = document.createElement('button');
     open.className = 'concept-open';
     open.type = 'button';
-    open.setAttribute('aria-label','Открыть концепт «'+card.dataset.title+'»');
-    if (card.closest('[data-copy]')) open.tabIndex = -1;
+    open.setAttribute('aria-label','Открыть «'+title(card)+'»');
+    if (card.closest('[data-copy], [aria-hidden=true]')) open.tabIndex = -1;
     card.prepend(open);
     open.addEventListener('click', () => {
       opener = open;
       dialog.dataset.viewing = "";
       dialog.showModal();
-      show(originals.findIndex(item => item.dataset.image === card.dataset.image), card);
+      show(originals.findIndex(item => key(item) === key(card)), card);
     });
   }
   dialog.querySelector('.close').onclick = () => dialog.close();

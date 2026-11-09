@@ -1,11 +1,17 @@
-.card-back .concept-open{position:absolute;inset:0;width:100%;height:100%;border:0;background:transparent;padding:0;z-index:3;cursor:zoom-in}
+.card-back .concept-open,.ab-intro-gallery .concept-open{position:absolute;inset:0;width:100%;height:100%;border:0;background:transparent;padding:0;z-index:3;cursor:zoom-in}
 .card-back .art-controls{z-index:4}
 
 .concept-viewer{position:fixed;inset:0;margin:auto;width:min(1240px,96vw);height:min(900px,94dvh);max-width:none;max-height:none;padding:48px 56px;border:none;color:white;background:transparent}
 .concept-viewer::backdrop{background:rgb(0 0 0/.72)}
 .viewer-stage{width:100%;height:100%;display:grid;place-items:center}
-.viewer-stage .card-back{position:relative;inset:auto!important;width:var(--viewer-width)!important;height:var(--viewer-height)!important;transform:none;pointer-events:auto!important;background:transparent}
+.viewer-stage .card-back,.viewer-stage .screen-original{position:relative;inset:auto!important;width:var(--viewer-width)!important;height:var(--viewer-height)!important;transform:none;pointer-events:auto!important;background:transparent}
 .viewer-stage .concept-open{display:none}
 .concept-viewer > button{position:absolute;padding:8px;border:0;background:transparent;color:inherit;cursor:pointer;font-size:26px}
 .concept-viewer .prev,.concept-viewer .next{top:50%;transform:translateY(-50%)}
 .concept-viewer .prev{left:6px}.concept-viewer .next{right:6px}.concept-viewer .close{right:6px;top:0}
+
+.ab-intro-gallery .screen-original{position:relative}
+body:has(.concept-viewer[open]) .ab-ribbon-track{animation-play-state:paused}
+.viewer-stage .screen-original{display:block;overflow:hidden;border-radius:var(--radius-surface,24px);background-size:100% 100%;background-repeat:no-repeat}
+.viewer-stage .screen-original img{display:block;width:100%;height:100%}
+.viewer-stage .ribbon-surface img{opacity:.5}
