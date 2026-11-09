@@ -33,3 +33,10 @@
 @media(max-width:380px){.floating-nav .nav-home{flex-basis:26px;margin-right:2px}}
 
 body .floating-nav .nav-sections,body .floating-nav .nav-telegram{background:transparent;box-shadow:none;backdrop-filter:none}
+
+body .floating-nav{--nav-gap:20px;gap:var(--nav-gap);align-items:center}
+body .floating-nav .nav-sections{display:contents}
+body .floating-nav a{padding:17px 0}
+body .floating-nav .nav-home{margin:0;padding:0;width:auto;flex:0 0 auto}
+body .floating-nav .nav-telegram{padding-inline:0}
+@media(max-width:700px){body .floating-nav{--nav-gap:12px}}

@@ -1,10 +1,11 @@
 .card-back .concept-open{position:absolute;inset:0;width:100%;height:100%;border:0;background:transparent;padding:0;z-index:3;cursor:zoom-in}
 .card-back .art-controls{z-index:4}
-.concept-viewer{position:fixed;inset:0;margin:auto;width:fit-content;max-width:96vw;height:fit-content;max-height:94vh;padding:48px 58px 16px;border:0;border-radius:20px;color:#252525;background:white}
-.concept-viewer::backdrop{background:rgb(0 0 0/.45)}
-.concept-viewer figure{margin:0;text-align:center}
-.concept-viewer img{display:block;margin:auto;width:auto;height:auto;max-width:calc(94vw - 116px);max-height:75vh;object-fit:contain}
-.concept-viewer figcaption{margin-top:12px}
-.concept-viewer button{position:absolute;padding:8px;border:0;background:transparent;color:inherit;cursor:pointer;font-size:24px}
+
+.concept-viewer{position:fixed;inset:0;margin:auto;width:min(1240px,96vw);height:min(900px,94dvh);max-width:none;max-height:none;padding:48px 56px;border:none;color:white;background:transparent}
+.concept-viewer::backdrop{background:rgb(0 0 0/.72)}
+.viewer-stage{width:100%;height:100%;display:grid;place-items:center}
+.viewer-stage .card-back{position:relative;inset:auto!important;width:var(--viewer-width)!important;height:var(--viewer-height)!important;transform:none;pointer-events:auto!important;background:transparent}
+.viewer-stage .concept-open{display:none}
+.concept-viewer > button{position:absolute;padding:8px;border:0;background:transparent;color:inherit;cursor:pointer;font-size:26px}
 .concept-viewer .prev,.concept-viewer .next{top:50%;transform:translateY(-50%)}
-.concept-viewer .prev{left:8px}.concept-viewer .next{right:8px}.concept-viewer .close{right:8px;top:4px}
+.concept-viewer .prev{left:6px}.concept-viewer .next{right:6px}.concept-viewer .close{right:6px;top:0}

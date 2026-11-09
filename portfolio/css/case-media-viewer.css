@@ -50,8 +50,6 @@ body .install-case .install-video-comparison{border-radius:24px 24px 0 0}
 .case-media-viewer .media-stage>video.branding-recording-trim{clip-path:inset(0 1% 0 0 round 16px)}
 
 .media-zoom-target, .media-zoom-target :is(img,video){cursor:zoom-in!important}
-.case-hero-still{margin:0 auto;width:min(100%,1000px);overflow:hidden;border-radius:24px;background-color:var(--case-preview-base,#f5f6f8);background-image:var(--case-preview-background);padding:32px 6% 0}
+.case-hero-still{margin:0 auto;width:min(100%,1000px);overflow:hidden;border-radius:24px;background-color:var(--case-preview-base,#f5f6f8);background-image:var(--case-preview-background);padding:var(--media-inset,7.6%) var(--media-inset,7.6%) 0}
 .case-hero-still img{width:100%;display:block;border-radius:16px 16px 0 0}
-.case-video-disclosure{width:min(100%,1000px);margin:16px auto 0}
-.case-video-disclosure summary{width:max-content;margin:auto;cursor:pointer}
-.case-video-disclosure[open] summary{margin-bottom:16px}
+body main.install-case .install-hero:has(+.case-hero-still){margin-bottom:62px}
