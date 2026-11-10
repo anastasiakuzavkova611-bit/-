@@ -18,7 +18,7 @@
 }
 
 .flow-case[data-cover],
-main.install-case[data-cover] :is(.install-video-comparison, .complete-screen-board, .solution-carousel),
+main.install-case[data-cover] :is(.install-video-comparison, .complete-screen-board),
 main.abordio-case[data-cover] :is(.ab-flow-board, .ab-solution-board) {
   background-color: var(--case-preview-base);
   background-image: var(--case-preview-background);
