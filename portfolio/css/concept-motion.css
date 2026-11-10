@@ -73,3 +73,12 @@
   height: auto;
   border-radius: 4.45% / 7.12%;
 }
+
+/* The exported landscape has opaque grey pixels beyond its own rounded edge.
+   Extend the landscape behind that edge, keeping the interface at its original scale. */
+dialog.concept-viewer .viewer-stage .card-back[data-image*="concept-3008-7960"] {
+  background: center / 106% auto no-repeat url("../assets/img/concept-3008-7960.webp");
+}
+dialog.concept-viewer .viewer-stage .card-back[data-image*="concept-3008-7960"] > img {
+  clip-path: inset(0 round 4.6% / 7.36%);
+}
