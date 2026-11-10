@@ -68,8 +68,16 @@ body main.abordio-case > .story-section:has(+ .ab-ui-overview) {margin-bottom:32
 .ab-booking-step {margin:80px auto;max-width:1000px;container-type:inline-size}
 body main.abordio-case .ab-booking-step > .story-section {margin:0 auto 24px}
 
-body main.abordio-case .ab-research-gallery > .ab-jtbd-board {height:calc(min(553px, 55.3cqi) + 28px)}
-body main.abordio-case .ab-research-gallery > .ab-jtbd-board .ab-research-media {inset:72px 7.6% 60px}
+body main.abordio-case .ab-research-gallery > .ab-jtbd-board {
+  height:auto;
+  padding:32px 7.6% 60px;
+}
+body main.abordio-case .ab-research-gallery > .ab-jtbd-board .ab-research-media {
+  position:static;
+  flex:none;
+  width:100%;
+  aspect-ratio:1232 / 656;
+}
 
 /* One frame for every booking flow, including slides in the search carousel. */
 body main.abordio-case .ab-booking-step .ab-flow-board {
