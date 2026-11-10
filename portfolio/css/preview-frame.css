@@ -63,10 +63,13 @@ dialog.concept-viewer .close { top: 8px; right: 16px; }
 
 /* Center the artwork independently of a caption in the upper margin. */
 body main.install-case .case-hero-still {
-  padding: var(--media-inset, 7.6%);
+  padding: var(--media-inset, 7.6%) var(--media-inset, 7.6%) 0;
+  aspect-ratio: 2 / 1;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 body main.install-case .case-hero-still img {
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
 }
 body main.install-case .complete-screen-board.annotated-board,
 body main.install-case .solution-carousel > figure.complete-screen-board {
@@ -86,13 +89,10 @@ body main.install-case .complete-screen-board .screen-original > img {
   border-radius: inherit;
 }
 body .case-art.desktop {
-  display: grid;
-  place-items: center;
   height: auto;
-  padding-block: var(--media-inset, 7.6%);
-}
-body .case-art.desktop .case-browser {
-  margin: 0;
-  align-self: center;
-  border-radius: 16px;
+  aspect-ratio: 2 / 1;
+  box-sizing: border-box;
+  align-items: flex-start;
+  overflow: hidden;
+  padding-bottom: 0;
 }
