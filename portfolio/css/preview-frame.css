@@ -8,9 +8,8 @@ dialog:is(.case-media-viewer, .concept-viewer) {
   margin: auto;
   padding: 0;
   border: 0;
-  --screen-corner: 16px;
-  --frame-corner: clamp(32px, 4vw, 56px);
-  border-radius: var(--frame-corner);
+  --preview-corner: 32px;
+  border-radius: var(--preview-corner);
   color: #252525;
   background: #f4f4f4;
 }
@@ -43,25 +42,21 @@ dialog.case-media-viewer .media-toolbar {
 }
 
 body:has(.concept-story) dialog.concept-viewer {
-  border-radius: var(--frame-corner);
+  border-radius: var(--preview-corner);
 }
 dialog.case-media-viewer .media-stage > :is(img, video),
-dialog.concept-viewer .card-back:has(> img[height="704"]) {
-  border-radius: var(--screen-corner);
+dialog.concept-viewer .viewer-stage > :is(.card-back, .screen-original) {
+  border-radius: var(--preview-corner);
   overflow: hidden;
 }
-/* Match the curved phone silhouette at any rendered size. */
-dialog.concept-viewer .viewer-stage .ribbon-surface,
-dialog.concept-viewer .card-back:has(> img[width="402"][height="874"]),
-dialog.case-media-viewer .media-stage > img:is([src*="/abordio-case/flow/"], [src*="/abordio-case/screen-"]) {
-  border-radius: 11.94% / 5.5%;
-  overflow: hidden;
+dialog.concept-viewer .viewer-stage > [data-motion="music"] {
+  border-radius: var(--preview-corner) !important;
 }
-dialog.concept-viewer .card-back:has(> img[width="1126"][height="704"]) {
-  border-radius: 4.45% / 7.12%;
-}
-dialog.concept-viewer .viewer-stage :is(.ribbon-surface, .card-back) > img {
+dialog.concept-viewer .viewer-stage :is(.card-back, .screen-original) > :is(img, .fitness-live) {
   border-radius: inherit;
+}
+dialog.case-media-viewer .media-stage > video.branding-recording-trim {
+  clip-path: inset(0 1% 0 0 round var(--preview-corner));
 }
 dialog.concept-viewer :is(.close, .prev, .next) { z-index: 1; }
 dialog.concept-viewer .close { top: 8px; right: 16px; }
