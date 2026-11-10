@@ -8,7 +8,9 @@ dialog:is(.case-media-viewer, .concept-viewer) {
   margin: auto;
   padding: 0;
   border: 0;
-  border-radius: 24px;
+  --screen-corner: 16px;
+  --frame-corner: clamp(32px, 4vw, 56px);
+  border-radius: var(--frame-corner);
   color: #252525;
   background: #f4f4f4;
 }
@@ -39,3 +41,27 @@ dialog.case-media-viewer .media-toolbar {
 @media (hover: hover) {
   .card-back .art-controls {opacity: 1}
 }
+
+body:has(.concept-story) dialog.concept-viewer {
+  border-radius: var(--frame-corner);
+}
+dialog.case-media-viewer .media-stage > :is(img, video),
+dialog.concept-viewer .card-back:has(> img[height="704"]) {
+  border-radius: var(--screen-corner);
+  overflow: hidden;
+}
+/* Match the curved phone silhouette at any rendered size. */
+dialog.concept-viewer .viewer-stage .ribbon-surface,
+dialog.concept-viewer .card-back:has(> img[width="402"][height="874"]),
+dialog.case-media-viewer .media-stage > img:is([src*="/abordio-case/flow/"], [src*="/abordio-case/screen-"]) {
+  border-radius: 11.94% / 5.5%;
+  overflow: hidden;
+}
+dialog.concept-viewer .card-back:has(> img[width="1126"][height="704"]) {
+  border-radius: 4.45% / 7.12%;
+}
+dialog.concept-viewer .viewer-stage :is(.ribbon-surface, .card-back) > img {
+  border-radius: inherit;
+}
+dialog.concept-viewer :is(.close, .prev, .next) { z-index: 1; }
+dialog.concept-viewer .close { top: 8px; right: 16px; }
