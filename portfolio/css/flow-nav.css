@@ -41,9 +41,24 @@ body .floating-nav .nav-home{margin:0;padding:0;width:auto;flex:0 0 auto}
 body .floating-nav .nav-telegram{padding-inline:0}
 @media(max-width:700px){body .floating-nav{--nav-gap:12px}}
 
+/* The surface follows the navigation on the homepage and inside cases. */
 body .floating-nav {
-  padding-inline: clamp(12px, 2vw, 24px);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, .96);
-  box-shadow: 0 1px 8px rgba(0, 0, 0, .08);
+  --header-inset: 24px;
+  top: var(--header-inset);
+  isolation: isolate;
+}
+body .floating-nav::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset-block: calc(-1 * var(--header-inset));
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background: #fafafa;
+  border-bottom: 1px solid #ededed;
+  pointer-events: none;
+}
+@media (max-width: 600px) {
+  body .floating-nav { --header-inset: 16px; }
 }
