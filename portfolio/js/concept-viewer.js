@@ -11,7 +11,7 @@
   const dialog = document.createElement('dialog');
   dialog.className = 'concept-viewer';
   dialog.setAttribute('aria-label', 'Просмотр концептов');
-  dialog.innerHTML = '<button class="close" aria-label="Закрыть">×</button><button class="prev" aria-label="Предыдущий концепт">←</button><div class="viewer-stage"></div><button class="next" aria-label="Следующий концепт">→</button>';
+  dialog.innerHTML = '<button class="close" aria-label="Закрыть">×</button><button class="prev" aria-label="Предыдущий концепт"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><div class="viewer-stage"></div><button class="next" aria-label="Следующий концепт"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>';
   document.body.append(dialog);
   const viewport = dialog.querySelector('.viewer-stage');
   let index = 0, active, marker, opener, ratio = 1;
