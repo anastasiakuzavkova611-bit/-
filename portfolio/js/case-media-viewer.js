@@ -10,34 +10,28 @@
  const next = dialog.querySelector('.media-next');
  title.setAttribute('aria-live','polite');
  let opener, sourceVideo;
- function positionVideoNext(){
+ function fitVideo(){
   const player=stage.querySelector('video');
   if(!dialog.open||!player||!player.videoWidth)return;
   if(player.classList.contains('branding-recording-trim')){
    const style=getComputedStyle(stage),w=stage.clientWidth-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight),h=stage.clientHeight-parseFloat(style.paddingTop)-parseFloat(style.paddingBottom);
    const width=Math.min(w,h*1728/870);player.style.width=width+'px';player.style.height=(width*870/1728)+'px';player.style.objectFit='cover';player.style.objectPosition='center top';
   }
-  const box=dialog.getBoundingClientRect(), media=player.getBoundingClientRect();
-  const visibleRight=media.right-(player.classList.contains('branding-recording-trim')?media.width*.01:0);
-  next.style.right='auto';
-  const last=title.textContent.trim()==='Стало';
-  next.dataset.last=String(last);
-  next.style.left=(last?(media.left-box.left)/2-next.offsetWidth/2:(visibleRight+box.right)/2-box.left-next.offsetWidth/2)+'px';
-  next.style.top=((media.top+media.bottom)/2-box.top)+'px';
  }
- const videoLayout=new ResizeObserver(positionVideoNext);
- window.addEventListener('resize',positionVideoNext);
+ const videoLayout=new ResizeObserver(fitVideo);
+ window.addEventListener('resize',fitVideo);
  function renderVideo() {
   videoLayout.disconnect();stage.querySelector('video')?.pause(); stage.replaceChildren();
   const root = sourceVideo.closest('.install-video-comparison');
   title.textContent = root.querySelector('.install-video-label').textContent;
+  next.dataset.last=String(title.textContent.trim()==='Стало');
   next.setAttribute('aria-label', title.textContent.trim()==='Было'?'Показать Стало':'Показать Было');
   const player = sourceVideo.cloneNode(true);
   player.removeAttribute('id'); player.controls=true; player.autoplay=true; player.loop=true; player.preload='auto';
   stage.append(player); player.currentTime=0; player.play().catch(()=>{});
   videoLayout.observe(stage);videoLayout.observe(player);
-  player.addEventListener('loadedmetadata',positionVideoNext);
-  requestAnimationFrame(positionVideoNext);
+  player.addEventListener('loadedmetadata',fitVideo);
+  requestAnimationFrame(fitVideo);
  }
  next.addEventListener('click',()=>{
   const root=sourceVideo?.closest('.install-video-comparison');if(!root)return;
