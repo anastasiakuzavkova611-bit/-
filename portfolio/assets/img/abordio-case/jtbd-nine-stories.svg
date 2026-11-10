@@ -2,59 +2,66 @@
 <title>JTBD на основе интервью</title>
 <rect width="100%" height="100%" fill="#f4f4f4"/>
 <rect x="0" y="0" width="310" height="208" rx="16" fill="#fff"/>
-<text x="20" y="38" font-size="18" fill="#252525">Когда мы решаем поесть</text>
-<text x="20" y="62" font-size="18" fill="#252525">вне дома, я хочу найти</text>
-<text x="20" y="86" font-size="18" fill="#252525">свободный стол в ресторане</text>
-<text x="20" y="110" font-size="18" fill="#252525">рядом, чтобы было недалеко.</text>
+<text x="20" y="38" font-size="18" fill="#252525">Когда мы решаем поесть вне</text>
+<text x="20" y="62" font-size="18" fill="#252525">дома, я хочу увидеть, в каких</text>
+<text x="20" y="86" font-size="18" fill="#252525">ресторанах поблизости есть</text>
+<text x="20" y="110" font-size="18" fill="#252525">место на всю компанию, чтобы</text>
+<text x="20" y="134" font-size="18" fill="#252525">быстро договориться, куда</text>
+<text x="20" y="158" font-size="18" fill="#252525">пойти.</text>
 <rect x="326" y="0" width="310" height="208" rx="16" fill="#fff"/>
-<text x="346" y="38" font-size="18" fill="#252525">Когда у меня мало времени,</text>
-<text x="346" y="62" font-size="18" fill="#252525">я хочу забронировать</text>
-<text x="346" y="86" font-size="18" fill="#252525">конкретный стол на удобное</text>
-<text x="346" y="110" font-size="18" fill="#252525">время, чтобы не тратить время</text>
-<text x="346" y="134" font-size="18" fill="#252525">на ожидание посадки.</text>
+<text x="346" y="38" font-size="18" fill="#252525">Когда у меня мало времени</text>
+<text x="346" y="62" font-size="18" fill="#252525">между делами, я хочу</text>
+<text x="346" y="86" font-size="18" fill="#252525">забронировать стол рядом к</text>
+<text x="346" y="110" font-size="18" fill="#252525">определённому часу, чтобы по</text>
+<text x="346" y="134" font-size="18" fill="#252525">приходу сразу сесть.</text>
 <rect x="652" y="0" width="310" height="208" rx="16" fill="#fff"/>
-<text x="672" y="38" font-size="18" fill="#252525">Когда мне важно, где мы будем</text>
-<text x="672" y="62" font-size="18" fill="#252525">сидеть, я хочу заранее выбрать</text>
-<text x="672" y="86" font-size="18" fill="#252525">конкретный стол, чтобы потом</text>
-<text x="672" y="110" font-size="18" fill="#252525">не просить нас пересадить.</text>
+<text x="672" y="38" font-size="18" fill="#252525">Когда я уже выбрал ресторан и</text>
+<text x="672" y="62" font-size="18" fill="#252525">открыл его карточку, я хочу</text>
+<text x="672" y="86" font-size="18" fill="#252525">сразу проверить свободное</text>
+<text x="672" y="110" font-size="18" fill="#252525">время и забронировать стол,</text>
+<text x="672" y="134" font-size="18" fill="#252525">чтобы не возвращаться к</text>
+<text x="672" y="158" font-size="18" fill="#252525">поиску.</text>
 <rect x="0" y="224" width="310" height="208" rx="16" fill="#fff"/>
-<text x="20" y="262" font-size="18" fill="#252525">Когда на подходящий стол</text>
-<text x="20" y="286" font-size="18" fill="#252525">действует скидка, я хочу понять</text>
-<text x="20" y="310" font-size="18" fill="#252525">её условия до бронирования,</text>
-<text x="20" y="334" font-size="18" fill="#252525">чтобы знать,</text>
-<text x="20" y="358" font-size="18" fill="#252525">на что рассчитывать</text>
-<text x="20" y="382" font-size="18" fill="#252525">при оплате счёта.</text>
+<text x="20" y="262" font-size="18" fill="#252525">Когда на подходящий стол</text>
+<text x="20" y="286" font-size="18" fill="#252525">действует скидка, я хочу до</text>
+<text x="20" y="310" font-size="18" fill="#252525">бронирования узнать, в какое</text>
+<text x="20" y="334" font-size="18" fill="#252525">время и на что она</text>
+<text x="20" y="358" font-size="18" fill="#252525">распространяется, чтобы</text>
+<text x="20" y="382" font-size="18" fill="#252525">понимать, на какую сумму</text>
+<text x="20" y="406" font-size="18" fill="#252525">рассчитывать.</text>
 <rect x="326" y="224" width="310" height="208" rx="16" fill="#fff"/>
-<text x="346" y="262" font-size="18" fill="#252525">Когда у нашей компании есть</text>
-<text x="346" y="286" font-size="18" fill="#252525">пожелания к посещению,</text>
-<text x="346" y="310" font-size="18" fill="#252525">я хочу передать их ресторану</text>
-<text x="346" y="334" font-size="18" fill="#252525">при бронировании,</text>
-<text x="346" y="358" font-size="18" fill="#252525">чтобы сотрудники могли учесть</text>
-<text x="346" y="382" font-size="18" fill="#252525">их заранее.</text>
+<text x="346" y="262" font-size="18" fill="#252525">Когда я бронирую стол на день</text>
+<text x="346" y="286" font-size="18" fill="#252525">рождения, годовщину или</text>
+<text x="346" y="310" font-size="18" fill="#252525">другое событие, я хочу</text>
+<text x="346" y="334" font-size="18" fill="#252525">отметить повод и оставить</text>
+<text x="346" y="358" font-size="18" fill="#252525">пожелание, чтобы ресторан мог</text>
+<text x="346" y="382" font-size="18" fill="#252525">подготовиться к нашему визиту.</text>
 <rect x="652" y="224" width="310" height="208" rx="16" fill="#fff"/>
 <text x="672" y="262" font-size="18" fill="#252525">Когда ресторан просит депозит,</text>
-<text x="672" y="286" font-size="18" fill="#252525">я хочу до оплаты узнать сумму,</text>
-<text x="672" y="310" font-size="18" fill="#252525">причину и условия возврата,</text>
-<text x="672" y="334" font-size="18" fill="#252525">чтобы решить, подходят</text>
-<text x="672" y="358" font-size="18" fill="#252525">ли мне эти условия.</text>
+<text x="672" y="286" font-size="18" fill="#252525">я хочу понять, зачем он нужен,</text>
+<text x="672" y="310" font-size="18" fill="#252525">сколько нужно внести за всю</text>
+<text x="672" y="334" font-size="18" fill="#252525">компанию и до какого момента</text>
+<text x="672" y="358" font-size="18" fill="#252525">его вернут полностью, чтобы</text>
+<text x="672" y="382" font-size="18" fill="#252525">решить, подходят ли мне</text>
+<text x="672" y="406" font-size="18" fill="#252525">условия.</text>
 <rect x="0" y="448" width="310" height="208" rx="16" fill="#fff"/>
-<text x="20" y="486" font-size="18" fill="#252525">Когда ресторан не может</text>
-<text x="20" y="510" font-size="18" fill="#252525">предоставить</text>
-<text x="20" y="534" font-size="18" fill="#252525">уже подтверждённый стол,</text>
-<text x="20" y="558" font-size="18" fill="#252525">я хочу сам решить, подходит</text>
-<text x="20" y="582" font-size="18" fill="#252525">ли замена, чтобы сохранить</text>
-<text x="20" y="606" font-size="18" fill="#252525">визит или отменить бронь</text>
-<text x="20" y="630" font-size="18" fill="#252525">с полным возвратом.</text>
+<text x="20" y="486" font-size="18" fill="#252525">Когда приближается время</text>
+<text x="20" y="510" font-size="18" fill="#252525">брони, я хочу получить</text>
+<text x="20" y="534" font-size="18" fill="#252525">напоминание с адресом и</text>
+<text x="20" y="558" font-size="18" fill="#252525">временем, чтобы успеть к</text>
+<text x="20" y="582" font-size="18" fill="#252525">началу встречи.</text>
 <rect x="326" y="448" width="310" height="208" rx="16" fill="#fff"/>
-<text x="346" y="486" font-size="18" fill="#252525">Когда приближается время</text>
-<text x="346" y="510" font-size="18" fill="#252525">брони, я хочу получить</text>
-<text x="346" y="534" font-size="18" fill="#252525">напоминание с адресом,</text>
-<text x="346" y="558" font-size="18" fill="#252525">чтобы вовремя прийти</text>
-<text x="346" y="582" font-size="18" fill="#252525">в ресторан.</text>
+<text x="346" y="486" font-size="18" fill="#252525">Когда я уже побывал в</text>
+<text x="346" y="510" font-size="18" fill="#252525">ресторане, я хочу оценить</text>
+<text x="346" y="534" font-size="18" fill="#252525">визит и при желании добавить</text>
+<text x="346" y="558" font-size="18" fill="#252525">фотографии, чтобы другим</text>
+<text x="346" y="582" font-size="18" fill="#252525">гостям было проще решить,</text>
+<text x="346" y="606" font-size="18" fill="#252525">подходит ли им это место.</text>
 <rect x="652" y="448" width="310" height="208" rx="16" fill="#fff"/>
-<text x="672" y="486" font-size="18" fill="#252525">Когда я снова собираюсь</text>
-<text x="672" y="510" font-size="18" fill="#252525">в знакомый ресторан, я хочу</text>
-<text x="672" y="534" font-size="18" fill="#252525">найти его в истории,</text>
-<text x="672" y="558" font-size="18" fill="#252525">чтобы быстро забронировать</text>
-<text x="672" y="582" font-size="18" fill="#252525">стол.</text>
+<text x="672" y="486" font-size="18" fill="#252525">Когда я хочу снова пойти туда,</text>
+<text x="672" y="510" font-size="18" fill="#252525">где мне понравилось, я хочу</text>
+<text x="672" y="534" font-size="18" fill="#252525">найти ресторан в истории</text>
+<text x="672" y="558" font-size="18" fill="#252525">броней, чтобы быстро</text>
+<text x="672" y="582" font-size="18" fill="#252525">забронировать стол на новую</text>
+<text x="672" y="606" font-size="18" fill="#252525">дату.</text>
 </svg>
