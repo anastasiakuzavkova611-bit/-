@@ -41,14 +41,10 @@ body .floating-nav .nav-home{margin:0;padding:0;width:auto;flex:0 0 auto}
 body .floating-nav .nav-telegram{padding-inline:0}
 @media(max-width:700px){body .floating-nav{--nav-gap:12px}}
 
-body .floating-nav::before {
-  content: "";
-  position: absolute;
-  inset: 4px -16px;
-  z-index: -1;
+body .floating-nav {
+  padding-inline: 16px;
   border-radius: 999px;
-  background: rgb(255 255 255 / 16%);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
-  pointer-events: none;
+  background: rgb(255 255 255 / 30%);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
