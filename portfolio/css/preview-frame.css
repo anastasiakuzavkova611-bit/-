@@ -96,3 +96,29 @@ body .case-art.desktop {
   overflow: hidden;
   padding-bottom: 0;
 }
+
+/* Navigation stays on the viewer frame as the artwork changes. */
+dialog:is(.concept-viewer, .case-media-viewer) > :is(.prev, .next, .media-next):not([hidden]) {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  left: auto;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  color: #444;
+  cursor: pointer;
+  z-index: 1;
+}
+dialog:is(.concept-viewer, .case-media-viewer) > :is(.prev, .media-next[data-last="true"]):not([hidden]) {
+  right: auto;
+  left: 6px;
+}
+dialog.concept-viewer > .prev svg { transform: rotate(180deg); }
