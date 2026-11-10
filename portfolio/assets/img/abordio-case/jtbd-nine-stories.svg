@@ -44,24 +44,17 @@
 <text x="672" y="358" font-size="18" fill="#252525">его вернут полностью, чтобы</text>
 <text x="672" y="382" font-size="18" fill="#252525">решить, подходят ли мне</text>
 <text x="672" y="406" font-size="18" fill="#252525">условия.</text>
-<rect x="0" y="448" width="310" height="208" rx="16" fill="#fff"/>
-<text x="20" y="486" font-size="18" fill="#252525">Когда приближается время</text>
-<text x="20" y="510" font-size="18" fill="#252525">брони, я хочу получить</text>
-<text x="20" y="534" font-size="18" fill="#252525">напоминание с адресом и</text>
-<text x="20" y="558" font-size="18" fill="#252525">временем, чтобы успеть к</text>
-<text x="20" y="582" font-size="18" fill="#252525">началу встречи.</text>
-<rect x="326" y="448" width="310" height="208" rx="16" fill="#fff"/>
-<text x="346" y="486" font-size="18" fill="#252525">Когда я уже побывал в</text>
-<text x="346" y="510" font-size="18" fill="#252525">ресторане, я хочу оценить</text>
-<text x="346" y="534" font-size="18" fill="#252525">визит и при желании добавить</text>
-<text x="346" y="558" font-size="18" fill="#252525">фотографии, чтобы другим</text>
-<text x="346" y="582" font-size="18" fill="#252525">гостям было проще решить,</text>
-<text x="346" y="606" font-size="18" fill="#252525">подходит ли им это место.</text>
-<rect x="652" y="448" width="310" height="208" rx="16" fill="#fff"/>
-<text x="672" y="486" font-size="18" fill="#252525">Когда я хочу снова пойти туда,</text>
-<text x="672" y="510" font-size="18" fill="#252525">где мне понравилось, я хочу</text>
-<text x="672" y="534" font-size="18" fill="#252525">найти ресторан в истории</text>
-<text x="672" y="558" font-size="18" fill="#252525">броней, чтобы быстро</text>
-<text x="672" y="582" font-size="18" fill="#252525">забронировать стол на новую</text>
-<text x="672" y="606" font-size="18" fill="#252525">дату.</text>
+<rect x="163" y="448" width="310" height="208" rx="16" fill="#fff"/>
+<text x="183" y="486" font-size="18" fill="#252525">Когда приближается время</text>
+<text x="183" y="510" font-size="18" fill="#252525">брони, я хочу получить</text>
+<text x="183" y="534" font-size="18" fill="#252525">напоминание с адресом и</text>
+<text x="183" y="558" font-size="18" fill="#252525">временем, чтобы успеть к</text>
+<text x="183" y="582" font-size="18" fill="#252525">началу встречи.</text>
+<rect x="489" y="448" width="310" height="208" rx="16" fill="#fff"/>
+<text x="509" y="486" font-size="18" fill="#252525">Когда я хочу снова пойти туда,</text>
+<text x="509" y="510" font-size="18" fill="#252525">где мне понравилось, я хочу</text>
+<text x="509" y="534" font-size="18" fill="#252525">найти ресторан в истории</text>
+<text x="509" y="558" font-size="18" fill="#252525">броней, чтобы быстро</text>
+<text x="509" y="582" font-size="18" fill="#252525">забронировать стол на новую</text>
+<text x="509" y="606" font-size="18" fill="#252525">дату.</text>
 </svg>
