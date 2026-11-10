@@ -1,0 +1,14 @@
+body main.install-case .image-sequence {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 40px);
+  height: auto;
+  aspect-ratio: auto;
+  background: transparent;
+  overflow: visible;
+  border-radius: 0;
+}
+body main.install-case .image-sequence > figure {
+  margin-block: 0;
+  scroll-margin-top: 110px;
+}
