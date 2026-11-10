@@ -60,3 +60,39 @@ dialog.case-media-viewer .media-stage > video.branding-recording-trim {
 }
 dialog.concept-viewer :is(.close, .prev, .next) { z-index: 1; }
 dialog.concept-viewer .close { top: 8px; right: 16px; }
+
+/* Center the artwork independently of a caption in the upper margin. */
+body main.install-case .case-hero-still {
+  padding: var(--media-inset, 7.6%);
+}
+body main.install-case .case-hero-still img {
+  border-radius: 16px;
+}
+body main.install-case .complete-screen-board.annotated-board,
+body main.install-case .solution-carousel > figure.complete-screen-board {
+  grid-template-rows: 1fr auto 1fr;
+  align-content: center;
+  padding-block: clamp(24px, 3.5cqi, 36px);
+}
+body main.install-case .complete-screen-board .screen-original {
+  grid-area: 2 / 1;
+  align-self: center;
+  justify-self: center;
+  border-radius: 16px;
+  overflow: hidden;
+}
+body main.install-case .complete-screen-board .screen-original > img {
+  object-position: center;
+  border-radius: inherit;
+}
+body .case-art.desktop {
+  display: grid;
+  place-items: center;
+  height: auto;
+  padding-block: var(--media-inset, 7.6%);
+}
+body .case-art.desktop .case-browser {
+  margin: 0;
+  align-self: center;
+  border-radius: 16px;
+}
