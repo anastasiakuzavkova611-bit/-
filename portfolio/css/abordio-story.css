@@ -93,3 +93,10 @@ body main.abordio-case .ab-metric-sheet img {display:block;position:static;width
 
 .ab-intro-gallery .ribbon-surface{background-size:100% 100%;background-repeat:no-repeat}
 .ab-intro-gallery .ribbon-surface img{opacity:.5}
+
+body main.install-case.abordio-case a.interview-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}

@@ -28,7 +28,7 @@
 <text x="346" y="286" font-size="18" font-weight="400" fill="#252525">сумму депозита и срок</text>
 <text x="346" y="310" font-size="18" font-weight="400" fill="#252525">возврата, он точнее оценивает,</text>
 <text x="346" y="334" font-size="18" font-weight="400" fill="#252525">сколько вернётся при отмене.</text>
-<rect x="652" y="224" width="310" height="208" rx="179" fill="#fff"/>
+<rect x="652" y="224" width="310" height="208" rx="16" fill="#fff"/>
 <text x="672" y="262" font-size="18" font-weight="400" fill="#252525">Если гость может нажать</text>
 <text x="672" y="286" font-size="18" font-weight="400" fill="#252525">на свободное время прямо</text>
 <text x="672" y="310" font-size="18" font-weight="400" fill="#252525">в карточке ресторана,</text>
