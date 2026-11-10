@@ -42,9 +42,15 @@ body .floating-nav .nav-telegram{padding-inline:0}
 @media(max-width:700px){body .floating-nav{--nav-gap:12px}}
 
 body .floating-nav {
+  width: max-content;
   padding-inline: 16px;
   border-radius: 999px;
   background: rgb(255 255 255 / 30%);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
+}
+
+/* Balance the visual weight of the mark and labels at desktop widths. */
+@media (min-width: 768px) {
+  body .floating-nav { left: calc(50% + 5px); }
 }
