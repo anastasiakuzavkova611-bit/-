@@ -34,3 +34,8 @@
   .case-priority .priority-cards { grid-template-columns: minmax(0, 1fr); grid-auto-rows: 1fr; }
   .priority-cards li { grid-column: 1; }
 }
+
+@media (min-width: 521px) {
+  [data-cover="install"] .case-priority .priority-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  [data-cover="install"] .case-priority .priority-cards > li { grid-column: auto; }
+}
