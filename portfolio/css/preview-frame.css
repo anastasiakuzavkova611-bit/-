@@ -175,10 +175,13 @@ dialog.case-media-viewer .media-stage.has-flow > img {
 
 /* Use the same screen size on the portfolio and inside both DataLens cases. */
 body .flow-case:is([data-cover="install"], [data-cover="branding"]) .case-art.desktop {
-  padding: min(32px, 3.2%) min(36px, 3.6%) 0;
+  padding: min(36px, 3.6%);
+  height: auto;
+  aspect-ratio: auto;
 }
 body .flow-case:is([data-cover="install"], [data-cover="branding"]) .case-browser {
-  border-radius: 24px 24px 0 0;
+  aspect-ratio: 2 / 1;
+  border-radius: 24px;
   overflow: hidden;
 }
 body:has(main.install-case:is([data-cover="install"], [data-cover="branding"])) dialog.case-media-viewer::backdrop {
