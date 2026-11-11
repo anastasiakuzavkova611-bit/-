@@ -47,3 +47,7 @@ body main.install-case[data-cover] .complete-screen-board.annotated-board {
 body main.install-case[data-cover] .complete-screen-board :is(figcaption, .carousel-board-title) {
   align-self: center;
 }
+
+body main.install-case:is([data-cover="install"], [data-cover="branding"]) .complete-screen-board.annotated-board:has(> :is(figcaption, .carousel-board-title)) {
+  padding-block-start: 8px;
+}
