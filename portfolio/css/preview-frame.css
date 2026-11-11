@@ -72,7 +72,7 @@ dialog:is(.concept-viewer, .case-media-viewer) :is(.close, .media-close) {
   color: inherit;
   font: 30px/1 Arial, sans-serif;
 }
-dialog.concept-viewer::before {
+body:has(.ab-intro-gallery) dialog.concept-viewer::before {
   content: attr(aria-label);
   position: absolute;
   inset: 16px 64px auto;
