@@ -18,7 +18,7 @@ main.install-case:is([data-cover="install"], [data-cover="branding"]) {
   --screen-corner: 24px;
 }
 body main.install-case[data-cover] .case-hero-still {
-  padding: min(36px, 3.6cqi) min(48px, 4.8cqi) 0;
+  padding: min(36px, 3.6cqi) min(36px, 3.6cqi) 0;
 }
 body main.install-case[data-cover] .case-hero-still .screen-original,
 body main.install-case[data-cover] .complete-screen-board .screen-original {
@@ -29,4 +29,8 @@ body main.install-case[data-cover] .complete-screen-board .screen-original {
 body main.install-case[data-cover] .case-hero-still .screen-original > img,
 body main.install-case[data-cover] .complete-screen-board .screen-original > img {
   border-radius: inherit;
+}
+
+body main.install-case[data-cover] .complete-screen-board.annotated-board {
+  padding-inline: min(56px, 5.6cqi);
 }
