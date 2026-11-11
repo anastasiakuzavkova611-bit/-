@@ -56,6 +56,8 @@
       active.before(marker);
       transfer(viewport, active);
     }
+    dialog.style.setProperty('--art-ratio', ratio);
+    dialog.style.setProperty('--art-limit', ['charge', 'prices'].includes(active.dataset.motion) ? '360px' : '1240px');
     dialog.setAttribute('aria-label', title(card));
     fit();
   }
