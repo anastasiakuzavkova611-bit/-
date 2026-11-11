@@ -173,12 +173,6 @@ dialog.case-media-viewer .media-stage.has-flow > img {
   }
 }
 
-/* Concentric corners: the frame radius includes the gap around the screen. */
-.flow-cases { container-type: inline-size; }
-body .flow-case:is([data-cover="install"], [data-cover="branding"]),
-body main.install-case:is([data-cover="install"], [data-cover="branding"]) {
-  --datalens-frame-radius: calc(24px + min(56px, 5.6cqi));
-}
 body .flow-case:is([data-cover="install"], [data-cover="branding"]) .case-art.desktop {
   padding: min(56px, 5.6%) min(56px, 5.6%) 0;
   height: auto;
@@ -187,7 +181,7 @@ body .flow-case:is([data-cover="install"], [data-cover="branding"]) .case-art.de
 }
 body .flow-case:is([data-cover="install"], [data-cover="branding"]) .case-browser {
   aspect-ratio: auto;
-  border-radius: 24px 24px 0 0;
+  border-radius: 20px 20px 0 0;
   overflow: hidden;
 }
 body:has(main.install-case:is([data-cover="install"], [data-cover="branding"])) dialog.case-media-viewer::backdrop {
@@ -196,11 +190,11 @@ body:has(main.install-case:is([data-cover="install"], [data-cover="branding"])) 
 
 body .flow-case:is([data-cover="install"], [data-cover="branding"]),
 body main.install-case:is([data-cover="install"], [data-cover="branding"]) :is(.case-hero-still, .complete-screen-board) {
-  border-radius: var(--datalens-frame-radius);
+  border-radius: 32px;
 }
 body:has(main.install-case:is([data-cover="install"], [data-cover="branding"])) dialog.case-media-viewer {
-  border-radius: calc(24px + var(--frame-gap));
+  border-radius: 32px;
 }
 body:has(main.install-case:is([data-cover="install"], [data-cover="branding"])) dialog.case-media-viewer .media-stage > :is(img, video) {
-  border-radius: 24px;
+  border-radius: 20px;
 }
