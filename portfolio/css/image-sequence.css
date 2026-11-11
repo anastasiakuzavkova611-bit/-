@@ -16,7 +16,7 @@ body main.install-case .image-sequence > figure {
 /* Desktop screenshots share a single clipping edge in both DataLens cases. */
 main.install-case:is([data-cover="install"], [data-cover="branding"]) {
   --screen-corner: 24px;
-  --screen-inset: min(36px, 3.6cqi);
+  --screen-inset: min(56px, 5.6cqi);
 }
 body main.install-case[data-cover] .case-hero-still {
   padding: var(--screen-inset);
@@ -24,7 +24,7 @@ body main.install-case[data-cover] .case-hero-still {
 }
 body main.install-case[data-cover] .case-hero-still .screen-original {
   display: block;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: auto;
 }
 body main.install-case[data-cover] .case-hero-still .screen-original,
 body main.install-case[data-cover] .complete-screen-board .screen-original {
