@@ -109,3 +109,36 @@ body main.install-case.abordio-case a.interview-more {
   gap: 8px;
   white-space: nowrap;
 }
+
+/* Use the same 43-point phone outline at every display size. */
+body:has(main.abordio-case) { --ab-phone-corner: 11.467% / 5.296%; }
+body main.abordio-case :is(.ab-intro-gallery, .ab-flow-phones) .screen-original,
+body main.abordio-case .ab-booking-step .ab-flow-phones .screen-original,
+body:has(main.abordio-case) dialog.concept-viewer .viewer-stage > .screen-original,
+body:has(main.abordio-case) dialog.case-media-viewer .media-stage.has-flow > img {
+  border-radius: var(--ab-phone-corner);
+  overflow: hidden;
+}
+body main.abordio-case :is(.ab-intro-gallery, .ab-flow-phones) .screen-original > img,
+body:has(main.abordio-case) dialog.concept-viewer .viewer-stage > .screen-original > img {
+  border-radius: inherit;
+}
+main.abordio-case { --board-side: 7.6%; --board-bottom: 60px; }
+body main.abordio-case .ab-research-board.ab-research-board,
+body main.abordio-case .ab-architecture-gallery > .ab-research-board,
+body main.abordio-case .ab-booking-step .ab-flow-board,
+body main.abordio-case .ab-research-gallery > .ab-jtbd-board {
+  padding-inline: var(--board-side);
+}
+body main.abordio-case .ab-research-gallery > .ab-jtbd-board,
+body main.abordio-case .ab-ui-overview > .ab-research-board {
+  padding-bottom: var(--board-bottom);
+}
+body main.abordio-case .ab-ui-overview > .ab-research-board { height: auto; }
+body main.abordio-case .ab-ui-overview .ab-research-media,
+body main.abordio-case .ab-ui-overview .screen-original,
+body main.abordio-case .ab-ui-overview img { display: block; width: 100%; height: auto; }
+body main.abordio-case .ab-research-board.ab-mvp-board .ab-mvp-grid {
+  inset-inline: var(--board-side);
+  bottom: var(--board-bottom);
+}
