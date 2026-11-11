@@ -11,7 +11,7 @@ dialog:is(.case-media-viewer, .concept-viewer) {
   --preview-corner: 32px;
   border-radius: var(--preview-corner);
   color: #252525;
-  background: #f4f4f4;
+  background: #e6e6e6;
 }
 dialog:is(.case-media-viewer, .concept-viewer)::backdrop {
   background: rgb(0 0 0 / .72);
@@ -59,7 +59,30 @@ dialog.case-media-viewer .media-stage > video.branding-recording-trim {
   clip-path: inset(0 1% 0 0 round var(--preview-corner));
 }
 dialog.concept-viewer :is(.close, .prev, .next) { z-index: 1; }
-dialog.concept-viewer .close { top: 8px; right: 16px; }
+dialog:is(.concept-viewer, .case-media-viewer) :is(.close, .media-close) {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font: 30px/1 Arial, sans-serif;
+}
+dialog.concept-viewer::before {
+  content: attr(aria-label);
+  position: absolute;
+  inset: 16px 64px auto;
+  text-align: center;
+  color: #666;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 24px;
+  pointer-events: none;
+}
 
 /* Center the artwork independently of a caption in the upper margin. */
 body main.install-case .case-hero-still {
@@ -111,8 +134,7 @@ dialog:is(.concept-viewer, .case-media-viewer) > :is(.prev, .next, .media-next):
   padding: 0;
   margin: 0;
   border: 0;
-  border-radius: 50%;
-  background: #fff;
+  background: transparent;
   color: #444;
   cursor: pointer;
   z-index: 1;
