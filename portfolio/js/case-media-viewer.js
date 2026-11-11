@@ -13,6 +13,7 @@
  function fitVideo(){
   const player=stage.querySelector('video');
   if(!dialog.open||!player||!player.videoWidth)return;
+  dialog.style.setProperty('--art-ratio', player.classList.contains('branding-recording-trim') ? 1728/870 : player.videoWidth/player.videoHeight);
   if(player.classList.contains('branding-recording-trim')){
    const style=getComputedStyle(stage),w=stage.clientWidth-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight),h=stage.clientHeight-parseFloat(style.paddingTop)-parseFloat(style.paddingBottom);
    const width=Math.min(w,h*1728/870);player.style.width=width+'px';player.style.height=(width*870/1728)+'px';player.style.objectFit='cover';player.style.objectPosition='center top';
@@ -47,7 +48,12 @@
   if (sourceVideo) {
    dialog.showModal(); renderVideo();
   } else {
-   const image = document.createElement('img'); image.src = trigger.href || media.currentSrc || media.src; image.alt = media.alt || 'Скриншот интерфейса';
+   const image = document.createElement('img');
+   if (media.naturalWidth) dialog.style.setProperty('--art-ratio', media.naturalWidth / media.naturalHeight);
+   image.onload = () => {
+    if (stage.contains(image) && image.naturalHeight) dialog.style.setProperty('--art-ratio', image.naturalWidth / image.naturalHeight);
+   };
+   image.src = trigger.href || media.currentSrc || media.src; image.alt = media.alt || 'Скриншот интерфейса';
    stage.append(image); dialog.showModal();
   }
  }
