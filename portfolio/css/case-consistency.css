@@ -127,7 +127,7 @@ body main.abordio-case .ab-flow-board:not(:has(figcaption)){padding-top:40px;pad
 body main.abordio-case .ab-ds-pair{display:flex;align-items:center;justify-content:center;gap:48px}body main.abordio-case .ab-ds-pair a{width:40%;height:100%;display:flex;align-items:center;justify-content:center}body main.abordio-case .ab-ds-pair img{width:100%;height:auto;max-height:100%;object-fit:contain}
 
 /* Twelve MVP functions, same card spacing throughout the grid. */
-body main.abordio-case .ab-mvp-board .ab-mvp-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(4,minmax(0,1fr));inset:76px 76px 40px}
+body main.abordio-case .ab-mvp-board .ab-mvp-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(4,minmax(0,1fr));inset:76px 76px 60px}
 
 /* Place arrows in the frame gutters so changing the image never moves a control. */
 body main.install-case :is(.install-video-comparison,.solution-carousel) {--preview-rail:var(--media-inset,7.6%)}
