@@ -65,7 +65,7 @@ dialog.concept-viewer :is(.close, .prev, .next) { z-index: 1; }
 dialog:is(.concept-viewer, .case-media-viewer) :is(.close, .media-close) {
   position: absolute;
   top: 8px;
-  right: 16px;
+  right: 6px;
   display: grid;
   place-items: center;
   width: 40px;
@@ -136,3 +136,39 @@ dialog:is(.concept-viewer, .case-media-viewer) > :is(.prev, .media-next[data-las
   left: 6px;
 }
 dialog.concept-viewer > .prev svg { transform: rotate(180deg); }
+
+dialog.case-media-viewer.shows-board .media-title { transform: translateY(6px); }
+dialog.case-media-viewer.shows-board .media-stage > img { border-radius: 0; background: transparent; }
+dialog.concept-viewer .viewer-stage > [data-image*="2722-445"] {
+  clip-path: inset(1.85% 1.88% round 7% / 7%);
+}
+dialog.concept-viewer .viewer-stage > [data-image*="2958-7260"] {
+  clip-path: inset(5.96% 3.36% round 2% / 3.55%);
+}
+dialog.case-media-viewer .media-stage.has-flow {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), minmax(0,1fr));
+  grid-template-rows: repeat(var(--rows), minmax(0,1fr));
+  gap: clamp(8px,1.3vw,20px);
+  justify-items: center;
+  align-items: center;
+}
+dialog.case-media-viewer .media-stage.has-flow > img {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  aspect-ratio: 375 / 812;
+  border-radius: 11% / 5%;
+}
+@media (max-width: 700px) {
+  dialog.case-media-viewer.shows-flow { height: 92dvh; }
+  dialog.case-media-viewer .media-stage.has-flow {
+    inset: 48px 16px 16px;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-rows: none;
+    grid-auto-rows: max-content;
+    align-content: safe center;
+    overflow: auto;
+  }
+}
