@@ -33,5 +33,8 @@ body main.install-case[data-cover] .complete-screen-board .screen-original > img
 }
 
 body main.install-case[data-cover] .complete-screen-board.annotated-board {
+  grid-template-rows: auto auto;
+  align-content: start;
+  padding-bottom: min(56px, 5.6cqi);
   padding-inline: var(--screen-inset);
 }
