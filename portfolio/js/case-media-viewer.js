@@ -47,14 +47,29 @@
   if (sourceVideo) {
    dialog.showModal(); renderVideo();
   } else {
-   const image = document.createElement('img');
-   image.src = trigger.href || media.currentSrc || media.src; image.alt = media.alt || 'Скриншот интерфейса';
-   stage.append(image); dialog.showModal();
+   const flow = trigger.closest('.ab-flow-phones')?.closest('.ab-booking-step');
+   const screens = flow ? [...flow.querySelectorAll('.ab-flow-phones a.screen-original')] : [trigger];
+   stage.classList.toggle('has-flow', !!flow);
+   dialog.classList.toggle('shows-flow', !!flow);
+   dialog.classList.toggle('shows-board', !!trigger.closest('.ab-jtbd-board, .ab-hypotheses-board') || /jtbd-nine-stories|abordio-hypothesis-cards/.test(trigger.href));
+   if (flow) {
+    stage.style.setProperty('--columns', Math.min(screens.length, 4));
+    stage.style.setProperty('--rows', Math.ceil(screens.length / 4));
+   }
+   for (const screen of screens) {
+    const image = document.createElement('img');
+    image.src = screen.href || media.currentSrc || media.src;
+    image.alt = screen.querySelector('img')?.alt || media.alt || 'Скриншот интерфейса';
+    stage.append(image);
+   }
+   dialog.showModal();
   }
  }
  dialog.querySelector('.media-close').addEventListener('click',()=>dialog.close());
  dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
  dialog.addEventListener('close',()=>{
+  dialog.classList.remove('shows-flow', 'shows-board');
+  stage.classList.remove('has-flow');
   videoLayout.disconnect();
   stage.querySelector('video')?.pause();stage.replaceChildren();document.documentElement.classList.remove('media-viewer-open');
   if(sourceVideo && !sourceVideo.closest('[hidden]') && !matchMedia('(prefers-reduced-motion: reduce)').matches){sourceVideo.currentTime=0;sourceVideo.play().catch(()=>{})}
