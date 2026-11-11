@@ -153,9 +153,9 @@ body main.install-case .case-hypothesis-preview .screen-original,
 body main.install-case .case-hypothesis-preview img {display:block;width:100%;height:auto;margin:0;padding:0;border-radius:0}
 
 /* Hang bullet markers in the gutter, aligned prose starts on the text rail. */
-body main.install-case .story-copy > ul {
+body main.install-case .story-copy > ul:only-child {
   padding-inline-start: 0;
   margin-inline-start: 0;
   list-style-position: outside;
 }
-body main.install-case .story-copy > ul > li { padding-inline-start: 0; }
+body main.install-case .story-copy > ul:only-child > li { padding-inline-start: 0; }
