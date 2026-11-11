@@ -36,6 +36,6 @@
 }
 
 @media (min-width: 521px) {
-  [data-cover="install"] .case-priority .priority-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  [data-cover="install"] .case-priority .priority-cards > li { grid-column: auto; }
+  :is([data-cover="install"], [data-cover="branding"]) .case-priority .priority-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  :is([data-cover="install"], [data-cover="branding"]) .case-priority .priority-cards > li { grid-column: auto; }
 }
