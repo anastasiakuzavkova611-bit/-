@@ -11,6 +11,18 @@
    const root=doc.documentElement;
    root.querySelector('rect[fill^="url(#pattern0"]')?.classList.add('charge-car-art');
    root.querySelector('[id="85%"]')?.classList.add('charge-live-value');
+   root.querySelector('[id="2h left"] tspan').classList.add('charge-time-left');
+   if (!small) {
+    const heading = root.querySelector('[id="Xiomi SU7"]');
+    const status = root.querySelector('[id="is charging"]');
+    const span = status.querySelector('tspan');
+    span.removeAttribute('x');
+    span.removeAttribute('y');
+    span.setAttribute('dx', '8');
+    for (const attr of ['fill', 'font-size', 'font-weight']) span.setAttribute(attr, status.getAttribute(attr));
+    heading.append(span);
+    status.remove();
+   }
    const fill=root.querySelector('[id="Frame 7"] rect');
    if(fill){fill.classList.add('charge-live-fill');fill.parentElement.removeAttribute('clip-path');const effect=root.querySelector('[id="filter8_dd_2722_551"]');if(effect)effect.setAttribute('width','534.216')}
    // Recolor only the original light layers; the car and neutral surfaces stay intact.
@@ -67,6 +79,13 @@
   });return svg;
  }
  targets.filter(el=>el.dataset.motion==='fitness').forEach(fitnessLayer);
+ function timeLeft(percent) {
+  const minutes = Math.round(120 * (100 - percent) / 100);
+  const hours = Math.floor(minutes / 60);
+  const remainder = minutes % 60;
+  if (!hours) return minutes + 'm left';
+  return hours + 'h' + (remainder ? ' ' + remainder + 'm' : '') + ' left';
+ }
  let elapsed=0,last=0;
  function animate(time){const delta=last?Math.min(time-last,60):0;last=time;if(!document.hidden&&!matchMedia('(prefers-reduced-motion: reduce)').matches){elapsed+=delta;
  const cycle=elapsed%15000;
@@ -77,7 +96,10 @@
  const value=Math.round(progressPercent);
  g.querySelector('.fitness-fill').setAttribute('width',370*progressPercent/100);
  g.querySelector('.fitness-value').textContent=value;})});
- const phase=(elapsed%18000)/14000;const value=Math.round(100*Math.min(1,phase));document.querySelectorAll('.charge-live').forEach(svg=>{if(!svg.closest('.motion-visible'))return;const label=svg.querySelector('.charge-live-value');if(!label)return;const [color,dark]=value<33?["#FF6257","#802720"]:value<66?["#FFC43D","#78520D"]:["#37DF72","#116B32"];svg.style.setProperty("--charge-color",color);svg.style.setProperty("--charge-dark",dark);const rgb=[1,3,5].map(i=>parseInt(color.slice(i,i+2),16)/255);svg.querySelectorAll(".charge-glow-matrix").forEach(el=>el.setAttribute("values",`0 0 0 0 ${rgb[0]} 0 0 0 0 ${rgb[1]} 0 0 0 0 ${rgb[2]} 0 0 0 ${el.dataset.alpha} 0`));label.querySelector('tspan').textContent=value+'%';label.setAttribute('fill',color);label.setAttribute('font-size',value===100?'44':'51.0296');const bar=svg.querySelector('.charge-live-fill');if(bar){bar.setAttribute('width',489.565*value/100);bar.setAttribute('fill',color)}})}requestAnimationFrame(animate)}requestAnimationFrame(animate);
+ const phase=(elapsed%18000)/14000;const value=Math.round(100*Math.min(1,phase));document.querySelectorAll('.charge-live').forEach(svg=>{if(!svg.closest('.motion-visible'))return;const label=svg.querySelector('.charge-live-value');if(!label)return;const [color,dark]=value<33?["#FF6257","#802720"]:value<66?["#FFC43D","#78520D"]:["#37DF72","#116B32"];svg.style.setProperty("--charge-color",color);svg.style.setProperty("--charge-dark",dark);const rgb=[1,3,5].map(i=>parseInt(color.slice(i,i+2),16)/255);svg.querySelectorAll(".charge-glow-matrix").forEach(el=>el.setAttribute("values",`0 0 0 0 ${rgb[0]} 0 0 0 0 ${rgb[1]} 0 0 0 0 ${rgb[2]} 0 0 0 ${el.dataset.alpha} 0`));const timeLabel = svg.querySelector('.charge-time-left');
+ const remaining = timeLeft(value);
+ if (timeLabel.textContent !== remaining) timeLabel.textContent = remaining;
+ label.querySelector('tspan').textContent=value+'%';label.setAttribute('fill',color);label.setAttribute('font-size',value===100?'44':'51.0296');const bar=svg.querySelector('.charge-live-fill');if(bar){bar.setAttribute('width',489.565*value/100);bar.setAttribute('fill',color)}})}requestAnimationFrame(animate)}requestAnimationFrame(animate);
  document.addEventListener('visibilitychange', () => {
   targets.forEach(el => el.classList.toggle('motion-paused', document.hidden));
  });
