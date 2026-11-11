@@ -3,9 +3,9 @@ dialog:is(.case-media-viewer, .concept-viewer) {
   box-sizing: border-box;
   --frame-gap: clamp(44px, 4vw, 56px);
   --frame-padding: calc(2 * var(--frame-gap));
-  --art-width: min(var(--art-limit, 1240px), calc(min(1240px, 96vw) - var(--frame-padding)), calc((min(900px, 94dvh) - var(--frame-padding)) * var(--art-ratio, 1)));
-  width: calc(var(--art-width) + var(--frame-padding));
-  height: calc(var(--art-width) / var(--art-ratio, 1) + var(--frame-padding));
+  --stage-width: min( calc(min(1240px, 96vw) - var(--frame-padding)), calc((min(900px, 94dvh) - var(--frame-padding)) * 16 / 9));
+  width: calc(var(--stage-width) + var(--frame-padding));
+  height: calc(var(--stage-width) * 9 / 16 + var(--frame-padding));
   max-width: none;
   max-height: none;
   margin: auto;
@@ -29,11 +29,6 @@ dialog.case-media-viewer .media-stage {
   width: auto;
   height: auto;
   padding: 0;
-}
-dialog.case-media-viewer:not(.has-video) .media-stage > img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 dialog.case-media-viewer .media-toolbar {
   position: relative;
@@ -79,17 +74,6 @@ dialog:is(.concept-viewer, .case-media-viewer) :is(.close, .media-close) {
   background: transparent;
   color: inherit;
   font: 30px/1 Arial, sans-serif;
-}
-body:has(.ab-intro-gallery) dialog.concept-viewer::before {
-  content: attr(aria-label);
-  position: absolute;
-  inset: 16px 64px auto;
-  text-align: center;
-  color: #666;
-  font-family: inherit;
-  font-size: 17px;
-  line-height: 24px;
-  pointer-events: none;
 }
 
 /* Center the artwork independently of a caption in the upper margin. */
