@@ -36,8 +36,8 @@ dialog.case-media-viewer .media-toolbar {
   height: 48px;
   min-height: 48px;
 }
-.card-back:hover img, .case-art:hover > img, .case-art:hover .case-browser,
-.flow-case:hover .case-browser, .flow-case:hover .case-art > img {
+/* Keep concept artwork still without suppressing case-card hover motion. */
+.card-back:hover img {
   transform: none;
 }
 @media (hover: hover) {
