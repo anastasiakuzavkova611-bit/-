@@ -30,7 +30,12 @@
 .flow-case .case-caption h2 a::after{content:"";position:absolute;inset:0;z-index:3;border-radius:inherit}
 .flow-case:has(.case-caption h2 a:focus-visible){outline:2px solid #555;outline-offset:5px}
 .fitness-live{overflow:hidden;border-radius:11.94% / 5.49%}
-@media(hover:hover) and (prefers-reduced-motion:no-preference){.flow-case:hover .case-browser,.flow-case:hover .case-art>img{transform:translateY(-5px)}}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+ .flow-case .phone-mockup { transition: transform .4s; }
+ .flow-case:hover .case-browser,
+ .flow-case:hover .case-art > img,
+ .flow-case:hover .phone-mockup { transform: translateY(-5px); }
+}
 
 @media (prefers-reduced-motion:no-preference){
  .card-back[data-motion="music"].motion-visible::after{
